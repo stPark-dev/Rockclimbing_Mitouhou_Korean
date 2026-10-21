@@ -119,7 +119,7 @@ def test_window_problem_when_a_line_exceeds_a_measured_limit():
 def test_measured_windows_replace_the_source_width_warning():
     widths = {86: 12}
     units_ = {"src:a": {"text": "", "capacity": 99, "source": "57ff", "copies": ["KWAMENU.BIN:14354"]},
-              "src:b": {"text": "", "capacity": 99, "source": "57ff", "copies": ["KWAMENU.BIN:14460"]}}
+              "src:b": {"text": "", "capacity": 99, "source": "57ff", "copies": ["KWAMENU.BIN:15ED4"]}}  # 登山情報, not measured
     ko = {"src:a": {"ko": "가나", "status": "draft"}, "src:b": {"ko": "가나", "status": "draft"}}
     assert [w[0] for w in kocheck.width_warnings(units_, ko, widths)] == ["src:b"]
     assert kocheck.window_problems(units_, ko) == []
