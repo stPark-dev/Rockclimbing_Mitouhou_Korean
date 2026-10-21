@@ -1,0 +1,10 @@
+# 원본 디스크와 게임에서 나온 데이터는 저장소에 넣지 않는다
+original/
+work/
+build/
+dist/
+*.zip
+*.bin
+*.cue
+*.jpg
+__pycache__/
