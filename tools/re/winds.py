@@ -18,7 +18,8 @@ from PIL import Image
 DS = r"C:\Users\S.T.Park\tools\duckstation\duckstation-qt-x64-ReleaseLTCG.exe"
 VK = {"Return": win32con.VK_RETURN, "Up": win32con.VK_UP, "Down": win32con.VK_DOWN,
       "Left": win32con.VK_LEFT, "Right": win32con.VK_RIGHT, "BackSpace": win32con.VK_BACK,
-      **{f"F{i}": win32con.VK_F1 + i - 1 for i in range(1, 13)}}
+      **{f"F{i}": win32con.VK_F1 + i - 1 for i in range(1, 13)},
+      **{f"NUM{i}": win32con.VK_NUMPAD0 + i for i in range(10)}, "Tab": win32con.VK_TAB}
 user32 = ctypes.windll.user32
 
 
@@ -96,17 +97,17 @@ def grab(hwnd):
     return im
 
 
-def find():
-    """Game window of a running DuckStation (for calls from a separate process)."""
+def find(exe=None):
+    """Game window of a running emulator (DuckStation unless `exe` names another .exe)."""
     import win32api
     for h in _all_top():
         pid = win32process.GetWindowThreadProcessId(h)[1]
         try:
             hp = win32api.OpenProcess(0x1000, False, pid)  # PROCESS_QUERY_LIMITED_INFORMATION
-            exe = win32process.GetModuleFileNameEx(hp, 0)
+            path = win32process.GetModuleFileNameEx(hp, 0)
         except Exception:
             continue
-        if exe.lower() == DS.lower():
+        if (path.lower() == DS.lower()) if exe is None else path.lower().endswith(exe.lower()):
             return game_window(pid, timeout=5)
     raise LookupError("DuckStation is not running")
 
@@ -121,10 +122,13 @@ def main():
     """winds.py launch <cue> | keys <name>... (a number waits that many seconds) | grab <png>"""
     import sys
     cmd, args = sys.argv[1], sys.argv[2:]
+    exe = None
+    if cmd.startswith("--exe="):
+        exe, cmd, args = cmd[6:], args[0], args[1:]
     if cmd == "launch":
         print(launch(args[0]).pid)
         return
-    h = find()
+    h = find(exe)
     if cmd == "keys":
         for a in args:
             if a.replace(".", "").isdigit():
