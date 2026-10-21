@@ -85,7 +85,9 @@ def test_non_hangul_sizes_follow_their_cells(text, size):
 def test_one_byte_slots_leave_room_for_fixed_and_reserved_cells():
     # cells 0-238 and 244-246 are 1-byte; 0-59 stay fixed (digits for FA, symbols, Latin capitals);
     # new punctuation, ｃｍｘ, ・ and ？ take 1-byte cells too
-    assert kocheck.ONE_BYTE_SLOTS == (239 + 3) - 60 - len(kocheck.NEW_PUNCT) - 3 - 2
+    # F5-F7 are not used: F6 (cell 245, ・) drew blank on the peak info window (2026-10-21),
+    # so 1-byte cells are 0-238 only and ・ moves into one of them
+    assert kocheck.ONE_BYTE_SLOTS == 239 - 60 - len(kocheck.NEW_PUNCT) - 3 - 2
 
 
 def test_line_widths_use_the_advance_table_and_layout_controls():

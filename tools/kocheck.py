@@ -26,13 +26,13 @@ TABLE = Path(__file__).resolve().parent.parent / "tables" / "charmap.tsv"
 LAYOUT = {0xFC}
 NEW_PUNCT = set(" .,“”")
 ALIASES = {"(": "（", ")": "）", "!": "！", "?": "？", ":": "："}
-# 1-byte codes reach glyph cells 0-238 and 244-246 (F5-F7). Cells 0-59 stay fixed: FA prints
-# digits from cells 0-9, and the symbols and Latin capitals keep their codes. The build places
-# NEW_PUNCT, ｃｍｘ, ・ and ？ in 1-byte cells as well; every other non-Hangul glyph keeps a
-# 2-byte cell.
+# 1-byte codes reach glyph cells 0-238 (F5-F7 are not used: F6 for cell 245 drew blank on the
+# peak info window, 2026-10-21). Cells 0-59 stay fixed: FA prints digits from cells 0-9, and the
+# symbols and Latin capitals keep their codes. The build places NEW_PUNCT, ｃｍｘ, ・ and ？ in
+# 1-byte cells as well; every other non-Hangul glyph keeps a 2-byte cell.
 FIXED_ONE_BYTE = 60
 ONE_BYTE_OTHER = set("ｃｍｘ・？")
-ONE_BYTE_SLOTS = (239 + 3) - FIXED_ONE_BYTE - len(NEW_PUNCT) - len(ONE_BYTE_OTHER)
+ONE_BYTE_SLOTS = 239 - FIXED_ONE_BYTE - len(NEW_PUNCT) - len(ONE_BYTE_OTHER)
 _CTL = re.compile(r"\{([0-9A-F]{2}):([0-9A-F]{2}(?:,[0-9A-F]{2})*)?\}")
 
 

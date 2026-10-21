@@ -75,6 +75,7 @@ python3 -m pytest -q tests/
 | `tools/charmap.py`, `tables/charmap.tsv` | 글리프 번호 → 문자표 (판독 상태 포함) |
 | `tools/textmap.py` | 문자열 모집단 추출 → `text/src/` (원문, 저장소 제외) |
 | `tools/units.py`, `tools/kocheck.py` | 번역 단위 파일 `text/ko/` 생성, 번역 기계 검사 |
+| `tools/build_ko.py` | 제품 빌드(글꼴 칸 배정·글리프·진행폭·문자열 제자리 쓰기). `--policy dev`는 배포 불가 |
 | `text/glossary.json` | 용어집 |
 | `docs/` | 조사 기록, 결정 기록 |
 
