@@ -9,7 +9,8 @@ Steps, all on the fixed revision (docs/survey.md §1):
    Hangul take free 2-byte cells;
 4. draw the glyphs into every copy of the font, write their advances into the
    executable's table, and write each translation over every copy of its unit;
-5. rebuild track 1 through iso.plan/apply.
+5. apply the emulator compatibility fix (tools/compat.py: START.BIN below the end of RAM);
+6. rebuild track 1 through iso.plan/apply.
 Untranslated units keep their source bytes; under the dev policy their kana and
 kanji show whatever now sits in those cells.
 
@@ -23,6 +24,7 @@ import json
 from pathlib import Path
 
 import charmap
+import compat
 import iso
 import kfont
 import kocheck
@@ -184,7 +186,7 @@ def _select(ko, policy):
     return picked
 
 
-def build(src, ko, bdf, policy="dev"):
+def build(src, ko, bdf, policy="dev", compat_fix=True):
     if hashlib.sha256(src).hexdigest() != poc_db.SOURCE_SHA256:
         raise ValueError("source is not the supported original track 1")
     picked = _select(ko, policy)
@@ -244,6 +246,8 @@ def build(src, ko, bdf, policy="dev"):
         else:
             exe[WIDTH_OFFSET + width_index(k)] = advance(ch, bdf)
 
+    if compat_fix:
+        report["compat"] = compat.apply(files)
     changes = {n: bytes(d) for n, d in files.items() if bytes(d) != originals[n]}
     out = iso.apply(src, iso.plan(src, disc, changes))
     report.update(cells=cells, files_out={n: bytes(d) for n, d in files.items()}, fonts=fonts,
@@ -259,12 +263,14 @@ def main():
     ap.add_argument("--ko", required=True)
     ap.add_argument("--out", required=True)
     ap.add_argument("--policy", default="dev")
+    ap.add_argument("--no-compat", action="store_true", help="leave out the START.BIN emulator fix (tools/compat.py)")
     a = ap.parse_args()
     poc_db.check_paths(a.src, a.out)
     ko = {}
     for p in sorted(Path(a.ko).glob("*.json")):
         ko.update(json.loads(p.read_text(encoding="utf-8")))
-    out, rep = build(Path(a.src).read_bytes(), ko, kfont.load_bdf(a.galmuri), a.policy)
+    out, rep = build(Path(a.src).read_bytes(), ko, kfont.load_bdf(a.galmuri), a.policy,
+                     compat_fix=not a.no_compat)
     Path(a.out).parent.mkdir(parents=True, exist_ok=True)
     Path(a.out).write_bytes(out)
     cue = poc_db.write_cue(a.cue, a.out)
