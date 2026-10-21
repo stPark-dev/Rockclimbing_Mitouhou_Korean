@@ -44,3 +44,9 @@ def test_corpus_database_line_reads_as_japanese():
     toks, _ = tc.read_page(data, 0x1790C)
     first = charmap.text(toks, charmap.load(TABLE)).split("\n")[0]
     assert first == "　まず、移動しようと思う手や足を選びます。"  # FD is the leading full-width space
+
+
+def test_text_shows_controls_with_their_argument_bytes():
+    cm = {0: ("あ", "visual")}
+    toks = [("ctl", 0xFC, b"\x02"), ("g", 0), ("ctl", 0xFB, b"\x01\x0a"), ("end",)]
+    assert charmap.text(toks, cm) == "{FC:02}あ{FB:01,0A}"

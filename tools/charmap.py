@@ -32,4 +32,6 @@ def text(toks, table):
             out.append("\n")
         elif t == ("sp",):
             out.append("　")
+        elif t[0] == "ctl":
+            out.append("{%02X:%s}" % (t[1], ",".join(f"{b:02X}" for b in t[2])))
     return "".join(out)
