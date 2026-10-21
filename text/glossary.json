@@ -1077,6 +1077,46 @@
    "kind": "tech",
    "status": "approved",
    "note": "D5: (인공) 괄호 유지 — 등반 방식 구분"
+  },
+  {
+   "ja": "雪洞",
+   "ko": "설동",
+   "kind": "term",
+   "status": "candidate",
+   "note": "눈을 파서 만든 대피 굴"
+  },
+  {
+   "ja": "雪渓",
+   "ko": "설계",
+   "kind": "term",
+   "status": "check",
+   "note": "등산 용어 설계(雪溪). 일반 독자에게 '설계(設計)'와 혼동될 수 있음 — 대안: 눈골짜기"
+  },
+  {
+   "ja": "スラブ",
+   "ko": "슬랩",
+   "kind": "term",
+   "status": "candidate"
+  },
+  {
+   "ja": "ガレキ",
+   "ko": "잔돌",
+   "kind": "term",
+   "status": "candidate",
+   "note": "원문이 (石や岩)로 풀이"
+  },
+  {
+   "ja": "吹き溜まり",
+   "ko": "눈 더미",
+   "kind": "term",
+   "status": "candidate"
+  },
+  {
+   "ja": "尾根",
+   "ko": "능선",
+   "kind": "term",
+   "status": "candidate",
+   "note": "원문 屋根은 尾根의 오자로 보임(2건)"
   }
  ]
 }
