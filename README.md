@@ -1,4 +1,4 @@
-<p align="center"><img src="alps_cover_ko.png" alt="락클라이밍 미답봉에의 도전 ~알프스 편~ 한글화" width="480"></p>
+<p align="center"><img src="alps_cover_ko.png" alt="락클라이밍 미답봉에의 도전 알프스 편 한글화" width="480"></p>
 
 # 락클라이밍 미답봉에의 도전 알프스 편 한글화
 
