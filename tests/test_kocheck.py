@@ -56,3 +56,19 @@ def test_check_reports_each_kind_of_problem():
 def test_check_skips_untranslated_units():
     units_ = {"src:a": {"text": "あ{F8:00}", "capacity": 1}}
     assert kocheck.check(units_, {"src:a": {"ko": "", "status": "untranslated"}}, one_byte=set()) == []
+
+
+def test_fit_plan_moves_syllables_of_tight_strings_into_one_byte_codes():
+    # "가" is most frequent but only in a roomy string; "다" sits in a string with no slack.
+    units_ = {"src:a": {"text": "", "capacity": 50}, "src:b": {"text": "", "capacity": 2}}  # a has room for 가 as 2 bytes
+    ko = {"src:a": {"ko": "가" * 20 + "나", "status": "draft"}, "src:b": {"ko": "다", "status": "draft"}}
+    assert kocheck.one_byte_plan(["가" * 20 + "나", "다"], slots=1) == {"가"}
+    plan = kocheck.fit_plan(units_, ko, slots=1)
+    assert plan == {"다"}
+    assert kocheck.check(units_, ko, plan) == []
+
+
+def test_fit_plan_keeps_frequency_plan_when_everything_fits():
+    units_ = {"src:a": {"text": "", "capacity": 40}}
+    ko = {"src:a": {"ko": "가가나", "status": "draft"}}
+    assert kocheck.fit_plan(units_, ko, slots=1) == {"가"}

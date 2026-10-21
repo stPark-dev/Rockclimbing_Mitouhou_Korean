@@ -86,6 +86,40 @@ def one_byte_plan(texts, slots=ONE_BYTE_SLOTS):
     return {ch for ch, _ in freq.most_common(slots)}
 
 
+def fit_plan(units_, ko, slots=ONE_BYTE_SLOTS, rounds=1000):
+    """Frequency plan, then swap syllables of overflowing strings into 1-byte codes,
+    each time evicting the least frequent 1-byte syllable whose eviction overflows nothing."""
+    entries = []
+    for k, v in ko.items():
+        if v.get("ko"):
+            toks = tokenize(v["ko"])
+            cnt = collections.Counter(t[1] for t in toks if t[0] == "c" and "가" <= t[1] <= "힣")
+            entries.append((toks, units_[k]["capacity"], cnt))
+    freq = collections.Counter()
+    for _, _, cnt in entries:
+        freq.update(cnt)
+    plan = one_byte_plan([v["ko"] for v in ko.values() if v.get("ko")], slots)
+    for _ in range(rounds):
+        slack = [cap - byte_length(toks, plan) for toks, cap, _ in entries]
+        gain = collections.Counter()
+        for (_, _, cnt), s in zip(entries, slack):
+            if s < 0:
+                gain.update({ch: c for ch, c in cnt.items() if ch not in plan})
+        if not gain:
+            break
+        best = max(gain, key=lambda ch: (gain[ch], freq[ch], ch))
+        out = None
+        for ch in sorted(plan, key=lambda ch: (freq[ch], ch)):
+            if all(s >= cnt[ch] for (_, _, cnt), s in zip(entries, slack) if ch in cnt and s >= 0) and not any(
+                    ch in cnt for (_, _, cnt), s in zip(entries, slack) if s < 0):
+                out = ch
+                break
+        if out is None:
+            break
+        plan = (plan - {out}) | {best}
+    return plan
+
+
 def check(units_, ko, one_byte):
     probs = []
     for k, entry in ko.items():
@@ -109,7 +143,8 @@ def main():
     es = [e for p in sorted(src.glob("*.json")) for e in json.loads(p.read_text(encoding="utf-8"))["entries"]]
     us = units.build(es)
     files = {p.stem: json.loads(p.read_text(encoding="utf-8")) for p in sorted(kodir.glob("*.json"))}
-    plan = one_byte_plan([v["ko"] for f in files.values() for v in f.values() if v.get("ko")])
+    merged = {k: v for f in files.values() for k, v in f.items()}
+    plan = fit_plan(us, merged)
     total = 0
     for name, ko in files.items():
         for k, kind, msg in check(us, ko, plan):

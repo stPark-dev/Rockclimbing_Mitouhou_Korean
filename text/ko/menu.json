@@ -4,840 +4,851 @@
   "copies": [
    "KWAMENU.BIN:10A6C"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "불러오기라도 해 볼까 싶어서\n",
+  "status": "draft",
+  "note": "개발용 농담 문구로 보임(화면 미확인)"
  },
  "src:6900d72eb8c5": {
   "cap": 20,
   "copies": [
    "KWAMENU.BIN:10A84"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "저장하려 해도 안 돼서\n",
+  "status": "draft",
+  "note": "개발용 농담 문구로 보임(화면 미확인)"
  },
  "src:fb1576043b89": {
   "cap": 24,
   "copies": [
    "KWAMENU.BIN:10A98"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "지금까지의 데이터를\n저장하겠습니까?\n",
+  "status": "draft"
  },
  "src:b1f91bc9b11f": {
   "cap": 48,
   "copies": [
    "KWAMENU.BIN:10AB0"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "메모리 카드를\n확인하는 중입니다.\n메모리 카드를\n뽑지 마십시오.\n",
+  "status": "draft"
  },
  "src:5d2f243eb0a7": {
   "cap": 32,
   "copies": [
    "KWAMENU.BIN:10AE0"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "메모리 카드가\n슬롯에 꽂혀 있지\n않습니다.\n",
+  "status": "draft"
  },
  "src:2fa2c90b7f30": {
   "cap": 24,
   "copies": [
    "KWAMENU.BIN:10B00"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "메모리 카드를\n선택하십시오.\n",
+  "status": "draft"
  },
  "src:5b55939eae7f": {
   "cap": 40,
   "copies": [
    "KWAMENU.BIN:10B18"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "메모리 카드가\n초기화되지 않았습니다.\n초기화하겠습니까?\n",
+  "status": "draft"
  },
  "src:8f328eca3d54": {
   "cap": 48,
   "copies": [
    "KWAMENU.BIN:10B40"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "메모리 카드를\n초기화하는 중입니다.\n메모리 카드를\n뽑지 마십시오.\n",
+  "status": "draft"
  },
  "src:cd1428eb9797": {
   "cap": 32,
   "copies": [
    "KWAMENU.BIN:10B70"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "메모리 카드의\n빈 블록이\n부족합니다.\n",
+  "status": "draft"
  },
  "src:1958485449c8": {
   "cap": 28,
   "copies": [
    "KWAMENU.BIN:10B94"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "저장할 곳을\n선택하십시오.\n",
+  "status": "draft"
  },
  "src:18137606f3bd": {
   "cap": 40,
   "copies": [
    "KWAMENU.BIN:10BB0"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "이전 데이터를 지우고\n덮어써도\n괜찮습니까?\n",
+  "status": "draft"
  },
  "src:9f51fb395026": {
   "cap": 36,
   "copies": [
    "KWAMENU.BIN:10BD8"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "저장하는 중입니다.\n\n메모리 카드를\n뽑지 마십시오.\n",
+  "status": "draft"
  },
  "src:8d49cb2791ef": {
   "cap": 16,
   "copies": [
    "KWAMENU.BIN:10BFC"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "저장을 마쳤습니다.\n",
+  "status": "draft"
  },
  "src:2121a7a4a508": {
   "cap": 20,
   "copies": [
    "KWAMENU.BIN:10C0C"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "초기화를 마쳤습니다.\n",
+  "status": "draft"
  },
  "src:df172289a1e2": {
   "cap": 44,
   "copies": [
    "KWAMENU.BIN:10C20"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "데이터를\n검색하고 있습니다.\n메모리 카드를\n뽑지 마십시오.\n",
+  "status": "draft"
  },
  "src:1f04acc7f391": {
   "cap": 16,
   "copies": [
    "KWAMENU.BIN:10C4C"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "저장에 실패했습니다.\n",
+  "status": "draft"
  },
  "src:99b153fbc2b3": {
   "cap": 20,
   "copies": [
    "KWAMENU.BIN:10C5C"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "메모리 카드가 가득 찼습니다.\n",
+  "status": "draft"
  },
  "src:04b81cb363f0": {
   "cap": 20,
   "copies": [
    "KWAMENU.BIN:10C70"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "읽기에 실패했습니다.\n",
+  "status": "draft"
  },
  "src:6f53e8bd333b": {
   "cap": 20,
   "copies": [
    "KWAMENU.BIN:10C84"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "쓰기에 실패했습니다.\n",
+  "status": "draft"
  },
  "src:14a1c7ba7997": {
   "cap": 20,
   "copies": [
    "KWAMENU.BIN:10C98"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "초기화에 실패했습니다.\n",
+  "status": "draft"
  },
  "src:e23a027069b8": {
   "cap": 24,
   "copies": [
    "KWAMENU.BIN:10CAC"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "지금까지의 데이터를\n불러오겠습니까?\n",
+  "status": "draft"
  },
  "src:a334b3bcb625": {
   "cap": 36,
   "copies": [
    "KWAMENU.BIN:10CC8"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "불러오는 중입니다.\n\n메모리 카드를\n뽑지 마십시오.\n",
+  "status": "draft"
  },
  "src:87b04d4df02f": {
   "cap": 16,
   "copies": [
    "KWAMENU.BIN:10CEC"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "불러오기를 마쳤습니다.\n",
+  "status": "draft"
  },
  "src:ce490160f3ec": {
   "cap": 16,
   "copies": [
    "KWAMENU.BIN:10CFC"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "불러오기 실패.\n",
+  "status": "draft"
  },
  "src:045ef980ea34": {
   "cap": 28,
   "copies": [
    "KWAMENU.BIN:10D0C"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "메모리 카드가\n초기화되지 않았습니다.\n",
+  "status": "draft"
  },
  "src:01d13605695e": {
   "cap": 16,
   "copies": [
    "KWAMENU.BIN:10D28"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "데이터 손상.\n",
+  "status": "draft"
  },
  "src:ff9d50b43495": {
   "cap": 24,
   "copies": [
    "KWAMENU.BIN:10D38"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "불러올 파일이\n없습니다.\n",
+  "status": "draft"
  },
  "src:d6c858dd3135": {
   "cap": 24,
   "copies": [
    "KWAMENU.BIN:10D50"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "이 메모리 카드는\n쓸 수 없습니다.\n",
+  "status": "draft"
  },
  "src:3c0bc30d3c1f": {
   "cap": 20,
   "copies": [
    "KWAMENU.BIN:10D68"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "이 데이터로\n하겠습니까?\n",
+  "status": "draft"
  },
  "src:32eb66fe48b0": {
   "cap": 12,
   "copies": [
    "KWAMENU.BIN:10D7C"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "저장 불가.\n",
+  "status": "draft"
  },
  "src:df7a9b17f9bf": {
   "cap": 60,
   "copies": [
    "KWAMENU.BIN:10D8C"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "메모리 카드가\n꽂혀 있지 않습니다.\n이대로는 게임 데이터를\n저장할 수 없습니다.\n괜찮습니까?\n",
+  "status": "draft"
  },
  "src:68717bf4219d": {
   "cap": 68,
   "copies": [
    "KWAMENU.BIN:10DC8"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "메모리 카드의\n빈 블록이 부족합니다.\n이대로는 게임 데이터를\n저장할 수 없습니다.\n괜찮습니까?\n",
+  "status": "draft"
  },
  "src:ce220c2eae33": {
   "cap": 8,
   "copies": [
    "KWAMENU.BIN:10E0C"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "레벨　{FA:00}",
+  "status": "draft"
  },
  "src:080348f977e7": {
   "cap": 16,
   "copies": [
    "KWAMENU.BIN:10E14"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "등산 횟수　{FA:01}\n",
+  "status": "draft"
  },
  "src:23ef9dc1f218": {
   "cap": 16,
   "copies": [
    "KWAMENU.BIN:10E24"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "조난 횟수　{FA:02}\n",
+  "status": "draft"
  },
  "src:e03fe55e148b": {
   "cap": 8,
   "copies": [
    "KWAMENU.BIN:10E34"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "레벨　{FA:03}",
+  "status": "draft"
  },
  "src:4e7a15a697e9": {
   "cap": 16,
   "copies": [
    "KWAMENU.BIN:10E3C"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "등산 횟수　{FA:04}\n",
+  "status": "draft"
  },
  "src:6e7a4d0e438f": {
   "cap": 16,
   "copies": [
    "KWAMENU.BIN:10E4C"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "조난 횟수　{FA:05}\n",
+  "status": "draft"
  },
  "src:14135c290c2f": {
   "cap": 8,
   "copies": [
    "KWAMENU.BIN:10E5C"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "레벨　{FA:06}",
+  "status": "draft"
  },
  "src:fcb37b4a2f6b": {
   "cap": 16,
   "copies": [
    "KWAMENU.BIN:10E64"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "등산 횟수　{FA:07}\n",
+  "status": "draft"
  },
  "src:9372e28dd9d2": {
   "cap": 16,
   "copies": [
    "KWAMENU.BIN:10E74"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "조난 횟수　{FA:08}\n",
+  "status": "draft"
  },
  "src:bbf4a2af057f": {
   "cap": 12,
   "copies": [
    "KWAMENU.BIN:10E84"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "데이터 없음\n",
+  "status": "draft"
  },
  "src:a67bbec6f8f8": {
   "cap": 16,
   "copies": [
    "KWAMENU.BIN:10E90"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "데이터 손상",
+  "status": "draft"
  },
  "src:b68fd0d0ea67": {
   "cap": 16,
   "copies": [
    "KWAMENU.BIN:10EA0"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "빈 블록 부족\n",
+  "status": "draft"
  },
  "src:6c4538bc8e43": {
   "cap": 20,
   "copies": [
    "KWAMENU.BIN:10EB0"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "데이터 버전이 다릅니다\n",
+  "status": "draft"
  },
  "src:a8da51e578d7": {
   "cap": 12,
   "copies": [
    "KWAMENU.BIN:10EC4"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "홈 화면\n",
+  "status": "draft"
  },
  "src:3ee84399f03d": {
   "cap": 12,
   "copies": [
    "KWAMENU.BIN:10ED0"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "여름산 등반 중\n",
+  "status": "draft"
  },
  "src:020841d4a84a": {
   "cap": 12,
   "copies": [
    "KWAMENU.BIN:10EDC"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "겨울산 등반 중\n",
+  "status": "draft"
  },
  "src:dedc271f41d9": {
   "cap": 16,
   "copies": [
    "KWAMENU.BIN:10EE8"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "고독한 노인・{F9:05}\n",
+  "status": "draft",
+  "note": "약칭: 칸 16바이트라 정식명(알프스의 고독한 노인) 불가 — 결정 필요"
  },
  "src:2fc8a1f29f2d": {
   "cap": 16,
   "copies": [
    "KWAMENU.BIN:10EF8"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "신들의 송곳니・{F9:05}\n",
+  "status": "draft",
+  "note": "약칭: 칸 16바이트라 정식명(신들을 향한 송곳니) 불가 — 결정 필요"
  },
  "src:8b71b897a026": {
   "cap": 16,
   "copies": [
    "KWAMENU.BIN:10F08"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "여신의 맨얼굴・{F9:05}\n",
+  "status": "draft"
  },
  "src:41b27a0a58db": {
   "cap": 12,
   "copies": [
    "KWAMENU.BIN:10F18"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "바람의 축제・{F9:05}\n",
+  "status": "draft"
  },
  "src:082165333cf3": {
   "cap": 16,
   "copies": [
    "KWAMENU.BIN:10F24"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "대지의 분노・{F9:05}\n",
+  "status": "draft"
  },
  "src:74f4fe5cddd5": {
   "cap": 16,
   "copies": [
    "KWAMENU.BIN:10F34"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "고독한 노인・{F9:06}\n",
+  "status": "draft",
+  "note": "약칭: 칸 16바이트"
  },
  "src:9ff0c00afc59": {
   "cap": 16,
   "copies": [
    "KWAMENU.BIN:10F44"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "신들의 송곳니・{F9:06}\n",
+  "status": "draft",
+  "note": "약칭: 칸 16바이트"
  },
  "src:84f4d199a617": {
   "cap": 16,
   "copies": [
    "KWAMENU.BIN:10F54"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "여신의 맨얼굴・{F9:06}\n",
+  "status": "draft"
  },
  "src:6f52b9175a21": {
   "cap": 12,
   "copies": [
    "KWAMENU.BIN:10F64"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "바람의 축제・{F9:06}\n",
+  "status": "draft"
  },
  "src:3c17a27024ea": {
   "cap": 16,
   "copies": [
    "KWAMENU.BIN:10F70"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "대지의 분노・{F9:06}\n",
+  "status": "draft"
  },
  "src:90e435bbd408": {
   "cap": 16,
   "copies": [
    "KWAMENU.BIN:10F80"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "고독한 노인・{F9:07}\n",
+  "status": "draft",
+  "note": "약칭: 칸 16바이트"
  },
  "src:db3375c28218": {
   "cap": 16,
   "copies": [
    "KWAMENU.BIN:10F90"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "신들의 송곳니・{F9:07}\n",
+  "status": "draft",
+  "note": "약칭: 칸 16바이트"
  },
  "src:132e99a352a9": {
   "cap": 16,
   "copies": [
    "KWAMENU.BIN:10FA0"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "여신의 맨얼굴・{F9:07}\n",
+  "status": "draft"
  },
  "src:98fadb6e6d85": {
   "cap": 12,
   "copies": [
    "KWAMENU.BIN:10FB0"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "바람의 축제・{F9:07}\n",
+  "status": "draft"
  },
  "src:9df799665ed8": {
   "cap": 16,
   "copies": [
    "KWAMENU.BIN:10FBC"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "대지의 분노・{F9:07}\n",
+  "status": "draft"
  },
  "src:a872c69373ca": {
   "cap": 20,
   "copies": [
    "KWAMENU.BIN:10FCC"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "노인의 지팡이 루트・{F9:02}\n",
+  "status": "draft"
  },
  "src:6db160df5b6d": {
   "cap": 20,
   "copies": [
    "KWAMENU.BIN:10FE0"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "노인의 수염 루트・{F9:02}\n",
+  "status": "draft"
  },
  "src:d60924f63b6a": {
   "cap": 16,
   "copies": [
    "KWAMENU.BIN:10FF4"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "왼쪽 송곳니 루트・{F9:02}\n",
+  "status": "draft"
  },
  "src:3af5895f7ac0": {
   "cap": 16,
   "copies": [
    "KWAMENU.BIN:11004"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "오른쪽 송곳니 루트・{F9:02}\n",
+  "status": "draft"
  },
  "src:da028f9caf60": {
   "cap": 20,
   "copies": [
    "KWAMENU.BIN:11014"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "영광으로 가는 계단 루트・{F9:02}\n",
+  "status": "draft"
  },
  "src:82bbc7a222db": {
   "cap": 20,
   "copies": [
    "KWAMENU.BIN:11028"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "여신의 입맞춤 루트・{F9:02}\n",
+  "status": "draft"
  },
  "src:b8685ee251cc": {
   "cap": 20,
   "copies": [
    "KWAMENU.BIN:1103C"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "여신의 어깨 루트・{F9:02}\n",
+  "status": "draft"
  },
  "src:bd53a4c79024": {
   "cap": 20,
   "copies": [
    "KWAMENU.BIN:11050"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "여신의 등 루트・{F9:02}\n",
+  "status": "draft"
  },
  "src:f022fd83c1a6": {
   "cap": 20,
   "copies": [
    "KWAMENU.BIN:11064"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "바람의 샛길 루트・{F9:02}\n",
+  "status": "draft"
  },
  "src:a4352516384f": {
   "cap": 16,
   "copies": [
    "KWAMENU.BIN:11078"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "바람의 길 루트・{F9:02}\n",
+  "status": "draft"
  },
  "src:d10bff4d4ed6": {
   "cap": 16,
   "copies": [
    "KWAMENU.BIN:11088"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "바람의 폭포 루트・{F9:02}\n",
+  "status": "draft"
  },
  "src:88f012e535a0": {
   "cap": 20,
   "copies": [
    "KWAMENU.BIN:11098"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "왕좌로 가는 길 루트・{F9:02}\n",
+  "status": "draft"
  },
  "src:d4a53c92f61a": {
   "cap": 16,
   "copies": [
    "KWAMENU.BIN:110AC"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "신의 칼날 루트・{F9:02}\n",
+  "status": "draft",
+  "note": "약칭: 칸 16바이트라 '신을 향한 칼날' 불가"
  },
  "src:55078594d54f": {
   "cap": 20,
   "copies": [
    "KWAMENU.BIN:110BC"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "생명의 가치 루트・{F9:02}\n",
+  "status": "draft"
  },
  "src:f90131bed490": {
   "cap": 20,
   "copies": [
    "KWAMENU.BIN:110D0"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "노인의 지팡이 루트・{F9:03}\n",
+  "status": "draft"
  },
  "src:b7191518ebe9": {
   "cap": 20,
   "copies": [
    "KWAMENU.BIN:110E4"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "노인의 수염 루트・{F9:03}\n",
+  "status": "draft"
  },
  "src:f244f94a625a": {
   "cap": 16,
   "copies": [
    "KWAMENU.BIN:110F8"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "왼쪽 송곳니 루트・{F9:03}\n",
+  "status": "draft"
  },
  "src:87c8fce97fd2": {
   "cap": 16,
   "copies": [
    "KWAMENU.BIN:11108"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "오른쪽 송곳니 루트・{F9:03}\n",
+  "status": "draft"
  },
  "src:3688360a824d": {
   "cap": 20,
   "copies": [
    "KWAMENU.BIN:11118"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "영광으로 가는 계단 루트・{F9:03}\n",
+  "status": "draft"
  },
  "src:cf8dce4ebc29": {
   "cap": 20,
   "copies": [
    "KWAMENU.BIN:1112C"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "여신의 입맞춤 루트・{F9:03}\n",
+  "status": "draft"
  },
  "src:0d706c4a5422": {
   "cap": 20,
   "copies": [
    "KWAMENU.BIN:11140"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "여신의 어깨 루트・{F9:03}\n",
+  "status": "draft"
  },
  "src:10f34c2ae11e": {
   "cap": 20,
   "copies": [
    "KWAMENU.BIN:11154"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "여신의 등 루트・{F9:03}\n",
+  "status": "draft"
  },
  "src:bc2b301e7c9a": {
   "cap": 20,
   "copies": [
    "KWAMENU.BIN:11168"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "바람의 샛길 루트・{F9:03}\n",
+  "status": "draft"
  },
  "src:cfa6972355f3": {
   "cap": 16,
   "copies": [
    "KWAMENU.BIN:1117C"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "바람의 길 루트・{F9:03}\n",
+  "status": "draft"
  },
  "src:147fc5b1d525": {
   "cap": 16,
   "copies": [
    "KWAMENU.BIN:1118C"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "바람의 폭포 루트・{F9:03}\n",
+  "status": "draft"
  },
  "src:d0edd1202673": {
   "cap": 20,
   "copies": [
    "KWAMENU.BIN:1119C"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "왕좌로 가는 길 루트・{F9:03}\n",
+  "status": "draft"
  },
  "src:730a8b60d7d0": {
   "cap": 16,
   "copies": [
    "KWAMENU.BIN:111B0"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "신의 칼날 루트・{F9:03}\n",
+  "status": "draft",
+  "note": "약칭: 칸 16바이트"
  },
  "src:edbebef36c92": {
   "cap": 20,
   "copies": [
    "KWAMENU.BIN:111C0"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "생명의 가치 루트・{F9:03}\n",
+  "status": "draft"
  },
  "src:ff33b675a061": {
   "cap": 20,
   "copies": [
    "KWAMENU.BIN:111D4"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "노인의 지팡이 루트・{F9:04}\n",
+  "status": "draft"
  },
  "src:e13ac898225f": {
   "cap": 20,
   "copies": [
    "KWAMENU.BIN:111E8"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "노인의 수염 루트・{F9:04}\n",
+  "status": "draft"
  },
  "src:fa88e9d5396a": {
   "cap": 16,
   "copies": [
    "KWAMENU.BIN:111FC"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "왼쪽 송곳니 루트・{F9:04}\n",
+  "status": "draft"
  },
  "src:6c695c889c98": {
   "cap": 16,
   "copies": [
    "KWAMENU.BIN:1120C"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "오른쪽 송곳니 루트・{F9:04}\n",
+  "status": "draft"
  },
  "src:7728d361169c": {
   "cap": 20,
   "copies": [
    "KWAMENU.BIN:1121C"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "영광으로 가는 계단 루트・{F9:04}\n",
+  "status": "draft"
  },
  "src:b5547a0f8114": {
   "cap": 20,
   "copies": [
    "KWAMENU.BIN:11230"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "여신의 입맞춤 루트・{F9:04}\n",
+  "status": "draft"
  },
  "src:0ab2601f2a3b": {
   "cap": 20,
   "copies": [
    "KWAMENU.BIN:11244"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "여신의 어깨 루트・{F9:04}\n",
+  "status": "draft"
  },
  "src:573b70a11b93": {
   "cap": 20,
   "copies": [
    "KWAMENU.BIN:11258"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "여신의 등 루트・{F9:04}\n",
+  "status": "draft"
  },
  "src:de0a697559ac": {
   "cap": 20,
   "copies": [
    "KWAMENU.BIN:1126C"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "바람의 샛길 루트・{F9:04}\n",
+  "status": "draft"
  },
  "src:31fb72ce8dae": {
   "cap": 16,
   "copies": [
    "KWAMENU.BIN:11280"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "바람의 길 루트・{F9:04}\n",
+  "status": "draft"
  },
  "src:d32b3aa575c7": {
   "cap": 16,
   "copies": [
    "KWAMENU.BIN:11290"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "바람의 폭포 루트・{F9:04}\n",
+  "status": "draft"
  },
  "src:fc6db3ede98c": {
   "cap": 20,
   "copies": [
    "KWAMENU.BIN:112A0"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "왕좌로 가는 길 루트・{F9:04}\n",
+  "status": "draft"
  },
  "src:736469f34ed4": {
   "cap": 16,
   "copies": [
    "KWAMENU.BIN:112B4"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "신의 칼날 루트・{F9:04}\n",
+  "status": "draft",
+  "note": "약칭: 칸 16바이트"
  },
  "src:126146f4f5c1": {
   "cap": 20,
   "copies": [
    "KWAMENU.BIN:112C4"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "생명의 가치 루트・{F9:04}\n",
+  "status": "draft"
  },
  "src:06fb0c7c1b35": {
   "cap": 8,
@@ -849,8 +860,8 @@
    "X_SUZU.BIN:012A8",
    "X_SUZU.BIN:012EC"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "노인의 혹",
+  "status": "draft"
  },
  "src:b4371ace9c6e": {
   "cap": 12,
@@ -862,8 +873,8 @@
    "X_SUZU.BIN:012B0",
    "X_SUZU.BIN:012F4"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "로프 하강 벽",
+  "status": "draft"
  },
  "src:5e3d13e26555": {
   "cap": 12,
@@ -872,8 +883,8 @@
    "KWAMENU.BIN:134B8",
    "X_SUZU.BIN:012BC"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "노인의 변덕Ａ",
+  "status": "draft"
  },
  "src:2cdd7ecf4008": {
   "cap": 12,
@@ -882,8 +893,8 @@
    "KWAMENU.BIN:134C4",
    "X_SUZU.BIN:012C8"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "노인의 변덕Ｂ",
+  "status": "draft"
  },
  "src:384397f2dbfe": {
   "cap": 12,
@@ -892,8 +903,8 @@
    "KWAMENU.BIN:134D0",
    "X_SUZU.BIN:012D4"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "노인의 변덕Ｃ",
+  "status": "draft"
  },
  "src:9054bb10a9a7": {
   "cap": 12,
@@ -902,8 +913,8 @@
    "KWAMENU.BIN:134DC",
    "X_SUZU.BIN:012E0"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "노인의 손톱자국Ａ",
+  "status": "draft"
  },
  "src:278fd33880b7": {
   "cap": 12,
@@ -912,8 +923,8 @@
    "KWAMENU.BIN:134FC",
    "X_SUZU.BIN:01300"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "게걸음 계곡Ａ",
+  "status": "draft"
  },
  "src:ddd080d3d0b9": {
   "cap": 12,
@@ -922,8 +933,8 @@
    "KWAMENU.BIN:13508",
    "X_SUZU.BIN:0130C"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "게걸음 계곡Ｂ",
+  "status": "draft"
  },
  "src:caae6b8bb453": {
   "cap": 12,
@@ -932,8 +943,8 @@
    "KWAMENU.BIN:13514",
    "X_SUZU.BIN:01318"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "노인의 질투",
+  "status": "draft"
  },
  "src:2add279769ab": {
   "cap": 12,
@@ -942,8 +953,8 @@
    "KWAMENU.BIN:13520",
    "X_SUZU.BIN:01324"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "노인의 손톱자국Ｂ",
+  "status": "draft"
  },
  "src:2cf57cdc2757": {
   "cap": 12,
@@ -952,8 +963,8 @@
    "KWAMENU.BIN:1352C",
    "X_SUZU.BIN:01330"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "신의 받침대Ａ",
+  "status": "draft"
  },
  "src:7381380573db": {
   "cap": 8,
@@ -978,8 +989,8 @@
    "X_SUZU.BIN:01344",
    "X_SUZU.BIN:013A8"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "풍수의 골짜기",
+  "status": "draft"
  },
  "src:16f9466cec5c": {
   "cap": 12,
@@ -988,8 +999,8 @@
    "KWAMENU.BIN:1354C",
    "X_SUZU.BIN:01350"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "금 간 송곳니Ａ",
+  "status": "draft"
  },
  "src:0436dcbcc3ef": {
   "cap": 12,
@@ -998,8 +1009,8 @@
    "KWAMENU.BIN:13558",
    "X_SUZU.BIN:0135C"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "금 간 송곳니Ｂ",
+  "status": "draft"
  },
  "src:ef7f57b6b856": {
   "cap": 12,
@@ -1008,8 +1019,8 @@
    "KWAMENU.BIN:13564",
    "X_SUZU.BIN:01368"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "금 간 송곳니Ｃ",
+  "status": "draft"
  },
  "src:f6817481f933": {
   "cap": 12,
@@ -1018,8 +1029,8 @@
    "KWAMENU.BIN:13570",
    "X_SUZU.BIN:01374"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "금 간 송곳니Ｄ",
+  "status": "draft"
  },
  "src:0fc92a42ddbe": {
   "cap": 12,
@@ -1028,8 +1039,8 @@
    "KWAMENU.BIN:1357C",
    "X_SUZU.BIN:01380"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "블러디 나이프 에지",
+  "status": "draft"
  },
  "src:c10c063d8190": {
   "cap": 8,
@@ -1041,8 +1052,8 @@
    "X_SUZU.BIN:0138C",
    "X_SUZU.BIN:01410"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "얼음의 검",
+  "status": "draft"
  },
  "src:bb02fbbe36ff": {
   "cap": 12,
@@ -1051,8 +1062,8 @@
    "KWAMENU.BIN:13590",
    "X_SUZU.BIN:01394"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "신의 받침대Ｂ",
+  "status": "draft"
  },
  "src:0682b9f8934f": {
   "cap": 8,
@@ -1141,16 +1152,16 @@
    "KWAMENU.BIN:135F0",
    "X_SUZU.BIN:013F4"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "하늘의 물고기",
+  "status": "draft"
  },
  "src:a1d6f0dd232f": {
   "cap": 16,
   "copies": [
    "KWAMENU.BIN:1142C"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "신의 받침대의 틈",
+  "status": "draft"
  },
  "src:d12935fff251": {
   "cap": 8,
@@ -1159,8 +1170,8 @@
    "KWAMENU.BIN:13604",
    "X_SUZU.BIN:01408"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "말갈기",
+  "status": "draft"
  },
  "src:5ae8346c79e4": {
   "cap": 8,
@@ -1169,8 +1180,8 @@
    "KWAMENU.BIN:13614",
    "X_SUZU.BIN:01418"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "얼음 기둥",
+  "status": "draft"
  },
  "src:e0baf00cb8ff": {
   "cap": 8,
@@ -1179,8 +1190,8 @@
    "KWAMENU.BIN:1361C",
    "X_SUZU.BIN:01420"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "바람의 길Ａ",
+  "status": "draft"
  },
  "src:8e461dc7bf31": {
   "cap": 8,
@@ -1189,8 +1200,8 @@
    "KWAMENU.BIN:13624",
    "X_SUZU.BIN:01428"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "바람의 길Ｂ",
+  "status": "draft"
  },
  "src:95a078d2725c": {
   "cap": 12,
@@ -1199,16 +1210,16 @@
    "KWAMENU.BIN:1362C",
    "X_SUZU.BIN:01430"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "신들의 축복",
+  "status": "draft"
  },
  "src:76c65482750c": {
   "cap": 8,
   "copies": [
    "KWAMENU.BIN:11470"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "문지기와 빗장",
+  "status": "draft"
  },
  "src:5b8c494f5b5a": {
   "cap": 12,
@@ -1217,8 +1228,8 @@
    "KWAMENU.BIN:13640",
    "X_SUZU.BIN:01444"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "변덕스러운 여인",
+  "status": "draft"
  },
  "src:9a812d9ecc83": {
   "cap": 8,
@@ -1227,8 +1238,8 @@
    "KWAMENU.BIN:1364C",
    "X_SUZU.BIN:01450"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "일각수",
+  "status": "draft"
  },
  "src:0fb6782b2f94": {
   "cap": 12,
@@ -1237,8 +1248,8 @@
    "KWAMENU.BIN:13654",
    "X_SUZU.BIN:01458"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "여신의 날개옷Ａ",
+  "status": "draft"
  },
  "src:ace70f64ebfb": {
   "cap": 8,
@@ -1247,8 +1258,8 @@
    "KWAMENU.BIN:13660",
    "X_SUZU.BIN:01464"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "어머니의 품속",
+  "status": "draft"
  },
  "src:cb8df3dd97fe": {
   "cap": 12,
@@ -1257,8 +1268,8 @@
    "KWAMENU.BIN:13668",
    "X_SUZU.BIN:0146C"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "귀부인의 거울",
+  "status": "draft"
  },
  "src:324de266c04b": {
   "cap": 8,
@@ -1267,8 +1278,8 @@
    "KWAMENU.BIN:13674",
    "X_SUZU.BIN:01478"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "하얀 소녀",
+  "status": "draft"
  },
  "src:202032cf75f5": {
   "cap": 8,
@@ -1277,8 +1288,8 @@
    "KWAMENU.BIN:1367C",
    "X_SUZU.BIN:01480"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "신의 술잔",
+  "status": "draft"
  },
  "src:adea15fb4cf5": {
   "cap": 12,
@@ -1287,8 +1298,8 @@
    "KWAMENU.BIN:13684",
    "X_SUZU.BIN:01488"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "여신의 날개옷Ｂ",
+  "status": "draft"
  },
  "src:9ef496185aad": {
   "cap": 8,
@@ -1297,8 +1308,8 @@
    "KWAMENU.BIN:13690",
    "X_SUZU.BIN:01494"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "물병",
+  "status": "draft"
  },
  "src:e9bc136fb5a1": {
   "cap": 8,
@@ -1307,8 +1318,8 @@
    "KWAMENU.BIN:13698",
    "X_SUZU.BIN:0149C"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "소녀의 살결",
+  "status": "draft"
  },
  "src:adb3ecc120ce": {
   "cap": 12,
@@ -1317,8 +1328,8 @@
    "KWAMENU.BIN:136A0",
    "X_SUZU.BIN:014A4"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "여신의 보석함",
+  "status": "draft"
  },
  "src:b2bff8823f7b": {
   "cap": 8,
@@ -1327,8 +1338,8 @@
    "KWAMENU.BIN:136AC",
    "X_SUZU.BIN:014B0"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "정령의 골짜기",
+  "status": "draft"
  },
  "src:26b9d59173c2": {
   "cap": 12,
@@ -1337,8 +1348,8 @@
    "KWAMENU.BIN:136B4",
    "X_SUZU.BIN:014B8"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "태양의 은혜",
+  "status": "draft"
  },
  "src:98c99d218c7a": {
   "cap": 12,
@@ -1347,8 +1358,8 @@
    "KWAMENU.BIN:136C0",
    "X_SUZU.BIN:014C4"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "영광의 빛",
+  "status": "draft"
  },
  "src:2c6a70a10873": {
   "cap": 12,
@@ -1357,8 +1368,8 @@
    "KWAMENU.BIN:136CC",
    "X_SUZU.BIN:014D0"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "여신의 날개옷Ｃ",
+  "status": "draft"
  },
  "src:783b54ac0b9d": {
   "cap": 12,
@@ -1367,8 +1378,8 @@
    "KWAMENU.BIN:136D8",
    "X_SUZU.BIN:014DC"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "여신의 등",
+  "status": "draft"
  },
  "src:eb7d1ac09a70": {
   "cap": 8,
@@ -1377,8 +1388,8 @@
    "KWAMENU.BIN:136E4",
    "X_SUZU.BIN:014E8"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "긴 머리카락Ａ",
+  "status": "draft"
  },
  "src:5927b251108f": {
   "cap": 8,
@@ -1387,8 +1398,8 @@
    "KWAMENU.BIN:136EC",
    "X_SUZU.BIN:014F0"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "긴 머리카락Ｂ",
+  "status": "draft"
  },
  "src:35ee6eda2d2d": {
   "cap": 12,
@@ -1397,8 +1408,8 @@
    "KWAMENU.BIN:136F4",
    "X_SUZU.BIN:014F8"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "양치기의 길",
+  "status": "draft"
  },
  "src:32ab170ba352": {
   "cap": 8,
@@ -1407,8 +1418,8 @@
    "KWAMENU.BIN:13700",
    "X_SUZU.BIN:01504"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "바람의 요람",
+  "status": "draft"
  },
  "src:31112f1a4bf6": {
   "cap": 8,
@@ -1417,8 +1428,8 @@
    "KWAMENU.BIN:13708",
    "X_SUZU.BIN:0150C"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "위대한 시간",
+  "status": "draft"
  },
  "src:d1521e43cc11": {
   "cap": 8,
@@ -1427,8 +1438,8 @@
    "KWAMENU.BIN:13710",
    "X_SUZU.BIN:01514"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "행복의 다리",
+  "status": "draft"
  },
  "src:ffe2c28f5f46": {
   "cap": 8,
@@ -1437,8 +1448,8 @@
    "KWAMENU.BIN:13718",
    "X_SUZU.BIN:0151C"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "용의 둥지",
+  "status": "draft"
  },
  "src:52da24c23db7": {
   "cap": 12,
@@ -1447,8 +1458,8 @@
    "KWAMENU.BIN:13720",
    "X_SUZU.BIN:01524"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "정적의 여왕",
+  "status": "draft"
  },
  "src:12d1388a324b": {
   "cap": 12,
@@ -1457,8 +1468,8 @@
    "KWAMENU.BIN:1372C",
    "X_SUZU.BIN:01530"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "날개 가진 자Ａ",
+  "status": "draft"
  },
  "src:bd64a555ea87": {
   "cap": 12,
@@ -1467,8 +1478,8 @@
    "KWAMENU.BIN:13738",
    "X_SUZU.BIN:0153C"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "기적의 태양",
+  "status": "draft"
  },
  "src:d1549c7902d8": {
   "cap": 8,
@@ -1477,8 +1488,8 @@
    "KWAMENU.BIN:13744",
    "X_SUZU.BIN:01548"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "벽돌집",
+  "status": "draft"
  },
  "src:66959f8dda6d": {
   "cap": 12,
@@ -1487,8 +1498,8 @@
    "KWAMENU.BIN:1374C",
    "X_SUZU.BIN:01550"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "날뛰는 백마",
+  "status": "draft"
  },
  "src:760437986f12": {
   "cap": 12,
@@ -1497,8 +1508,8 @@
    "KWAMENU.BIN:13758",
    "X_SUZU.BIN:0155C"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "도적의 골짜기",
+  "status": "draft"
  },
  "src:dc7ace570ac3": {
   "cap": 12,
@@ -1507,8 +1518,8 @@
    "KWAMENU.BIN:13764",
    "X_SUZU.BIN:01568"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "현자의 서재",
+  "status": "draft"
  },
  "src:de26f5205b67": {
   "cap": 12,
@@ -1517,8 +1528,8 @@
    "KWAMENU.BIN:13770",
    "X_SUZU.BIN:01574"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "무너진 각설탕",
+  "status": "draft"
  },
  "src:f5bfb9ed46fc": {
   "cap": 12,
@@ -1527,8 +1538,8 @@
    "KWAMENU.BIN:1377C",
    "X_SUZU.BIN:01580"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "지나간 시간",
+  "status": "draft"
  },
  "src:c331d14d767f": {
   "cap": 12,
@@ -1537,8 +1548,8 @@
    "KWAMENU.BIN:13788",
    "X_SUZU.BIN:0158C"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "날개 가진 자Ｂ",
+  "status": "draft"
  },
  "src:c7364bf9565c": {
   "cap": 8,
@@ -1547,8 +1558,8 @@
    "KWAMENU.BIN:13794",
    "X_SUZU.BIN:01598"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "하늘 기둥",
+  "status": "draft"
  },
  "src:95adc0090aae": {
   "cap": 12,
@@ -1557,8 +1568,8 @@
    "KWAMENU.BIN:1379C",
    "X_SUZU.BIN:015A0"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "기사의 방패Ａ",
+  "status": "draft"
  },
  "src:3691c082e280": {
   "cap": 12,
@@ -1567,8 +1578,8 @@
    "KWAMENU.BIN:137A8",
    "X_SUZU.BIN:015AC"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "기사의 방패Ｂ",
+  "status": "draft"
  },
  "src:64b4290c57f9": {
   "cap": 12,
@@ -1577,8 +1588,8 @@
    "KWAMENU.BIN:137B4",
    "X_SUZU.BIN:015B8"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "숭고한 달력",
+  "status": "draft"
  },
  "src:84595211090d": {
   "cap": 8,
@@ -1587,8 +1598,8 @@
    "KWAMENU.BIN:137C0",
    "X_SUZU.BIN:015C4"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "새장 속의 새",
+  "status": "draft"
  },
  "src:1d89fc566815": {
   "cap": 12,
@@ -1597,8 +1608,8 @@
    "KWAMENU.BIN:137C8",
    "X_SUZU.BIN:015CC"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "하늘의 탑Ａ",
+  "status": "draft"
  },
  "src:1d652a49c879": {
   "cap": 12,
@@ -1607,8 +1618,8 @@
    "KWAMENU.BIN:137D4",
    "X_SUZU.BIN:015D8"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "하늘의 탑Ｂ",
+  "status": "draft"
  },
  "src:325d872ea76f": {
   "cap": 8,
@@ -1617,8 +1628,8 @@
    "KWAMENU.BIN:137E0",
    "X_SUZU.BIN:015E4"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "떠 있는 섬",
+  "status": "draft"
  },
  "src:8a9423c1ceec": {
   "cap": 12,
@@ -1627,8 +1638,8 @@
    "KWAMENU.BIN:137E8",
    "X_SUZU.BIN:015EC"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "답파의 보상",
+  "status": "draft"
  },
  "src:a704edb077ae": {
   "cap": 8,
@@ -1637,8 +1648,8 @@
    "KWAMENU.BIN:137F4",
    "X_SUZU.BIN:015F8"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "신전의 문",
+  "status": "draft"
  },
  "src:40a00800c12d": {
   "cap": 8,
@@ -1647,8 +1658,8 @@
    "KWAMENU.BIN:137FC",
    "X_SUZU.BIN:01600"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "회랑",
+  "status": "draft"
  },
  "src:575bb92e6d58": {
   "cap": 16,
@@ -1657,8 +1668,8 @@
    "KWAMENU.BIN:13804",
    "X_SUZU.BIN:01608"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "대지의 걸상",
+  "status": "draft"
  },
  "src:31c277bd96c0": {
   "cap": 8,
@@ -1667,8 +1678,8 @@
    "KWAMENU.BIN:13814",
    "X_SUZU.BIN:01618"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "엎질러진 우유",
+  "status": "draft"
  },
  "src:b5aa06a140d5": {
   "cap": 8,
@@ -1677,8 +1688,8 @@
    "KWAMENU.BIN:1381C",
    "X_SUZU.BIN:01620"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "대지의 품",
+  "status": "draft"
  },
  "src:5f76f017469a": {
   "cap": 12,
@@ -1687,8 +1698,8 @@
    "KWAMENU.BIN:13824",
    "X_SUZU.BIN:01628"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "망자들의 술집",
+  "status": "draft"
  },
  "src:ae73f0fbce49": {
   "cap": 8,
@@ -1707,8 +1718,8 @@
    "KWAMENU.BIN:1387C",
    "X_SUZU.BIN:0163C"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "흰 갓 버섯",
+  "status": "draft"
  },
  "src:e83b32999612": {
   "cap": 12,
@@ -1717,8 +1728,8 @@
    "KWAMENU.BIN:13888",
    "X_SUZU.BIN:01648"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "여우의 사냥터",
+  "status": "draft"
  },
  "src:859ceeef09c4": {
   "cap": 8,
@@ -1727,8 +1738,8 @@
    "KWAMENU.BIN:13894",
    "X_SUZU.BIN:01654"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "어둠의 담장",
+  "status": "draft"
  },
  "src:8549d8761949": {
   "cap": 8,
@@ -1737,8 +1748,8 @@
    "KWAMENU.BIN:1389C",
    "X_SUZU.BIN:0165C"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "어둠의 문",
+  "status": "draft"
  },
  "src:a6ea005b2c24": {
   "cap": 12,
@@ -1747,8 +1758,8 @@
    "KWAMENU.BIN:138A4",
    "X_SUZU.BIN:01664"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "악마의 만찬",
+  "status": "draft"
  },
  "src:3dec57bfe257": {
   "cap": 8,
@@ -1757,8 +1768,8 @@
    "KWAMENU.BIN:138B0",
    "X_SUZU.BIN:01670"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "얼음 묘비",
+  "status": "draft"
  },
  "src:1d4b3f1bc129": {
   "cap": 8,
@@ -1767,8 +1778,8 @@
    "KWAMENU.BIN:138B8",
    "X_SUZU.BIN:01678"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "생명의 가치",
+  "status": "draft"
  },
  "src:b6e25e629000": {
   "cap": 4,
@@ -1776,7 +1787,8 @@
    "KWAMENU.BIN:116BA"
   ],
   "ko": "",
-  "status": "untranslated"
+  "status": "untranslated",
+  "note": "비텍스트로 보임(９れＪ). 번역하지 않음 — 모집단 재검토 대상"
  },
  "src:287547f67c81": {
   "cap": 19,
@@ -1784,95 +1796,97 @@
    "KWAMENU.BIN:11CF5"
   ],
   "ko": "",
-  "status": "untranslated"
+  "status": "untranslated",
+  "note": "보류: 앞 3글자(）－れ)는 데이터 바이트로 보이고 포인터가 문자열 중간(名前…)을 가리킬 수 있음. 참조 확인 후 번역"
  },
  "src:f0eceb670cac": {
   "cap": 68,
   "copies": [
    "KWAMENU.BIN:11D08"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "등산 중 데이터{FA:01}\n{FC:08}봉\n　등정 루트\n　클리어 스테이지{FA:02}／{FA:03}\n　행동 가능 일수{FC:02}{FA:04}일",
+  "status": "draft"
  },
  "src:9d10a4580500": {
   "cap": 20,
   "copies": [
    "KWAMENU.BIN:11D4C"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "여름산과 겨울산 중 어느 쪽?",
+  "status": "draft"
  },
  "src:273efcda9744": {
   "cap": 40,
   "copies": [
    "KWAMENU.BIN:11D60"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "아쉽지만 당신의 기량으로는\n아직 겨울산 등반은 어렵습니다.",
+  "status": "draft"
  },
  "src:6f51c01c0372": {
   "cap": 64,
   "copies": [
    "KWAMENU.BIN:11D88"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "・여름산\n\n　여름산은 비교적 등정이 쉽습니다.\n쌓인 눈도 적고 날씨도 안정적입니다.",
+  "status": "draft"
  },
  "src:d3cba86d4037": {
   "cap": 212,
   "copies": [
    "KWAMENU.BIN:11DC8"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "・겨울산\n\n　어느 정도 위험이 따릅니다. 눈이 깊고\n날씨도 자주 눈보라가 쳐서 텐트에 갇히는\n일도 있습니다. 또 겨울산 등반에는\n다음 기술이 필요합니다.\n\n　겨울산 등반에 필요한 기술\n　더블 피켈・설산 비박・적설\n　상태를 읽는 눈・체력을 아끼는 등반법・체\n　력・활락 정지.",
+  "status": "draft"
  },
  "src:fa02dd2afa3c": {
   "cap": 20,
   "copies": [
    "KWAMENU.BIN:11E9C"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "등정 방식을 고르십시오.",
+  "status": "draft"
  },
  "src:c72f4335ab5c": {
   "cap": 76,
   "copies": [
    "KWAMENU.BIN:11EB0"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "・파트너와 둘이서\n　한 명이 오르는 동안 다른\n한 명이 확보를 하므로\n떨어져도 비교적 안전합니다.",
+  "status": "draft"
  },
  "src:c61f97a844b1": {
   "cap": 44,
   "copies": [
    "KWAMENU.BIN:11EFC"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "・단독 등정\n　혼자서 오르기 때문에\n위험도 큽니다.",
+  "status": "draft"
  },
  "src:f76eb6fd1662": {
   "cap": 204,
   "copies": [
    "KWAMENU.BIN:11F28"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "　？？？？？？？？？？？？？？？？？？\n？？？？？？？？？？？？？？？？？？？\n？？？？？？？？？.\n　？？？？？？？？？？？？？？？？？？\n？？？？？？？？？？？？？？？？？？？\n？？？？？？？？？？？？？.",
+  "status": "draft",
+  "note": "자리표시 문구(원문 ？ 그대로, 。만 .)"
  },
  "src:33aec264d646": {
   "cap": 16,
   "copies": [
    "KWAMENU.BIN:11FF4"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "어느 산에 오르겠습니까?",
+  "status": "draft"
  },
  "src:9b19fa49d3a5": {
   "cap": 12,
   "copies": [
    "KWAMENU.BIN:12004"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "알프스의 고독한 노인",
+  "status": "draft"
  },
  "src:bd877bde1564": {
   "cap": 12,
@@ -1880,8 +1894,8 @@
    "KWAMENU.BIN:12010",
    "X_SUZU.BIN:011D4"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "신들을 향한 송곳니",
+  "status": "draft"
  },
  "src:4eaba1c60508": {
   "cap": 12,
@@ -1889,8 +1903,8 @@
    "KWAMENU.BIN:1201C",
    "X_SUZU.BIN:011E0"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "여신의 맨얼굴",
+  "status": "draft"
  },
  "src:384928b9cb09": {
   "cap": 8,
@@ -1898,8 +1912,8 @@
    "KWAMENU.BIN:12028",
    "X_SUZU.BIN:011EC"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "바람의 축제",
+  "status": "draft"
  },
  "src:8bb10cf733c1": {
   "cap": 12,
@@ -1907,16 +1921,16 @@
    "KWAMENU.BIN:12030",
    "X_SUZU.BIN:011F4"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "대지의 분노",
+  "status": "draft"
  },
  "src:1f8e9a059374": {
   "cap": 12,
   "copies": [
    "KWAMENU.BIN:1203C"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "알프스 등반사",
+  "status": "draft"
  },
  "src:c3bfc19a2f01": {
   "cap": 772,
@@ -1948,8 +1962,8 @@
    "KWAMENU.BIN:128D0",
    "KWAMENU.BIN:12A90"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "Ⅰ봉\n알프스의 고독한 노인\n\n노인의 지팡이 루트(여름・프리 클라이밍)\n노인의 수염 루트(여름・프리 클라이밍)\n",
+  "status": "draft"
  },
  "src:eeb4e0ac0a58": {
   "cap": 100,
@@ -1957,8 +1971,8 @@
    "KWAMENU.BIN:1291C",
    "KWAMENU.BIN:12ADC"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "Ⅱ봉\n신들을 향한 송곳니\n\n왼쪽 송곳니 루트(여름・프리 클라이밍)\n오른쪽 송곳니 루트(여름・프리 클라이밍)\n영광으로 가는 계단 루트(겨울・인공 등반)\n",
+  "status": "draft"
  },
  "src:44f7adbba6aa": {
   "cap": 104,
@@ -1966,8 +1980,8 @@
    "KWAMENU.BIN:12980",
    "KWAMENU.BIN:12B40"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "Ⅲ봉\n여신의 맨얼굴\n\n여신의 입맞춤 루트(여름・프리 클라이밍)\n여신의 어깨 루트(여름・프리 클라이밍)\n여신의 등 루트(겨울・인공 등반)\n",
+  "status": "draft"
  },
  "src:42b5eac82056": {
   "cap": 92,
@@ -1975,176 +1989,177 @@
    "KWAMENU.BIN:129E8",
    "KWAMENU.BIN:12BA8"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "Ⅳ봉\n바람의 축제\n\n바람의 샛길 루트(여름・인공 등반)\n바람의 길 루트(여름・인공 등반)\n바람의 폭포 루트(겨울・인공 등반)\n",
+  "status": "draft"
  },
  "src:2ef447f39ae7": {
   "cap": 76,
   "copies": [
    "KWAMENU.BIN:12A44"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "Ⅴ봉\n대지의 분노\n\n왕좌로 가는 길 루트(여름・인공 등반)\n생명의 가치 루트(겨울・인공 등반)\n{FC:02}\n{FC:02}",
+  "status": "draft"
  },
  "src:74223797f077": {
   "cap": 72,
   "copies": [
    "KWAMENU.BIN:12C04"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "Ⅴ봉\n대지의 분노\n\n왕좌로 가는 길 루트(여름・인공 등반)\n생명의 가치 루트(겨울・인공 등반)\n{FC:02}",
+  "status": "draft"
  },
  "src:f58fd9ed1917": {
   "cap": 20,
   "copies": [
    "KWAMENU.BIN:12C4C"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "프리 클라이밍으로 오릅니다.",
+  "status": "draft"
  },
  "src:0bf698dc067a": {
   "cap": 16,
   "copies": [
    "KWAMENU.BIN:12C60"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "인공 등반으로 오릅니다.",
+  "status": "draft"
  },
  "src:41e4136c7936": {
   "cap": 12,
   "copies": [
    "KWAMENU.BIN:12C70"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "２인 파티",
+  "status": "draft"
  },
  "src:9b008fc2079b": {
   "cap": 12,
   "copies": [
    "KWAMENU.BIN:12C7C"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "단독 등정",
+  "status": "draft"
  },
  "src:63f8501e9e72": {
   "cap": 8,
   "copies": [
    "KWAMENU.BIN:12C88"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "여름산",
+  "status": "draft"
  },
  "src:b816d90fab8b": {
   "cap": 8,
   "copies": [
    "KWAMENU.BIN:12C90"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "겨울산",
+  "status": "draft"
  },
  "src:7b13a5075d60": {
   "cap": 12,
   "copies": [
    "KWAMENU.BIN:12C98"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "등정 성공",
+  "status": "draft"
  },
  "src:3a7fb5e23513": {
   "cap": 24,
   "copies": [
    "KWAMENU.BIN:12CA4"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "등정 실패 또는 단념",
+  "status": "draft"
  },
  "src:136a26039f37": {
   "cap": 8,
   "copies": [
    "KWAMENU.BIN:12CBC"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "조난",
+  "status": "draft"
  },
  "src:1a44d979ed58": {
   "cap": 8,
   "copies": [
    "KWAMENU.BIN:12CC4"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "미도전",
+  "status": "draft"
  },
  "src:ed99e73431f9": {
   "cap": 16,
   "copies": [
    "KWAMENU.BIN:12CCC"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "봉　알프스의 고독한 노인",
+  "status": "draft"
  },
  "src:ec8f0079ff33": {
   "cap": 12,
   "copies": [
    "KWAMENU.BIN:12CDC"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "봉　신들의 송곳니",
+  "status": "draft",
+  "note": "약칭: 칸 12바이트"
  },
  "src:e6adccbe9dc7": {
   "cap": 16,
   "copies": [
    "KWAMENU.BIN:12CE8"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "봉　여신의 맨얼굴",
+  "status": "draft"
  },
  "src:c7e199b692c4": {
   "cap": 12,
   "copies": [
    "KWAMENU.BIN:12CF8"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "봉　바람의 축제",
+  "status": "draft"
  },
  "src:adf0ec57c61e": {
   "cap": 12,
   "copies": [
    "KWAMENU.BIN:12D04"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "봉　대지의 분노",
+  "status": "draft"
  },
  "src:6d5f45a917cf": {
   "cap": 20,
   "copies": [
    "KWAMENU.BIN:12D10"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "제{FA:05}스테이지\n난도　{FA:09}급",
+  "status": "draft"
  },
  "src:563af1ea6482": {
   "cap": 20,
   "copies": [
    "KWAMENU.BIN:12D24"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "이 루트에 필요한 기술",
+  "status": "draft"
  },
  "src:fdbb52775eb7": {
   "cap": 20,
   "copies": [
    "KWAMENU.BIN:12D38"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "오버행을 넘는 기술",
+  "status": "draft"
  },
  "src:e1dfd3126461": {
   "cap": 20,
   "copies": [
    "KWAMENU.BIN:12D4C"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "하켄을 점검하는 기술",
+  "status": "draft"
  },
  "src:4f6051db6718": {
   "cap": 12,
@@ -2152,8 +2167,8 @@
    "KWAMENU.BIN:12D60",
    "KWAMENU.BIN:13F54"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "펜듈럼 트래버스",
+  "status": "draft"
  },
  "src:83a70ac46ac0": {
   "cap": 32,
@@ -2164,48 +2179,49 @@
    "KWAMENU.BIN:12DCC",
    "KWAMENU.BIN:12DEC"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "？？？？？？？？？？？？？？？",
+  "status": "draft",
+  "note": "자리표시 문구"
  },
  "src:2a51d719fb73": {
   "cap": 64,
   "copies": [
    "KWAMENU.BIN:12E0C"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "제{FA:00}스테이지\n\n공략 성공\n\n공략 시간　{FA:01}시간{FA:02}분\n누계 시간　{FA:04}일{FA:05}시간",
+  "status": "draft"
  },
  "src:ae32fa3e81a1": {
   "cap": 20,
   "copies": [
    "KWAMENU.BIN:12E4C"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "제{FA:00}스테이지\n\n미공략",
+  "status": "draft"
  },
  "src:5dc05ebfa247": {
   "cap": 108,
   "copies": [
    "KWAMENU.BIN:12E60"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "제{FA:08}스테이지\n예상 공략 시간{FC:02}{FA:00}분\n누계 시간{FC:04}{FA:01}일{FA:02}시간\n필요 예상 장비\n　하켄류{FC:02}{FA:04}개\n　로프류{FC:03}{FA:06}개\n　식량{FC:05}{FA:07}끼니분",
+  "status": "draft"
  },
  "src:f258c3bd39eb": {
   "cap": 12,
   "copies": [
    "KWAMENU.BIN:12ECC"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "제{FA:05}스테이지",
+  "status": "draft"
  },
  "src:781ec3d854cc": {
   "cap": 32,
   "copies": [
    "KWAMENU.BIN:12ED8"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "다음 스테이지로 가기 전에\n어떻게 하겠습니까?",
+  "status": "draft"
  },
  "src:22101a10059a": {
   "cap": 72,
@@ -2448,8 +2464,8 @@
    "KWAMENU.BIN:13638",
    "X_SUZU.BIN:0143C"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "문지기와 빗장",
+  "status": "draft"
  },
  "src:c748c6092ef2": {
   "cap": 8,
@@ -2720,32 +2736,32 @@
   "copies": [
    "KWAMENU.BIN:13F2C"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "좁은 침니",
+  "status": "draft"
  },
  "src:95619c7ccb88": {
   "cap": 12,
   "copies": [
    "KWAMENU.BIN:13F38"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "넓은 침니",
+  "status": "draft"
  },
  "src:375f4e6cc7ca": {
   "cap": 8,
   "copies": [
    "KWAMENU.BIN:13F44"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "디에드르",
+  "status": "draft"
  },
  "src:df53c23c3d82": {
   "cap": 8,
   "copies": [
    "KWAMENU.BIN:13F4C"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "레이백",
+  "status": "draft"
  },
  "src:7dee8d8cd9d5": {
   "cap": 20,
