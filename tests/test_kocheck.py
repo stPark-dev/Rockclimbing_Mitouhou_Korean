@@ -86,3 +86,20 @@ def test_one_byte_slots_leave_room_for_fixed_and_reserved_cells():
     # cells 0-238 and 244-246 are 1-byte; 0-59 stay fixed (digits for FA, symbols, Latin capitals);
     # new punctuation, ｃｍｘ, ・ and ？ take 1-byte cells too
     assert kocheck.ONE_BYTE_SLOTS == (239 + 3) - 60 - len(kocheck.NEW_PUNCT) - 3 - 2
+
+
+def test_line_widths_use_the_advance_table_and_layout_controls():
+    widths = {86: 12, 87: 9}  # あ い
+    src = [("g", 86), ("g", 87), ("nl",), ("ctl", 0xFC, b"\x02"), ("g", 86), ("sp",)]
+    assert kocheck.source_line_widths(src, widths) == [21, 26 + 12 + 13]
+    ko = kocheck.tokenize("가 나\n{FC:01}다")
+    assert kocheck.ko_line_widths(ko) == [12 + 6 + 12, 13 + 12]
+
+
+def test_width_warning_when_a_line_is_wider_than_the_widest_source_line():
+    widths = {86: 12}
+    units_ = {"src:a": {"text": "", "capacity": 99, "source": "5757ff"}}  # ああ = 24px
+    ko = {"src:a": {"ko": "가나다", "status": "draft"}}  # 36px
+    assert [w[1] for w in kocheck.width_warnings(units_, ko, widths)] == ["width"]
+    ko = {"src:a": {"ko": "가나", "status": "draft"}}  # 24px
+    assert kocheck.width_warnings(units_, ko, widths) == []

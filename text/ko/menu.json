@@ -2238,24 +2238,25 @@
   "copies": [
    "KWAMENU.BIN:12EF8"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "날씨에 따른 예비일 검토\n예상 날씨 정보\n　악천후 확률은 {FA:00}％입니다.\n\n예비일을 며칠로 하겠습니까?",
+  "status": "draft"
  },
  "src:0ebed1fe2da0": {
   "cap": 100,
   "copies": [
    "KWAMENU.BIN:12F40"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "장비 점검\n　하켄{FC:02}{FA:00}개\n　로프{FC:03}{FA:01}개\n　식량{FC:04}{FA:02}끼니분\n　위 장비를 가져갑니다.\n\n　이 계획으로\n　괜찮습니까?",
+  "status": "draft"
  },
  "src:f34537775098": {
   "cap": 28,
   "copies": [
    "KWAMENU.BIN:12FB8"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "계획보다 ｘｘ시간 빨리 가고 있군.",
+  "status": "draft",
+  "note": "개발용 자리표시(ｘｘ) 문구로 보임"
  },
  "src:c589a2c15a40": {
   "cap": 24,
@@ -2269,72 +2270,80 @@
    "SUZU_0.BIN:058A0",
    "SUZU_0.BIN:114A4"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "거의 계획대로 가고 있습니다.",
+  "status": "draft"
  },
  "src:bcb047232687": {
   "cap": 60,
   "copies": [
    "KWAMENU.BIN:12FEC"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "계획보다 ｘｘ시간 늦어졌습니다.\n하지만 식량은 아직 여유가 있습니다.\n남은 식량　ｘｘ끼니분",
+  "status": "draft",
+  "note": "개발용 자리표시 문구"
  },
  "src:6305a3e2f4c9": {
   "cap": 88,
   "copies": [
    "KWAMENU.BIN:13028"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "계획보다 ｘｘ시간 늦어졌습니다.\n게다가 이대로라면 식량이\n버티지 못할 것 같습니다.\nｘｘ끼니분 부족이 예상됩니다.\n남은 식량　ｘｘ끼니분.",
+  "status": "draft",
+  "note": "개발용 자리표시 문구"
  },
  "src:17d9575a2db4": {
   "cap": 32,
   "copies": [
    "KWAMENU.BIN:13080"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "ｘｘｘ 루트도\n답파 예정 시간 ｘｘ시간",
+  "status": "draft",
+  "note": "개발용 자리표시 문구"
  },
  "src:3eb13a8bf93e": {
   "cap": 52,
   "copies": [
    "KWAMENU.BIN:131B8"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "ｘｘｘ 스테이지\n답파를 위한 조언\nｘｘｘｘｘｘｘｘｘｘｘｘｘｘｘ\nｘｘｘｘｘｘｘｘｘ",
+  "status": "draft",
+  "note": "개발용 자리표시 문구"
  },
  "src:9f86ae5dbc64": {
   "cap": 20,
   "copies": [
    "KWAMENU.BIN:131EC"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "이 ｘｘｘ 피치를 공략합니까",
+  "status": "draft",
+  "note": "개발용 자리표시 문구"
  },
  "src:0da6f7953022": {
   "cap": 124,
   "copies": [
    "KWAMENU.BIN:13200"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "ｘｘｘ 피치\n개요\n　・・・・・・・・・・・・・・・\n　・・・・・・・・・\n난이도\n{FC:02}초급{FC:02}클래스Ｖ\n필요 기술\n{FC:02}오버행 등반\n{FC:02}에트리에 기술",
+  "status": "draft",
+  "note": "개발용 자리표시 문구"
  },
  "src:9277c7103743": {
   "cap": 288,
   "copies": [
    "KWAMENU.BIN:1327C"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "ｘｘｘ 피치{FC:02}시각 ｘｘ：ｘｘ\n암질{FC:02}：화강암　매우 단단하지만 이\n{FC:05}피치는 미세 크랙이 많아\n{FC:05}하켄을 비교적 박기\n{FC:05}쉽다.\n적설{FC:02}：남향 사면이라 쌓인 눈이\n{FC:05}거의 없다.\n낙석 등：낙석 위험도　큼\n{FC:05}크기　주먹～사람 머리만 함\n날씨{FC:02}：흐림. 안개가 끼기 쉽다.\n바람{FC:03}：현재　미풍.\n기온{FC:02}：－１５Ｃ(ｘｘＦ)\n예측{FC:02}：날씨는 나빠지는 중. ４～５시간 뒤\n{FC:05}눈보라 가능성 ８０％.",
+  "status": "draft",
+  "note": "개발용 자리표시 문구"
  },
  "src:cd9cb867c33e": {
   "cap": 76,
   "copies": [
    "KWAMENU.BIN:1339C"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "ｘｘｘ 피치\n답파를 위한 조언.\n・・・・・・・・・・・・・・・\n・・・・・・・・・・.",
+  "status": "draft",
+  "note": "개발용 자리표시 문구"
  },
  "src:a3d245c477c5": {
   "cap": 12,
@@ -2342,8 +2351,8 @@
    "KWAMENU.BIN:133E8",
    "X_SUZU.BIN:01200"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "노인의 지팡이 루트",
+  "status": "draft"
  },
  "src:c99bfb31007f": {
   "cap": 12,
@@ -2351,8 +2360,8 @@
    "KWAMENU.BIN:133F4",
    "X_SUZU.BIN:0120C"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "노인의 수염 루트",
+  "status": "draft"
  },
  "src:54d02aa0a97f": {
   "cap": 12,
@@ -2360,8 +2369,8 @@
    "KWAMENU.BIN:13400",
    "X_SUZU.BIN:01218"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "왼쪽 송곳니 루트",
+  "status": "draft"
  },
  "src:cc15b8015d63": {
   "cap": 12,
@@ -2369,24 +2378,24 @@
    "KWAMENU.BIN:1340C",
    "X_SUZU.BIN:01224"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "오른쪽 송곳니 루트",
+  "status": "draft"
  },
  "src:c54f8e7c9b8f": {
   "cap": 16,
   "copies": [
    "KWAMENU.BIN:13418"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "영광으로 가는 계단 루트",
+  "status": "draft"
  },
  "src:f12887c863f6": {
   "cap": 16,
   "copies": [
    "KWAMENU.BIN:13428"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "여신의 입맞춤 루트",
+  "status": "draft"
  },
  "src:20786a526eec": {
   "cap": 12,
@@ -2394,8 +2403,8 @@
    "KWAMENU.BIN:13438",
    "X_SUZU.BIN:01248"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "여신의 어깨 루트",
+  "status": "draft"
  },
  "src:678582fe033f": {
   "cap": 16,
@@ -2403,8 +2412,8 @@
    "KWAMENU.BIN:13444",
    "X_SUZU.BIN:01254"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "여신의 등 루트",
+  "status": "draft"
  },
  "src:7cd3722cfdaf": {
   "cap": 16,
@@ -2412,8 +2421,8 @@
    "KWAMENU.BIN:13454",
    "X_SUZU.BIN:01264"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "바람의 샛길 루트",
+  "status": "draft"
  },
  "src:b5bb24efe42d": {
   "cap": 12,
@@ -2421,8 +2430,8 @@
    "KWAMENU.BIN:13464",
    "X_SUZU.BIN:01274"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "바람의 길 루트",
+  "status": "draft"
  },
  "src:4bdebb851d83": {
   "cap": 12,
@@ -2430,8 +2439,8 @@
    "KWAMENU.BIN:13470",
    "X_SUZU.BIN:01280"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "바람의 폭포 루트",
+  "status": "draft"
  },
  "src:817ffd3d4f87": {
   "cap": 16,
@@ -2439,16 +2448,16 @@
    "KWAMENU.BIN:1347C",
    "X_SUZU.BIN:0128C"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "왕좌로 가는 길 루트",
+  "status": "draft"
  },
  "src:ea66db39b43c": {
   "cap": 12,
   "copies": [
    "KWAMENU.BIN:1348C"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "신의 칼날 루트",
+  "status": "draft"
  },
  "src:2d806dacad75": {
   "cap": 12,
@@ -2456,8 +2465,8 @@
    "KWAMENU.BIN:13498",
    "X_SUZU.BIN:0129C"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "생명의 가치 루트",
+  "status": "draft"
  },
  "src:77c8154d4369": {
   "cap": 12,
@@ -2465,8 +2474,8 @@
    "KWAMENU.BIN:135F8",
    "X_SUZU.BIN:013FC"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "신의 받침대 녹",
+  "status": "draft"
  },
  "src:23541355d93a": {
   "cap": 8,
@@ -2482,264 +2491,264 @@
   "copies": [
    "KWAMENU.BIN:13838"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "어둠의 입",
+  "status": "draft"
  },
  "src:506cbdc4ed71": {
   "cap": 12,
   "copies": [
    "KWAMENU.BIN:13840"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "탄식의 대지",
+  "status": "draft"
  },
  "src:e2b009d4708f": {
   "cap": 8,
   "copies": [
    "KWAMENU.BIN:1384C"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "사냥개",
+  "status": "draft"
  },
  "src:d35eb02d1237": {
   "cap": 8,
   "copies": [
    "KWAMENU.BIN:13854"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "은의 성벽",
+  "status": "draft"
  },
  "src:7e110d04b647": {
   "cap": 8,
   "copies": [
    "KWAMENU.BIN:1385C"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "호두 줍기",
+  "status": "draft"
  },
  "src:e08e0dd07516": {
   "cap": 12,
   "copies": [
    "KWAMENU.BIN:13864"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "운해의 인어",
+  "status": "draft"
  },
  "src:375f84c10c13": {
   "cap": 12,
   "copies": [
    "KWAMENU.BIN:13870"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "자연의 군주",
+  "status": "draft"
  },
  "src:91f41846e421": {
   "cap": 24,
   "copies": [
    "KWAMENU.BIN:138C0"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "어느 암장에서 트레이닝하겠습니까?",
+  "status": "draft"
  },
  "src:07b6812f6fb5": {
   "cap": 84,
   "copies": [
    "KWAMENU.BIN:138D8"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "３점 지지법\n{FC:02}(프리)\n　난이도　초급{FC:02}\n프리 클라이밍\n\n알프스의 고독한 노인\n스테이지　５\n　노인의 변덕\n피치　１",
+  "status": "draft"
  },
  "src:739acaaa7428": {
   "cap": 76,
   "copies": [
    "KWAMENU.BIN:1392C"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "로프 하강\n{FC:02}난이도　초급\n프리 클라이밍\n\n알프스의 고독한 노인\n스테이지　２\n　로프 하강 벽\n피치　１",
+  "status": "draft"
  },
  "src:9b7bad75c1fb": {
   "cap": 76,
   "copies": [
    "KWAMENU.BIN:13978"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "트래버스\n{FC:02}(프리)\n{FC:02}난이도　초급\n프리 클라이밍\n\n여신의 맨얼굴\n스테이지　１\n{FC:02}신의 술잔\n피치　１",
+  "status": "draft"
  },
  "src:fe7ca22ed863": {
   "cap": 68,
   "copies": [
    "KWAMENU.BIN:139C4"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "좁은 침니\n{FC:02}난이도　중급\n프리 클라이밍\n\n신들을 향한 송곳니\n스테이지　４\n{FC:04}비뚠 송곳니\n피치　２",
+  "status": "draft"
  },
  "src:7754e65d455f": {
   "cap": 68,
   "copies": [
    "KWAMENU.BIN:13A08"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "넓은 침니\n{FC:02}난이도　상급\n프리 클라이밍\n\n신들을 향한 송곳니\n스테이지　４\n{FC:04}비뚠 송곳니\n피치　２",
+  "status": "draft"
  },
  "src:aef34b17aebe": {
   "cap": 68,
   "copies": [
    "KWAMENU.BIN:13A4C"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "디에드르\n{FC:02}난이도　상급\n프리 클라이밍\n\n신들을 향한 송곳니\n스테이지　１２\n{FC:04}하늘의 물고기\n피치　２",
+  "status": "draft"
  },
  "src:454a32173b8e": {
   "cap": 68,
   "copies": [
    "KWAMENU.BIN:13A90"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "레이백\n{FC:02}난이도　중급\n프리 클라이밍\n\n신들을 향한 송곳니\n스테이지　３\n{FC:03}풍수의 골짜기\n피치　１",
+  "status": "draft"
  },
  "src:fb4ca8b34346": {
   "cap": 76,
   "copies": [
    "KWAMENU.BIN:13AD4"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "펜듈럼 트래버스\n{FC:02}난이도　상급\n프리 클라이밍\n\n여신의 맨얼굴\n스테이지　４\n　여신의 날개옷\n피치　１",
+  "status": "draft"
  },
  "src:4a721edca9fa": {
   "cap": 84,
   "copies": [
    "KWAMENU.BIN:13B20"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "오버행\n　(트래버스)\n{FC:02}난이도　상급\n프리 클라이밍\n\n여신의 맨얼굴\n스테이지　５\n　여신의 보석함\n피치　１",
+  "status": "draft"
  },
  "src:e8d1e0d35fdf": {
   "cap": 80,
   "copies": [
    "KWAMENU.BIN:13B74"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "오버행\n{FC:02}(등반)\n{FC:02}난이도　상급\n프리 클라이밍\n\n여신의 맨얼굴\n스테이지　４\n　여신의 날개옷\n피치　１",
+  "status": "draft"
  },
  "src:66f24bd5b0c4": {
   "cap": 80,
   "copies": [
    "KWAMENU.BIN:13BC4"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "３점 지지법\n{FC:02}(인공)\n{FC:02}난이도　초급\n{FC:02}인공 등반\n\n바람의 축제\n스테이지　４\n{FC:03}현자의 서재\n피치　１",
+  "status": "draft"
  },
  "src:0861082ab571": {
   "cap": 76,
   "copies": [
    "KWAMENU.BIN:13C14"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "트래버스\n{FC:02}(인공)\n{FC:02}난이도　초급\n{FC:02}인공 등반\n\n대지의 분노\n스테이지　１\n{FC:04}신전의 문\n피치　１",
+  "status": "draft"
  },
  "src:b592474898c5": {
   "cap": 72,
   "copies": [
    "KWAMENU.BIN:13C60"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "능선 등반\n{FC:02}난이도　중급\n{FC:02}인공 등반\n\n대지의 분노\n스테이지　３\n　대지의 걸상\n피치　１",
+  "status": "draft"
  },
  "src:5f83a7a4f0b4": {
   "cap": 56,
   "copies": [
    "KWAMENU.BIN:13CA8"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "빙벽 활락 정지\n{FC:02}난이도　중급\n{FC:02}인공 등반\n\n오리지널\n　스테이지\n\n",
+  "status": "draft"
  },
  "src:8e168c1be011": {
   "cap": 80,
   "copies": [
    "KWAMENU.BIN:13CE0"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "테라스에서의\n　하켄 박기\n{FC:02}난이도　중급\n{FC:02}인공 등반\n\n바람의 축제\n스테이지　１\n{FC:03}벽돌집\n피치　１",
+  "status": "draft"
  },
  "src:1ad7b4b7d609": {
   "cap": 80,
   "copies": [
    "KWAMENU.BIN:13D30"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "암장에서의\n　하켄 박기\n{FC:02}난이도　중급\n{FC:02}인공 등반\n\n바람의 축제\n스테이지　７\n{FC:02}날개 가진 자\n피치　１",
+  "status": "draft"
  },
  "src:9f60fcd4d343": {
   "cap": 84,
   "copies": [
    "KWAMENU.BIN:13D80"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "더블 피켈\n　빙벽 등반\n{FC:02}난이도　중급\n{FC:02}인공 등반\n\n바람의 축제\n스테이지　５\n{FC:02}무너진 각설탕\n피치　１",
+  "status": "draft"
  },
  "src:242f6056d3e1": {
   "cap": 80,
   "copies": [
    "KWAMENU.BIN:13DD4"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "더블 피켈\n　빙벽 등반\n{FC:02}난이도　중급\n{FC:02}인공 등반\n\n신들을 향한 송곳니\n스테이지　３\n{FC:05}얼음의 검\n피치　１",
+  "status": "draft"
  },
  "src:5a7987b7912f": {
   "cap": 76,
   "copies": [
    "KWAMENU.BIN:13E24"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "에트리에\n{FC:03}트래버스\n{FC:02}난이도　상급\n{FC:02}인공 등반\n\n바람의 축제\n스테이지　２\n{FC:02}바람의 요람\n피치　１",
+  "status": "draft"
  },
  "src:a17aa3605f0b": {
   "cap": 72,
   "copies": [
    "KWAMENU.BIN:13E70"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "에트리에 등반\n{FC:02}난이도　상급\n{FC:02}인공 등반\n\n여신의 맨얼굴\n스테이지　１\n{FC:04}정령의 골짜기\n피치　１",
+  "status": "draft"
  },
  "src:7fd300721f78": {
   "cap": 8,
   "copies": [
    "KWAMENU.BIN:13EB8"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "프로필",
+  "status": "draft"
  },
  "src:0a81adb90970": {
   "cap": 60,
   "copies": [
    "KWAMENU.BIN:13EC0"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "\n\n　테크닉 레벨　{FA:00}\n　등반 횟수{FC:04}{FA:01}\n　조난 횟수{FC:05}{FA:02}\n　트레이닝 횟수　{FA:03}",
+  "status": "draft"
  },
  "src:80801fec989c": {
   "cap": 20,
   "copies": [
    "KWAMENU.BIN:13EFC"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "３점 지지법(프리)",
+  "status": "draft"
  },
  "src:3754e706c810": {
   "cap": 12,
   "copies": [
    "KWAMENU.BIN:13F10"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "로프 하강",
+  "status": "draft"
  },
  "src:ec5cdff08edf": {
   "cap": 16,
   "copies": [
    "KWAMENU.BIN:13F1C"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "트래버스(프리)",
+  "status": "draft"
  },
  "src:71d9a0994c5d": {
   "cap": 12,
@@ -2778,64 +2787,64 @@
   "copies": [
    "KWAMENU.BIN:13F60"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "오버행(트래버스)",
+  "status": "draft"
  },
  "src:06d540fc7d87": {
   "cap": 16,
   "copies": [
    "KWAMENU.BIN:13F74"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "오버행(등반)",
+  "status": "draft"
  },
  "src:32cfcfdbfa75": {
   "cap": 20,
   "copies": [
    "KWAMENU.BIN:13F84"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "３점 지지법(인공)",
+  "status": "draft"
  },
  "src:4dc95e80f015": {
   "cap": 16,
   "copies": [
    "KWAMENU.BIN:13F98"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "트래버스(인공)",
+  "status": "draft"
  },
  "src:9c7619a39cf3": {
   "cap": 12,
   "copies": [
    "KWAMENU.BIN:13FA8"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "능선 등반",
+  "status": "draft"
  },
  "src:7f9366cd5448": {
   "cap": 16,
   "copies": [
    "KWAMENU.BIN:13FB4"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "빙벽 활락 정지",
+  "status": "draft"
  },
  "src:4d28e8854ae5": {
   "cap": 20,
   "copies": [
    "KWAMENU.BIN:13FC4"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "테라스에서의 하켄 박기",
+  "status": "draft"
  },
  "src:7e3694dcc719": {
   "cap": 20,
   "copies": [
    "KWAMENU.BIN:13FD8"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "암장에서의 하켄 박기",
+  "status": "draft"
  },
  "src:241bee4b9cb3": {
   "cap": 24,
@@ -2843,24 +2852,24 @@
    "KWAMENU.BIN:13FEC",
    "KWAMENU.BIN:14004"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "더블 피켈\n{FC:02}빙벽 등반",
+  "status": "draft"
  },
  "src:7af033242dc7": {
   "cap": 16,
   "copies": [
    "KWAMENU.BIN:1401C"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "에트리에 트래버스",
+  "status": "draft"
  },
  "src:b0f1360bbc31": {
   "cap": 12,
   "copies": [
    "KWAMENU.BIN:1402C"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "에트리에 등반",
+  "status": "draft"
  },
  "src:90ea564f624f": {
   "cap": 20,
@@ -2868,32 +2877,32 @@
    "KWAMENU.BIN:14038",
    "KWAMENU.BIN:1404C"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "더블 피켈 빙벽 등반",
+  "status": "draft"
  },
  "src:cf2aeaa643c3": {
   "cap": 264,
   "copies": [
    "KWAMENU.BIN:14060"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "　확보 지점을 만드는 역할을 하며\n바위 틈(크랙)에 박아서\n쓰는 금속 쐐기입니다.\n머리 구멍에 카라비너를 걸고, 카라비너에\n자일이나 에트리에를 걸어 쓰며, 등반에\n꼭 필요한 장비입니다.\n　크랙의 방향・모양・폭이 다양하듯\n하켄도 크랙에 맞는 특징을\n가진 여러 종류가 있습니다. 세로형・가로형・겸용\n형 같은 모양 차이부터 길이・두께\n・재질 차이까지 매우 다양합니다.",
+  "status": "draft"
  },
  "src:6ad657f45bbd": {
   "cap": 196,
   "copies": [
    "KWAMENU.BIN:14290"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "　빙벽 등반이나 눈 위를 걸을 때 미끄럼\n방지용으로 등산화 바닥에 달아 씁니다.\n아이젠의 발톱을 눈이나 얼음에\n박으면서 오르며 추락 위험을\n막습니다.\n　아이젠은 발톱 수에 따라 쓰임새가\n다른데, 앞으로 ４개가 튀어나온 １２\n발톱짜리가 겨울산에서 흔히 쓰입니다.",
+  "status": "draft"
  },
  "src:b994ec917c24": {
   "cap": 268,
   "copies": [
    "KWAMENU.BIN:14354"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "　겨울 산행에서 피켈은 여러 가지로\n쓰입니다.\n주로 지팡이로 쓰고, 블레이드(사진 왼쪽 아래\n부분)로 얼음과 눈을 깎아 발판을 만들며,\n빙벽에서는 피크(사진 왼쪽 위 부분)를 얼음에\n찍으며 오르고, 눈에 깊이 꽂으면\n확보점의 보조로 쓸 수 있습니다.\n또 미끄러질 때는 사면에 피크를 박아\n활락 정지를 앞당길 수 있습니다.\n　이처럼 피켈은 겨울 산행에\n빼놓을 수 없는 등산 용구입니다.",
+  "status": "draft"
  },
  "src:9425ea3d8b49": {
   "cap": 92,

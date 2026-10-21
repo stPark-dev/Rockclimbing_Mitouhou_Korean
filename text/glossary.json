@@ -1130,6 +1130,54 @@
    "kind": "route",
    "status": "approved",
    "note": "D7 약칭(정식: 신을 향한 칼날)"
+  },
+  {
+   "ja": "神の台座の錆び",
+   "ko": "신의 받침대 녹",
+   "kind": "stage",
+   "status": "candidate"
+  },
+  {
+   "ja": "闇への口",
+   "ko": "어둠의 입",
+   "kind": "stage",
+   "status": "candidate"
+  },
+  {
+   "ja": "嘆きの大地",
+   "ko": "탄식의 대지",
+   "kind": "stage",
+   "status": "candidate"
+  },
+  {
+   "ja": "狩猟犬",
+   "ko": "사냥개",
+   "kind": "stage",
+   "status": "candidate"
+  },
+  {
+   "ja": "銀の城壁",
+   "ko": "은의 성벽",
+   "kind": "stage",
+   "status": "candidate"
+  },
+  {
+   "ja": "クルミ拾い",
+   "ko": "호두 줍기",
+   "kind": "stage",
+   "status": "candidate"
+  },
+  {
+   "ja": "雲海の人魚",
+   "ko": "운해의 인어",
+   "kind": "stage",
+   "status": "candidate"
+  },
+  {
+   "ja": "自然の君主",
+   "ko": "자연의 군주",
+   "kind": "stage",
+   "status": "candidate"
   }
  ]
 }
