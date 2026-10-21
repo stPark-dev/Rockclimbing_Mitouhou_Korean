@@ -30,4 +30,6 @@ def text(toks, table):
             out.append(table[t[1]][0])
         elif t == ("nl",):
             out.append("\n")
+        elif t == ("sp",):
+            out.append("　")
     return "".join(out)

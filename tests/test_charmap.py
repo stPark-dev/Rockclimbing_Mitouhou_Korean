@@ -35,7 +35,7 @@ def test_load_rejects_duplicates_and_gaps(tmp_path):
 
 def test_text_renders_tokens():
     cm = {0: ("あ", "visual"), 1: ("い", "visual")}
-    assert charmap.text([("page",), ("g", 0), ("nl",), ("g", 1), ("end",)], cm) == "あ\nい"
+    assert charmap.text([("sp",), ("g", 0), ("nl",), ("g", 1), ("end",)], cm) == "　あ\nい"
 
 
 @pytest.mark.skipif(not KWAMENU.exists(), reason="extracted KWAMENU.BIN not available")
@@ -43,4 +43,4 @@ def test_corpus_database_line_reads_as_japanese():
     data = KWAMENU.read_bytes()
     toks, _ = tc.read_page(data, 0x1790C)
     first = charmap.text(toks, charmap.load(TABLE)).split("\n")[0]
-    assert first == "まず、移動しようと思う手や足を選びます。"
+    assert first == "　まず、移動しようと思う手や足を選びます。"  # FD is the leading full-width space
