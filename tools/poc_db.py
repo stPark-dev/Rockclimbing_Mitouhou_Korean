@@ -13,7 +13,6 @@ usage: poc_db.py --src <track 01 .bin> --cue <original .cue> --galmuri Galmuri11
 
 import argparse
 import hashlib
-import os
 import re
 from pathlib import Path
 
@@ -91,8 +90,9 @@ def check_paths(src, out):
 
 
 def write_cue(src_cue, out_bin):
-    """Copy the cue, pointing track 1 at out_bin and the audio tracks back at the originals."""
-    src_dir, out_dir = Path(src_cue).resolve().parent, Path(out_bin).resolve().parent
+    """Copy the cue, pointing track 1 at out_bin and the audio tracks back at the originals.
+    Audio paths are absolute: DuckStation on Windows fails to open a FILE path with ../ in it."""
+    src_dir = Path(src_cue).resolve().parent
     lines, track1 = [], 0
     for line in Path(src_cue).read_text().splitlines():
         m = re.match(r'FILE "(.+)" BINARY', line)
@@ -102,7 +102,7 @@ def write_cue(src_cue, out_bin):
                 track1 += 1
                 path = Path(out_bin).name
             else:
-                path = Path(os.path.relpath(src_dir / name, out_dir)).as_posix()
+                path = str(src_dir / name)
             line = f'FILE "{path}" BINARY'
         lines.append(line)
     if track1 != 1:

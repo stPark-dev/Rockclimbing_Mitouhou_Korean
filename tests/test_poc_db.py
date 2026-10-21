@@ -120,7 +120,7 @@ def test_write_cue_points_track1_at_output_and_audio_at_originals(tmp_path):
     out.parent.mkdir()
     text = poc_db.write_cue(cue, out).read_text()
     assert 'FILE "poc.bin" BINARY' in text
-    assert 'FILE "../src/g (Track 02).bin" BINARY' in text
+    assert f'FILE "{(tmp_path / "src" / "g (Track 02).bin").resolve()}" BINARY' in text
 
 
 @pytest.mark.parametrize("names", [["g (Track 1).bin"], ["a (Track 01).bin", "b (Track 01).bin"]])

@@ -13,15 +13,13 @@
 | 번역 | 초벌 499/1,477(등반 61·식사 22·이벤트 91·메뉴 약 330). 스테이지 정보 702 미착수 |
 | 결정 | D1–D7 |
 | 제품 빌드 | `tools/build_ko.py` 완성. 개발용 빌드 런타임 확인(survey §9) |
-| 테스트 | 179개 통과(`python3 -m pytest -q tests/`) |
+| 창 한계 | 실측 3창 등록(`kocheck.WINDOW_LIMITS`): 장비 설명 249, 봉우리 소개 265, 스테이지 설명 259px |
+| 테스트 | 181개 통과(`python3 -m pytest -q tests/`) |
 
 ## 2. 다음 순서 (사용자 승인, 2026-10-21)
 
-1. **데이터베이스 설명 창 한계를 검사에 넣고 넘친 줄을 고친다.**
-   - 실측 한계: 줄 너비 약 249px(글자 시작 x=47, 창 안쪽 오른쪽 끝 약 x=296). 렌더러는 창 테두리에서 자르지 않는다.
-   - `kocheck`의 줄 너비 검사에 창별 한계 표(모듈·오프셋 범위·px·근거)를 추가한다. 한계가 확인되지 않은 창은 지금처럼 원문 최대 줄 기준 경고로 둔다.
-   - 넘친 번역: 장비 설명(피켈 「주로 지팡이로 쓰고, 블레이드(사진 왼쪽 아래」 약 262px 등) 줄바꿈 수정.
-2. **아직 실측하지 않은 창을 같은 방식으로 잰다.** 우선순위:
+1. ~~데이터베이스 설명 창 한계를 검사에 넣고 넘친 줄을 고친다.~~ 완료(2026-10-21). 한계를 넘는 줄은 `window` 문제로 나온다. 하켄·피켈 설명 줄바꿈 수정.
+2. **아직 실측하지 않은 창을 같은 방식으로 잰다.** 봉우리 소개·스테이지 설명 창은 완료. **막힘: 「山へ行く」 진입 후 검은 화면**(survey §9, 원본도 같음). 비행기 영상을 건너뛰지 말 것(건너뛰면 예외로 멈춤). 다음 시도: 저장 상태 없이 처음부터 입력 없이 오래 기다리기, DuckStation 다른 버전, 트레이닝 메뉴로 등반 화면(KABE) 먼저 확인. 남은 우선순위:
    - 스테이지 정보 창(SUZU 계열, 702단위가 걸린 가장 큰 묶음)
    - 이벤트 메시지 창(MT0/1, SUZU_1)
    - 등반 화면 메시지 창(KABE), 식사·휴식 창(MESI)
@@ -58,7 +56,8 @@
 - 번역 단위 갱신: `cd tools && python3 units.py ../text/src ../text/ko`
 - 번역 검사: `cd tools && python3 kocheck.py ../text/src ../text/ko [-w]`
 - 개발용 빌드: `cd tools && python3 build_ko.py --src "../original/<원본> (Track 01).bin" --cue "../original/<원본>.cue" --galmuri ../../galmuri/Galmuri11.bdf --ko ../text/ko --out ../build/mitouhou_ko_dev.bin --policy dev` (약 1분, 결과 옆에 배포 불가 manifest)
-- 런타임: `Xephyr :7 -screen 800x700 -ac -br -noreset &` 후 `PYTHON=../venv/bin/python sh tools/re/emu_restart.sh build/mitouhou_ko_dev.cue`(에뮬레이터 재시작과 입력 포커스 지정). 키 입력은 `../kenshin/tools/re/xkey.py :7 z ...`(○=z, ×=x, Start=Return).
+- 런타임(Windows): `python tools/re/winds.py launch <cue 절대 경로>` → `keys z 3 Down ...`(숫자는 대기 초) → `grab <png>`. PostMessage·PrintWindow라 사용자 포커스를 뺏지 않는다. DuckStation은 `../tools/duckstation`(공용 설정, F1–F4 저장·F5–F8 불러오기 = `savestates/savestate_N.sav`, 다른 프로젝트와 공유). 화면 좌표/2.5 = 게임 px(창 800 폭).
+- 런타임(Linux): `Xephyr :7 -screen 800x700 -ac -br -noreset &` 후 `PYTHON=../venv/bin/python sh tools/re/emu_restart.sh build/mitouhou_ko_dev.cue`(에뮬레이터 재시작과 입력 포커스 지정). 키 입력은 `../kenshin/tools/re/xkey.py :7 z ...`(○=z, ×=x, Start=Return).
   - 재시작 시 이전 창이 포커스를 잡고 남는 문제가 있어, 새 창을 찾아 `set_input_focus`해야 한다.
   - 경로: 부팅 후 z(GAME START) → z(NEW GAME) → 이름 입력에서 아래 7회 후 z(終了) → 메인 메뉴. 데이터베이스: 메인 메뉴에서 → ↓ z, 「登山道具」: → z.
 - 번역 반영은 `text/ko/<문맥>.json`의 `ko`·`status`·`note`를 직접 고친다(작업 중 쓴 일회용 도우미는 저장소 밖 `work/`에 있고 필수는 아니다).

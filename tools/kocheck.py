@@ -190,6 +190,10 @@ def ko_line_widths(toks, widths=None):
 WINDOW_LIMITS = [
     ("KWAMENU.BIN", 0x14060, 0x14460, 249,
      "database equipment descriptions: text x=47, inner right edge x~296 (docs/survey.md §9)"),
+    ("KWAMENU.BIN", 0x128D0, 0x12C4C, 265,
+     "peak introductions (climbing plan): text x=32, inner right edge x~297 (docs/survey.md §9)"),
+    ("KWAMENU.BIN", 0x14460, 0x15EA8, 259,
+     "stage descriptions (route plan, lower window): text x=36, inner right edge x~296 (docs/survey.md §9)"),
 ]
 
 
