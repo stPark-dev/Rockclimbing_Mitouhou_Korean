@@ -20,7 +20,7 @@
 | 그림 글자 | 일본어 그림만 한글화(D1). 위치 조사 전 |
 | 이름 입력 | 한글 입력 표로 교체(D2). 조사 전 |
 
-자세한 조사 결과와 근거는 [`docs/survey.md`](docs/survey.md), 결정 사항은 [`docs/decisions.md`](docs/decisions.md)에 있습니다.
+자세한 조사 결과와 근거는 [`docs/survey.md`](docs/survey.md), 결정 사항은 [`docs/decisions.md`](docs/decisions.md)에 있습니다. 현재 상태와 다음 작업 순서는 [`docs/HANDOFF.md`](docs/HANDOFF.md)에 정리되어 있습니다.
 
 ## 지원 원본
 
