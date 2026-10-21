@@ -102,7 +102,7 @@ def write_cue(src_cue, out_bin):
                 track1 += 1
                 path = Path(out_bin).name
             else:
-                path = os.path.relpath(src_dir / name, out_dir)
+                path = Path(os.path.relpath(src_dir / name, out_dir)).as_posix()
             line = f'FILE "{path}" BINARY'
         lines.append(line)
     if track1 != 1:

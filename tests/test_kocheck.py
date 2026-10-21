@@ -105,3 +105,21 @@ def test_width_warning_when_a_line_is_wider_than_the_widest_source_line():
     assert [w[1] for w in kocheck.width_warnings(units_, ko, widths)] == ["width"]
     ko = {"src:a": {"ko": "가나", "status": "draft"}}  # 24px
     assert kocheck.width_warnings(units_, ko, widths) == []
+
+
+def test_window_problem_when_a_line_exceeds_a_measured_limit():
+    # database equipment descriptions: 249px (docs/survey.md §9)
+    units_ = {"src:a": {"text": "", "capacity": 99, "source": "57ff", "copies": ["KWAMENU.BIN:14354"]}}
+    ko = {"src:a": {"ko": "가" * 20 + "\n" + "가" * 21, "status": "draft"}}  # 240px, 252px
+    assert kocheck.window_problems(units_, ko) == [("src:a", "window", "line 2 252px > 249px")]
+    ko = {"src:a": {"ko": "가" * 20, "status": "draft"}}
+    assert kocheck.window_problems(units_, ko) == []
+
+
+def test_measured_windows_replace_the_source_width_warning():
+    widths = {86: 12}
+    units_ = {"src:a": {"text": "", "capacity": 99, "source": "57ff", "copies": ["KWAMENU.BIN:14354"]},
+              "src:b": {"text": "", "capacity": 99, "source": "57ff", "copies": ["KWAMENU.BIN:14460"]}}
+    ko = {"src:a": {"ko": "가나", "status": "draft"}, "src:b": {"ko": "가나", "status": "draft"}}
+    assert [w[0] for w in kocheck.width_warnings(units_, ko, widths)] == ["src:b"]
+    assert kocheck.window_problems(units_, ko) == []

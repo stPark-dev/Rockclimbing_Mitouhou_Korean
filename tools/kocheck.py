@@ -8,6 +8,9 @@
   reused for Hangul, and 。、 are replaced by . , (D4).
 - capacity: the in-place size (D3), counting the most frequent syllables as
   1-byte codes. The 1-byte plan is an estimate until the build assigns codes.
+- window: lines wider than a window limit measured on screen (WINDOW_LIMITS).
+  Strings in windows not yet measured get a warning when a line is wider than
+  the widest source line.
 
 usage: kocheck.py <text/src dir> <text/ko dir> [-w]   (-w lists line-width warnings)
 """
@@ -182,12 +185,43 @@ def ko_line_widths(toks, widths=None):
     return lines
 
 
-def width_warnings(units_, ko, widths):
-    """Lines wider than the widest source line of the same string. Observed source
-    usage, not a confirmed window limit, so these are review candidates."""
+# Line widths measured on screen with the dev build: (module, first offset, end offset, px, evidence).
+# The renderer does not clip at the window border, so a wider line draws over it.
+WINDOW_LIMITS = [
+    ("KWAMENU.BIN", 0x14060, 0x14460, 249,
+     "database equipment descriptions: text x=47, inner right edge x~296 (docs/survey.md §9)"),
+]
+
+
+def window_limit(copies):
+    """Smallest measured limit among a unit's copies, or None if no copy sits in a measured window."""
+    found = []
+    for cid in copies:
+        mod, off = cid.split(":")
+        found += [px for m, lo, hi, px, _ in WINDOW_LIMITS if m == mod and lo <= int(off, 16) < hi]
+    return min(found) if found else None
+
+
+def window_problems(units_, ko, widths=None):
+    """Lines wider than a measured window limit."""
     out = []
     for k, entry in ko.items():
-        if not entry.get("ko"):
+        limit = window_limit(units_[k]["copies"]) if entry.get("ko") else None
+        if limit is None:
+            continue
+        lines = ko_line_widths(tokenize(entry["ko"]), widths)
+        over = [(i + 1, w) for i, w in enumerate(lines) if w > limit]
+        if over:
+            out.append((k, "window", ", ".join(f"line {i} {w}px" for i, w in over) + f" > {limit}px"))
+    return out
+
+
+def width_warnings(units_, ko, widths):
+    """Lines wider than the widest source line of the same string, for strings in windows
+    not yet measured. Observed source usage, not a window limit, so these are review candidates."""
+    out = []
+    for k, entry in ko.items():
+        if not entry.get("ko") or window_limit(units_[k].get("copies", [])) is not None:
             continue
         src = max(source_line_widths(tc.decode(bytes.fromhex(units_[k]["source"])), widths))
         got = max(ko_line_widths(tokenize(entry["ko"]), widths))
@@ -223,7 +257,7 @@ def main():
     plan = fit_plan(us, merged)
     total = 0
     for name, ko in files.items():
-        for k, kind, msg in check(us, ko, plan):
+        for k, kind, msg in check(us, ko, plan) + window_problems(us, ko):
             total += 1
             print(f"{name} {k} {kind}: {msg}")
     exe = Path(__file__).resolve().parent.parent / "work" / "files" / "SLPS_006.62"
