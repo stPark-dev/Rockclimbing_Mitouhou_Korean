@@ -1,0 +1,1087 @@
+{
+ "src:dc59766b7599": {
+  "cap": 88,
+  "copies": [
+   "MT0.BIN:00000",
+   "MT1.BIN:00000",
+   "SUZU_1.BIN:075A4",
+   "SUZU_1.BIN:0B030",
+   "SUZU_1.BIN:0DDCC"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:9805c724dfce": {
+  "cap": 32,
+  "copies": [
+   "MT0.BIN:00058",
+   "MT1.BIN:00058",
+   "SUZU_1.BIN:075FC",
+   "SUZU_1.BIN:0B088",
+   "SUZU_1.BIN:0DE24"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:38d0c7ced16d": {
+  "cap": 16,
+  "copies": [
+   "MT0.BIN:00078",
+   "MT1.BIN:00078",
+   "SUZU_1.BIN:0761C",
+   "SUZU_1.BIN:0B0A8",
+   "SUZU_1.BIN:0DE44"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:0ac0bd49adcf": {
+  "cap": 100,
+  "copies": [
+   "MT0.BIN:00088",
+   "MT1.BIN:00088",
+   "SUZU_1.BIN:0762C",
+   "SUZU_1.BIN:0B0B8",
+   "SUZU_1.BIN:0DE54"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:22a9c8eaa73d": {
+  "cap": 116,
+  "copies": [
+   "MT0.BIN:000EC",
+   "MT1.BIN:000EC",
+   "SUZU_1.BIN:07690",
+   "SUZU_1.BIN:0B11C",
+   "SUZU_1.BIN:0DEB8"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:23e53db69ae3": {
+  "cap": 52,
+  "copies": [
+   "MT0.BIN:00160",
+   "MT1.BIN:00160",
+   "SUZU_1.BIN:07704",
+   "SUZU_1.BIN:0B190",
+   "SUZU_1.BIN:0DF2C"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:c50ceefc343d": {
+  "cap": 56,
+  "copies": [
+   "MT0.BIN:00194",
+   "MT1.BIN:00194",
+   "SUZU_1.BIN:07738",
+   "SUZU_1.BIN:0B1C4",
+   "SUZU_1.BIN:0DF60"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:a1a7ec86812b": {
+  "cap": 52,
+  "copies": [
+   "MT0.BIN:001CC",
+   "MT1.BIN:001CC",
+   "SUZU_1.BIN:07770",
+   "SUZU_1.BIN:0B1FC",
+   "SUZU_1.BIN:0DF98"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:7760cfd2b859": {
+  "cap": 12,
+  "copies": [
+   "MT0.BIN:00200",
+   "MT1.BIN:00200",
+   "SUZU_1.BIN:077A4",
+   "SUZU_1.BIN:0B230",
+   "SUZU_1.BIN:0DFCC"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:1ae07fc07149": {
+  "cap": 52,
+  "copies": [
+   "MT0.BIN:0020C",
+   "MT1.BIN:0020C",
+   "SUZU_1.BIN:077B0",
+   "SUZU_1.BIN:0B23C",
+   "SUZU_1.BIN:0DFD8"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:d779c48da2e2": {
+  "cap": 156,
+  "copies": [
+   "MT0.BIN:00240",
+   "MT1.BIN:00240",
+   "SUZU_1.BIN:077E4",
+   "SUZU_1.BIN:0B270",
+   "SUZU_1.BIN:0E00C"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:b5b86ee1230d": {
+  "cap": 100,
+  "copies": [
+   "MT0.BIN:002DC",
+   "MT1.BIN:002DC",
+   "SUZU_1.BIN:07880",
+   "SUZU_1.BIN:0B30C",
+   "SUZU_1.BIN:0E0A8"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:eadf33ec0d03": {
+  "cap": 68,
+  "copies": [
+   "MT0.BIN:00340",
+   "MT1.BIN:00340",
+   "SUZU_1.BIN:078E4",
+   "SUZU_1.BIN:0B370",
+   "SUZU_1.BIN:0E10C"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:9cff5097cecf": {
+  "cap": 104,
+  "copies": [
+   "MT0.BIN:00384",
+   "MT1.BIN:00384",
+   "SUZU_1.BIN:07928",
+   "SUZU_1.BIN:0B3B4",
+   "SUZU_1.BIN:0E150"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:686b2a6417d2": {
+  "cap": 76,
+  "copies": [
+   "MT0.BIN:003EC",
+   "MT1.BIN:003EC",
+   "SUZU_1.BIN:07990",
+   "SUZU_1.BIN:0B41C",
+   "SUZU_1.BIN:0E1B8"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:514f8686940d": {
+  "cap": 156,
+  "copies": [
+   "MT0.BIN:00438",
+   "MT1.BIN:00438",
+   "SUZU_1.BIN:079DC",
+   "SUZU_1.BIN:0B468",
+   "SUZU_1.BIN:0E204"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:30e1f2180ebc": {
+  "cap": 104,
+  "copies": [
+   "MT0.BIN:004D4",
+   "MT1.BIN:004D4",
+   "SUZU_1.BIN:07A78",
+   "SUZU_1.BIN:0B504",
+   "SUZU_1.BIN:0E2A0"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:48fbba6294de": {
+  "cap": 76,
+  "copies": [
+   "MT0.BIN:0053C",
+   "MT1.BIN:0053C",
+   "SUZU_1.BIN:07AE0",
+   "SUZU_1.BIN:0B56C",
+   "SUZU_1.BIN:0E308"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:f77b2898b8fb": {
+  "cap": 52,
+  "copies": [
+   "MT0.BIN:00588",
+   "MT1.BIN:00588",
+   "SUZU_1.BIN:07B2C",
+   "SUZU_1.BIN:0B5B8",
+   "SUZU_1.BIN:0E354"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:4d2d13100f4a": {
+  "cap": 140,
+  "copies": [
+   "MT0.BIN:005BC",
+   "MT1.BIN:005BC",
+   "SUZU_1.BIN:07B60",
+   "SUZU_1.BIN:0B5EC",
+   "SUZU_1.BIN:0E388"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:605c7d0366bb": {
+  "cap": 88,
+  "copies": [
+   "MT0.BIN:00648",
+   "MT1.BIN:00648",
+   "SUZU_1.BIN:07BEC",
+   "SUZU_1.BIN:0B678",
+   "SUZU_1.BIN:0E414"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:c625c05f255f": {
+  "cap": 64,
+  "copies": [
+   "MT0.BIN:006A0",
+   "MT1.BIN:006A0",
+   "SUZU_1.BIN:07C44",
+   "SUZU_1.BIN:0B6D0",
+   "SUZU_1.BIN:0E46C"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:39b11b20cf99": {
+  "cap": 108,
+  "copies": [
+   "MT0.BIN:006E0",
+   "MT1.BIN:006E0",
+   "SUZU_1.BIN:07C84",
+   "SUZU_1.BIN:0B710",
+   "SUZU_1.BIN:0E4AC"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:fba29330821e": {
+  "cap": 60,
+  "copies": [
+   "MT0.BIN:0074C",
+   "MT1.BIN:0074C",
+   "SUZU_1.BIN:07CF0",
+   "SUZU_1.BIN:0B77C",
+   "SUZU_1.BIN:0E518"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:9a835496f9cb": {
+  "cap": 60,
+  "copies": [
+   "MT0.BIN:00788",
+   "MT1.BIN:00788",
+   "SUZU_1.BIN:07D2C",
+   "SUZU_1.BIN:0B7B8",
+   "SUZU_1.BIN:0E554"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:c9e8d8e408b9": {
+  "cap": 76,
+  "copies": [
+   "MT0.BIN:007C4",
+   "MT1.BIN:007C4",
+   "SUZU_1.BIN:07D68",
+   "SUZU_1.BIN:0B7F4",
+   "SUZU_1.BIN:0E590"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:677d30660928": {
+  "cap": 140,
+  "copies": [
+   "MT0.BIN:00810",
+   "MT1.BIN:00810",
+   "SUZU_1.BIN:07DB4",
+   "SUZU_1.BIN:0B840",
+   "SUZU_1.BIN:0E5DC"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:bc7a4246ac1f": {
+  "cap": 96,
+  "copies": [
+   "MT0.BIN:0089C",
+   "MT1.BIN:0089C",
+   "SUZU_1.BIN:07E40",
+   "SUZU_1.BIN:0B8CC",
+   "SUZU_1.BIN:0E668"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:cc11ccb67c08": {
+  "cap": 112,
+  "copies": [
+   "MT0.BIN:008FC",
+   "MT1.BIN:008FC",
+   "SUZU_1.BIN:07EA0",
+   "SUZU_1.BIN:0B92C",
+   "SUZU_1.BIN:0E6C8"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:f2300b6a1efe": {
+  "cap": 88,
+  "copies": [
+   "MT0.BIN:0096C",
+   "MT1.BIN:0096C",
+   "SUZU_1.BIN:07F10",
+   "SUZU_1.BIN:0B99C",
+   "SUZU_1.BIN:0E738"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:58a467b34c2f": {
+  "cap": 104,
+  "copies": [
+   "MT0.BIN:009C4",
+   "MT1.BIN:009C4",
+   "SUZU_1.BIN:07F68",
+   "SUZU_1.BIN:0B9F4",
+   "SUZU_1.BIN:0E790"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:056f075968ad": {
+  "cap": 92,
+  "copies": [
+   "MT0.BIN:00A2C",
+   "MT1.BIN:00A2C",
+   "SUZU_1.BIN:07FD0",
+   "SUZU_1.BIN:0BA5C",
+   "SUZU_1.BIN:0E7F8"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:ef5422bf8d9f": {
+  "cap": 60,
+  "copies": [
+   "MT0.BIN:00A88",
+   "MT1.BIN:00A88",
+   "SUZU_1.BIN:0802C",
+   "SUZU_1.BIN:0BAB8",
+   "SUZU_1.BIN:0E854"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:b25a2d6b256b": {
+  "cap": 52,
+  "copies": [
+   "MT0.BIN:00AC4",
+   "MT1.BIN:00AC4",
+   "SUZU_1.BIN:08068",
+   "SUZU_1.BIN:0BAF4",
+   "SUZU_1.BIN:0E890"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:0956f435a51f": {
+  "cap": 64,
+  "copies": [
+   "MT0.BIN:00AF8",
+   "MT1.BIN:00AF8",
+   "SUZU_1.BIN:0809C",
+   "SUZU_1.BIN:0BB28",
+   "SUZU_1.BIN:0E8C4"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:c0d069579e5c": {
+  "cap": 84,
+  "copies": [
+   "MT0.BIN:00B38",
+   "MT1.BIN:00B38",
+   "SUZU_1.BIN:080DC",
+   "SUZU_1.BIN:0BB68",
+   "SUZU_1.BIN:0E904"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:d8366f763b8b": {
+  "cap": 72,
+  "copies": [
+   "MT0.BIN:00B8C",
+   "MT1.BIN:00B8C",
+   "SUZU_1.BIN:08130",
+   "SUZU_1.BIN:0BBBC",
+   "SUZU_1.BIN:0E958"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:f994b66645a5": {
+  "cap": 40,
+  "copies": [
+   "MT0.BIN:00BD4",
+   "MT1.BIN:00BD4",
+   "SUZU_1.BIN:08178",
+   "SUZU_1.BIN:0BC04",
+   "SUZU_1.BIN:0E9A0"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:442775c29acb": {
+  "cap": 88,
+  "copies": [
+   "MT0.BIN:00BFC",
+   "MT1.BIN:00BFC",
+   "SUZU_1.BIN:081A0",
+   "SUZU_1.BIN:0BC2C",
+   "SUZU_1.BIN:0E9C8"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:ca075b5c449b": {
+  "cap": 60,
+  "copies": [
+   "MT0.BIN:00C54",
+   "MT1.BIN:00C54",
+   "SUZU_1.BIN:081F8",
+   "SUZU_1.BIN:0BC84",
+   "SUZU_1.BIN:0EA20"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:b927f2dcdaea": {
+  "cap": 124,
+  "copies": [
+   "MT0.BIN:00C90",
+   "MT1.BIN:00C90",
+   "SUZU_1.BIN:08234",
+   "SUZU_1.BIN:0BCC0",
+   "SUZU_1.BIN:0EA5C"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:907962305689": {
+  "cap": 112,
+  "copies": [
+   "MT0.BIN:00D0C",
+   "MT1.BIN:00D0C",
+   "SUZU_1.BIN:082B0",
+   "SUZU_1.BIN:0BD3C",
+   "SUZU_1.BIN:0EAD8"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:b458371e1570": {
+  "cap": 68,
+  "copies": [
+   "MT0.BIN:00D7C",
+   "MT1.BIN:00D7C",
+   "SUZU_1.BIN:08320",
+   "SUZU_1.BIN:0BDAC",
+   "SUZU_1.BIN:0EB48"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:5136768d0938": {
+  "cap": 80,
+  "copies": [
+   "MT0.BIN:00DC0",
+   "MT1.BIN:00DC0",
+   "SUZU_1.BIN:08364",
+   "SUZU_1.BIN:0BDF0",
+   "SUZU_1.BIN:0EB8C"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:d7b01ad7752a": {
+  "cap": 84,
+  "copies": [
+   "MT0.BIN:00E10",
+   "MT1.BIN:00E10",
+   "SUZU_1.BIN:083B4",
+   "SUZU_1.BIN:0BE40",
+   "SUZU_1.BIN:0EBDC"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:531d4ea17473": {
+  "cap": 100,
+  "copies": [
+   "MT0.BIN:00E64",
+   "MT1.BIN:00E64",
+   "SUZU_1.BIN:08408",
+   "SUZU_1.BIN:0BE94",
+   "SUZU_1.BIN:0EC30"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:b6659c9a6961": {
+  "cap": 56,
+  "copies": [
+   "MT0.BIN:00EC8",
+   "MT1.BIN:00EC8",
+   "SUZU_1.BIN:0846C",
+   "SUZU_1.BIN:0BEF8",
+   "SUZU_1.BIN:0EC94"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:1d8c82f1c356": {
+  "cap": 92,
+  "copies": [
+   "MT0.BIN:00F00",
+   "MT1.BIN:00F00",
+   "SUZU_1.BIN:084A4",
+   "SUZU_1.BIN:0BF30",
+   "SUZU_1.BIN:0ECCC"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:85f44ea94865": {
+  "cap": 136,
+  "copies": [
+   "MT0.BIN:00F5C",
+   "MT1.BIN:00F5C",
+   "SUZU_1.BIN:08500",
+   "SUZU_1.BIN:0BF8C",
+   "SUZU_1.BIN:0ED28"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:1a508d634e29": {
+  "cap": 92,
+  "copies": [
+   "MT0.BIN:00FE4",
+   "MT1.BIN:00FE4",
+   "SUZU_1.BIN:08588",
+   "SUZU_1.BIN:0C014",
+   "SUZU_1.BIN:0EDB0"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:c278fdd9cd97": {
+  "cap": 100,
+  "copies": [
+   "MT0.BIN:01040",
+   "MT1.BIN:01040",
+   "SUZU_1.BIN:085E4",
+   "SUZU_1.BIN:0C070",
+   "SUZU_1.BIN:0EE0C"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:1933cbaf7034": {
+  "cap": 96,
+  "copies": [
+   "MT0.BIN:010A4",
+   "MT1.BIN:010A4",
+   "SUZU_1.BIN:08648",
+   "SUZU_1.BIN:0C0D4",
+   "SUZU_1.BIN:0EE70"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:81795c155b58": {
+  "cap": 60,
+  "copies": [
+   "MT0.BIN:01104",
+   "MT1.BIN:01104",
+   "SUZU_1.BIN:086A8",
+   "SUZU_1.BIN:0C134",
+   "SUZU_1.BIN:0EED0"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:190e2237d3ab": {
+  "cap": 124,
+  "copies": [
+   "MT0.BIN:01140",
+   "MT1.BIN:01140",
+   "SUZU_1.BIN:086E4",
+   "SUZU_1.BIN:0C170",
+   "SUZU_1.BIN:0EF0C"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:701ff1fa604b": {
+  "cap": 112,
+  "copies": [
+   "MT0.BIN:011BC",
+   "MT1.BIN:011BC",
+   "SUZU_1.BIN:08760",
+   "SUZU_1.BIN:0C1EC",
+   "SUZU_1.BIN:0EF88"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:292dbed142ad": {
+  "cap": 96,
+  "copies": [
+   "MT0.BIN:0122C",
+   "MT1.BIN:0122C"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:1998a03d9105": {
+  "cap": 120,
+  "copies": [
+   "MT0.BIN:0128C",
+   "MT1.BIN:0128C",
+   "SUZU_1.BIN:08830",
+   "SUZU_1.BIN:0C2BC",
+   "SUZU_1.BIN:0F058"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:c06b03859a3e": {
+  "cap": 72,
+  "copies": [
+   "MT0.BIN:01304",
+   "MT1.BIN:01304",
+   "SUZU_1.BIN:088A8",
+   "SUZU_1.BIN:0C334",
+   "SUZU_1.BIN:0F0D0"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:7fb913953014": {
+  "cap": 100,
+  "copies": [
+   "MT0.BIN:0134C",
+   "MT1.BIN:0134C",
+   "SUZU_1.BIN:088F0",
+   "SUZU_1.BIN:0C37C",
+   "SUZU_1.BIN:0F118"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:8582d7795a9a": {
+  "cap": 112,
+  "copies": [
+   "MT0.BIN:013B0",
+   "MT1.BIN:013B0",
+   "SUZU_1.BIN:08954",
+   "SUZU_1.BIN:0C3E0",
+   "SUZU_1.BIN:0F17C"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:eb410c30e311": {
+  "cap": 108,
+  "copies": [
+   "MT0.BIN:01420",
+   "MT1.BIN:01420",
+   "SUZU_1.BIN:089C4",
+   "SUZU_1.BIN:0C450",
+   "SUZU_1.BIN:0F1EC"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:9ad9d978003f": {
+  "cap": 96,
+  "copies": [
+   "MT0.BIN:0148C",
+   "MT1.BIN:0148C",
+   "SUZU_1.BIN:08A30",
+   "SUZU_1.BIN:0C4BC",
+   "SUZU_1.BIN:0F258"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:b9e11e17163d": {
+  "cap": 48,
+  "copies": [
+   "MT0.BIN:014EC",
+   "MT1.BIN:014EC",
+   "SUZU_1.BIN:08A90",
+   "SUZU_1.BIN:0C51C",
+   "SUZU_1.BIN:0F2B8"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:9ac9b2d81892": {
+  "cap": 28,
+  "copies": [
+   "MT0.BIN:0151C",
+   "MT1.BIN:0151C",
+   "SUZU_1.BIN:08AC0",
+   "SUZU_1.BIN:0C54C",
+   "SUZU_1.BIN:0F2E8"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:17c3565da745": {
+  "cap": 48,
+  "copies": [
+   "MT0.BIN:01538",
+   "MT1.BIN:01538",
+   "SUZU_1.BIN:08ADC",
+   "SUZU_1.BIN:0C568",
+   "SUZU_1.BIN:0F304"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:8e9201873cbd": {
+  "cap": 24,
+  "copies": [
+   "MT0.BIN:01568",
+   "MT1.BIN:01568",
+   "SUZU_1.BIN:08B0C",
+   "SUZU_1.BIN:0C598",
+   "SUZU_1.BIN:0F334"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:680a98e30c81": {
+  "cap": 28,
+  "copies": [
+   "MT0.BIN:01580",
+   "MT1.BIN:01580",
+   "SUZU_1.BIN:08B24",
+   "SUZU_1.BIN:0C5B0",
+   "SUZU_1.BIN:0F34C"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:8f80fda0fbac": {
+  "cap": 36,
+  "copies": [
+   "MT0.BIN:0159C",
+   "MT1.BIN:0159C",
+   "SUZU_1.BIN:08B40",
+   "SUZU_1.BIN:0C5CC",
+   "SUZU_1.BIN:0F368"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:d0618c3ba9c4": {
+  "cap": 24,
+  "copies": [
+   "MT0.BIN:015C0",
+   "MT1.BIN:015C0",
+   "SUZU_1.BIN:08B64",
+   "SUZU_1.BIN:0C5F0",
+   "SUZU_1.BIN:0F38C"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:bde16541acf5": {
+  "cap": 36,
+  "copies": [
+   "MT0.BIN:015D8",
+   "MT1.BIN:015D8",
+   "SUZU_1.BIN:08B7C",
+   "SUZU_1.BIN:0C608",
+   "SUZU_1.BIN:0F3A4"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:308346ac6871": {
+  "cap": 16,
+  "copies": [
+   "MT0.BIN:015FC",
+   "MT1.BIN:015FC",
+   "SUZU_1.BIN:08BA0",
+   "SUZU_1.BIN:0C62C",
+   "SUZU_1.BIN:0F3C8"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:106d85ea9986": {
+  "cap": 40,
+  "copies": [
+   "MT0.BIN:0160C",
+   "MT1.BIN:0160C",
+   "SUZU_1.BIN:08BB0",
+   "SUZU_1.BIN:0C63C",
+   "SUZU_1.BIN:0F3D8"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:f14c095474e1": {
+  "cap": 24,
+  "copies": [
+   "MT0.BIN:01634",
+   "MT1.BIN:01634",
+   "SUZU_1.BIN:08BD8",
+   "SUZU_1.BIN:0C664",
+   "SUZU_1.BIN:0F400"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:01b19780993c": {
+  "cap": 16,
+  "copies": [
+   "MT0.BIN:0164C",
+   "MT1.BIN:0164C",
+   "SUZU_1.BIN:08BF0",
+   "SUZU_1.BIN:0C67C",
+   "SUZU_1.BIN:0F418"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:61ba18b46c74": {
+  "cap": 24,
+  "copies": [
+   "MT0.BIN:0165C",
+   "MT1.BIN:0165C",
+   "SUZU_1.BIN:08C00",
+   "SUZU_1.BIN:0C68C",
+   "SUZU_1.BIN:0F428"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:2a4acd61cb13": {
+  "cap": 28,
+  "copies": [
+   "MT0.BIN:01674",
+   "MT1.BIN:01674",
+   "SUZU_1.BIN:08C18",
+   "SUZU_1.BIN:0C6A4",
+   "SUZU_1.BIN:0F440"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:52e8a3592121": {
+  "cap": 28,
+  "copies": [
+   "MT0.BIN:01690",
+   "MT1.BIN:01690",
+   "SUZU_1.BIN:08C34",
+   "SUZU_1.BIN:0C6C0",
+   "SUZU_1.BIN:0F45C"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:1deab7567b83": {
+  "cap": 20,
+  "copies": [
+   "MT0.BIN:016AC",
+   "MT1.BIN:016AC",
+   "SUZU_1.BIN:08C50",
+   "SUZU_1.BIN:0C6DC",
+   "SUZU_1.BIN:0F478"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:55d6352ab507": {
+  "cap": 32,
+  "copies": [
+   "MT0.BIN:016C0",
+   "MT1.BIN:016C0",
+   "SUZU_1.BIN:08C64",
+   "SUZU_1.BIN:0C6F0",
+   "SUZU_1.BIN:0F48C"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:ba74bfe9db43": {
+  "cap": 24,
+  "copies": [
+   "MT0.BIN:016E0",
+   "MT1.BIN:016E0",
+   "SUZU_1.BIN:08C84",
+   "SUZU_1.BIN:0C710",
+   "SUZU_1.BIN:0F4AC"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:a69712437f2f": {
+  "cap": 16,
+  "copies": [
+   "MT0.BIN:016F8",
+   "MT1.BIN:016F8",
+   "SUZU_1.BIN:08C9C",
+   "SUZU_1.BIN:0C728",
+   "SUZU_1.BIN:0F4C4"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:1b9c810507ef": {
+  "cap": 24,
+  "copies": [
+   "MT0.BIN:01708",
+   "MT1.BIN:01708",
+   "SUZU_1.BIN:08CAC",
+   "SUZU_1.BIN:0C738",
+   "SUZU_1.BIN:0F4D4"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:a2e8f84e058b": {
+  "cap": 28,
+  "copies": [
+   "MT0.BIN:01720",
+   "MT1.BIN:01720",
+   "SUZU_1.BIN:08CC4",
+   "SUZU_1.BIN:0C750",
+   "SUZU_1.BIN:0F4EC"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:0d1001869d5f": {
+  "cap": 16,
+  "copies": [
+   "MT0.BIN:0173C",
+   "MT1.BIN:0173C",
+   "SUZU_1.BIN:08CE0",
+   "SUZU_1.BIN:0C76C",
+   "SUZU_1.BIN:0F508"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:083ecf31e577": {
+  "cap": 28,
+  "copies": [
+   "MT0.BIN:0174C",
+   "MT1.BIN:0174C",
+   "SUZU_1.BIN:08CF0",
+   "SUZU_1.BIN:0C77C",
+   "SUZU_1.BIN:0F518"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:58f16b41face": {
+  "cap": 24,
+  "copies": [
+   "MT0.BIN:01768",
+   "MT1.BIN:01768",
+   "SUZU_1.BIN:08D0C",
+   "SUZU_1.BIN:0C798",
+   "SUZU_1.BIN:0F534"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:c3839a5f68a0": {
+  "cap": 20,
+  "copies": [
+   "MT0.BIN:01780",
+   "MT1.BIN:01780",
+   "SUZU_1.BIN:08D24",
+   "SUZU_1.BIN:0C7B0",
+   "SUZU_1.BIN:0F54C"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:6463509bc43f": {
+  "cap": 28,
+  "copies": [
+   "MT0.BIN:01794",
+   "MT1.BIN:01794",
+   "SUZU_1.BIN:08D38",
+   "SUZU_1.BIN:0C7C4",
+   "SUZU_1.BIN:0F560"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:5596bdd1e26b": {
+  "cap": 28,
+  "copies": [
+   "MT0.BIN:017B0",
+   "MT1.BIN:017B0",
+   "SUZU_1.BIN:08D54",
+   "SUZU_1.BIN:0C7E0",
+   "SUZU_1.BIN:0F57C"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:95a2232f4f0a": {
+  "cap": 28,
+  "copies": [
+   "MT0.BIN:017CC",
+   "MT1.BIN:017CC",
+   "SUZU_1.BIN:08D70",
+   "SUZU_1.BIN:0C7FC",
+   "SUZU_1.BIN:0F598"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:992552448e88": {
+  "cap": 8,
+  "copies": [
+   "SUZU_1.BIN:0DDC4"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ }
+}

@@ -47,7 +47,10 @@ def test_refs_find_words_and_lui_addiu_pairs():
 
 @pytest.mark.parametrize("toks,noise", [
     ([("g", 86), ("g", 87)], False),  # あい
-    ([("g", 4), ("g", 126), ("g", 1), ("g", 59)], True),  # ５れ２Ｚ: MIPS bytes read as text
+    ([("g", 4), ("g", 127), ("g", 1), ("g", 59)], True),  # ５れ２Ｚ: MIPS bytes read as text (れ = 127)
+    ([("g", 4), ("g", 126), ("g", 1)], False),  # ５る２: る (126) is not part of the rule
+    ([("g", 98), ("g", 127), ("g", 32), ("g", 220)], False),  # されれ、: punctuation after れ is prose
+    ([("g", 127), ("g", 31)], False),  # れ。
     ([("g", 234)], True),  # one glyph
     ([("g", 83), ("g", 83), ("g", 110)], False),  # ｘｘの: developer placeholder text
 ])

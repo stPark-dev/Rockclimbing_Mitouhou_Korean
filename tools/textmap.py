@@ -47,11 +47,11 @@ MODULES = {
 # MT0/MT1 carry digit tables after their messages (0x17E8 onward)
 BLOB_TEXT_END = {"MT0.BIN": 0x17E8, "MT1.BIN": 0x17E8}
 EXE_BASE, EXE_HEADER = 0x80010000, 0x800
-# Adopted population (reviewed 2026-10-21, docs/survey.md §4.3). MGAME.BIN has none:
+# Adopted population (reviewed 2026-10-21, revised after the れ-index fix; docs/survey.md §4.3). MGAME.BIN has none:
 # its referenced candidates all read as MIPS bytes.
 EXPECTED_COUNTS = {
-    "KWAMENU.BIN": 730, "KABE.BIN": 65, "MESI.BIN": 23, "STAFF.BIN": 1, "SUZU_0.BIN": 745,
-    "SUZU_1.BIN": 267, "X_SUZU.BIN": 115, "SUZU0.BIN": 404, "SUZU1.BIN": 550, "SUZU2.BIN": 469,
+    "KWAMENU.BIN": 731, "KABE.BIN": 62, "MESI.BIN": 22, "STAFF.BIN": 1, "SUZU_0.BIN": 745,
+    "SUZU_1.BIN": 268, "X_SUZU.BIN": 115, "SUZU0.BIN": 404, "SUZU1.BIN": 550, "SUZU2.BIN": 469,
     "SUZU3.BIN": 538, "SUZU4.BIN": 472, "MT0.BIN": 90, "MT1.BIN": 90,
 }
 
@@ -119,13 +119,17 @@ def refs(data, base):
     return out
 
 
+_CODE_AFTER_RE = set(range(0, 18)) | set(range(20, 26))
+
+
 def is_code_noise(toks):
     g = [t[1] for t in toks if t[0] == "g"]
     if len(g) < 2:
         return True
     if any(60 <= k <= 85 and k != 83 for k in g):  # Latin lowercase other than the ｘ placeholder
         return True
-    return any(a == 126 and (b < 34 or 60 <= b <= 85) for a, b in zip(g, g[1:]))  # れ + digit/symbol
+    # れ (127) followed by a digit, an ASCII-like symbol (＋－＝／ｘ；：＠”＃＄％＆) or Latin lowercase
+    return any(a == 127 and (b in _CODE_AFTER_RE or 60 <= b <= 85) for a, b in zip(g, g[1:]))
 
 
 def _entry(name, start, end, slot_end, data, evidence, sites):

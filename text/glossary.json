@@ -1,0 +1,1082 @@
+{
+ "_rules": {
+  "basis": "D4: 원문 의미 번역. 게임 오리지널 이름(산 별칭·루트·스테이지)은 뜻을 살려 옮긴다(실명 병기 안 함). 실존 인물·지명은 외래어 표기법.",
+  "climbing": "D4: 등반 용어는 외래어 음역(국내 등반계 표기). 원문이 괄호로 풀이한 용어는 풀이도 함께 옮긴다.",
+  "voice": "D5: 화자 단위로 통일. 클라이머 독백은 반말(결심 ~하자!/~하겠어!, 안도 ~겠네./~같아., 경고 ~다!/~야!, 실수 ~말았어./~버렸군.). 전문가 경고·설명은 ~입니다./~하십시오., 시스템 사건 서술은 ~했습니다./~합니다.",
+  "punctuation": "D4: 。→. 、→, (글리프 새로 추가). 전각 기호 ：（）＃・～ 와 전각 숫자는 원문 글리프 그대로.",
+  "status": "approved = 사용자 확인, provisional = 사용자가 잠정 채택, candidate = 원칙상 후보, check = 확인 필요",
+  "kinds": "peak 봉우리 별칭, route 루트, stage 스테이지, tech 등반 기술, gear 장비, term 등산 용어, ui 시스템, person 실존 인물, place 실존 지명",
+  "name_slot": "D5: {F8:00}(이름으로 추정) 뒤에 받침 의존 조사를 쓰지 않는다. 「쪽으로/쪽을」「에게」「{이름}, …」 문형. 「의 몸이」 반복 금지."
+ },
+ "terms": [
+  {
+   "ja": "アルプスの孤老",
+   "ko": "알프스의 고독한 노인",
+   "kind": "peak",
+   "status": "check",
+   "note": "Ⅰ봉. 등반 기록상 마터호른. 노인(老人のこぶ·杖·髭) 연작과 이어짐"
+  },
+  {
+   "ja": "神々への牙",
+   "ko": "신들을 향한 송곳니",
+   "kind": "peak",
+   "status": "check",
+   "note": "Ⅱ봉. 등반 기록상 아이거"
+  },
+  {
+   "ja": "女神の素顔",
+   "ko": "여신의 맨얼굴",
+   "kind": "peak",
+   "status": "check",
+   "note": "Ⅲ봉. 융프라우로 추정(미확인)"
+  },
+  {
+   "ja": "風の祭り",
+   "ko": "바람의 축제",
+   "kind": "peak",
+   "status": "candidate"
+  },
+  {
+   "ja": "大地の怒り",
+   "ko": "대지의 분노",
+   "kind": "peak",
+   "status": "candidate"
+  },
+  {
+   "ja": "老人の杖",
+   "ko": "노인의 지팡이",
+   "kind": "route",
+   "status": "candidate"
+  },
+  {
+   "ja": "老人の髭",
+   "ko": "노인의 수염",
+   "kind": "route",
+   "status": "candidate"
+  },
+  {
+   "ja": "左の牙",
+   "ko": "왼쪽 송곳니",
+   "kind": "route",
+   "status": "candidate"
+  },
+  {
+   "ja": "右の牙",
+   "ko": "오른쪽 송곳니",
+   "kind": "route",
+   "status": "candidate"
+  },
+  {
+   "ja": "栄光への階段",
+   "ko": "영광으로 가는 계단",
+   "kind": "route",
+   "status": "candidate"
+  },
+  {
+   "ja": "女神の口づけ",
+   "ko": "여신의 입맞춤",
+   "kind": "route",
+   "status": "candidate"
+  },
+  {
+   "ja": "女神の肩",
+   "ko": "여신의 어깨",
+   "kind": "route",
+   "status": "candidate"
+  },
+  {
+   "ja": "女神の背中",
+   "ko": "여신의 등",
+   "kind": "route",
+   "status": "candidate"
+  },
+  {
+   "ja": "風の寄り道",
+   "ko": "바람의 샛길",
+   "kind": "route",
+   "status": "candidate"
+  },
+  {
+   "ja": "風の道",
+   "ko": "바람의 길",
+   "kind": "route",
+   "status": "candidate",
+   "note": "스테이지 이름(風の道Ａ/Ｂ)으로도 쓰임"
+  },
+  {
+   "ja": "風の滝",
+   "ko": "바람의 폭포",
+   "kind": "route",
+   "status": "candidate"
+  },
+  {
+   "ja": "王座への道",
+   "ko": "왕좌로 가는 길",
+   "kind": "route",
+   "status": "candidate"
+  },
+  {
+   "ja": "命の価値",
+   "ko": "생명의 가치",
+   "kind": "route",
+   "status": "candidate"
+  },
+  {
+   "ja": "老人のこぶ",
+   "ko": "노인의 혹",
+   "kind": "stage",
+   "status": "candidate"
+  },
+  {
+   "ja": "ロープ降下の壁",
+   "ko": "로프 하강 벽",
+   "kind": "stage",
+   "status": "candidate"
+  },
+  {
+   "ja": "老人の気まぐれ",
+   "ko": "노인의 변덕",
+   "kind": "stage",
+   "status": "candidate",
+   "note": "Ａ/Ｂ/Ｃ 변형"
+  },
+  {
+   "ja": "老人の爪痕",
+   "ko": "노인의 손톱자국",
+   "kind": "stage",
+   "status": "candidate"
+  },
+  {
+   "ja": "蟹渡りの沢",
+   "ko": "게걸음 계곡",
+   "kind": "stage",
+   "status": "check",
+   "note": "蟹渡り = 옆으로 붙어 건너는 트래버스(へつり)"
+  },
+  {
+   "ja": "老人の悟気（りんき）",
+   "ko": "노인의 질투",
+   "kind": "stage",
+   "status": "check",
+   "note": "悟気는 悋気(りんき, 질투)의 오기로 보임"
+  },
+  {
+   "ja": "神の台座",
+   "ko": "신의 받침대",
+   "kind": "stage",
+   "status": "candidate"
+  },
+  {
+   "ja": "神への扉",
+   "ko": "신에게로 가는 문",
+   "kind": "stage",
+   "status": "candidate"
+  },
+  {
+   "ja": "風水の谷間",
+   "ko": "풍수의 골짜기",
+   "kind": "stage",
+   "status": "candidate"
+  },
+  {
+   "ja": "ひび割れた牙",
+   "ko": "금 간 송곳니",
+   "kind": "stage",
+   "status": "candidate"
+  },
+  {
+   "ja": "ブラッディナイフエッジ",
+   "ko": "블러디 나이프 에지",
+   "kind": "stage",
+   "status": "candidate",
+   "note": "ブラディ… 표기 변형도 같은 대상"
+  },
+  {
+   "ja": "氷の剣",
+   "ko": "얼음의 검",
+   "kind": "stage",
+   "status": "candidate"
+  },
+  {
+   "ja": "ずれた牙",
+   "ko": "어긋난 송곳니",
+   "kind": "stage",
+   "status": "candidate"
+  },
+  {
+   "ja": "竜の爪痕",
+   "ko": "용의 발톱 자국",
+   "kind": "stage",
+   "status": "candidate"
+  },
+  {
+   "ja": "天空の魚",
+   "ko": "하늘의 물고기",
+   "kind": "stage",
+   "status": "candidate"
+  },
+  {
+   "ja": "神の台座のほころび",
+   "ko": "신의 받침대의 틈",
+   "kind": "stage",
+   "status": "candidate"
+  },
+  {
+   "ja": "馬のたてがみ",
+   "ko": "말갈기",
+   "kind": "stage",
+   "status": "candidate"
+  },
+  {
+   "ja": "氷の柱",
+   "ko": "얼음 기둥",
+   "kind": "stage",
+   "status": "candidate"
+  },
+  {
+   "ja": "神々の祝福",
+   "ko": "신들의 축복",
+   "kind": "stage",
+   "status": "candidate"
+  },
+  {
+   "ja": "門番と門（かんぬき）",
+   "ko": "문지기와 빗장",
+   "kind": "stage",
+   "status": "candidate"
+  },
+  {
+   "ja": "気まぐれな女性",
+   "ko": "변덕스러운 여인",
+   "kind": "stage",
+   "status": "candidate"
+  },
+  {
+   "ja": "一角獣",
+   "ko": "일각수",
+   "kind": "stage",
+   "status": "candidate"
+  },
+  {
+   "ja": "女神の羽衣",
+   "ko": "여신의 날개옷",
+   "kind": "stage",
+   "status": "candidate"
+  },
+  {
+   "ja": "母の体内",
+   "ko": "어머니의 품속",
+   "kind": "stage",
+   "status": "candidate"
+  },
+  {
+   "ja": "貴婦人の鏡",
+   "ko": "귀부인의 거울",
+   "kind": "stage",
+   "status": "candidate"
+  },
+  {
+   "ja": "白き乙女",
+   "ko": "하얀 소녀",
+   "kind": "stage",
+   "status": "candidate"
+  },
+  {
+   "ja": "神の杯",
+   "ko": "신의 술잔",
+   "kind": "stage",
+   "status": "candidate"
+  },
+  {
+   "ja": "水瓶",
+   "ko": "물병",
+   "kind": "stage",
+   "status": "candidate"
+  },
+  {
+   "ja": "乙女の肌",
+   "ko": "소녀의 살결",
+   "kind": "stage",
+   "status": "candidate"
+  },
+  {
+   "ja": "女神の宝石箱",
+   "ko": "여신의 보석함",
+   "kind": "stage",
+   "status": "candidate"
+  },
+  {
+   "ja": "精霊の谷",
+   "ko": "정령의 골짜기",
+   "kind": "stage",
+   "status": "candidate"
+  },
+  {
+   "ja": "太陽の恵み",
+   "ko": "태양의 은혜",
+   "kind": "stage",
+   "status": "candidate"
+  },
+  {
+   "ja": "栄光の輝き",
+   "ko": "영광의 빛",
+   "kind": "stage",
+   "status": "candidate"
+  },
+  {
+   "ja": "長い髪",
+   "ko": "긴 머리카락",
+   "kind": "stage",
+   "status": "candidate"
+  },
+  {
+   "ja": "羊飼いの道",
+   "ko": "양치기의 길",
+   "kind": "stage",
+   "status": "candidate"
+  },
+  {
+   "ja": "風のゆりかご",
+   "ko": "바람의 요람",
+   "kind": "stage",
+   "status": "candidate"
+  },
+  {
+   "ja": "大いなる時",
+   "ko": "위대한 시간",
+   "kind": "stage",
+   "status": "candidate"
+  },
+  {
+   "ja": "幸せの橋",
+   "ko": "행복의 다리",
+   "kind": "stage",
+   "status": "candidate"
+  },
+  {
+   "ja": "竜の巣",
+   "ko": "용의 둥지",
+   "kind": "stage",
+   "status": "candidate"
+  },
+  {
+   "ja": "静寂の女王",
+   "ko": "정적의 여왕",
+   "kind": "stage",
+   "status": "candidate"
+  },
+  {
+   "ja": "翼を持つ者",
+   "ko": "날개 가진 자",
+   "kind": "stage",
+   "status": "candidate"
+  },
+  {
+   "ja": "奇跡の太陽",
+   "ko": "기적의 태양",
+   "kind": "stage",
+   "status": "candidate"
+  },
+  {
+   "ja": "煉瓦の家",
+   "ko": "벽돌집",
+   "kind": "stage",
+   "status": "candidate",
+   "note": "煉瓦（レンガ）の家 변형 포함"
+  },
+  {
+   "ja": "荒れ狂う白馬",
+   "ko": "날뛰는 백마",
+   "kind": "stage",
+   "status": "candidate"
+  },
+  {
+   "ja": "盗賊の谷間",
+   "ko": "도적의 골짜기",
+   "kind": "stage",
+   "status": "candidate"
+  },
+  {
+   "ja": "賢者の書斎",
+   "ko": "현자의 서재",
+   "kind": "stage",
+   "status": "candidate"
+  },
+  {
+   "ja": "崩れた角砂糖",
+   "ko": "무너진 각설탕",
+   "kind": "stage",
+   "status": "candidate"
+  },
+  {
+   "ja": "過ぎ去りし時",
+   "ko": "지나간 시간",
+   "kind": "stage",
+   "status": "candidate"
+  },
+  {
+   "ja": "空の柱",
+   "ko": "하늘 기둥",
+   "kind": "stage",
+   "status": "candidate"
+  },
+  {
+   "ja": "騎士の盾",
+   "ko": "기사의 방패",
+   "kind": "stage",
+   "status": "candidate"
+  },
+  {
+   "ja": "崇高なる暦",
+   "ko": "숭고한 달력",
+   "kind": "stage",
+   "status": "candidate"
+  },
+  {
+   "ja": "籠の鳥",
+   "ko": "새장 속의 새",
+   "kind": "stage",
+   "status": "candidate",
+   "note": "かごの鳥 변형 포함"
+  },
+  {
+   "ja": "天空の塔",
+   "ko": "하늘의 탑",
+   "kind": "stage",
+   "status": "candidate"
+  },
+  {
+   "ja": "浮き島",
+   "ko": "떠 있는 섬",
+   "kind": "stage",
+   "status": "candidate"
+  },
+  {
+   "ja": "踏破の報酬",
+   "ko": "답파의 보상",
+   "kind": "stage",
+   "status": "candidate"
+  },
+  {
+   "ja": "神殿の門",
+   "ko": "신전의 문",
+   "kind": "stage",
+   "status": "candidate"
+  },
+  {
+   "ja": "回廊",
+   "ko": "회랑",
+   "kind": "stage",
+   "status": "candidate"
+  },
+  {
+   "ja": "大地の座り椅子",
+   "ko": "대지의 걸상",
+   "kind": "stage",
+   "status": "candidate"
+  },
+  {
+   "ja": "こぼれたミルク",
+   "ko": "엎질러진 우유",
+   "kind": "stage",
+   "status": "candidate"
+  },
+  {
+   "ja": "大地の懐",
+   "ko": "대지의 품",
+   "kind": "stage",
+   "status": "candidate"
+  },
+  {
+   "ja": "死者達の酒場",
+   "ko": "망자들의 술집",
+   "kind": "stage",
+   "status": "candidate"
+  },
+  {
+   "ja": "銀の鍵束",
+   "ko": "은 열쇠 꾸러미",
+   "kind": "stage",
+   "status": "candidate"
+  },
+  {
+   "ja": "白い笠のキノコ",
+   "ko": "흰 갓 버섯",
+   "kind": "stage",
+   "status": "candidate"
+  },
+  {
+   "ja": "狐の狩り場",
+   "ko": "여우의 사냥터",
+   "kind": "stage",
+   "status": "candidate",
+   "note": "狐（キツネ）の狩り場 변형 포함"
+  },
+  {
+   "ja": "暗闇の掘",
+   "ko": "어둠의 해자",
+   "kind": "stage",
+   "status": "check",
+   "note": "掘는 堀(해자)의 오기로 보임"
+  },
+  {
+   "ja": "暗闇の扉",
+   "ko": "어둠의 문",
+   "kind": "stage",
+   "status": "candidate"
+  },
+  {
+   "ja": "悪魔の晩餐",
+   "ko": "악마의 만찬",
+   "kind": "stage",
+   "status": "candidate"
+  },
+  {
+   "ja": "氷の墓標",
+   "ko": "얼음 묘비",
+   "kind": "stage",
+   "status": "candidate"
+  },
+  {
+   "ja": "ステージ",
+   "ko": "스테이지",
+   "kind": "ui",
+   "status": "approved"
+  },
+  {
+   "ja": "ルート",
+   "ko": "루트",
+   "kind": "term",
+   "status": "candidate"
+  },
+  {
+   "ja": "ピッチ",
+   "ko": "피치",
+   "kind": "term",
+   "status": "candidate"
+  },
+  {
+   "ja": "山岳",
+   "ko": "산",
+   "kind": "term",
+   "status": "candidate",
+   "note": "정보창 항목명"
+  },
+  {
+   "ja": "峰",
+   "ko": "봉",
+   "kind": "term",
+   "status": "candidate",
+   "note": "Ⅰ峰 → Ⅰ봉"
+  },
+  {
+   "ja": "ホールド",
+   "ko": "홀드",
+   "kind": "tech",
+   "status": "candidate"
+  },
+  {
+   "ja": "テラス",
+   "ko": "테라스",
+   "kind": "term",
+   "status": "candidate"
+  },
+  {
+   "ja": "岩だな",
+   "ko": "바위 턱",
+   "kind": "term",
+   "status": "candidate"
+  },
+  {
+   "ja": "トラバース",
+   "ko": "트래버스",
+   "kind": "tech",
+   "status": "candidate"
+  },
+  {
+   "ja": "振り子トラバース",
+   "ko": "펜듈럼 트래버스",
+   "kind": "tech",
+   "status": "check",
+   "note": "흔들이 트래버스로도 씀"
+  },
+  {
+   "ja": "へつり",
+   "ko": "물가 트래버스",
+   "kind": "tech",
+   "status": "check",
+   "note": "원문이 괄호로 풀이함"
+  },
+  {
+   "ja": "チムニー",
+   "ko": "침니",
+   "kind": "tech",
+   "status": "candidate"
+  },
+  {
+   "ja": "狭いチムニー",
+   "ko": "좁은 침니",
+   "kind": "tech",
+   "status": "candidate"
+  },
+  {
+   "ja": "広いチムニー",
+   "ko": "넓은 침니",
+   "kind": "tech",
+   "status": "candidate"
+  },
+  {
+   "ja": "クラック",
+   "ko": "크랙",
+   "kind": "tech",
+   "status": "candidate"
+  },
+  {
+   "ja": "オーバーハング",
+   "ko": "오버행",
+   "kind": "tech",
+   "status": "candidate"
+  },
+  {
+   "ja": "レイバック",
+   "ko": "레이백",
+   "kind": "tech",
+   "status": "candidate"
+  },
+  {
+   "ja": "レイバック（デュルファー）",
+   "ko": "레이백(뒬퍼)",
+   "kind": "tech",
+   "status": "check"
+  },
+  {
+   "ja": "ジェードル",
+   "ko": "디에드르",
+   "kind": "tech",
+   "status": "candidate",
+   "note": "ジェードル（コーナー）→ 디에드르(코너)"
+  },
+  {
+   "ja": "リッジ（岩稜）",
+   "ko": "리지(바위 능선)",
+   "kind": "term",
+   "status": "candidate"
+  },
+  {
+   "ja": "稜線",
+   "ko": "능선",
+   "kind": "term",
+   "status": "candidate"
+  },
+  {
+   "ja": "フリークライミング",
+   "ko": "프리 클라이밍",
+   "kind": "tech",
+   "status": "candidate"
+  },
+  {
+   "ja": "フェースクライミング",
+   "ko": "페이스 클라이밍",
+   "kind": "tech",
+   "status": "candidate"
+  },
+  {
+   "ja": "アイスクライミング",
+   "ko": "아이스 클라이밍",
+   "kind": "tech",
+   "status": "candidate"
+  },
+  {
+   "ja": "人工登はん",
+   "ko": "인공 등반",
+   "kind": "tech",
+   "status": "candidate"
+  },
+  {
+   "ja": "登はん",
+   "ko": "등반",
+   "kind": "term",
+   "status": "candidate",
+   "note": "登攀 포함"
+  },
+  {
+   "ja": "三点支持法",
+   "ko": "3점 지지법",
+   "kind": "tech",
+   "status": "candidate"
+  },
+  {
+   "ja": "三点確保",
+   "ko": "3점 확보",
+   "kind": "tech",
+   "status": "candidate"
+  },
+  {
+   "ja": "確保（ビレイ）",
+   "ko": "확보(빌레이)",
+   "kind": "tech",
+   "status": "candidate"
+  },
+  {
+   "ja": "懸垂下降",
+   "ko": "현수 하강",
+   "kind": "tech",
+   "status": "candidate"
+  },
+  {
+   "ja": "重心移動",
+   "ko": "중심 이동",
+   "kind": "tech",
+   "status": "candidate"
+  },
+  {
+   "ja": "ダブルピッケル",
+   "ko": "더블 피켈",
+   "kind": "tech",
+   "status": "approved"
+  },
+  {
+   "ja": "ピッケル",
+   "ko": "피켈",
+   "kind": "gear",
+   "status": "approved"
+  },
+  {
+   "ja": "アイスバイル",
+   "ko": "아이스바일",
+   "kind": "gear",
+   "status": "candidate"
+  },
+  {
+   "ja": "アイゼン",
+   "ko": "아이젠",
+   "kind": "gear",
+   "status": "candidate"
+  },
+  {
+   "ja": "ハーケン",
+   "ko": "하켄",
+   "kind": "gear",
+   "status": "approved",
+   "note": "D5: 하켄으로 통일(피톤과 혼용 금지). 원문이 ハーケン（ピトン）처럼 동의어를 함께 적은 데이터베이스 제목만 원문대로 하켄(피톤)"
+  },
+  {
+   "ja": "あぶみ",
+   "ko": "에트리에",
+   "kind": "gear",
+   "status": "provisional",
+   "note": "D4: 형태별 명칭(웨빙 사다리=에트리에, 디딤판 사다리=에이드 래더). 데이터베이스 登山道具 그림으로 형태 확인 필요"
+  },
+  {
+   "ja": "カラビナ",
+   "ko": "카라비너",
+   "kind": "gear",
+   "status": "candidate"
+  },
+  {
+   "ja": "ロープ（ザイル）",
+   "ko": "로프(자일)",
+   "kind": "gear",
+   "status": "candidate"
+  },
+  {
+   "ja": "ハーネス",
+   "ko": "하네스",
+   "kind": "gear",
+   "status": "candidate"
+  },
+  {
+   "ja": "ツエルト",
+   "ko": "비박 색",
+   "kind": "gear",
+   "status": "check",
+   "note": "독일어 Zelt. 한국에서는 '비비색'·'첼트'"
+  },
+  {
+   "ja": "登山靴",
+   "ko": "등산화",
+   "kind": "gear",
+   "status": "candidate"
+  },
+  {
+   "ja": "行動食",
+   "ko": "행동식",
+   "kind": "gear",
+   "status": "candidate"
+  },
+  {
+   "ja": "ビバーク",
+   "ko": "비박",
+   "kind": "term",
+   "status": "candidate"
+  },
+  {
+   "ja": "雪庇",
+   "ko": "눈처마",
+   "kind": "term",
+   "status": "candidate"
+  },
+  {
+   "ja": "クレバス",
+   "ko": "크레바스",
+   "kind": "term",
+   "status": "candidate"
+  },
+  {
+   "ja": "ゴルジュ",
+   "ko": "고르주",
+   "kind": "term",
+   "status": "candidate",
+   "note": "원문이 괄호로 풀이함"
+  },
+  {
+   "ja": "ガレ",
+   "ko": "너덜",
+   "kind": "term",
+   "status": "candidate"
+  },
+  {
+   "ja": "クラスト",
+   "ko": "크러스트",
+   "kind": "term",
+   "status": "candidate"
+  },
+  {
+   "ja": "ラッセル",
+   "ko": "러셀",
+   "kind": "term",
+   "status": "candidate"
+  },
+  {
+   "ja": "なだれ",
+   "ko": "눈사태",
+   "kind": "term",
+   "status": "approved"
+  },
+  {
+   "ja": "流雪",
+   "ko": "흘러내리는 눈",
+   "kind": "term",
+   "status": "check",
+   "note": "짧은 표기 후보: 유설"
+  },
+  {
+   "ja": "地吹雪",
+   "ko": "땅눈보라",
+   "kind": "term",
+   "status": "candidate"
+  },
+  {
+   "ja": "ホワイトアウト",
+   "ko": "화이트아웃",
+   "kind": "term",
+   "status": "candidate"
+  },
+  {
+   "ja": "観天望気",
+   "ko": "관천망기",
+   "kind": "term",
+   "status": "check",
+   "note": "하늘을 보고 날씨를 예측함"
+  },
+  {
+   "ja": "高所順応",
+   "ko": "고소 순응",
+   "kind": "term",
+   "status": "candidate"
+  },
+  {
+   "ja": "高山病",
+   "ko": "고산병",
+   "kind": "term",
+   "status": "candidate"
+  },
+  {
+   "ja": "停滞",
+   "ko": "정체",
+   "kind": "term",
+   "status": "candidate"
+  },
+  {
+   "ja": "単独行",
+   "ko": "단독행",
+   "kind": "term",
+   "status": "candidate"
+  },
+  {
+   "ja": "極地法・包囲法",
+   "ko": "극지법·포위법",
+   "kind": "term",
+   "status": "candidate"
+  },
+  {
+   "ja": "クライマー",
+   "ko": "클라이머",
+   "kind": "ui",
+   "status": "candidate",
+   "note": "기본 이름 포함(D2)"
+  },
+  {
+   "ja": "セーブ",
+   "ko": "저장",
+   "kind": "ui",
+   "status": "candidate"
+  },
+  {
+   "ja": "ロード",
+   "ko": "불러오기",
+   "kind": "ui",
+   "status": "candidate"
+  },
+  {
+   "ja": "メモリーカード",
+   "ko": "메모리 카드",
+   "kind": "ui",
+   "status": "candidate"
+  },
+  {
+   "ja": "トレーニング",
+   "ko": "트레이닝",
+   "kind": "ui",
+   "status": "candidate"
+  },
+  {
+   "ja": "データベース",
+   "ko": "데이터베이스",
+   "kind": "ui",
+   "status": "candidate"
+  },
+  {
+   "ja": "登山計画",
+   "ko": "등산 계획",
+   "kind": "ui",
+   "status": "candidate"
+  },
+  {
+   "ja": "ウィンパー",
+   "ko": "윔퍼",
+   "kind": "person",
+   "status": "candidate",
+   "note": "Edward Whymper"
+  },
+  {
+   "ja": "ティンダル",
+   "ko": "틴들",
+   "kind": "person",
+   "status": "candidate",
+   "note": "John Tyndall"
+  },
+  {
+   "ja": "ママリー",
+   "ko": "머메리",
+   "kind": "person",
+   "status": "candidate",
+   "note": "Albert F. Mummery"
+  },
+  {
+   "ja": "カレル",
+   "ko": "카렐",
+   "kind": "person",
+   "status": "candidate",
+   "note": "Jean-Antoine Carrel"
+  },
+  {
+   "ja": "アルマー",
+   "ko": "알머",
+   "kind": "person",
+   "status": "candidate",
+   "note": "Christian Almer"
+  },
+  {
+   "ja": "ヘックマイアー",
+   "ko": "헤크마이어",
+   "kind": "person",
+   "status": "candidate",
+   "note": "Anderl Heckmair"
+  },
+  {
+   "ja": "テレイ",
+   "ko": "테레이",
+   "kind": "person",
+   "status": "candidate",
+   "note": "Lionel Terray"
+  },
+  {
+   "ja": "レビュファ",
+   "ko": "레뷔파",
+   "kind": "person",
+   "status": "candidate",
+   "note": "Gaston Rébuffat"
+  },
+  {
+   "ja": "ロッククライミング",
+   "ko": "락클라이밍",
+   "kind": "ui",
+   "status": "approved",
+   "note": "D5: 타이틀 표기와 통일"
+  },
+  {
+   "ja": "アタックする",
+   "ko": "도전하다",
+   "kind": "term",
+   "status": "approved",
+   "note": "D5: 등반 상황에서는 공략하다 허용"
+  },
+  {
+   "ja": "攻略する",
+   "ko": "공략하다",
+   "kind": "term",
+   "status": "approved",
+   "note": "D5: 상황에 따라 돌파하다 허용"
+  },
+  {
+   "ja": "ネンザ",
+   "ko": "삐다 / 염좌",
+   "kind": "term",
+   "status": "approved",
+   "note": "D5: 대사는 삐다, 상태명은 염좌"
+  },
+  {
+   "ja": "小休止",
+   "ko": "짧은 휴식",
+   "kind": "ui",
+   "status": "approved",
+   "note": "D5: 연결 문맥에 따라 조정"
+  },
+  {
+   "ja": "落石",
+   "ko": "낙석",
+   "kind": "term",
+   "status": "approved",
+   "note": "D5"
+  },
+  {
+   "ja": "雪崩",
+   "ko": "눈사태",
+   "kind": "term",
+   "status": "approved",
+   "note": "D5"
+  },
+  {
+   "ja": "突風",
+   "ko": "돌풍",
+   "kind": "term",
+   "status": "approved",
+   "note": "D5"
+  },
+  {
+   "ja": "氷壁登はん",
+   "ko": "빙벽 등반",
+   "kind": "tech",
+   "status": "approved",
+   "note": "D5"
+  },
+  {
+   "ja": "人工",
+   "ko": "인공",
+   "kind": "tech",
+   "status": "approved",
+   "note": "D5: (인공) 괄호 유지 — 등반 방식 구분"
+  }
+ ]
+}

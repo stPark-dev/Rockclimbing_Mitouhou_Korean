@@ -1,0 +1,5052 @@
+{
+ "src:6c06ae6527f3": {
+  "cap": 24,
+  "copies": [
+   "KWAMENU.BIN:10A6C"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:6900d72eb8c5": {
+  "cap": 20,
+  "copies": [
+   "KWAMENU.BIN:10A84"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:fb1576043b89": {
+  "cap": 24,
+  "copies": [
+   "KWAMENU.BIN:10A98"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:b1f91bc9b11f": {
+  "cap": 48,
+  "copies": [
+   "KWAMENU.BIN:10AB0"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:5d2f243eb0a7": {
+  "cap": 32,
+  "copies": [
+   "KWAMENU.BIN:10AE0"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:2fa2c90b7f30": {
+  "cap": 24,
+  "copies": [
+   "KWAMENU.BIN:10B00"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:5b55939eae7f": {
+  "cap": 40,
+  "copies": [
+   "KWAMENU.BIN:10B18"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:8f328eca3d54": {
+  "cap": 48,
+  "copies": [
+   "KWAMENU.BIN:10B40"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:cd1428eb9797": {
+  "cap": 32,
+  "copies": [
+   "KWAMENU.BIN:10B70"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:1958485449c8": {
+  "cap": 28,
+  "copies": [
+   "KWAMENU.BIN:10B94"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:18137606f3bd": {
+  "cap": 40,
+  "copies": [
+   "KWAMENU.BIN:10BB0"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:9f51fb395026": {
+  "cap": 36,
+  "copies": [
+   "KWAMENU.BIN:10BD8"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:8d49cb2791ef": {
+  "cap": 16,
+  "copies": [
+   "KWAMENU.BIN:10BFC"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:2121a7a4a508": {
+  "cap": 20,
+  "copies": [
+   "KWAMENU.BIN:10C0C"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:df172289a1e2": {
+  "cap": 44,
+  "copies": [
+   "KWAMENU.BIN:10C20"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:1f04acc7f391": {
+  "cap": 16,
+  "copies": [
+   "KWAMENU.BIN:10C4C"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:99b153fbc2b3": {
+  "cap": 20,
+  "copies": [
+   "KWAMENU.BIN:10C5C"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:04b81cb363f0": {
+  "cap": 20,
+  "copies": [
+   "KWAMENU.BIN:10C70"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:6f53e8bd333b": {
+  "cap": 20,
+  "copies": [
+   "KWAMENU.BIN:10C84"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:14a1c7ba7997": {
+  "cap": 20,
+  "copies": [
+   "KWAMENU.BIN:10C98"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:e23a027069b8": {
+  "cap": 24,
+  "copies": [
+   "KWAMENU.BIN:10CAC"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:a334b3bcb625": {
+  "cap": 36,
+  "copies": [
+   "KWAMENU.BIN:10CC8"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:87b04d4df02f": {
+  "cap": 16,
+  "copies": [
+   "KWAMENU.BIN:10CEC"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:ce490160f3ec": {
+  "cap": 16,
+  "copies": [
+   "KWAMENU.BIN:10CFC"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:045ef980ea34": {
+  "cap": 28,
+  "copies": [
+   "KWAMENU.BIN:10D0C"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:01d13605695e": {
+  "cap": 16,
+  "copies": [
+   "KWAMENU.BIN:10D28"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:ff9d50b43495": {
+  "cap": 24,
+  "copies": [
+   "KWAMENU.BIN:10D38"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:d6c858dd3135": {
+  "cap": 24,
+  "copies": [
+   "KWAMENU.BIN:10D50"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:3c0bc30d3c1f": {
+  "cap": 20,
+  "copies": [
+   "KWAMENU.BIN:10D68"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:32eb66fe48b0": {
+  "cap": 12,
+  "copies": [
+   "KWAMENU.BIN:10D7C"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:df7a9b17f9bf": {
+  "cap": 60,
+  "copies": [
+   "KWAMENU.BIN:10D8C"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:68717bf4219d": {
+  "cap": 68,
+  "copies": [
+   "KWAMENU.BIN:10DC8"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:ce220c2eae33": {
+  "cap": 8,
+  "copies": [
+   "KWAMENU.BIN:10E0C"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:080348f977e7": {
+  "cap": 16,
+  "copies": [
+   "KWAMENU.BIN:10E14"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:23ef9dc1f218": {
+  "cap": 16,
+  "copies": [
+   "KWAMENU.BIN:10E24"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:e03fe55e148b": {
+  "cap": 8,
+  "copies": [
+   "KWAMENU.BIN:10E34"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:4e7a15a697e9": {
+  "cap": 16,
+  "copies": [
+   "KWAMENU.BIN:10E3C"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:6e7a4d0e438f": {
+  "cap": 16,
+  "copies": [
+   "KWAMENU.BIN:10E4C"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:14135c290c2f": {
+  "cap": 8,
+  "copies": [
+   "KWAMENU.BIN:10E5C"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:fcb37b4a2f6b": {
+  "cap": 16,
+  "copies": [
+   "KWAMENU.BIN:10E64"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:9372e28dd9d2": {
+  "cap": 16,
+  "copies": [
+   "KWAMENU.BIN:10E74"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:bbf4a2af057f": {
+  "cap": 12,
+  "copies": [
+   "KWAMENU.BIN:10E84"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:a67bbec6f8f8": {
+  "cap": 16,
+  "copies": [
+   "KWAMENU.BIN:10E90"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:b68fd0d0ea67": {
+  "cap": 16,
+  "copies": [
+   "KWAMENU.BIN:10EA0"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:6c4538bc8e43": {
+  "cap": 20,
+  "copies": [
+   "KWAMENU.BIN:10EB0"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:a8da51e578d7": {
+  "cap": 12,
+  "copies": [
+   "KWAMENU.BIN:10EC4"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:3ee84399f03d": {
+  "cap": 12,
+  "copies": [
+   "KWAMENU.BIN:10ED0"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:020841d4a84a": {
+  "cap": 12,
+  "copies": [
+   "KWAMENU.BIN:10EDC"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:dedc271f41d9": {
+  "cap": 16,
+  "copies": [
+   "KWAMENU.BIN:10EE8"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:2fc8a1f29f2d": {
+  "cap": 16,
+  "copies": [
+   "KWAMENU.BIN:10EF8"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:8b71b897a026": {
+  "cap": 16,
+  "copies": [
+   "KWAMENU.BIN:10F08"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:41b27a0a58db": {
+  "cap": 12,
+  "copies": [
+   "KWAMENU.BIN:10F18"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:082165333cf3": {
+  "cap": 16,
+  "copies": [
+   "KWAMENU.BIN:10F24"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:74f4fe5cddd5": {
+  "cap": 16,
+  "copies": [
+   "KWAMENU.BIN:10F34"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:9ff0c00afc59": {
+  "cap": 16,
+  "copies": [
+   "KWAMENU.BIN:10F44"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:84f4d199a617": {
+  "cap": 16,
+  "copies": [
+   "KWAMENU.BIN:10F54"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:6f52b9175a21": {
+  "cap": 12,
+  "copies": [
+   "KWAMENU.BIN:10F64"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:3c17a27024ea": {
+  "cap": 16,
+  "copies": [
+   "KWAMENU.BIN:10F70"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:90e435bbd408": {
+  "cap": 16,
+  "copies": [
+   "KWAMENU.BIN:10F80"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:db3375c28218": {
+  "cap": 16,
+  "copies": [
+   "KWAMENU.BIN:10F90"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:132e99a352a9": {
+  "cap": 16,
+  "copies": [
+   "KWAMENU.BIN:10FA0"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:98fadb6e6d85": {
+  "cap": 12,
+  "copies": [
+   "KWAMENU.BIN:10FB0"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:9df799665ed8": {
+  "cap": 16,
+  "copies": [
+   "KWAMENU.BIN:10FBC"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:a872c69373ca": {
+  "cap": 20,
+  "copies": [
+   "KWAMENU.BIN:10FCC"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:6db160df5b6d": {
+  "cap": 20,
+  "copies": [
+   "KWAMENU.BIN:10FE0"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:d60924f63b6a": {
+  "cap": 16,
+  "copies": [
+   "KWAMENU.BIN:10FF4"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:3af5895f7ac0": {
+  "cap": 16,
+  "copies": [
+   "KWAMENU.BIN:11004"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:da028f9caf60": {
+  "cap": 20,
+  "copies": [
+   "KWAMENU.BIN:11014"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:82bbc7a222db": {
+  "cap": 20,
+  "copies": [
+   "KWAMENU.BIN:11028"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:b8685ee251cc": {
+  "cap": 20,
+  "copies": [
+   "KWAMENU.BIN:1103C"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:bd53a4c79024": {
+  "cap": 20,
+  "copies": [
+   "KWAMENU.BIN:11050"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:f022fd83c1a6": {
+  "cap": 20,
+  "copies": [
+   "KWAMENU.BIN:11064"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:a4352516384f": {
+  "cap": 16,
+  "copies": [
+   "KWAMENU.BIN:11078"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:d10bff4d4ed6": {
+  "cap": 16,
+  "copies": [
+   "KWAMENU.BIN:11088"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:88f012e535a0": {
+  "cap": 20,
+  "copies": [
+   "KWAMENU.BIN:11098"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:d4a53c92f61a": {
+  "cap": 16,
+  "copies": [
+   "KWAMENU.BIN:110AC"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:55078594d54f": {
+  "cap": 20,
+  "copies": [
+   "KWAMENU.BIN:110BC"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:f90131bed490": {
+  "cap": 20,
+  "copies": [
+   "KWAMENU.BIN:110D0"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:b7191518ebe9": {
+  "cap": 20,
+  "copies": [
+   "KWAMENU.BIN:110E4"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:f244f94a625a": {
+  "cap": 16,
+  "copies": [
+   "KWAMENU.BIN:110F8"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:87c8fce97fd2": {
+  "cap": 16,
+  "copies": [
+   "KWAMENU.BIN:11108"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:3688360a824d": {
+  "cap": 20,
+  "copies": [
+   "KWAMENU.BIN:11118"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:cf8dce4ebc29": {
+  "cap": 20,
+  "copies": [
+   "KWAMENU.BIN:1112C"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:0d706c4a5422": {
+  "cap": 20,
+  "copies": [
+   "KWAMENU.BIN:11140"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:10f34c2ae11e": {
+  "cap": 20,
+  "copies": [
+   "KWAMENU.BIN:11154"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:bc2b301e7c9a": {
+  "cap": 20,
+  "copies": [
+   "KWAMENU.BIN:11168"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:cfa6972355f3": {
+  "cap": 16,
+  "copies": [
+   "KWAMENU.BIN:1117C"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:147fc5b1d525": {
+  "cap": 16,
+  "copies": [
+   "KWAMENU.BIN:1118C"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:d0edd1202673": {
+  "cap": 20,
+  "copies": [
+   "KWAMENU.BIN:1119C"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:730a8b60d7d0": {
+  "cap": 16,
+  "copies": [
+   "KWAMENU.BIN:111B0"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:edbebef36c92": {
+  "cap": 20,
+  "copies": [
+   "KWAMENU.BIN:111C0"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:ff33b675a061": {
+  "cap": 20,
+  "copies": [
+   "KWAMENU.BIN:111D4"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:e13ac898225f": {
+  "cap": 20,
+  "copies": [
+   "KWAMENU.BIN:111E8"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:fa88e9d5396a": {
+  "cap": 16,
+  "copies": [
+   "KWAMENU.BIN:111FC"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:6c695c889c98": {
+  "cap": 16,
+  "copies": [
+   "KWAMENU.BIN:1120C"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:7728d361169c": {
+  "cap": 20,
+  "copies": [
+   "KWAMENU.BIN:1121C"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:b5547a0f8114": {
+  "cap": 20,
+  "copies": [
+   "KWAMENU.BIN:11230"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:0ab2601f2a3b": {
+  "cap": 20,
+  "copies": [
+   "KWAMENU.BIN:11244"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:573b70a11b93": {
+  "cap": 20,
+  "copies": [
+   "KWAMENU.BIN:11258"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:de0a697559ac": {
+  "cap": 20,
+  "copies": [
+   "KWAMENU.BIN:1126C"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:31fb72ce8dae": {
+  "cap": 16,
+  "copies": [
+   "KWAMENU.BIN:11280"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:d32b3aa575c7": {
+  "cap": 16,
+  "copies": [
+   "KWAMENU.BIN:11290"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:fc6db3ede98c": {
+  "cap": 20,
+  "copies": [
+   "KWAMENU.BIN:112A0"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:736469f34ed4": {
+  "cap": 16,
+  "copies": [
+   "KWAMENU.BIN:112B4"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:126146f4f5c1": {
+  "cap": 20,
+  "copies": [
+   "KWAMENU.BIN:112C4"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:06fb0c7c1b35": {
+  "cap": 8,
+  "copies": [
+   "KWAMENU.BIN:112D8",
+   "KWAMENU.BIN:1131C",
+   "KWAMENU.BIN:134A4",
+   "KWAMENU.BIN:134E8",
+   "X_SUZU.BIN:012A8",
+   "X_SUZU.BIN:012EC"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:b4371ace9c6e": {
+  "cap": 12,
+  "copies": [
+   "KWAMENU.BIN:112E0",
+   "KWAMENU.BIN:11324",
+   "KWAMENU.BIN:134AC",
+   "KWAMENU.BIN:134F0",
+   "X_SUZU.BIN:012B0",
+   "X_SUZU.BIN:012F4"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:5e3d13e26555": {
+  "cap": 12,
+  "copies": [
+   "KWAMENU.BIN:112EC",
+   "KWAMENU.BIN:134B8",
+   "X_SUZU.BIN:012BC"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:2cdd7ecf4008": {
+  "cap": 12,
+  "copies": [
+   "KWAMENU.BIN:112F8",
+   "KWAMENU.BIN:134C4",
+   "X_SUZU.BIN:012C8"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:384397f2dbfe": {
+  "cap": 12,
+  "copies": [
+   "KWAMENU.BIN:11304",
+   "KWAMENU.BIN:134D0",
+   "X_SUZU.BIN:012D4"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:9054bb10a9a7": {
+  "cap": 12,
+  "copies": [
+   "KWAMENU.BIN:11310",
+   "KWAMENU.BIN:134DC",
+   "X_SUZU.BIN:012E0"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:278fd33880b7": {
+  "cap": 12,
+  "copies": [
+   "KWAMENU.BIN:11330",
+   "KWAMENU.BIN:134FC",
+   "X_SUZU.BIN:01300"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:ddd080d3d0b9": {
+  "cap": 12,
+  "copies": [
+   "KWAMENU.BIN:1133C",
+   "KWAMENU.BIN:13508",
+   "X_SUZU.BIN:0130C"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:caae6b8bb453": {
+  "cap": 12,
+  "copies": [
+   "KWAMENU.BIN:11348",
+   "KWAMENU.BIN:13514",
+   "X_SUZU.BIN:01318"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:2add279769ab": {
+  "cap": 12,
+  "copies": [
+   "KWAMENU.BIN:11354",
+   "KWAMENU.BIN:13520",
+   "X_SUZU.BIN:01324"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:2cf57cdc2757": {
+  "cap": 12,
+  "copies": [
+   "KWAMENU.BIN:11360",
+   "KWAMENU.BIN:1352C",
+   "X_SUZU.BIN:01330"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:7381380573db": {
+  "cap": 8,
+  "copies": [
+   "KWAMENU.BIN:1136C",
+   "KWAMENU.BIN:113D0",
+   "KWAMENU.BIN:13538",
+   "KWAMENU.BIN:1359C",
+   "X_SUZU.BIN:0133C",
+   "X_SUZU.BIN:013A0"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:8cd1cdee0761": {
+  "cap": 12,
+  "copies": [
+   "KWAMENU.BIN:11374",
+   "KWAMENU.BIN:113D8",
+   "KWAMENU.BIN:13540",
+   "KWAMENU.BIN:135A4",
+   "X_SUZU.BIN:01344",
+   "X_SUZU.BIN:013A8"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:16f9466cec5c": {
+  "cap": 12,
+  "copies": [
+   "KWAMENU.BIN:11380",
+   "KWAMENU.BIN:1354C",
+   "X_SUZU.BIN:01350"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:0436dcbcc3ef": {
+  "cap": 12,
+  "copies": [
+   "KWAMENU.BIN:1138C",
+   "KWAMENU.BIN:13558",
+   "X_SUZU.BIN:0135C"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:ef7f57b6b856": {
+  "cap": 12,
+  "copies": [
+   "KWAMENU.BIN:11398",
+   "KWAMENU.BIN:13564",
+   "X_SUZU.BIN:01368"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:f6817481f933": {
+  "cap": 12,
+  "copies": [
+   "KWAMENU.BIN:113A4",
+   "KWAMENU.BIN:13570",
+   "X_SUZU.BIN:01374"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:0fc92a42ddbe": {
+  "cap": 12,
+  "copies": [
+   "KWAMENU.BIN:113B0",
+   "KWAMENU.BIN:1357C",
+   "X_SUZU.BIN:01380"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:c10c063d8190": {
+  "cap": 8,
+  "copies": [
+   "KWAMENU.BIN:113BC",
+   "KWAMENU.BIN:11444",
+   "KWAMENU.BIN:13588",
+   "KWAMENU.BIN:1360C",
+   "X_SUZU.BIN:0138C",
+   "X_SUZU.BIN:01410"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:bb02fbbe36ff": {
+  "cap": 12,
+  "copies": [
+   "KWAMENU.BIN:113C4",
+   "KWAMENU.BIN:13590",
+   "X_SUZU.BIN:01394"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:0682b9f8934f": {
+  "cap": 8,
+  "copies": [
+   "KWAMENU.BIN:113E4",
+   "KWAMENU.BIN:135B0",
+   "X_SUZU.BIN:013B4"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:ca332e2170c7": {
+  "cap": 8,
+  "copies": [
+   "KWAMENU.BIN:113EC",
+   "KWAMENU.BIN:135B8",
+   "X_SUZU.BIN:013BC"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:79623da2dae7": {
+  "cap": 8,
+  "copies": [
+   "KWAMENU.BIN:113F4",
+   "KWAMENU.BIN:135C0",
+   "X_SUZU.BIN:013C4"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:d3499a66439d": {
+  "cap": 8,
+  "copies": [
+   "KWAMENU.BIN:113FC",
+   "KWAMENU.BIN:135C8",
+   "X_SUZU.BIN:013CC"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:f978f830ac06": {
+  "cap": 8,
+  "copies": [
+   "KWAMENU.BIN:11404",
+   "KWAMENU.BIN:135D0",
+   "X_SUZU.BIN:013D4"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:7fcebc6556ca": {
+  "cap": 8,
+  "copies": [
+   "KWAMENU.BIN:1140C",
+   "KWAMENU.BIN:135D8",
+   "X_SUZU.BIN:013DC"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:b1aaa6e16f42": {
+  "cap": 8,
+  "copies": [
+   "KWAMENU.BIN:11414",
+   "KWAMENU.BIN:135E0",
+   "X_SUZU.BIN:013E4"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:c6e1cc2477ed": {
+  "cap": 8,
+  "copies": [
+   "KWAMENU.BIN:1141C",
+   "KWAMENU.BIN:135E8",
+   "X_SUZU.BIN:013EC"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:1ef466b24d4b": {
+  "cap": 8,
+  "copies": [
+   "KWAMENU.BIN:11424",
+   "KWAMENU.BIN:135F0",
+   "X_SUZU.BIN:013F4"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:a1d6f0dd232f": {
+  "cap": 16,
+  "copies": [
+   "KWAMENU.BIN:1142C"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:d12935fff251": {
+  "cap": 8,
+  "copies": [
+   "KWAMENU.BIN:1143C",
+   "KWAMENU.BIN:13604",
+   "X_SUZU.BIN:01408"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:5ae8346c79e4": {
+  "cap": 8,
+  "copies": [
+   "KWAMENU.BIN:1144C",
+   "KWAMENU.BIN:13614",
+   "X_SUZU.BIN:01418"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:e0baf00cb8ff": {
+  "cap": 8,
+  "copies": [
+   "KWAMENU.BIN:11454",
+   "KWAMENU.BIN:1361C",
+   "X_SUZU.BIN:01420"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:8e461dc7bf31": {
+  "cap": 8,
+  "copies": [
+   "KWAMENU.BIN:1145C",
+   "KWAMENU.BIN:13624",
+   "X_SUZU.BIN:01428"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:95a078d2725c": {
+  "cap": 12,
+  "copies": [
+   "KWAMENU.BIN:11464",
+   "KWAMENU.BIN:1362C",
+   "X_SUZU.BIN:01430"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:76c65482750c": {
+  "cap": 8,
+  "copies": [
+   "KWAMENU.BIN:11470"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:5b8c494f5b5a": {
+  "cap": 12,
+  "copies": [
+   "KWAMENU.BIN:11478",
+   "KWAMENU.BIN:13640",
+   "X_SUZU.BIN:01444"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:9a812d9ecc83": {
+  "cap": 8,
+  "copies": [
+   "KWAMENU.BIN:11484",
+   "KWAMENU.BIN:1364C",
+   "X_SUZU.BIN:01450"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:0fb6782b2f94": {
+  "cap": 12,
+  "copies": [
+   "KWAMENU.BIN:1148C",
+   "KWAMENU.BIN:13654",
+   "X_SUZU.BIN:01458"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:ace70f64ebfb": {
+  "cap": 8,
+  "copies": [
+   "KWAMENU.BIN:11498",
+   "KWAMENU.BIN:13660",
+   "X_SUZU.BIN:01464"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:cb8df3dd97fe": {
+  "cap": 12,
+  "copies": [
+   "KWAMENU.BIN:114A0",
+   "KWAMENU.BIN:13668",
+   "X_SUZU.BIN:0146C"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:324de266c04b": {
+  "cap": 8,
+  "copies": [
+   "KWAMENU.BIN:114AC",
+   "KWAMENU.BIN:13674",
+   "X_SUZU.BIN:01478"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:202032cf75f5": {
+  "cap": 8,
+  "copies": [
+   "KWAMENU.BIN:114B4",
+   "KWAMENU.BIN:1367C",
+   "X_SUZU.BIN:01480"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:adea15fb4cf5": {
+  "cap": 12,
+  "copies": [
+   "KWAMENU.BIN:114BC",
+   "KWAMENU.BIN:13684",
+   "X_SUZU.BIN:01488"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:9ef496185aad": {
+  "cap": 8,
+  "copies": [
+   "KWAMENU.BIN:114C8",
+   "KWAMENU.BIN:13690",
+   "X_SUZU.BIN:01494"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:e9bc136fb5a1": {
+  "cap": 8,
+  "copies": [
+   "KWAMENU.BIN:114D0",
+   "KWAMENU.BIN:13698",
+   "X_SUZU.BIN:0149C"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:adb3ecc120ce": {
+  "cap": 12,
+  "copies": [
+   "KWAMENU.BIN:114D8",
+   "KWAMENU.BIN:136A0",
+   "X_SUZU.BIN:014A4"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:b2bff8823f7b": {
+  "cap": 8,
+  "copies": [
+   "KWAMENU.BIN:114E4",
+   "KWAMENU.BIN:136AC",
+   "X_SUZU.BIN:014B0"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:26b9d59173c2": {
+  "cap": 12,
+  "copies": [
+   "KWAMENU.BIN:114EC",
+   "KWAMENU.BIN:136B4",
+   "X_SUZU.BIN:014B8"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:98c99d218c7a": {
+  "cap": 12,
+  "copies": [
+   "KWAMENU.BIN:114F8",
+   "KWAMENU.BIN:136C0",
+   "X_SUZU.BIN:014C4"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:2c6a70a10873": {
+  "cap": 12,
+  "copies": [
+   "KWAMENU.BIN:11504",
+   "KWAMENU.BIN:136CC",
+   "X_SUZU.BIN:014D0"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:783b54ac0b9d": {
+  "cap": 12,
+  "copies": [
+   "KWAMENU.BIN:11510",
+   "KWAMENU.BIN:136D8",
+   "X_SUZU.BIN:014DC"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:eb7d1ac09a70": {
+  "cap": 8,
+  "copies": [
+   "KWAMENU.BIN:1151C",
+   "KWAMENU.BIN:136E4",
+   "X_SUZU.BIN:014E8"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:5927b251108f": {
+  "cap": 8,
+  "copies": [
+   "KWAMENU.BIN:11524",
+   "KWAMENU.BIN:136EC",
+   "X_SUZU.BIN:014F0"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:35ee6eda2d2d": {
+  "cap": 12,
+  "copies": [
+   "KWAMENU.BIN:1152C",
+   "KWAMENU.BIN:136F4",
+   "X_SUZU.BIN:014F8"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:32ab170ba352": {
+  "cap": 8,
+  "copies": [
+   "KWAMENU.BIN:11538",
+   "KWAMENU.BIN:13700",
+   "X_SUZU.BIN:01504"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:31112f1a4bf6": {
+  "cap": 8,
+  "copies": [
+   "KWAMENU.BIN:11540",
+   "KWAMENU.BIN:13708",
+   "X_SUZU.BIN:0150C"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:d1521e43cc11": {
+  "cap": 8,
+  "copies": [
+   "KWAMENU.BIN:11548",
+   "KWAMENU.BIN:13710",
+   "X_SUZU.BIN:01514"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:ffe2c28f5f46": {
+  "cap": 8,
+  "copies": [
+   "KWAMENU.BIN:11550",
+   "KWAMENU.BIN:13718",
+   "X_SUZU.BIN:0151C"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:52da24c23db7": {
+  "cap": 12,
+  "copies": [
+   "KWAMENU.BIN:11558",
+   "KWAMENU.BIN:13720",
+   "X_SUZU.BIN:01524"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:12d1388a324b": {
+  "cap": 12,
+  "copies": [
+   "KWAMENU.BIN:11564",
+   "KWAMENU.BIN:1372C",
+   "X_SUZU.BIN:01530"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:bd64a555ea87": {
+  "cap": 12,
+  "copies": [
+   "KWAMENU.BIN:11570",
+   "KWAMENU.BIN:13738",
+   "X_SUZU.BIN:0153C"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:d1549c7902d8": {
+  "cap": 8,
+  "copies": [
+   "KWAMENU.BIN:1157C",
+   "KWAMENU.BIN:13744",
+   "X_SUZU.BIN:01548"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:66959f8dda6d": {
+  "cap": 12,
+  "copies": [
+   "KWAMENU.BIN:11584",
+   "KWAMENU.BIN:1374C",
+   "X_SUZU.BIN:01550"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:760437986f12": {
+  "cap": 12,
+  "copies": [
+   "KWAMENU.BIN:11590",
+   "KWAMENU.BIN:13758",
+   "X_SUZU.BIN:0155C"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:dc7ace570ac3": {
+  "cap": 12,
+  "copies": [
+   "KWAMENU.BIN:1159C",
+   "KWAMENU.BIN:13764",
+   "X_SUZU.BIN:01568"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:de26f5205b67": {
+  "cap": 12,
+  "copies": [
+   "KWAMENU.BIN:115A8",
+   "KWAMENU.BIN:13770",
+   "X_SUZU.BIN:01574"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:f5bfb9ed46fc": {
+  "cap": 12,
+  "copies": [
+   "KWAMENU.BIN:115B4",
+   "KWAMENU.BIN:1377C",
+   "X_SUZU.BIN:01580"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:c331d14d767f": {
+  "cap": 12,
+  "copies": [
+   "KWAMENU.BIN:115C0",
+   "KWAMENU.BIN:13788",
+   "X_SUZU.BIN:0158C"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:c7364bf9565c": {
+  "cap": 8,
+  "copies": [
+   "KWAMENU.BIN:115CC",
+   "KWAMENU.BIN:13794",
+   "X_SUZU.BIN:01598"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:95adc0090aae": {
+  "cap": 12,
+  "copies": [
+   "KWAMENU.BIN:115D4",
+   "KWAMENU.BIN:1379C",
+   "X_SUZU.BIN:015A0"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:3691c082e280": {
+  "cap": 12,
+  "copies": [
+   "KWAMENU.BIN:115E0",
+   "KWAMENU.BIN:137A8",
+   "X_SUZU.BIN:015AC"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:64b4290c57f9": {
+  "cap": 12,
+  "copies": [
+   "KWAMENU.BIN:115EC",
+   "KWAMENU.BIN:137B4",
+   "X_SUZU.BIN:015B8"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:84595211090d": {
+  "cap": 8,
+  "copies": [
+   "KWAMENU.BIN:115F8",
+   "KWAMENU.BIN:137C0",
+   "X_SUZU.BIN:015C4"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:1d89fc566815": {
+  "cap": 12,
+  "copies": [
+   "KWAMENU.BIN:11600",
+   "KWAMENU.BIN:137C8",
+   "X_SUZU.BIN:015CC"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:1d652a49c879": {
+  "cap": 12,
+  "copies": [
+   "KWAMENU.BIN:1160C",
+   "KWAMENU.BIN:137D4",
+   "X_SUZU.BIN:015D8"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:325d872ea76f": {
+  "cap": 8,
+  "copies": [
+   "KWAMENU.BIN:11618",
+   "KWAMENU.BIN:137E0",
+   "X_SUZU.BIN:015E4"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:8a9423c1ceec": {
+  "cap": 12,
+  "copies": [
+   "KWAMENU.BIN:11620",
+   "KWAMENU.BIN:137E8",
+   "X_SUZU.BIN:015EC"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:a704edb077ae": {
+  "cap": 8,
+  "copies": [
+   "KWAMENU.BIN:1162C",
+   "KWAMENU.BIN:137F4",
+   "X_SUZU.BIN:015F8"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:40a00800c12d": {
+  "cap": 8,
+  "copies": [
+   "KWAMENU.BIN:11634",
+   "KWAMENU.BIN:137FC",
+   "X_SUZU.BIN:01600"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:575bb92e6d58": {
+  "cap": 16,
+  "copies": [
+   "KWAMENU.BIN:1163C",
+   "KWAMENU.BIN:13804",
+   "X_SUZU.BIN:01608"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:31c277bd96c0": {
+  "cap": 8,
+  "copies": [
+   "KWAMENU.BIN:1164C",
+   "KWAMENU.BIN:13814",
+   "X_SUZU.BIN:01618"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:b5aa06a140d5": {
+  "cap": 8,
+  "copies": [
+   "KWAMENU.BIN:11654",
+   "KWAMENU.BIN:1381C",
+   "X_SUZU.BIN:01620"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:5f76f017469a": {
+  "cap": 12,
+  "copies": [
+   "KWAMENU.BIN:1165C",
+   "KWAMENU.BIN:13824",
+   "X_SUZU.BIN:01628"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:ae73f0fbce49": {
+  "cap": 8,
+  "copies": [
+   "KWAMENU.BIN:11668",
+   "KWAMENU.BIN:13830",
+   "X_SUZU.BIN:01634"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:c2dbcf429eab": {
+  "cap": 12,
+  "copies": [
+   "KWAMENU.BIN:11670",
+   "KWAMENU.BIN:1387C",
+   "X_SUZU.BIN:0163C"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:e83b32999612": {
+  "cap": 12,
+  "copies": [
+   "KWAMENU.BIN:1167C",
+   "KWAMENU.BIN:13888",
+   "X_SUZU.BIN:01648"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:859ceeef09c4": {
+  "cap": 8,
+  "copies": [
+   "KWAMENU.BIN:11688",
+   "KWAMENU.BIN:13894",
+   "X_SUZU.BIN:01654"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:8549d8761949": {
+  "cap": 8,
+  "copies": [
+   "KWAMENU.BIN:11690",
+   "KWAMENU.BIN:1389C",
+   "X_SUZU.BIN:0165C"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:a6ea005b2c24": {
+  "cap": 12,
+  "copies": [
+   "KWAMENU.BIN:11698",
+   "KWAMENU.BIN:138A4",
+   "X_SUZU.BIN:01664"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:3dec57bfe257": {
+  "cap": 8,
+  "copies": [
+   "KWAMENU.BIN:116A4",
+   "KWAMENU.BIN:138B0",
+   "X_SUZU.BIN:01670"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:1d4b3f1bc129": {
+  "cap": 8,
+  "copies": [
+   "KWAMENU.BIN:116AC",
+   "KWAMENU.BIN:138B8",
+   "X_SUZU.BIN:01678"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:b6e25e629000": {
+  "cap": 4,
+  "copies": [
+   "KWAMENU.BIN:116BA"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:287547f67c81": {
+  "cap": 19,
+  "copies": [
+   "KWAMENU.BIN:11CF5"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:f0eceb670cac": {
+  "cap": 68,
+  "copies": [
+   "KWAMENU.BIN:11D08"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:9d10a4580500": {
+  "cap": 20,
+  "copies": [
+   "KWAMENU.BIN:11D4C"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:273efcda9744": {
+  "cap": 40,
+  "copies": [
+   "KWAMENU.BIN:11D60"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:6f51c01c0372": {
+  "cap": 64,
+  "copies": [
+   "KWAMENU.BIN:11D88"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:d3cba86d4037": {
+  "cap": 212,
+  "copies": [
+   "KWAMENU.BIN:11DC8"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:fa02dd2afa3c": {
+  "cap": 20,
+  "copies": [
+   "KWAMENU.BIN:11E9C"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:c72f4335ab5c": {
+  "cap": 76,
+  "copies": [
+   "KWAMENU.BIN:11EB0"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:c61f97a844b1": {
+  "cap": 44,
+  "copies": [
+   "KWAMENU.BIN:11EFC"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:f76eb6fd1662": {
+  "cap": 204,
+  "copies": [
+   "KWAMENU.BIN:11F28"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:33aec264d646": {
+  "cap": 16,
+  "copies": [
+   "KWAMENU.BIN:11FF4"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:9b19fa49d3a5": {
+  "cap": 12,
+  "copies": [
+   "KWAMENU.BIN:12004"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:bd877bde1564": {
+  "cap": 12,
+  "copies": [
+   "KWAMENU.BIN:12010",
+   "X_SUZU.BIN:011D4"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:4eaba1c60508": {
+  "cap": 12,
+  "copies": [
+   "KWAMENU.BIN:1201C",
+   "X_SUZU.BIN:011E0"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:384928b9cb09": {
+  "cap": 8,
+  "copies": [
+   "KWAMENU.BIN:12028",
+   "X_SUZU.BIN:011EC"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:8bb10cf733c1": {
+  "cap": 12,
+  "copies": [
+   "KWAMENU.BIN:12030",
+   "X_SUZU.BIN:011F4"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:1f8e9a059374": {
+  "cap": 12,
+  "copies": [
+   "KWAMENU.BIN:1203C"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:c3bfc19a2f01": {
+  "cap": 772,
+  "copies": [
+   "KWAMENU.BIN:12048"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:47ff00edc69d": {
+  "cap": 708,
+  "copies": [
+   "KWAMENU.BIN:1234C"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:f970864e352e": {
+  "cap": 704,
+  "copies": [
+   "KWAMENU.BIN:12610"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:41ef5326076a": {
+  "cap": 76,
+  "copies": [
+   "KWAMENU.BIN:128D0",
+   "KWAMENU.BIN:12A90"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:eeb4e0ac0a58": {
+  "cap": 100,
+  "copies": [
+   "KWAMENU.BIN:1291C",
+   "KWAMENU.BIN:12ADC"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:44f7adbba6aa": {
+  "cap": 104,
+  "copies": [
+   "KWAMENU.BIN:12980",
+   "KWAMENU.BIN:12B40"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:42b5eac82056": {
+  "cap": 92,
+  "copies": [
+   "KWAMENU.BIN:129E8",
+   "KWAMENU.BIN:12BA8"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:2ef447f39ae7": {
+  "cap": 76,
+  "copies": [
+   "KWAMENU.BIN:12A44"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:74223797f077": {
+  "cap": 72,
+  "copies": [
+   "KWAMENU.BIN:12C04"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:f58fd9ed1917": {
+  "cap": 20,
+  "copies": [
+   "KWAMENU.BIN:12C4C"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:0bf698dc067a": {
+  "cap": 16,
+  "copies": [
+   "KWAMENU.BIN:12C60"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:41e4136c7936": {
+  "cap": 12,
+  "copies": [
+   "KWAMENU.BIN:12C70"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:9b008fc2079b": {
+  "cap": 12,
+  "copies": [
+   "KWAMENU.BIN:12C7C"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:63f8501e9e72": {
+  "cap": 8,
+  "copies": [
+   "KWAMENU.BIN:12C88"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:b816d90fab8b": {
+  "cap": 8,
+  "copies": [
+   "KWAMENU.BIN:12C90"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:7b13a5075d60": {
+  "cap": 12,
+  "copies": [
+   "KWAMENU.BIN:12C98"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:3a7fb5e23513": {
+  "cap": 24,
+  "copies": [
+   "KWAMENU.BIN:12CA4"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:136a26039f37": {
+  "cap": 8,
+  "copies": [
+   "KWAMENU.BIN:12CBC"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:1a44d979ed58": {
+  "cap": 8,
+  "copies": [
+   "KWAMENU.BIN:12CC4"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:ed99e73431f9": {
+  "cap": 16,
+  "copies": [
+   "KWAMENU.BIN:12CCC"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:ec8f0079ff33": {
+  "cap": 12,
+  "copies": [
+   "KWAMENU.BIN:12CDC"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:e6adccbe9dc7": {
+  "cap": 16,
+  "copies": [
+   "KWAMENU.BIN:12CE8"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:c7e199b692c4": {
+  "cap": 12,
+  "copies": [
+   "KWAMENU.BIN:12CF8"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:adf0ec57c61e": {
+  "cap": 12,
+  "copies": [
+   "KWAMENU.BIN:12D04"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:6d5f45a917cf": {
+  "cap": 20,
+  "copies": [
+   "KWAMENU.BIN:12D10"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:563af1ea6482": {
+  "cap": 20,
+  "copies": [
+   "KWAMENU.BIN:12D24"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:fdbb52775eb7": {
+  "cap": 20,
+  "copies": [
+   "KWAMENU.BIN:12D38"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:e1dfd3126461": {
+  "cap": 20,
+  "copies": [
+   "KWAMENU.BIN:12D4C"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:4f6051db6718": {
+  "cap": 12,
+  "copies": [
+   "KWAMENU.BIN:12D60",
+   "KWAMENU.BIN:13F54"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:83a70ac46ac0": {
+  "cap": 32,
+  "copies": [
+   "KWAMENU.BIN:12D6C",
+   "KWAMENU.BIN:12D8C",
+   "KWAMENU.BIN:12DAC",
+   "KWAMENU.BIN:12DCC",
+   "KWAMENU.BIN:12DEC"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:2a51d719fb73": {
+  "cap": 64,
+  "copies": [
+   "KWAMENU.BIN:12E0C"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:ae32fa3e81a1": {
+  "cap": 20,
+  "copies": [
+   "KWAMENU.BIN:12E4C"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:5dc05ebfa247": {
+  "cap": 108,
+  "copies": [
+   "KWAMENU.BIN:12E60"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:f258c3bd39eb": {
+  "cap": 12,
+  "copies": [
+   "KWAMENU.BIN:12ECC"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:781ec3d854cc": {
+  "cap": 32,
+  "copies": [
+   "KWAMENU.BIN:12ED8"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:22101a10059a": {
+  "cap": 72,
+  "copies": [
+   "KWAMENU.BIN:12EF8"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:0ebed1fe2da0": {
+  "cap": 100,
+  "copies": [
+   "KWAMENU.BIN:12F40"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:f34537775098": {
+  "cap": 28,
+  "copies": [
+   "KWAMENU.BIN:12FB8"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:c589a2c15a40": {
+  "cap": 24,
+  "copies": [
+   "KWAMENU.BIN:12FD4",
+   "SUZU0.BIN:00020",
+   "SUZU1.BIN:00020",
+   "SUZU2.BIN:00020",
+   "SUZU3.BIN:00020",
+   "SUZU4.BIN:00020",
+   "SUZU_0.BIN:058A0",
+   "SUZU_0.BIN:114A4"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:bcb047232687": {
+  "cap": 60,
+  "copies": [
+   "KWAMENU.BIN:12FEC"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:6305a3e2f4c9": {
+  "cap": 88,
+  "copies": [
+   "KWAMENU.BIN:13028"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:17d9575a2db4": {
+  "cap": 32,
+  "copies": [
+   "KWAMENU.BIN:13080"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:3eb13a8bf93e": {
+  "cap": 52,
+  "copies": [
+   "KWAMENU.BIN:131B8"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:9f86ae5dbc64": {
+  "cap": 20,
+  "copies": [
+   "KWAMENU.BIN:131EC"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:0da6f7953022": {
+  "cap": 124,
+  "copies": [
+   "KWAMENU.BIN:13200"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:9277c7103743": {
+  "cap": 288,
+  "copies": [
+   "KWAMENU.BIN:1327C"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:cd9cb867c33e": {
+  "cap": 76,
+  "copies": [
+   "KWAMENU.BIN:1339C"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:a3d245c477c5": {
+  "cap": 12,
+  "copies": [
+   "KWAMENU.BIN:133E8",
+   "X_SUZU.BIN:01200"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:c99bfb31007f": {
+  "cap": 12,
+  "copies": [
+   "KWAMENU.BIN:133F4",
+   "X_SUZU.BIN:0120C"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:54d02aa0a97f": {
+  "cap": 12,
+  "copies": [
+   "KWAMENU.BIN:13400",
+   "X_SUZU.BIN:01218"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:cc15b8015d63": {
+  "cap": 12,
+  "copies": [
+   "KWAMENU.BIN:1340C",
+   "X_SUZU.BIN:01224"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:c54f8e7c9b8f": {
+  "cap": 16,
+  "copies": [
+   "KWAMENU.BIN:13418"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:f12887c863f6": {
+  "cap": 16,
+  "copies": [
+   "KWAMENU.BIN:13428"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:20786a526eec": {
+  "cap": 12,
+  "copies": [
+   "KWAMENU.BIN:13438",
+   "X_SUZU.BIN:01248"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:678582fe033f": {
+  "cap": 16,
+  "copies": [
+   "KWAMENU.BIN:13444",
+   "X_SUZU.BIN:01254"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:7cd3722cfdaf": {
+  "cap": 16,
+  "copies": [
+   "KWAMENU.BIN:13454",
+   "X_SUZU.BIN:01264"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:b5bb24efe42d": {
+  "cap": 12,
+  "copies": [
+   "KWAMENU.BIN:13464",
+   "X_SUZU.BIN:01274"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:4bdebb851d83": {
+  "cap": 12,
+  "copies": [
+   "KWAMENU.BIN:13470",
+   "X_SUZU.BIN:01280"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:817ffd3d4f87": {
+  "cap": 16,
+  "copies": [
+   "KWAMENU.BIN:1347C",
+   "X_SUZU.BIN:0128C"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:ea66db39b43c": {
+  "cap": 12,
+  "copies": [
+   "KWAMENU.BIN:1348C"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:2d806dacad75": {
+  "cap": 12,
+  "copies": [
+   "KWAMENU.BIN:13498",
+   "X_SUZU.BIN:0129C"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:77c8154d4369": {
+  "cap": 12,
+  "copies": [
+   "KWAMENU.BIN:135F8",
+   "X_SUZU.BIN:013FC"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:23541355d93a": {
+  "cap": 8,
+  "copies": [
+   "KWAMENU.BIN:13638",
+   "X_SUZU.BIN:0143C"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:c748c6092ef2": {
+  "cap": 8,
+  "copies": [
+   "KWAMENU.BIN:13838"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:506cbdc4ed71": {
+  "cap": 12,
+  "copies": [
+   "KWAMENU.BIN:13840"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:e2b009d4708f": {
+  "cap": 8,
+  "copies": [
+   "KWAMENU.BIN:1384C"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:d35eb02d1237": {
+  "cap": 8,
+  "copies": [
+   "KWAMENU.BIN:13854"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:7e110d04b647": {
+  "cap": 8,
+  "copies": [
+   "KWAMENU.BIN:1385C"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:e08e0dd07516": {
+  "cap": 12,
+  "copies": [
+   "KWAMENU.BIN:13864"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:375f84c10c13": {
+  "cap": 12,
+  "copies": [
+   "KWAMENU.BIN:13870"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:91f41846e421": {
+  "cap": 24,
+  "copies": [
+   "KWAMENU.BIN:138C0"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:07b6812f6fb5": {
+  "cap": 84,
+  "copies": [
+   "KWAMENU.BIN:138D8"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:739acaaa7428": {
+  "cap": 76,
+  "copies": [
+   "KWAMENU.BIN:1392C"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:9b7bad75c1fb": {
+  "cap": 76,
+  "copies": [
+   "KWAMENU.BIN:13978"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:fe7ca22ed863": {
+  "cap": 68,
+  "copies": [
+   "KWAMENU.BIN:139C4"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:7754e65d455f": {
+  "cap": 68,
+  "copies": [
+   "KWAMENU.BIN:13A08"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:aef34b17aebe": {
+  "cap": 68,
+  "copies": [
+   "KWAMENU.BIN:13A4C"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:454a32173b8e": {
+  "cap": 68,
+  "copies": [
+   "KWAMENU.BIN:13A90"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:fb4ca8b34346": {
+  "cap": 76,
+  "copies": [
+   "KWAMENU.BIN:13AD4"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:4a721edca9fa": {
+  "cap": 84,
+  "copies": [
+   "KWAMENU.BIN:13B20"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:e8d1e0d35fdf": {
+  "cap": 80,
+  "copies": [
+   "KWAMENU.BIN:13B74"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:66f24bd5b0c4": {
+  "cap": 80,
+  "copies": [
+   "KWAMENU.BIN:13BC4"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:0861082ab571": {
+  "cap": 76,
+  "copies": [
+   "KWAMENU.BIN:13C14"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:b592474898c5": {
+  "cap": 72,
+  "copies": [
+   "KWAMENU.BIN:13C60"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:5f83a7a4f0b4": {
+  "cap": 56,
+  "copies": [
+   "KWAMENU.BIN:13CA8"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:8e168c1be011": {
+  "cap": 80,
+  "copies": [
+   "KWAMENU.BIN:13CE0"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:1ad7b4b7d609": {
+  "cap": 80,
+  "copies": [
+   "KWAMENU.BIN:13D30"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:9f60fcd4d343": {
+  "cap": 84,
+  "copies": [
+   "KWAMENU.BIN:13D80"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:242f6056d3e1": {
+  "cap": 80,
+  "copies": [
+   "KWAMENU.BIN:13DD4"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:5a7987b7912f": {
+  "cap": 76,
+  "copies": [
+   "KWAMENU.BIN:13E24"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:a17aa3605f0b": {
+  "cap": 72,
+  "copies": [
+   "KWAMENU.BIN:13E70"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:7fd300721f78": {
+  "cap": 8,
+  "copies": [
+   "KWAMENU.BIN:13EB8"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:0a81adb90970": {
+  "cap": 60,
+  "copies": [
+   "KWAMENU.BIN:13EC0"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:80801fec989c": {
+  "cap": 20,
+  "copies": [
+   "KWAMENU.BIN:13EFC"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:3754e706c810": {
+  "cap": 12,
+  "copies": [
+   "KWAMENU.BIN:13F10"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:ec5cdff08edf": {
+  "cap": 16,
+  "copies": [
+   "KWAMENU.BIN:13F1C"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:71d9a0994c5d": {
+  "cap": 12,
+  "copies": [
+   "KWAMENU.BIN:13F2C"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:95619c7ccb88": {
+  "cap": 12,
+  "copies": [
+   "KWAMENU.BIN:13F38"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:375f4e6cc7ca": {
+  "cap": 8,
+  "copies": [
+   "KWAMENU.BIN:13F44"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:df53c23c3d82": {
+  "cap": 8,
+  "copies": [
+   "KWAMENU.BIN:13F4C"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:7dee8d8cd9d5": {
+  "cap": 20,
+  "copies": [
+   "KWAMENU.BIN:13F60"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:06d540fc7d87": {
+  "cap": 16,
+  "copies": [
+   "KWAMENU.BIN:13F74"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:32cfcfdbfa75": {
+  "cap": 20,
+  "copies": [
+   "KWAMENU.BIN:13F84"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:4dc95e80f015": {
+  "cap": 16,
+  "copies": [
+   "KWAMENU.BIN:13F98"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:9c7619a39cf3": {
+  "cap": 12,
+  "copies": [
+   "KWAMENU.BIN:13FA8"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:7f9366cd5448": {
+  "cap": 16,
+  "copies": [
+   "KWAMENU.BIN:13FB4"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:4d28e8854ae5": {
+  "cap": 20,
+  "copies": [
+   "KWAMENU.BIN:13FC4"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:7e3694dcc719": {
+  "cap": 20,
+  "copies": [
+   "KWAMENU.BIN:13FD8"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:241bee4b9cb3": {
+  "cap": 24,
+  "copies": [
+   "KWAMENU.BIN:13FEC",
+   "KWAMENU.BIN:14004"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:7af033242dc7": {
+  "cap": 16,
+  "copies": [
+   "KWAMENU.BIN:1401C"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:b0f1360bbc31": {
+  "cap": 12,
+  "copies": [
+   "KWAMENU.BIN:1402C"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:90ea564f624f": {
+  "cap": 20,
+  "copies": [
+   "KWAMENU.BIN:14038",
+   "KWAMENU.BIN:1404C"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:cf2aeaa643c3": {
+  "cap": 264,
+  "copies": [
+   "KWAMENU.BIN:14060"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:6ad657f45bbd": {
+  "cap": 196,
+  "copies": [
+   "KWAMENU.BIN:14290"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:b994ec917c24": {
+  "cap": 268,
+  "copies": [
+   "KWAMENU.BIN:14354"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:9425ea3d8b49": {
+  "cap": 92,
+  "copies": [
+   "KWAMENU.BIN:14460"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:06fd7c9dfde6": {
+  "cap": 84,
+  "copies": [
+   "KWAMENU.BIN:144BC",
+   "KWAMENU.BIN:1465C",
+   "KWAMENU.BIN:15BD4"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:1b6b3821406e": {
+  "cap": 56,
+  "copies": [
+   "KWAMENU.BIN:14510"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:4813472903de": {
+  "cap": 56,
+  "copies": [
+   "KWAMENU.BIN:14548"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:a2849c8ea119": {
+  "cap": 56,
+  "copies": [
+   "KWAMENU.BIN:14580",
+   "KWAMENU.BIN:156EC"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:5cef96493fb9": {
+  "cap": 72,
+  "copies": [
+   "KWAMENU.BIN:145B8"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:f698778cd921": {
+  "cap": 92,
+  "copies": [
+   "KWAMENU.BIN:14600"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:90babdff66b4": {
+  "cap": 148,
+  "copies": [
+   "KWAMENU.BIN:146B0"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:d107c2cc00d5": {
+  "cap": 84,
+  "copies": [
+   "KWAMENU.BIN:14744"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:7fc45ad27c26": {
+  "cap": 88,
+  "copies": [
+   "KWAMENU.BIN:14798"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:bd59373d7478": {
+  "cap": 88,
+  "copies": [
+   "KWAMENU.BIN:147F0"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:0d326191b889": {
+  "cap": 64,
+  "copies": [
+   "KWAMENU.BIN:14848",
+   "KWAMENU.BIN:14AB0"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:eae416fa35ec": {
+  "cap": 56,
+  "copies": [
+   "KWAMENU.BIN:14888",
+   "KWAMENU.BIN:14AF0"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:7eceee1feb65": {
+  "cap": 76,
+  "copies": [
+   "KWAMENU.BIN:148C0"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:615d1b862d48": {
+  "cap": 96,
+  "copies": [
+   "KWAMENU.BIN:1490C"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:79fc6e9f0ab6": {
+  "cap": 56,
+  "copies": [
+   "KWAMENU.BIN:1496C"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:7aa57552f97a": {
+  "cap": 76,
+  "copies": [
+   "KWAMENU.BIN:149A4"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:b75cd220817e": {
+  "cap": 76,
+  "copies": [
+   "KWAMENU.BIN:149F0"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:948f240542e9": {
+  "cap": 56,
+  "copies": [
+   "KWAMENU.BIN:14A3C"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:dcc0f3563122": {
+  "cap": 60,
+  "copies": [
+   "KWAMENU.BIN:14A74"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:8325ded870d3": {
+  "cap": 104,
+  "copies": [
+   "KWAMENU.BIN:14B28"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:eba55607dcc1": {
+  "cap": 56,
+  "copies": [
+   "KWAMENU.BIN:14B90"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:b13cbbf13c93": {
+  "cap": 52,
+  "copies": [
+   "KWAMENU.BIN:14BC8",
+   "KWAMENU.BIN:15608",
+   "KWAMENU.BIN:15BA0"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:f30ff7d6c8ca": {
+  "cap": 52,
+  "copies": [
+   "KWAMENU.BIN:14BFC"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:e48ea0c79c2a": {
+  "cap": 120,
+  "copies": [
+   "KWAMENU.BIN:14C30"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:b7894588aa35": {
+  "cap": 60,
+  "copies": [
+   "KWAMENU.BIN:14CA8"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:6a2b8ae95440": {
+  "cap": 68,
+  "copies": [
+   "KWAMENU.BIN:14CE4"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:527d271aa2be": {
+  "cap": 64,
+  "copies": [
+   "KWAMENU.BIN:14D28"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:b721283cc8f1": {
+  "cap": 96,
+  "copies": [
+   "KWAMENU.BIN:14D68"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:c00f01719bde": {
+  "cap": 52,
+  "copies": [
+   "KWAMENU.BIN:14DC8"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:12ee9f883ad6": {
+  "cap": 48,
+  "copies": [
+   "KWAMENU.BIN:14DFC"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:d2af2ff05b1b": {
+  "cap": 120,
+  "copies": [
+   "KWAMENU.BIN:14E2C"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:979ed6359700": {
+  "cap": 64,
+  "copies": [
+   "KWAMENU.BIN:14EA4"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:67e368f82d6d": {
+  "cap": 52,
+  "copies": [
+   "KWAMENU.BIN:14EE4"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:87e9f5df0341": {
+  "cap": 64,
+  "copies": [
+   "KWAMENU.BIN:14F18",
+   "KWAMENU.BIN:14F58"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:0d8f92bed2ce": {
+  "cap": 64,
+  "copies": [
+   "KWAMENU.BIN:14F98"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:63c8277ccedd": {
+  "cap": 64,
+  "copies": [
+   "KWAMENU.BIN:14FD8"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:69e0a8364948": {
+  "cap": 56,
+  "copies": [
+   "KWAMENU.BIN:15018"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:0687245435c0": {
+  "cap": 72,
+  "copies": [
+   "KWAMENU.BIN:15050"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:35e63115c9ba": {
+  "cap": 92,
+  "copies": [
+   "KWAMENU.BIN:15098"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:3ddd5a7e7c13": {
+  "cap": 44,
+  "copies": [
+   "KWAMENU.BIN:150F4"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:b181cd786c75": {
+  "cap": 52,
+  "copies": [
+   "KWAMENU.BIN:15120"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:e996999aa36b": {
+  "cap": 64,
+  "copies": [
+   "KWAMENU.BIN:15154"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:b15be4a0f06d": {
+  "cap": 52,
+  "copies": [
+   "KWAMENU.BIN:15194",
+   "KWAMENU.BIN:151FC",
+   "KWAMENU.BIN:15B14"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:29191f72f060": {
+  "cap": 52,
+  "copies": [
+   "KWAMENU.BIN:151C8"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:710fe28a8431": {
+  "cap": 52,
+  "copies": [
+   "KWAMENU.BIN:15230"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:0d3cb644bcdd": {
+  "cap": 52,
+  "copies": [
+   "KWAMENU.BIN:15264"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:19a7446e8ea5": {
+  "cap": 64,
+  "copies": [
+   "KWAMENU.BIN:15298"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:a89a0bb615a7": {
+  "cap": 60,
+  "copies": [
+   "KWAMENU.BIN:152D8"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:c050864445d5": {
+  "cap": 84,
+  "copies": [
+   "KWAMENU.BIN:15314"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:734f97fe2c17": {
+  "cap": 88,
+  "copies": [
+   "KWAMENU.BIN:15368"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:dab141b4ee9d": {
+  "cap": 72,
+  "copies": [
+   "KWAMENU.BIN:153C0"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:299f0151a50b": {
+  "cap": 68,
+  "copies": [
+   "KWAMENU.BIN:15408"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:15f07bf4c20a": {
+  "cap": 68,
+  "copies": [
+   "KWAMENU.BIN:1544C"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:ea9dfc9cc24e": {
+  "cap": 56,
+  "copies": [
+   "KWAMENU.BIN:15490"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:7de17240f768": {
+  "cap": 64,
+  "copies": [
+   "KWAMENU.BIN:154C8"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:dec25d595974": {
+  "cap": 92,
+  "copies": [
+   "KWAMENU.BIN:15508",
+   "KWAMENU.BIN:15A3C"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:ac8cee9ed692": {
+  "cap": 80,
+  "copies": [
+   "KWAMENU.BIN:15564"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:cbe76d878e28": {
+  "cap": 84,
+  "copies": [
+   "KWAMENU.BIN:155B4"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:876372ae1089": {
+  "cap": 56,
+  "copies": [
+   "KWAMENU.BIN:1563C"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:8cd7b81cbce0": {
+  "cap": 64,
+  "copies": [
+   "KWAMENU.BIN:15674"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:09c19ad6e181": {
+  "cap": 56,
+  "copies": [
+   "KWAMENU.BIN:156B4"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:d75b3274c092": {
+  "cap": 56,
+  "copies": [
+   "KWAMENU.BIN:15724",
+   "KWAMENU.BIN:157B0"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:dd612bb727cb": {
+  "cap": 84,
+  "copies": [
+   "KWAMENU.BIN:1575C"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:21df3835f363": {
+  "cap": 68,
+  "copies": [
+   "KWAMENU.BIN:157E8"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:12ea1fce564f": {
+  "cap": 84,
+  "copies": [
+   "KWAMENU.BIN:1582C"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:67ebf25e1466": {
+  "cap": 68,
+  "copies": [
+   "KWAMENU.BIN:15880"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:c683ae713f24": {
+  "cap": 64,
+  "copies": [
+   "KWAMENU.BIN:158C4"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:4b9e764ea1f9": {
+  "cap": 80,
+  "copies": [
+   "KWAMENU.BIN:15904"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:5a846b885b62": {
+  "cap": 72,
+  "copies": [
+   "KWAMENU.BIN:15954"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:e9585c5d59be": {
+  "cap": 84,
+  "copies": [
+   "KWAMENU.BIN:1599C"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:e73ea26c63d8": {
+  "cap": 76,
+  "copies": [
+   "KWAMENU.BIN:159F0"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:f759b25096bf": {
+  "cap": 52,
+  "copies": [
+   "KWAMENU.BIN:15A98"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:99bbc7ba65ef": {
+  "cap": 72,
+  "copies": [
+   "KWAMENU.BIN:15ACC"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:f3aa65d12271": {
+  "cap": 88,
+  "copies": [
+   "KWAMENU.BIN:15B48"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:2799c0660712": {
+  "cap": 68,
+  "copies": [
+   "KWAMENU.BIN:15C28"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:b17d8a00b536": {
+  "cap": 84,
+  "copies": [
+   "KWAMENU.BIN:15C6C"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:c5483c285e01": {
+  "cap": 52,
+  "copies": [
+   "KWAMENU.BIN:15CC0",
+   "KWAMENU.BIN:15D74"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:82a4a49e0276": {
+  "cap": 64,
+  "copies": [
+   "KWAMENU.BIN:15CF4"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:5f8cb0b033e3": {
+  "cap": 64,
+  "copies": [
+   "KWAMENU.BIN:15D34"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:2b4510b8d082": {
+  "cap": 88,
+  "copies": [
+   "KWAMENU.BIN:15DA8"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:984b6f1658d1": {
+  "cap": 68,
+  "copies": [
+   "KWAMENU.BIN:15E00"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:dc7b34ca3ef5": {
+  "cap": 48,
+  "copies": [
+   "KWAMENU.BIN:15E44"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:4cc0ca6cdd86": {
+  "cap": 52,
+  "copies": [
+   "KWAMENU.BIN:15E74"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:90d5392b2dac": {
+  "cap": 12,
+  "copies": [
+   "KWAMENU.BIN:15EA8"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:008b2bfb4cc5": {
+  "cap": 16,
+  "copies": [
+   "KWAMENU.BIN:15EB4"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:83b32a28b95c": {
+  "cap": 16,
+  "copies": [
+   "KWAMENU.BIN:15EC4"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:1db702021094": {
+  "cap": 140,
+  "copies": [
+   "KWAMENU.BIN:15ED4"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:b36c0df57c28": {
+  "cap": 108,
+  "copies": [
+   "KWAMENU.BIN:15F60"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:6707ab071dd5": {
+  "cap": 180,
+  "copies": [
+   "KWAMENU.BIN:15FCC"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:152818bb4ee0": {
+  "cap": 160,
+  "copies": [
+   "KWAMENU.BIN:16080"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:0cf578531278": {
+  "cap": 140,
+  "copies": [
+   "KWAMENU.BIN:16120"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:cae29641a6d3": {
+  "cap": 156,
+  "copies": [
+   "KWAMENU.BIN:161AC"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:a53e35af9a75": {
+  "cap": 96,
+  "copies": [
+   "KWAMENU.BIN:16248"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:989002babdfc": {
+  "cap": 84,
+  "copies": [
+   "KWAMENU.BIN:162A8"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:ffe4bf1d2c18": {
+  "cap": 20,
+  "copies": [
+   "KWAMENU.BIN:162FC"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:b6d9cb49ca6e": {
+  "cap": 48,
+  "copies": [
+   "KWAMENU.BIN:16310"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:d6ea0d40989f": {
+  "cap": 68,
+  "copies": [
+   "KWAMENU.BIN:16340"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:f7b76bc74d82": {
+  "cap": 64,
+  "copies": [
+   "KWAMENU.BIN:16384"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:a174eb5a7afc": {
+  "cap": 172,
+  "copies": [
+   "KWAMENU.BIN:163C4"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:2d0ab026781a": {
+  "cap": 128,
+  "copies": [
+   "KWAMENU.BIN:16470"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:6d02d3646428": {
+  "cap": 92,
+  "copies": [
+   "KWAMENU.BIN:164F0"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:51be99d608af": {
+  "cap": 128,
+  "copies": [
+   "KWAMENU.BIN:1654C"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:117adf8803bd": {
+  "cap": 132,
+  "copies": [
+   "KWAMENU.BIN:165CC"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:64f6ffacedda": {
+  "cap": 176,
+  "copies": [
+   "KWAMENU.BIN:16650"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:3e3092f0bcf9": {
+  "cap": 52,
+  "copies": [
+   "KWAMENU.BIN:16700"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:917cdf5e53ec": {
+  "cap": 136,
+  "copies": [
+   "KWAMENU.BIN:16734"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:f997176bdff9": {
+  "cap": 92,
+  "copies": [
+   "KWAMENU.BIN:167BC"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:8728820e1123": {
+  "cap": 48,
+  "copies": [
+   "KWAMENU.BIN:16818"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:1c38514f1956": {
+  "cap": 12,
+  "copies": [
+   "KWAMENU.BIN:16848"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:e54b980d1a3c": {
+  "cap": 108,
+  "copies": [
+   "KWAMENU.BIN:16854"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:e982b2fe9c08": {
+  "cap": 188,
+  "copies": [
+   "KWAMENU.BIN:168C0"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:d9daec0b510e": {
+  "cap": 136,
+  "copies": [
+   "KWAMENU.BIN:1697C"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:2139ac760a58": {
+  "cap": 64,
+  "copies": [
+   "KWAMENU.BIN:16A04"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:75fcf5866560": {
+  "cap": 52,
+  "copies": [
+   "KWAMENU.BIN:16A44"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:494aa941a588": {
+  "cap": 96,
+  "copies": [
+   "KWAMENU.BIN:16A78"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:b85c71d40d00": {
+  "cap": 80,
+  "copies": [
+   "KWAMENU.BIN:16AD8"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:891dcbb44b19": {
+  "cap": 192,
+  "copies": [
+   "KWAMENU.BIN:16B28"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:e5499c07a18d": {
+  "cap": 120,
+  "copies": [
+   "KWAMENU.BIN:16BE8"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:0b61fd261906": {
+  "cap": 112,
+  "copies": [
+   "KWAMENU.BIN:16C60"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:8fd82d0dade7": {
+  "cap": 20,
+  "copies": [
+   "KWAMENU.BIN:16CD0"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:c2c6089bb3bb": {
+  "cap": 76,
+  "copies": [
+   "KWAMENU.BIN:16CE4"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:800b30fe6995": {
+  "cap": 132,
+  "copies": [
+   "KWAMENU.BIN:16D30"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:23f94ca23162": {
+  "cap": 132,
+  "copies": [
+   "KWAMENU.BIN:16DB4"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:fa0c3e138d3f": {
+  "cap": 56,
+  "copies": [
+   "KWAMENU.BIN:16E38"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:40e45bf5cc59": {
+  "cap": 72,
+  "copies": [
+   "KWAMENU.BIN:16E70"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:b5c7ad2cc08e": {
+  "cap": 120,
+  "copies": [
+   "KWAMENU.BIN:16EB8"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:62feb88c8b57": {
+  "cap": 136,
+  "copies": [
+   "KWAMENU.BIN:16F30"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:59f7943c737e": {
+  "cap": 112,
+  "copies": [
+   "KWAMENU.BIN:16FB8"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:8bed2afc723e": {
+  "cap": 80,
+  "copies": [
+   "KWAMENU.BIN:17028"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:978a5dc27f6a": {
+  "cap": 120,
+  "copies": [
+   "KWAMENU.BIN:17078"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:696775eff3ca": {
+  "cap": 120,
+  "copies": [
+   "KWAMENU.BIN:170F0"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:e8c3332d9772": {
+  "cap": 144,
+  "copies": [
+   "KWAMENU.BIN:17168"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:bae7e6222a16": {
+  "cap": 12,
+  "copies": [
+   "KWAMENU.BIN:171F8"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:83c667f18057": {
+  "cap": 108,
+  "copies": [
+   "KWAMENU.BIN:17204"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:e5ffa682d93f": {
+  "cap": 68,
+  "copies": [
+   "KWAMENU.BIN:17270"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:97c753349734": {
+  "cap": 128,
+  "copies": [
+   "KWAMENU.BIN:172B4"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:2fd2b3845172": {
+  "cap": 148,
+  "copies": [
+   "KWAMENU.BIN:17334"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:d644ad4b22f9": {
+  "cap": 68,
+  "copies": [
+   "KWAMENU.BIN:173C8"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:558335353d27": {
+  "cap": 100,
+  "copies": [
+   "KWAMENU.BIN:1740C"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:fdfa7001791b": {
+  "cap": 68,
+  "copies": [
+   "KWAMENU.BIN:17470"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:263ae37d8c2d": {
+  "cap": 104,
+  "copies": [
+   "KWAMENU.BIN:174B4"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:84d3aa5d42b3": {
+  "cap": 168,
+  "copies": [
+   "KWAMENU.BIN:1751C"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:0f808eefceda": {
+  "cap": 112,
+  "copies": [
+   "KWAMENU.BIN:175C4"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:cad3b25b48c2": {
+  "cap": 12,
+  "copies": [
+   "KWAMENU.BIN:17634"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:9bc55660cf17": {
+  "cap": 52,
+  "copies": [
+   "KWAMENU.BIN:17640"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:fa14c73401a0": {
+  "cap": 96,
+  "copies": [
+   "KWAMENU.BIN:17674"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:8026037e1dae": {
+  "cap": 136,
+  "copies": [
+   "KWAMENU.BIN:176D4"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:8d8e8aee3693": {
+  "cap": 144,
+  "copies": [
+   "KWAMENU.BIN:1775C"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:476f4e21a942": {
+  "cap": 168,
+  "copies": [
+   "KWAMENU.BIN:177EC"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:02f72b5dba48": {
+  "cap": 120,
+  "copies": [
+   "KWAMENU.BIN:17894"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:0f2529247cbc": {
+  "cap": 108,
+  "copies": [
+   "KWAMENU.BIN:1790C",
+   "KWAMENU.BIN:17F90"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:974c3c884db0": {
+  "cap": 92,
+  "copies": [
+   "KWAMENU.BIN:17978"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:1d96bbdab8c8": {
+  "cap": 56,
+  "copies": [
+   "KWAMENU.BIN:179D4"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:f4bc7dda28b2": {
+  "cap": 44,
+  "copies": [
+   "KWAMENU.BIN:17A0C"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:69bc3191890c": {
+  "cap": 56,
+  "copies": [
+   "KWAMENU.BIN:17A38"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:941668ae0745": {
+  "cap": 36,
+  "copies": [
+   "KWAMENU.BIN:17A70",
+   "KWAMENU.BIN:17C70",
+   "KWAMENU.BIN:180EC"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:4875d27053c6": {
+  "cap": 96,
+  "copies": [
+   "KWAMENU.BIN:17A94"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:8a87a6974576": {
+  "cap": 116,
+  "copies": [
+   "KWAMENU.BIN:17AF4"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:5fcd668181f8": {
+  "cap": 68,
+  "copies": [
+   "KWAMENU.BIN:17B68"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:924d867e9c77": {
+  "cap": 112,
+  "copies": [
+   "KWAMENU.BIN:17BAC"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:3b107de5aaac": {
+  "cap": 24,
+  "copies": [
+   "KWAMENU.BIN:17C1C"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:b44f869ee9f1": {
+  "cap": 24,
+  "copies": [
+   "KWAMENU.BIN:17C34"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:c954687dba8c": {
+  "cap": 36,
+  "copies": [
+   "KWAMENU.BIN:17C4C"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:2794bd51d649": {
+  "cap": 44,
+  "copies": [
+   "KWAMENU.BIN:17C94"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:910fea9a1e96": {
+  "cap": 48,
+  "copies": [
+   "KWAMENU.BIN:17CC0"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:4e50de1045a3": {
+  "cap": 48,
+  "copies": [
+   "KWAMENU.BIN:17CF0"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:33320c32d7d4": {
+  "cap": 60,
+  "copies": [
+   "KWAMENU.BIN:17D20"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:93f9ef571d6b": {
+  "cap": 52,
+  "copies": [
+   "KWAMENU.BIN:17D5C"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:3d3008c0cc55": {
+  "cap": 40,
+  "copies": [
+   "KWAMENU.BIN:17D90"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:3dcb85142a57": {
+  "cap": 96,
+  "copies": [
+   "KWAMENU.BIN:17DB8"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:dd4b61452289": {
+  "cap": 56,
+  "copies": [
+   "KWAMENU.BIN:17E18"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:ca262eb9193d": {
+  "cap": 28,
+  "copies": [
+   "KWAMENU.BIN:17E50"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:6e758e6d8d21": {
+  "cap": 52,
+  "copies": [
+   "KWAMENU.BIN:17E6C"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:4f6cbd312358": {
+  "cap": 28,
+  "copies": [
+   "KWAMENU.BIN:17EA0"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:c77bf20c741e": {
+  "cap": 76,
+  "copies": [
+   "KWAMENU.BIN:17EBC"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:1a244c71aa7e": {
+  "cap": 48,
+  "copies": [
+   "KWAMENU.BIN:17F08"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:4b3bca613b6d": {
+  "cap": 88,
+  "copies": [
+   "KWAMENU.BIN:17F38"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:c30a390ad25a": {
+  "cap": 92,
+  "copies": [
+   "KWAMENU.BIN:17FFC"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:1d384ef8a9bd": {
+  "cap": 56,
+  "copies": [
+   "KWAMENU.BIN:18058"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:6131fa8913c6": {
+  "cap": 36,
+  "copies": [
+   "KWAMENU.BIN:18090"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:e03f8d749a45": {
+  "cap": 56,
+  "copies": [
+   "KWAMENU.BIN:180B4"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:4f089d52b81f": {
+  "cap": 96,
+  "copies": [
+   "KWAMENU.BIN:18110"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:8945574b7000": {
+  "cap": 116,
+  "copies": [
+   "KWAMENU.BIN:18170"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:4cf26c6e3285": {
+  "cap": 84,
+  "copies": [
+   "KWAMENU.BIN:181E4"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:24b81fc33bf1": {
+  "cap": 80,
+  "copies": [
+   "KWAMENU.BIN:18238"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:2b6773e7c736": {
+  "cap": 84,
+  "copies": [
+   "KWAMENU.BIN:18288"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:34c30aaf61b9": {
+  "cap": 100,
+  "copies": [
+   "KWAMENU.BIN:182DC"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:b18eb77d6bcb": {
+  "cap": 68,
+  "copies": [
+   "KWAMENU.BIN:18340"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:5ae5b79f5b4a": {
+  "cap": 140,
+  "copies": [
+   "KWAMENU.BIN:18384"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:2a65ad68e4af": {
+  "cap": 72,
+  "copies": [
+   "KWAMENU.BIN:18410"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:891320ba0844": {
+  "cap": 116,
+  "copies": [
+   "KWAMENU.BIN:18458"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:6d77a5e78a59": {
+  "cap": 24,
+  "copies": [
+   "KWAMENU.BIN:184CC"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:8c3050867762": {
+  "cap": 20,
+  "copies": [
+   "KWAMENU.BIN:184E4"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:d1b6eba0c465": {
+  "cap": 48,
+  "copies": [
+   "KWAMENU.BIN:184F8"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:97ff120ae3bd": {
+  "cap": 36,
+  "copies": [
+   "KWAMENU.BIN:18528"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:cd6da6835ac1": {
+  "cap": 44,
+  "copies": [
+   "KWAMENU.BIN:1854C"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:e897a1373ed5": {
+  "cap": 52,
+  "copies": [
+   "KWAMENU.BIN:18578"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:507d1d659b9e": {
+  "cap": 28,
+  "copies": [
+   "KWAMENU.BIN:185AC"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:97b3664073ab": {
+  "cap": 88,
+  "copies": [
+   "KWAMENU.BIN:185C8"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:c06bcbb80a19": {
+  "cap": 68,
+  "copies": [
+   "KWAMENU.BIN:18620"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:ea4fe64774a6": {
+  "cap": 64,
+  "copies": [
+   "KWAMENU.BIN:18664"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:fde17c0f0743": {
+  "cap": 24,
+  "copies": [
+   "KWAMENU.BIN:186A4"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:b8f7b3f893e7": {
+  "cap": 184,
+  "copies": [
+   "KWAMENU.BIN:186BC"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:3f65440151d2": {
+  "cap": 216,
+  "copies": [
+   "KWAMENU.BIN:18774"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:bbc594b2db06": {
+  "cap": 224,
+  "copies": [
+   "KWAMENU.BIN:1884C"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:88cc528aea69": {
+  "cap": 188,
+  "copies": [
+   "KWAMENU.BIN:1892C"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:30aa74bd3b25": {
+  "cap": 184,
+  "copies": [
+   "KWAMENU.BIN:189E8"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:baadff780738": {
+  "cap": 200,
+  "copies": [
+   "KWAMENU.BIN:18AA0"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:df28fb9e365b": {
+  "cap": 176,
+  "copies": [
+   "KWAMENU.BIN:18B68"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:786e3b8d5831": {
+  "cap": 212,
+  "copies": [
+   "KWAMENU.BIN:18C18"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:52f3844978c6": {
+  "cap": 256,
+  "copies": [
+   "KWAMENU.BIN:18CEC"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:94dff50d448e": {
+  "cap": 212,
+  "copies": [
+   "KWAMENU.BIN:18DEC"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:f15a128d9668": {
+  "cap": 216,
+  "copies": [
+   "KWAMENU.BIN:18EC0"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:485415de308a": {
+  "cap": 220,
+  "copies": [
+   "KWAMENU.BIN:18F98"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:e20984b608bd": {
+  "cap": 192,
+  "copies": [
+   "KWAMENU.BIN:19074"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:bc158b700579": {
+  "cap": 188,
+  "copies": [
+   "KWAMENU.BIN:19134"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:1ccc4261e55f": {
+  "cap": 244,
+  "copies": [
+   "KWAMENU.BIN:191F0"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:a39c63e3ef72": {
+  "cap": 244,
+  "copies": [
+   "KWAMENU.BIN:192E4"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:0f55c7c02c1b": {
+  "cap": 164,
+  "copies": [
+   "KWAMENU.BIN:193D8"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:5c365eba1f54": {
+  "cap": 196,
+  "copies": [
+   "KWAMENU.BIN:1947C"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:4d728bfd6f9f": {
+  "cap": 180,
+  "copies": [
+   "KWAMENU.BIN:19540"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:74b3d7a4cae8": {
+  "cap": 176,
+  "copies": [
+   "KWAMENU.BIN:195F4"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:a164b7e5b6ff": {
+  "cap": 60,
+  "copies": [
+   "KWAMENU.BIN:196A4"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:2f8b56928fb9": {
+  "cap": 28,
+  "copies": [
+   "KWAMENU.BIN:196E0",
+   "KWAMENU.BIN:19A24"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:c8c348f78e9c": {
+  "cap": 64,
+  "copies": [
+   "KWAMENU.BIN:196FC"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:a5df5fdbfcda": {
+  "cap": 28,
+  "copies": [
+   "KWAMENU.BIN:1973C"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:01e4418b96c9": {
+  "cap": 48,
+  "copies": [
+   "KWAMENU.BIN:19758"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:2c31a20cfebc": {
+  "cap": 24,
+  "copies": [
+   "KWAMENU.BIN:19788",
+   "KWAMENU.BIN:19A74"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:c60e7991a6a4": {
+  "cap": 52,
+  "copies": [
+   "KWAMENU.BIN:197A0"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:5263669943f2": {
+  "cap": 24,
+  "copies": [
+   "KWAMENU.BIN:197D4"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:3c8bc2356d81": {
+  "cap": 52,
+  "copies": [
+   "KWAMENU.BIN:197EC"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:02a8fb5e79df": {
+  "cap": 24,
+  "copies": [
+   "KWAMENU.BIN:19820"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:bfcfa2bdd0e7": {
+  "cap": 52,
+  "copies": [
+   "KWAMENU.BIN:19838"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:e25a0bb27f2b": {
+  "cap": 24,
+  "copies": [
+   "KWAMENU.BIN:1986C"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:e9945945d101": {
+  "cap": 52,
+  "copies": [
+   "KWAMENU.BIN:19884"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:7c53af79b734": {
+  "cap": 20,
+  "copies": [
+   "KWAMENU.BIN:198B8"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:306b09705eb8": {
+  "cap": 60,
+  "copies": [
+   "KWAMENU.BIN:198CC"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:a92acd7851b9": {
+  "cap": 28,
+  "copies": [
+   "KWAMENU.BIN:19908"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:ecdc9f09f5cb": {
+  "cap": 68,
+  "copies": [
+   "KWAMENU.BIN:19924"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:5bf81b27b6dd": {
+  "cap": 36,
+  "copies": [
+   "KWAMENU.BIN:19968"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:821fbea9e4b1": {
+  "cap": 64,
+  "copies": [
+   "KWAMENU.BIN:1998C"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:729b939da5dc": {
+  "cap": 32,
+  "copies": [
+   "KWAMENU.BIN:199CC"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:5afe12001043": {
+  "cap": 56,
+  "copies": [
+   "KWAMENU.BIN:199EC"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:803ab7c62af4": {
+  "cap": 52,
+  "copies": [
+   "KWAMENU.BIN:19A40"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:cb2ba6293e46": {
+  "cap": 56,
+  "copies": [
+   "KWAMENU.BIN:19A8C"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:6086b82e5719": {
+  "cap": 24,
+  "copies": [
+   "KWAMENU.BIN:19AC4"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:24ec6cf4fd87": {
+  "cap": 36,
+  "copies": [
+   "KWAMENU.BIN:19ADC"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:04bfa2b4e3bb": {
+  "cap": 28,
+  "copies": [
+   "KWAMENU.BIN:19B00"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:34533359b7b1": {
+  "cap": 60,
+  "copies": [
+   "KWAMENU.BIN:19B1C"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:29ebf22b1c8a": {
+  "cap": 36,
+  "copies": [
+   "KWAMENU.BIN:19B58"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:753f075df77b": {
+  "cap": 64,
+  "copies": [
+   "KWAMENU.BIN:19B7C"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:abc6b3bd90ff": {
+  "cap": 36,
+  "copies": [
+   "KWAMENU.BIN:19BBC"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:111d4804bfb3": {
+  "cap": 64,
+  "copies": [
+   "KWAMENU.BIN:19BE0"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:7967d2f1f028": {
+  "cap": 36,
+  "copies": [
+   "KWAMENU.BIN:19C20",
+   "KWAMENU.BIN:19C80"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:b5be54602fab": {
+  "cap": 60,
+  "copies": [
+   "KWAMENU.BIN:19C44"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:e6eecd00115d": {
+  "cap": 56,
+  "copies": [
+   "KWAMENU.BIN:19CA4"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:010071f2e167": {
+  "cap": 28,
+  "copies": [
+   "KWAMENU.BIN:19CDC"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:6a7d0bfb9992": {
+  "cap": 56,
+  "copies": [
+   "KWAMENU.BIN:19CF8"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:cef8337335f9": {
+  "cap": 28,
+  "copies": [
+   "KWAMENU.BIN:19D30"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:609790212b67": {
+  "cap": 36,
+  "copies": [
+   "KWAMENU.BIN:19D4C"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:453673ee5949": {
+  "cap": 28,
+  "copies": [
+   "KWAMENU.BIN:19D70"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:692dfe7ccbc0": {
+  "cap": 24,
+  "copies": [
+   "KWAMENU.BIN:19D8C"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:3d0c477cdd68": {
+  "cap": 28,
+  "copies": [
+   "KWAMENU.BIN:19DA4"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:0de7b5cf3f88": {
+  "cap": 20,
+  "copies": [
+   "KWAMENU.BIN:19DC0"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:5e31db6fb29f": {
+  "cap": 3,
+  "copies": [
+   "KWAMENU.BIN:19DD4",
+   "KWAMENU.BIN:1A374"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:ef6161bc185c": {
+  "cap": 4,
+  "copies": [
+   "KWAMENU.BIN:19FB4"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:b0a7e6c31c63": {
+  "cap": 3,
+  "copies": [
+   "KWAMENU.BIN:1A554"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:5dae914e0105": {
+  "cap": 4,
+  "copies": [
+   "KWAMENU.BIN:1A734"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ },
+ "src:558b69e8c90e": {
+  "cap": 4,
+  "copies": [
+   "KWAMENU.BIN:1AEB4"
+  ],
+  "ko": "",
+  "status": "untranslated"
+ }
+}
