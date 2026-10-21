@@ -137,6 +137,42 @@ def fit_plan(units_, ko, slots=ONE_BYTE_SLOTS, rounds=1000):
         if out is None:
             break
         plan = (plan - {out}) | {best}
+    if any(cap < byte_length(toks, plan) for toks, cap, _ in entries):
+        plan = cover_plan(entries, freq, slots) or plan
+    return plan
+
+
+def cover_plan(entries, freq, slots):
+    """Smallest syllable set that fits every string (integer program), then the most frequent
+    syllables in the remaining slots. Ties go to frequent syllables. None if scipy is missing
+    or no such set fits in `slots`."""
+    try:
+        import numpy as np
+        from scipy.optimize import Bounds, LinearConstraint, milp
+    except ImportError:
+        return None
+    rows = [(cnt, byte_length(toks, set()) - cap) for toks, cap, cnt in entries]
+    rows = [(cnt, need) for cnt, need in rows if need > 0]
+    syl = sorted({ch for cnt, _ in rows for ch in cnt}, key=lambda ch: (-freq[ch], ch))
+    if not syl:
+        return None
+    col = {ch: i for i, ch in enumerate(syl)}
+    a = np.zeros((len(rows), len(syl)))
+    for r, (cnt, _) in enumerate(rows):
+        for ch, n in cnt.items():
+            a[r, col[ch]] = n
+    cost = 1 + np.arange(len(syl)) / (len(syl) * 10.0)
+    res = milp(c=cost, constraints=[LinearConstraint(a, [need for _, need in rows], np.inf)],
+               integrality=np.ones(len(syl)), bounds=Bounds(0, 1))
+    if res.x is None:
+        return None
+    plan = {ch for ch, x in zip(syl, res.x) if x > 0.5}
+    if len(plan) > slots:
+        return None
+    for ch, _ in sorted(freq.items(), key=lambda kv: (-kv[1], kv[0])):
+        if len(plan) >= slots:
+            break
+        plan.add(ch)
     return plan
 
 
@@ -194,6 +230,14 @@ WINDOW_LIMITS = [
      "peak introductions (climbing plan): text x=32, inner right edge x~297 (docs/survey.md §9)"),
     ("KWAMENU.BIN", 0x14460, 0x15EA8, 259,
      "stage descriptions (route plan, lower window): text x=36, inner right edge x~296 (docs/survey.md §9)"),
+    ("KWAMENU.BIN", 0x15ED4, 0x1790C, 236,
+     "database mountaineering terms: text x=44, inner right edge x~281 (docs/survey.md §9)"),
+    ("KWAMENU.BIN", 0x1790C, 0x186A4, 268,
+     "climber controls (database, under the picture): text x=28, inner right edge x~297 (docs/survey.md §9)"),
+    ("KWAMENU.BIN", 0x138D8, 0x13EB8, 108,
+     "training item summaries (right panel): text x=204, inner right edge x~313 (docs/survey.md §9)"),
+    ("KWAMENU.BIN", 0x186BC, 0x196A4, 236,
+     "training descriptions: same frame as the database terms window (docs/survey.md §9)"),
 ]
 
 
@@ -213,7 +257,9 @@ def window_problems(units_, ko, widths=None):
         limit = window_limit(units_[k]["copies"]) if entry.get("ko") else None
         if limit is None:
             continue
-        lines = ko_line_widths(tokenize(entry["ko"]), widths)
+        # layout at the end of a line (FC tabs, FD spaces) draws nothing
+        text = re.sub(r"(?:\{FC:[0-9A-F]{2}\}|　)+(?=\n|$)", "", entry["ko"])
+        lines = ko_line_widths(tokenize(text), widths)
         over = [(i + 1, w) for i, w in enumerate(lines) if w > limit]
         if over:
             out.append((k, "window", ", ".join(f"line {i} {w}px" for i, w in over) + f" > {limit}px"))

@@ -119,7 +119,29 @@ def test_window_problem_when_a_line_exceeds_a_measured_limit():
 def test_measured_windows_replace_the_source_width_warning():
     widths = {86: 12}
     units_ = {"src:a": {"text": "", "capacity": 99, "source": "57ff", "copies": ["KWAMENU.BIN:14354"]},
-              "src:b": {"text": "", "capacity": 99, "source": "57ff", "copies": ["KWAMENU.BIN:15ED4"]}}  # 登山情報, not measured
+              "src:b": {"text": "", "capacity": 99, "source": "57ff", "copies": ["KWAMENU.BIN:196A4"]}}  # training result, not measured
     ko = {"src:a": {"ko": "가나", "status": "draft"}, "src:b": {"ko": "가나", "status": "draft"}}
     assert [w[0] for w in kocheck.width_warnings(units_, ko, widths)] == ["src:b"]
     assert kocheck.window_problems(units_, ko) == []
+
+
+def test_cover_plan_takes_the_smallest_fitting_set_then_frequent_syllables():
+    # 가나, 가다 and 나라 each need one 1-byte syllable; {가, 나} covers all three with two slots,
+    # and the third slot goes to the most frequent remaining syllable 라
+    pytest.importorskip("scipy")
+    import collections
+    texts = [("가나", 4), ("가다", 4), ("나라", 4), ("다라라라", 99)]
+    entries = [(kocheck.tokenize(t), cap, collections.Counter(t)) for t, cap in texts]
+    freq = collections.Counter("".join(t for t, _ in texts))
+    plan = kocheck.cover_plan(entries, freq, slots=3)
+    assert plan == {"가", "나", "라"}
+    assert kocheck.cover_plan(entries, freq, slots=1) is None
+
+
+def test_window_problems_ignore_layout_at_the_end_of_a_line():
+    # training item panel: 108px; a trailing FC tab draws nothing
+    units_ = {"src:a": {"text": "", "capacity": 99, "source": "57ff", "copies": ["KWAMENU.BIN:138D8"]}}
+    ko = {"src:a": {"ko": "가" * 9 + "{FC:02}\n" + "가" * 9 + "　", "status": "draft"}}
+    assert kocheck.window_problems(units_, ko) == []
+    ko = {"src:a": {"ko": "{FC:01}" + "가" * 9, "status": "draft"}}
+    assert kocheck.window_problems(units_, ko) == [("src:a", "window", "line 1 121px > 108px")]

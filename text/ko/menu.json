@@ -1947,24 +1947,27 @@
   "copies": [
    "KWAMENU.BIN:12048"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "\n{FC:04}１９１９년\n{FC:06}영국(어빙)\n{FC:04}등정 성공{FC:02}조난자 수　０명\n\n{FC:04}１９４６년\n{FC:06}이탈리아(제르바수티)\n{FC:04}등정 실패{FC:02}조난자 수　１명\n{FC:04}등반 중 추락\n\n{FC:04}１９５５년{FC:02}브루야르 빙하\n{FC:06}프랑스(라슈날)\n{FC:04}등정 실패{FC:02}조난자 수　１명\n{FC:04}크레바스에 추락\n\n{FC:04}１９６１년\n{FC:05}프레네 중앙 필라 루트\n{FC:06}프랑스(데메종)\n{FC:04}등정 성공{FC:02}조난자 수　０명\n\n{FC:04}１９６６년\n{FC:06}일본(우에무라 나오미)\n{FC:04}등정 성공{FC:02}조난자 수　０명\n\n{FC:04}１９７０년　일반 루트\n{FC:06}프랑스인 파티\n{FC:04}등정 실패{FC:02}조난자 수　４명\n{FC:04}눈사태를 만났으나 전원 구조\n\n{FC:04}１９７９년\n{FC:05}일본(가모 아키코)\n{FC:04}등정 성공　조난자 수　０명\n\n{FC:04}１９９１년\n{FC:05}일본(가쿠료 산악회)\n{FC:04}등정 실패　조난자 수　３명\n{FC:04}추락\n\n{FC:04}１９９２년\n{FC:05}체코슬로바키아\n{FC:04}등정 성공　조난자 수　２명\n{FC:04}하산 중 활락\n\n{FC:04}１９９２년\n{FC:05}이탈리아인 파티\n{FC:04}등정 실패　조난자 수　６명\n{FC:04}크레바스에 추락\n\n{FC:04}１９９３년\n{FC:05}다국적 클라이머 파티\n{FC:04}등정 실패　조난자 수　８명\n{FC:04}세락 지대 붕괴에 휘말림\n\n{FC:04}１７８６년　초등정\n{FC:05}보송 빙하 루트\n{FC:04}스위스(소쉬르 대)\n{FC:04}조난자 수　０명",
+  "status": "draft",
+  "note": "알프스 등반사(몽블랑, 화면 확인). D7 별도 검수 대상. 원문 그대로 옮김: 1786년 초등정을 「ソシュール隊」로 적음(실제 초등은 발마·파카르, 소쉬르는 1787년). 「多国雑」은 多国籍의 오기로 보고 다국적으로 옮김. 鴨 秋子(가모 아키코)·岳僚山の会(가쿠료 산악회) 읽기 미확인. ブラッシュ氷河=브루야르(Brouillard)로 추정."
  },
  "src:47ff00edc69d": {
   "cap": 708,
   "copies": [
    "KWAMENU.BIN:1234C"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "{FC:04}１８６５년\n{FC:05}영국(윔퍼 대)\n{FC:04}초등정{FC:02}조난자 수　４명\n{FC:04}천수백 미터 아래 빙하로 활락\n\n{FC:04}１８６８년　첫 종주\n{FC:05}아일랜드(틴들)\n{FC:04}등정 성공{FC:02}조난자 수　０명\n\n{FC:04}１８７９년\n{FC:05}영국(머메리)\n{FC:04}등정 성공　조난자 수　０명\n\n{FC:04}１８８０년\n{FC:05}이탈리아(카렐)\n{FC:04}등정 실패　조난자 수　１명\n{FC:04}가이드가 순직\n\n{FC:04}１９２３년\n{FC:05}일본(아소 다케지)\n{FC:04}등정 성공　조난자 수　０명\n\n{FC:04}１９５１년\n{FC:05}일본(이토 스나오)\n{FC:04}등정 성공　조난자 수　０명\n\n{FC:04}１９５２년\n{FC:05}오스트리아\n{FC:04}(딤베르거)\n{FC:04}등정 성공{FC:02}조난자 수　０명\n\n{FC:04}１９７０년\n{FC:05}일본인 파티\n{FC:04}등정 실패　조난자 수　２명\n{FC:04}원인 불명\n\n{FC:04}１９７０년\n{FC:05}일본인 파티\n{FC:04}등정 실패　조난자 수　２명\n{FC:04}행방불명\n\n{FC:04}１９７０년\n{FC:05}일본인 등산가\n{FC:04}등정 실패　조난자 수　１명\n{FC:04}행방불명\n\n{FC:04}１９７８년\n{FC:05}스위스(주주)\n{FC:04}등정 실패　조난자 수　１명\n{FC:04}비박 중 사망\n\n{FC:04}１９９１년\n{FC:05}일본인 등산가\n{FC:04}등정 실패{FC:02}조난자 수　１명\n{FC:04}등정 중 추락\n",
+  "status": "draft",
+  "note": "알프스 등반사(마터호른, 화면 확인). D7 별도 검수 대상. 伊藤 愿(이토 스나오) 읽기 미확인, ジュージュ(주주) 원어 미확인. 「不明」은 사고 원인 불명으로 옮김. 1880년 카렐 가이드 순직은 원문 그대로."
  },
  "src:f970864e352e": {
   "cap": 704,
   "copies": [
    "KWAMENU.BIN:12610"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "{FC:04}１８５８년\n{FC:05}스위스(알머)\n{FC:04}등정 성공{FC:02}조난자 수　０명\n{FC:04}１９３８년　북벽\n{FC:05}오스트리아\n{FC:0B}(헤크마이어 대)\n{FC:04}등정 성공　조난자 수　０명\n\n{FC:04}１９４７년　북벽\n{FC:05}프랑스(테레이)\n{FC:04}등정 성공　조난자 수　０명\n\n{FC:04}１９５２년　북벽\n{FC:05}프랑스(레뷔파)\n{FC:04}등정 성공　조난자 수　０명\n\n{FC:04}１９６６년\n{FC:05}미국・영국 합동대\n{FC:04}등정 성공　조난자 수　１명\n{FC:04}리더가 추락\n\n{FC:04}１９７０년\n{FC:05}스코틀랜드 등산가대\n{FC:04}등정 성공{FC:02}조난자 수　０명\n\n{FC:04}１９７０년　북벽 직등 및 하강\n{FC:05}일본(산가쿠 도시카이 대)\n{FC:04}등정 성공　조난자 수　０명\n\n{FC:04}１９７０년　북벽\n{FC:05}스위스(스위스 대)\n{FC:04}등정 성공　조난자 수　０명\n\n{FC:04}１９７０년　북벽\n{FC:05}일본(일본 대)\n{FC:04}등정 성공　조난자 수　０명\n\n{FC:04}１９７０년　북벽\n{FC:05}일본(동계 유럽 알프스 대)\n{FC:04}등정 성공　조난자 수　１명\n{FC:04}추락\n\n{FC:04}１９７２년　북벽\n{FC:05}일본(후루카와 마사히로)\n{FC:04}등정 실패　조난자 수　１명\n{FC:04}추락\n\n{FC:04}１９９３년　북벽\n{FC:05}독일(프랑크 주르당)\n{FC:04}등정 성공　조난자 수　０명",
+  "status": "draft",
+  "note": "알프스 등반사(아이거, 화면 확인). D7 별도 검수 대상. 山学同志会(산가쿠 도시카이), 古川 正博(후루카와 마사히로) 읽기 미확인. フランクユールダン은 Frank Jourdan으로 보고 프랑크 주르당으로 옮김(미확인)."
  },
  "src:41ef5326076a": {
   "cap": 76,
@@ -2555,7 +2558,7 @@
   "copies": [
    "KWAMENU.BIN:138D8"
   ],
-  "ko": "３점 지지법\n{FC:02}(프리)\n　난이도　초급{FC:02}\n프리 클라이밍\n\n알프스의 고독한 노인\n스테이지　５\n　노인의 변덕\n피치　１",
+  "ko": "３점 지지법\n{FC:02}(프리)\n　난이도　초급{FC:02}\n프리 클라이밍\n\n고독한 노인\n스테이지　５\n　노인의 변덕\n피치　１",
   "status": "draft"
  },
  "src:739acaaa7428": {
@@ -2563,7 +2566,7 @@
   "copies": [
    "KWAMENU.BIN:1392C"
   ],
-  "ko": "로프 하강\n{FC:02}난이도　초급\n프리 클라이밍\n\n알프스의 고독한 노인\n스테이지　２\n　로프 하강 벽\n피치　１",
+  "ko": "로프 하강\n{FC:02}난이도　초급\n프리 클라이밍\n\n고독한 노인\n스테이지　２\n　로프 하강 벽\n피치　１",
   "status": "draft"
  },
  "src:9b7bad75c1fb": {
@@ -2579,7 +2582,7 @@
   "copies": [
    "KWAMENU.BIN:139C4"
   ],
-  "ko": "좁은 침니\n{FC:02}난이도　중급\n프리 클라이밍\n\n신들을 향한 송곳니\n스테이지　４\n{FC:04}비뚠 송곳니\n피치　２",
+  "ko": "좁은 침니\n{FC:02}난이도　중급\n프리 클라이밍\n\n신들의 송곳니\n스테이지　４\n{FC:02}비뚠 송곳니\n피치　２",
   "status": "draft"
  },
  "src:7754e65d455f": {
@@ -2587,7 +2590,7 @@
   "copies": [
    "KWAMENU.BIN:13A08"
   ],
-  "ko": "넓은 침니\n{FC:02}난이도　상급\n프리 클라이밍\n\n신들을 향한 송곳니\n스테이지　４\n{FC:04}비뚠 송곳니\n피치　２",
+  "ko": "넓은 침니\n{FC:02}난이도　상급\n프리 클라이밍\n\n신들의 송곳니\n스테이지　４\n{FC:02}비뚠 송곳니\n피치　２",
   "status": "draft"
  },
  "src:aef34b17aebe": {
@@ -2595,7 +2598,7 @@
   "copies": [
    "KWAMENU.BIN:13A4C"
   ],
-  "ko": "디에드르\n{FC:02}난이도　상급\n프리 클라이밍\n\n신들을 향한 송곳니\n스테이지　１２\n{FC:04}하늘의 물고기\n피치　２",
+  "ko": "디에드르\n{FC:02}난이도　상급\n프리 클라이밍\n\n신들의 송곳니\n스테이지　１２\n　하늘의 물고기\n피치　２",
   "status": "draft"
  },
  "src:454a32173b8e": {
@@ -2603,7 +2606,7 @@
   "copies": [
    "KWAMENU.BIN:13A90"
   ],
-  "ko": "레이백\n{FC:02}난이도　중급\n프리 클라이밍\n\n신들을 향한 송곳니\n스테이지　３\n{FC:03}풍수의 골짜기\n피치　１",
+  "ko": "레이백\n{FC:02}난이도　중급\n프리 클라이밍\n\n신들의 송곳니\n스테이지　３\n　풍수의 골짜기\n피치　１",
   "status": "draft"
  },
  "src:fb4ca8b34346": {
@@ -2691,7 +2694,7 @@
   "copies": [
    "KWAMENU.BIN:13DD4"
   ],
-  "ko": "더블 피켈\n　빙벽 등반\n{FC:02}난이도　중급\n{FC:02}인공 등반\n\n신들을 향한 송곳니\n스테이지　３\n{FC:05}얼음의 검\n피치　１",
+  "ko": "더블 피켈\n　빙벽 등반\n{FC:02}난이도　중급\n{FC:02}인공 등반\n\n신들의 송곳니\n스테이지　３\n{FC:02}얼음의 검\n피치　１",
   "status": "draft"
  },
  "src:5a7987b7912f": {
@@ -2707,7 +2710,7 @@
   "copies": [
    "KWAMENU.BIN:13E70"
   ],
-  "ko": "에트리에 등반\n{FC:02}난이도　상급\n{FC:02}인공 등반\n\n여신의 맨얼굴\n스테이지　１\n{FC:04}정령의 골짜기\n피치　１",
+  "ko": "에트리에 등반\n{FC:02}난이도　상급\n{FC:02}인공 등반\n\n여신의 맨얼굴\n스테이지　１\n　정령의 골짜기\n피치　１",
   "status": "draft"
  },
  "src:7fd300721f78": {
@@ -2909,8 +2912,8 @@
   "copies": [
    "KWAMENU.BIN:14460"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "암벽 가운데에 큰 바위덩이가 있습니다.\n바위 돌기가 매우 많아서\n비교적 움직이기 쉬운 암벽입니다.\n\n피치 수\n{FC:02}없음\n필요 기술\n{FC:02}없음",
+  "status": "draft"
  },
  "src:06fd7c9dfde6": {
   "cap": 84,
@@ -2919,24 +2922,24 @@
    "KWAMENU.BIN:1465C",
    "KWAMENU.BIN:15BD4"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "거의 수직인 벽입니다.\n몇 군데 있는 테라스를 거쳐\n목적지로 내려갑니다.\n\n피치 수\n{FC:02}없음\n필요 기술\n{FC:02}없음",
+  "status": "draft"
  },
  "src:1b6b3821406e": {
   "cap": 56,
   "copies": [
    "KWAMENU.BIN:14510"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "출발점 바로 위의 테라스를 목표로 합니다.\n\n피치 수\n{FC:02}없음\n필요 기술\n{FC:02}없음",
+  "status": "draft"
  },
  "src:4813472903de": {
   "cap": 56,
   "copies": [
    "KWAMENU.BIN:14548"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "출발점 왼쪽 위의 테라스를 목표로 합니다.\n\n피치 수\n{FC:02}없음\n필요 기술\n{FC:02}없음",
+  "status": "draft"
  },
  "src:a2849c8ea119": {
   "cap": 56,
@@ -2944,56 +2947,56 @@
    "KWAMENU.BIN:14580",
    "KWAMENU.BIN:156EC"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "곳곳에 잔설이 있는 암벽을 오릅니다.\n\n피치 수\n{FC:02}없음\n필요 기술\n{FC:02}없음",
+  "status": "draft"
  },
  "src:5cef96493fb9": {
   "cap": 72,
   "copies": [
    "KWAMENU.BIN:145B8"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "세로 크랙이 많이\n나 있는 암벽입니다.\n또 곳곳에 잔설이 있습니다.\n\n피치 수\n{FC:02}없음\n필요 기술\n{FC:02}없음",
+  "status": "draft"
  },
  "src:f698778cd921": {
   "cap": 92,
   "copies": [
    "KWAMENU.BIN:14600"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "암벽 가운데에 큰 바위덩이가 있습니다.\n바위 돌기가 매우 많아서\n비교적 움직이기 쉬운 암벽입니다.\n\n피치 수\n{FC:02}없음\n필요 기술\n{FC:02}없음",
+  "status": "draft"
  },
  "src:90babdff66b4": {
   "cap": 148,
   "copies": [
    "KWAMENU.BIN:146B0"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "고르주(양쪽에서 암벽이 좁혀 든 좁은 골)\n입니다.\n물살이 세서 헤엄쳐 갈 수는 없으니\n암벽을 물가 트래버스\n(물가의 홀드를 찾아 옆으로\n이동하는 것)로 돌파합시다.\n\n피치 수\n{FC:02}없음\n필요 기술\n{FC:02}없음",
+  "status": "draft"
  },
  "src:d107c2cc00d5": {
   "cap": 84,
   "copies": [
    "KWAMENU.BIN:14744"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "오버행 그늘로 들어가\n폭포 터널을 빠져나가는\n시원한 스테이지입니다.\n\n피치 수\n{FC:02}없음\n필요 기술\n{FC:02}오버행",
+  "status": "draft"
  },
  "src:7fc45ad27c26": {
   "cap": 88,
   "copies": [
    "KWAMENU.BIN:14798"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "온통 잔설인 정상을 향해 오릅니다.\n도중에 크게 갈라진 바위 틈이 ２곳 있습니다.\n\n피치 수\n{FC:02}없음\n필요 기술\n{FC:02}없음",
+  "status": "draft"
  },
  "src:bd59373d7478": {
   "cap": 88,
   "copies": [
    "KWAMENU.BIN:147F0"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "온통 잔설인 정상을 향해 오릅니다.\n도중에 크게 갈라진 바위 틈이 １곳 있습니다.\n\n피치 수\n{FC:02}없음\n필요 기술\n{FC:02}없음",
+  "status": "draft"
  },
  "src:0d326191b889": {
   "cap": 64,
@@ -3001,8 +3004,8 @@
    "KWAMENU.BIN:14848",
    "KWAMENU.BIN:14AB0"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "출발점 바로 위의 테라스를 목표로 합니다.\n\n피치 수\n{FC:02}없음\n필요 기술\n{FC:02}오버행",
+  "status": "draft"
  },
  "src:eae416fa35ec": {
   "cap": 56,
@@ -3010,80 +3013,80 @@
    "KWAMENU.BIN:14888",
    "KWAMENU.BIN:14AF0"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "오르내리기를 번갈아 하며 언덕을 넘습니다.\n\n피치 수\n{FC:02}６\n필요 기술\n{FC:02}없음",
+  "status": "draft"
  },
  "src:7eceee1feb65": {
   "cap": 76,
   "copies": [
    "KWAMENU.BIN:148C0"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "물이 흐르는 암벽을\n머리 위 테라스를 향해 오릅니다.\n\n피치 수\n{FC:02}없음\n필요 기술\n{FC:02}오버행",
+  "status": "draft"
  },
  "src:615d1b862d48": {
   "cap": 96,
   "copies": [
    "KWAMENU.BIN:1490C"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "좁은 데서 넓은 데로 이어지는 침니를\n머리 위 테라스를 향해 오릅니다.\n\n피치 수\n{FC:02}없음\n필요 기술\n{FC:02}좁은 침니\n{FC:02}넓은 침니",
+  "status": "draft"
  },
  "src:79fc6e9f0ab6": {
   "cap": 56,
   "copies": [
    "KWAMENU.BIN:1496C"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "좁은 침니를 오릅니다.\n\n피치 수\n{FC:02}없음\n필요 기술\n{FC:02}좁은 침니",
+  "status": "draft"
  },
  "src:7aa57552f97a": {
   "cap": 76,
   "copies": [
    "KWAMENU.BIN:149A4"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "좁은 침니와 수많은 미세 크랙이 있는\n암벽을 오릅니다.\n\n피치 수\n{FC:02}２\n필요 기술\n{FC:02}좁은 침니",
+  "status": "draft"
  },
  "src:b75cd220817e": {
   "cap": 76,
   "copies": [
    "KWAMENU.BIN:149F0"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "좁은 침니와 수많은 미세 크랙이 있는\n암벽을 내려갑니다.\n\n피치 수\n{FC:02}３\n필요 기술\n{FC:02}좁은 침니",
+  "status": "draft"
  },
  "src:948f240542e9": {
   "cap": 56,
   "copies": [
    "KWAMENU.BIN:14A3C"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "암반 가득 날카로운 바위가 솟은 지대입니다.\n\n피치 수\n{FC:02}４\n필요 기술\n{FC:02}없음",
+  "status": "draft"
  },
  "src:dcc0f3563122": {
   "cap": 60,
   "copies": [
    "KWAMENU.BIN:14A74"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "온통 덮인 잔설을 정상을 향해\n오릅니다.\n\n피치 수\n{FC:02}４\n필요 기술\n{FC:02}없음",
+  "status": "draft"
  },
  "src:8325ded870d3": {
   "cap": 104,
   "copies": [
    "KWAMENU.BIN:14B28"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "암벽 왼쪽에는 크랙이 나 있지만\n암반에 홀드할 곳이 적고\n오른쪽 절반에는 얼음이 붙어 있습니다.\n\n피치 수\n{FC:02}없음\n필요 기술\n{FC:02}레이백",
+  "status": "draft"
  },
  "src:eba55607dcc1": {
   "cap": 56,
   "copies": [
    "KWAMENU.BIN:14B90"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "능선을 따라 위쪽 테라스를 목표로 합니다.\n\n피치 수\n{FC:02}없음\n필요 기술\n{FC:02}레이백",
+  "status": "draft"
  },
  "src:b13cbbf13c93": {
   "cap": 52,
@@ -3092,96 +3095,96 @@
    "KWAMENU.BIN:15608",
    "KWAMENU.BIN:15BA0"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "리지(바위 능선)를 올라갑니다.\n\n피치 수\n{FC:02}없음\n필요 기술\n{FC:02}없음",
+  "status": "draft"
  },
  "src:f30ff7d6c8ca": {
   "cap": 52,
   "copies": [
    "KWAMENU.BIN:14BFC"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "리지(바위 능선)를 내려갑니다.\n\n피치 수\n{FC:02}없음\n필요 기술\n{FC:02}없음",
+  "status": "draft"
  },
  "src:e48ea0c79c2a": {
   "cap": 120,
   "copies": [
    "KWAMENU.BIN:14C30"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "암벽 오른쪽에는 크랙이 나 있지만\n암반에 홀드할 곳이 적고\n왼쪽 절반에는 얼음이 붙어 있습니다.\n이곳을 내려갑니다.\n\n피치 수\n{FC:02}없음\n필요 기술\n{FC:02}레이백",
+  "status": "draft"
  },
  "src:b7894588aa35": {
   "cap": 60,
   "copies": [
    "KWAMENU.BIN:14CA8"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "위쪽으로 침니 ２개가 뻗어 있습니다.\n\n피치 수\n{FC:02}없음\n필요 기술\n{FC:02}좁은 침니",
+  "status": "draft"
  },
  "src:6a2b8ae95440": {
   "cap": 68,
   "copies": [
    "KWAMENU.BIN:14CE4"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "가는 바위 다리로 겨우 이어진\n옆 암벽으로 이동합니다.\n\n피치 수\n{FC:02}없음\n필요 기술\n{FC:02}없음",
+  "status": "draft"
  },
  "src:527d271aa2be": {
   "cap": 64,
   "copies": [
    "KWAMENU.BIN:14D28"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "좁은 침니가 난 지대를 내려갑니다.\n\n피치 수\n{FC:02}없음\n필요 기술\n{FC:02}좁은 침니",
+  "status": "draft"
  },
  "src:b721283cc8f1": {
   "cap": 96,
   "copies": [
    "KWAMENU.BIN:14D68"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "넓은 데서 좁은 데로 이어지는 침니를\n머리 위 테라스를 향해 오릅니다.\n\n피치 수\n{FC:02}없음\n필요 기술\n{FC:02}좁은 침니\n{FC:02}넓은 침니",
+  "status": "draft"
  },
  "src:c00f01719bde": {
   "cap": 52,
   "copies": [
    "KWAMENU.BIN:14DC8"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "디에드르를 오릅니다.\n\n피치 수\n{FC:02}없음\n필요 기술\n{FC:02}디에드르",
+  "status": "draft"
  },
  "src:12ee9f883ad6": {
   "cap": 48,
   "copies": [
    "KWAMENU.BIN:14DFC"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "줄지어 있는 바위 턱을 오릅니다.\n\n피치 수\n{FC:02}２\n필요 기술\n{FC:02}없음",
+  "status": "draft"
  },
  "src:d2af2ff05b1b": {
   "cap": 120,
   "copies": [
    "KWAMENU.BIN:14E2C"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "빙하를 오릅니다.\n이곳 빙하의 얼음은 너무 단단해서\n아이스 클라이밍을 할 수 없습니다.\n빙하 표면에 드러난 뜬돌을\n홀드해서 오릅니다.\n\n피치 수\n{FC:02}３\n필요 기술\n{FC:02}없음",
+  "status": "draft"
  },
  "src:979ed6359700": {
   "cap": 64,
   "copies": [
    "KWAMENU.BIN:14EA4"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "셔벗 같은 빙벽을\n아이스 클라이밍으로 오릅니다.\n\n피치 수\n{FC:02}３\n필요 기술\n{FC:02}더블 피켈",
+  "status": "draft"
  },
  "src:67e368f82d6d": {
   "cap": 52,
   "copies": [
    "KWAMENU.BIN:14EE4"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "빙벽을 아이스 클라이밍으로 오릅니다.\n\n피치 수\n{FC:02}３\n필요 기술\n{FC:02}더블 피켈",
+  "status": "draft"
  },
  "src:87e9f5df0341": {
   "cap": 64,
@@ -3189,72 +3192,72 @@
    "KWAMENU.BIN:14F18",
    "KWAMENU.BIN:14F58"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "암벽에 얇게 언 얼음을\n아이스 클라이밍으로 오릅니다.\n\n피치 수\n{FC:02}３\n필요 기술\n{FC:02}더블 피켈",
+  "status": "draft"
  },
  "src:0d8f92bed2ce": {
   "cap": 64,
   "copies": [
    "KWAMENU.BIN:14F98"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "빙벽 밖으로 머리를 내민 바위 돌기를\n써서 오릅니다.\n\n피치 수\n{FC:02}없음\n필요 기술\n{FC:02}없음",
+  "status": "draft"
  },
  "src:63c8277ccedd": {
   "cap": 64,
   "copies": [
    "KWAMENU.BIN:14FD8"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "가운데로 흐르는 폭포를 따라\n위에 보이는 테라스를 목표로 합니다.\n\n피치 수\n{FC:02}없음\n필요 기술\n{FC:02}없음",
+  "status": "draft"
  },
  "src:69e0a8364948": {
   "cap": 56,
   "copies": [
    "KWAMENU.BIN:15018"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "좁은 침니가 밀집한 지대입니다.\n\n피치 수\n{FC:02}없음\n필요 기술\n{FC:02}좁은 침니",
+  "status": "draft"
  },
  "src:0687245435c0": {
   "cap": 72,
   "copies": [
    "KWAMENU.BIN:15050"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "옆으로 난 크랙을 오르고\n오버행 위를 목표로 합니다.\n\n피치 수\n{FC:02}없음\n필요 기술\n{FC:02}오버행",
+  "status": "draft"
  },
  "src:35e63115c9ba": {
   "cap": 92,
   "copies": [
    "KWAMENU.BIN:15098"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "출발점 바로 위에 보이는\n오버행 위 테라스를 목표로 합니다.\n\n피치 수\n{FC:02}없음\n필요 기술\n{FC:02}오버행\n{FC:02}펜듈럼 트래버스",
+  "status": "draft"
  },
  "src:3ddd5a7e7c13": {
   "cap": 44,
   "copies": [
    "KWAMENU.BIN:150F4"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "잔설이 많은 지대입니다.\n\n피치 수\n{FC:02}없음\n필요 기술\n{FC:02}없음",
+  "status": "draft"
  },
  "src:b181cd786c75": {
   "cap": 52,
   "copies": [
    "KWAMENU.BIN:15120"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "잔설 지대를 오릅니다.\n\n피치 수\n{FC:02}없음\n필요 기술\n{FC:02}디에드르",
+  "status": "draft"
  },
  "src:e996999aa36b": {
   "cap": 64,
   "copies": [
    "KWAMENU.BIN:15154"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "잔설 지대를 올라 정상을 목표로 합니다.\n\n피치 수\n{FC:02}없음\n필요 기술\n{FC:02}좁은 침니",
+  "status": "draft"
  },
  "src:b15be4a0f06d": {
   "cap": 52,
@@ -3263,104 +3266,104 @@
    "KWAMENU.BIN:151FC",
    "KWAMENU.BIN:15B14"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "바위 턱을 발만으로 트래버스합니다.\n\n피치 수\n{FC:02}없음\n필요 기술\n{FC:02}없음",
+  "status": "draft"
  },
  "src:29191f72f060": {
   "cap": 52,
   "copies": [
    "KWAMENU.BIN:151C8"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "수많은 크랙 지대를 오릅니다.\n\n피치 수\n{FC:02}없음\n필요 기술\n{FC:02}없음",
+  "status": "draft"
  },
  "src:710fe28a8431": {
   "cap": 52,
   "copies": [
    "KWAMENU.BIN:15230"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "오버행을 넘어갑니다.\n\n피치 수\n{FC:02}２\n필요 기술\n{FC:02}오버행",
+  "status": "draft"
  },
  "src:0d3cb644bcdd": {
   "cap": 52,
   "copies": [
    "KWAMENU.BIN:15264"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "오버행을 넘어갑니다.\n\n피치 수\n{FC:02}３\n필요 기술\n{FC:02}오버행",
+  "status": "draft"
  },
  "src:19a7446e8ea5": {
   "cap": 64,
   "copies": [
    "KWAMENU.BIN:15298"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "오버행이 ３개 이어진 스테이지입니다.\n\n피치 수\n{FC:02}３\n필요 기술\n{FC:02}오버행(에트리에)",
+  "status": "draft"
  },
  "src:a89a0bb615a7": {
   "cap": 60,
   "copies": [
    "KWAMENU.BIN:152D8"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "오버행을 넘어갑니다.\n\n피치 수\n{FC:02}３\n필요 기술\n{FC:02}오버행(에트리에)",
+  "status": "draft"
  },
  "src:c050864445d5": {
   "cap": 84,
   "copies": [
    "KWAMENU.BIN:15314"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "언 폭포를 아이스 클라이밍으로 오릅니다.\n도중에 진귀한 것을 눈앞에서 보게 될\n것입니다.\n\n피치 수\n{FC:02}３\n필요 기술\n{FC:02}더블 피켈",
+  "status": "draft"
  },
  "src:734f97fe2c17": {
   "cap": 88,
   "copies": [
    "KWAMENU.BIN:15368"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "빙벽을 아이스 클라이밍으로 오릅니다.\n위쪽에는 얼음이 튀어나온\n부분이 몇 군데 있습니다.\n\n피치 수\n{FC:02}３\n필요 기술\n{FC:02}더블 피켈",
+  "status": "draft"
  },
  "src:dab141b4ee9d": {
   "cap": 72,
   "copies": [
    "KWAMENU.BIN:153C0"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "줄지어 있는 바위 턱을 더블 피켈로\n트래버스하면서 오릅니다.\n\n피치 수\n{FC:02}２\n필요 기술\n{FC:02}더블 피켈",
+  "status": "draft"
  },
  "src:299f0151a50b": {
   "cap": 68,
   "copies": [
    "KWAMENU.BIN:15408"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "울퉁불퉁한 바위 면에 언 얼음을\n아이스 클라이밍으로 오릅니다.\n\n피치 수\n{FC:02}없음\n필요 기술\n{FC:02}더블 피켈",
+  "status": "draft"
  },
  "src:15f07bf4c20a": {
   "cap": 68,
   "copies": [
    "KWAMENU.BIN:1544C"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "일반 클라이밍과 아이스 클라이밍\n두 가지가 있는 스테이지입니다.\n\n피치 수\n{FC:02}３\n필요 기술\n{FC:02}더블 피켈",
+  "status": "draft"
  },
  "src:ea9dfc9cc24e": {
   "cap": 56,
   "copies": [
    "KWAMENU.BIN:15490"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "동굴이 밀집한 암벽을 오릅니다.\n\n피치 수\n{FC:02}４\n필요 기술\n{FC:02}없음",
+  "status": "draft"
  },
  "src:7de17240f768": {
   "cap": 64,
   "copies": [
    "KWAMENU.BIN:154C8"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "오버행이 ２단으로 이어집니다.\n\n피치 수\n{FC:02}없음\n필요 기술\n{FC:02}오버행(에트리에)",
+  "status": "draft"
  },
  "src:dec25d595974": {
   "cap": 92,
@@ -3368,48 +3371,48 @@
    "KWAMENU.BIN:15508",
    "KWAMENU.BIN:15A3C"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "죽순 모양 암반에서 아이스 클라이밍,\n동굴로 긴 여정이 이어집니다.\n\n피치 수\n{FC:02}４\n필요 기술\n{FC:02}더블 피켈\n{FC:02}오버행(에트리에)",
+  "status": "draft"
  },
  "src:ac8cee9ed692": {
   "cap": 80,
   "copies": [
    "KWAMENU.BIN:15564"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "암벽과 암벽을 잇는\n바위 다리 같은 곳을 건너갑니다.\n\n피치 수\n{FC:02}없음\n필요 기술\n{FC:02}오버행(에트리에)",
+  "status": "draft"
  },
  "src:cbe76d878e28": {
   "cap": 84,
   "copies": [
    "KWAMENU.BIN:155B4"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "암반 가득 날카로운 바위가 솟은 지대입니다.\n능선을 따라 왼쪽 위 테라스를 목표로 합니다.\n\n피치 수\n{FC:02}없음\n필요 기술\n{FC:02}없음",
+  "status": "draft"
  },
  "src:876372ae1089": {
   "cap": 56,
   "copies": [
    "KWAMENU.BIN:1563C"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "출발점 오른쪽 위의 테라스를 목표로 합니다.\n\n피치 수\n{FC:02}없음\n필요 기술\n{FC:02}없음",
+  "status": "draft"
  },
  "src:8cd7b81cbce0": {
   "cap": 64,
   "copies": [
    "KWAMENU.BIN:15674"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "오로지 머리 위 정상을 향해\n아이스 클라이밍으로 오릅니다.\n\n피치 수\n{FC:02}３\n필요 기술\n{FC:02}없음",
+  "status": "draft"
  },
  "src:09c19ad6e181": {
   "cap": 56,
   "copies": [
    "KWAMENU.BIN:156B4"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "동굴이 밀집한 암벽을 오릅니다.\n\n피치 수\n{FC:02}없음\n필요 기술\n{FC:02}없음",
+  "status": "draft"
  },
  "src:d75b3274c092": {
   "cap": 56,
@@ -3417,120 +3420,120 @@
    "KWAMENU.BIN:15724",
    "KWAMENU.BIN:157B0"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "언 폭포를 아이스 클라이밍으로 오릅니다.\n\n피치 수\n{FC:02}없음\n필요 기술\n{FC:02}더블 피켈",
+  "status": "draft"
  },
  "src:dd612bb727cb": {
   "cap": 84,
   "copies": [
    "KWAMENU.BIN:1575C"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "가운데 언 폭포는 얼음이 너무 단단해서\n아이스 클라이밍을 할 수 없습니다.\n암벽을 오릅시다.\n\n피치 수\n{FC:02}없음\n필요 기술\n{FC:02}없음",
+  "status": "draft"
  },
  "src:21df3835f363": {
   "cap": 68,
   "copies": [
    "KWAMENU.BIN:157E8"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "암벽의 움푹한 곳에 남은 눈을\n아이스 클라이밍으로 오릅니다.\n\n피치 수\n{FC:02}없음\n필요 기술\n{FC:02}더블 피켈",
+  "status": "draft"
  },
  "src:12ea1fce564f": {
   "cap": 84,
   "copies": [
    "KWAMENU.BIN:1582C"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "동굴 ２개를 넘어 오버행\n위를 목표로 합니다.\n\n피치 수\n{FC:02}없음\n필요 기술\n{FC:02}오버행\n{FC:02}오버행(에트리에)",
+  "status": "draft"
  },
  "src:67ebf25e1466": {
   "cap": 68,
   "copies": [
    "KWAMENU.BIN:15880"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "오로지 머리 위 정상을 향해\n아이스 클라이밍으로 오릅니다.\n\n피치 수\n{FC:02}３\n필요 기술\n{FC:02}더블 피켈",
+  "status": "draft"
  },
  "src:c683ae713f24": {
   "cap": 64,
   "copies": [
    "KWAMENU.BIN:158C4"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "오버행을 넘어 테라스를 목표로 합니다.\n\n피치 수\n{FC:02}３\n필요 기술\n{FC:02}오버행(에트리에)",
+  "status": "draft"
  },
  "src:4b9e764ea1f9": {
   "cap": 80,
   "copies": [
    "KWAMENU.BIN:15904"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "출발점 오른쪽 위의 테라스를 목표로 합니다.\n바위 턱은 발만으로 트래버스합니다.\n\n피치 수\n{FC:02}２\n필요 기술\n{FC:02}없음",
+  "status": "draft"
  },
  "src:5a846b885b62": {
   "cap": 72,
   "copies": [
    "KWAMENU.BIN:15954"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "눈 쌓인 지대 중 눈이 없는 곳을\n오릅니다.\n\n피치 수\n{FC:02}３\n필요 기술\n{FC:02}에트리에 트래버스",
+  "status": "draft"
  },
  "src:e9585c5d59be": {
   "cap": 84,
   "copies": [
    "KWAMENU.BIN:1599C"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "테라스를 거쳐\n오른쪽 위 테라스를 목표로 합니다.\n머리 위로 큰 눈처마가 보입니다.\n\n피치 수\n{FC:02}３\n필요 기술\n{FC:02}없음",
+  "status": "draft"
  },
  "src:e73ea26c63d8": {
   "cap": 76,
   "copies": [
    "KWAMENU.BIN:159F0"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "큰 바위덩이 오른쪽 위의 테라스를\n목표로 오릅니다.\n\n피치 수\n{FC:02}４\n필요 기술\n{FC:02}오버행(에트리에)",
+  "status": "draft"
  },
  "src:f759b25096bf": {
   "cap": 52,
   "copies": [
    "KWAMENU.BIN:15A98"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "빙벽을 아이스 클라이밍으로 오릅니다.\n\n피치 수\n{FC:02}４\n필요 기술\n{FC:02}더블 피켈",
+  "status": "draft"
  },
  "src:99bbc7ba65ef": {
   "cap": 72,
   "copies": [
    "KWAMENU.BIN:15ACC"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "빙벽과 눈처마가 번갈아 이어집니다.\n\n피치 수\n{FC:02}６\n필요 기술\n{FC:02}더블 피켈\n{FC:02}오버행(에트리에)",
+  "status": "draft"
  },
  "src:f3aa65d12271": {
   "cap": 88,
   "copies": [
    "KWAMENU.BIN:15B48"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "큰 바위덩이 오른쪽 위의 테라스를\n목표로 오릅니다.\n\n피치 수\n{FC:02}４\n필요 기술\n{FC:02}더블 피켈\n{FC:02}오버행(에트리에)",
+  "status": "draft"
  },
  "src:2799c0660712": {
   "cap": 68,
   "copies": [
    "KWAMENU.BIN:15C28"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "가운데 있는 언 폭포를 따라\n위에 보이는 테라스를 목표로 합니다.\n\n피치 수\n{FC:02}없음\n필요 기술\n{FC:02}없음",
+  "status": "draft"
  },
  "src:b17d8a00b536": {
   "cap": 84,
   "copies": [
    "KWAMENU.BIN:15C6C"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "동굴 ２개를 넘어 오버행 위를\n목표로 합니다.\n\n피치 수\n{FC:02}없음\n필요 기술\n{FC:02}오버행\n{FC:02}오버행(에트리에)",
+  "status": "draft"
  },
  "src:c5483c285e01": {
   "cap": 52,
@@ -3538,592 +3541,592 @@
    "KWAMENU.BIN:15CC0",
    "KWAMENU.BIN:15D74"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "구름 속으로 뛰어들어 정상을 목표로 합니다.\n\n피치 수\n{FC:02}２\n필요 기술\n{FC:02}없음",
+  "status": "draft"
  },
  "src:82a4a49e0276": {
   "cap": 64,
   "copies": [
    "KWAMENU.BIN:15CF4"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "흘러내리는 눈을 아이스 클라이밍으로\n기어오릅니다.\n\n피치 수\n{FC:02}３\n필요 기술\n{FC:02}더블 피켈",
+  "status": "draft"
  },
  "src:5f8cb0b033e3": {
   "cap": 64,
   "copies": [
    "KWAMENU.BIN:15D34"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "오버행을 트래버스한 뒤\n위로 오릅니다.\n\n피치 수\n{FC:02}２\n필요 기술\n{FC:02}없음",
+  "status": "draft"
  },
  "src:2b4510b8d082": {
   "cap": 88,
   "copies": [
    "KWAMENU.BIN:15DA8"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "빙벽을 아이스 클라이밍으로 오른 뒤\n크레바스가 있는 완만한 비탈을\n걸어서 목적지로 향합니다.\n\n피치 수\n{FC:02}２\n필요 기술\n{FC:02}더블 피켈",
+  "status": "draft"
  },
  "src:984b6f1658d1": {
   "cap": 68,
   "copies": [
    "KWAMENU.BIN:15E00"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "암반 틈에 생긴 얼음을\n아이스 클라이밍으로 오릅니다.\n\n피치 수\n{FC:02}２\n필요 기술\n{FC:02}더블 피켈",
+  "status": "draft"
  },
  "src:dc7b34ca3ef5": {
   "cap": 48,
   "copies": [
    "KWAMENU.BIN:15E44"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "주상 용암을 오릅니다.\n\n피치 수\n{FC:02}없음\n필요 기술\n{FC:02}없음",
+  "status": "draft"
  },
  "src:4cc0ca6cdd86": {
   "cap": 52,
   "copies": [
    "KWAMENU.BIN:15E74"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "화석을 찾으며 정상을 목표로 합니다.\n\n피치 수\n{FC:02}４\n필요 기술\n{FC:02}없음",
+  "status": "draft"
  },
  "src:90d5392b2dac": {
   "cap": 12,
   "copies": [
    "KWAMENU.BIN:15EA8"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "등산 정보",
+  "status": "draft"
  },
  "src:008b2bfb4cc5": {
   "cap": 16,
   "copies": [
    "KWAMENU.BIN:15EB4"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "어느 항목을 볼까요?",
+  "status": "draft"
  },
  "src:83b32a28b95c": {
   "cap": 16,
   "copies": [
    "KWAMENU.BIN:15EC4"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "■일반 등산 용어",
+  "status": "draft"
  },
  "src:1db702021094": {
   "cap": 140,
   "copies": [
    "KWAMENU.BIN:15ED4"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "활락\n\n　활락하면 치명적인 사고로\n이어지기 쉽습니다.\n활락을 막으려면 눈이 없는 곳에서는\n３점 확보 중심의 바위 오르기 기본을,\n눈이 있는 곳에서는 피켈을 쓴\n활락 정지를 꼭 연습해 두는\n것이 좋습니다.",
+  "status": "draft"
  },
  "src:b36c0df57c28": {
   "cap": 108,
   "copies": [
    "KWAMENU.BIN:15F60"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "고산병\n\n　두통・어지럼증・숨참・식욕 부진・\n메스꺼움・구토・수면 장애 등의\n증상을 통틀어\n고산병(정식으로는 급성 고산병)이라고\n합니다.",
+  "status": "draft"
  },
  "src:6707ab071dd5": {
   "cap": 180,
   "copies": [
    "KWAMENU.BIN:15FCC"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "체감 온도\n\n　온도계로 재는 기온과 달리\n몸이 직접 느끼는 더위와 추위를\n말합니다.\n체감 온도를 낮추는 큰 요소는\n몸이 젖는 것과 바람입니다.\n풍속이 １미터 늘 때마다 체감 온도는\n약 １도 내려갑니다.\n젖으면 더 크게 떨어지며\n갈아입지 않는 한 회복되지 않습니다.",
+  "status": "draft"
  },
  "src:152818bb4ee0": {
   "cap": 160,
   "copies": [
    "KWAMENU.BIN:16080"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "단독행\n\n　경우에 따라서는 며칠 동안이나\n다른 사람과의 교류가 거의 끊기지만\n대자연과 마주하며 지내는\n귀중한 시간을 가질 수 있습니다.\n자기 페이스로 산을 즐길 수 있지만\n자기 실력으로 완전히 해낼 수 있는\n계획이어야 합니다.",
+  "status": "draft"
  },
  "src:0cf578531278": {
   "cap": 140,
   "copies": [
    "KWAMENU.BIN:16120"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "정체\n\n　악천후 등으로 행동 예정을\n멈추고 그 자리에 머무르는 것입니다.\n예비일 수만큼 정체할 수 있지만\n예비일을 다 쓰면 이후 예정을\n중단하고 탈출 루트로\n하산하는 것을 검토합니다.",
+  "status": "draft"
  },
  "src:cae29641a6d3": {
   "cap": 156,
   "copies": [
    "KWAMENU.BIN:161AC"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "비박\n\n　텐트나 침낭 같은 캠프 용구를\n쓰지 않고 밖에서 밤을 지내는 것입니다.\n이는 일종의 비상사태로\n일부러 하는 일은 아닙니다.\n그러나 바위 오르기나 계곡 오르기에서는\n처음부터 계획적으로 비박하는 일도\n적지 않습니다.",
+  "status": "draft"
  },
  "src:a53e35af9a75": {
   "cap": 96,
   "copies": [
    "KWAMENU.BIN:16248"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "낙석\n\n　위에서 돌이 떨어지는 것과\n떨어진 돌 자체를 말합니다.\n눈이 녹은 직후, 장마철,\n큰비 직후에 일어나기 쉽습니다.",
+  "status": "draft"
  },
  "src:989002babdfc": {
   "cap": 84,
   "copies": [
    "KWAMENU.BIN:162A8"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "루트 파인딩\n\n　길을 잘못 들었을 때 등에 주변 지형과\n지도를 대조해 현재 위치를 확정하고\n대책을 세우는 것입니다.",
+  "status": "draft"
  },
  "src:ffe4bf1d2c18": {
   "cap": 20,
   "copies": [
    "KWAMENU.BIN:162FC"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "■등산의 여러 형태",
+  "status": "draft"
  },
  "src:b6d9cb49ca6e": {
   "cap": 48,
   "copies": [
    "KWAMENU.BIN:16310"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "아이스 클라이밍\n\n　피켈, 아이젠을 써서\n빙설벽 등을 오르는 것입니다.",
+  "status": "draft"
  },
  "src:d6ea0d40989f": {
   "cap": 68,
   "copies": [
    "KWAMENU.BIN:16340"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "알파인 클라이밍\n\n　암벽이나 바위 능선 같은 어려운 루트를\n등산 용구를 구사해 오르는 것입니다.",
+  "status": "draft"
  },
  "src:f7b76bc74d82": {
   "cap": 64,
   "copies": [
    "KWAMENU.BIN:16384"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "알파인 스타일\n\n　주로 ６０００미터 이상의 고봉을\n대상으로 하는 고소 등산 방식의 하나\n입니다.",
+  "status": "draft"
  },
  "src:a174eb5a7afc": {
   "cap": 172,
   "copies": [
    "KWAMENU.BIN:163C4"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "확보(빌레이)\n\n　파트너와 로프를 서로 묶고\n한쪽이 미끄러지면 다른 쪽이 로프를\n당겨 추락을 막는 것입니다.\n흔히 쓰는 것이 스타카토\n클라이밍으로, 한 명이 등반자,\n한 명이 확보자(빌레이어)가 되어\n번갈아 역할을 나누며 오릅니다.",
+  "status": "draft"
  },
  "src:2d0ab026781a": {
   "cap": 128,
   "copies": [
    "KWAMENU.BIN:16470"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "극지법・포위법\n\n　히말라야 등의 고봉을 오르는 고전적인\n방식입니다.\n베이스캠프에서 제１, 제２, 제３\n캠프로 차례로 전진 캠프를 세우고\n마지막 캠프에서 등정하는 방법입니다.",
+  "status": "draft"
  },
  "src:6d02d3646428": {
   "cap": 92,
   "copies": [
    "KWAMENU.BIN:164F0"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "클라이밍 게렌데\n\n　자연 속에 있는 알파인 클라이밍\n연습장입니다.\n인공 시설이 거의 없으므로\n안전 대책이 중요합니다.",
+  "status": "draft"
  },
  "src:51be99d608af": {
   "cap": 128,
   "copies": [
    "KWAMENU.BIN:1654C"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "고소 순응\n\n　고산병에 걸리지 않게 증상이 가벼울 때\n어느 고도에서 몸을 적응시키는 것\n입니다.\n보통 처음 고도의 영향이 나타나기 쉬운\n곳은 ４０００～４２００미터 전후라고\n합니다.",
+  "status": "draft"
  },
  "src:117adf8803bd": {
   "cap": 132,
   "copies": [
    "KWAMENU.BIN:165CC"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "고소 등산\n\n　보통 ６０００미터 이상의 고봉에\n오르는 것을 말합니다.\n６０００미터 이상의 산이 있는 곳은\n알래스카,\n안데스,\n파미르,\n톈산\n산맥 등을 포함한 히말라야 주변뿐입니다.",
+  "status": "draft"
  },
  "src:64f6ffacedda": {
   "cap": 176,
   "copies": [
    "KWAMENU.BIN:16650"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "３점 확보\n\n　클라이밍의 기본 중 하나로\n바위 표면의 모서리, 턱, 틈, 곡면 등을\n이용해 손발 네 점 중 세 점으로\n몸을 지지하는 것입니다.\n남은 손이나 발로 다음 홀드를 잡아\n이동해 가면\n미끄러질 위험을 가장 줄일 수\n있습니다.",
+  "status": "draft"
  },
  "src:3e3092f0bcf9": {
   "cap": 52,
   "copies": [
    "KWAMENU.BIN:16700"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "트래버스\n\n　바위 오르기에서\n홀드를 찾으며 옆으로 이동하는 것을\n말합니다.",
+  "status": "draft"
  },
  "src:917cdf5e53ec": {
   "cap": 136,
   "copies": [
    "KWAMENU.BIN:16734"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "트레킹\n\n　비교적 긴 시간의 도보 여행, 또는\n하이킹을 말합니다.\n또 등정을 목적으로 하는 등산이나\n루트 완등을 노리는 클라이밍과\n달리, 트레킹은 걷는 과정 자체를\n즐기는 것이 특징입니다.",
+  "status": "draft"
  },
  "src:f997176bdff9": {
   "cap": 92,
   "copies": [
    "KWAMENU.BIN:167BC"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "프리 클라이밍\n\n　피톤, 볼트를 홀드로 쓰지 않고\n물론 에트리에도 걸지 않고, 클라이머의\n손발과 자연에 있는 홀드만을\n써서 오르는 것입니다.",
+  "status": "draft"
  },
  "src:8728820e1123": {
   "cap": 48,
   "copies": [
    "KWAMENU.BIN:16818"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "물가 트래버스\n\n　물가에서 손발 디딜 곳을 찾으며\n옆으로 이동하는 것입니다.",
+  "status": "draft"
  },
  "src:1c38514f1956": {
   "cap": 12,
   "copies": [
    "KWAMENU.BIN:16848"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "■산의 지형",
+  "status": "draft"
  },
  "src:e54b980d1a3c": {
   "cap": 108,
   "copies": [
    "KWAMENU.BIN:16854"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "오버행\n\n　사람의 손발만으로는 오를 수 없을 듯한\n경사가 ９０도를 넘는 암벽을 말합니다.\n또 지붕 처마처럼 수평으로\n튀어나온 부분을 루프라고 합니다.",
+  "status": "draft"
  },
  "src:e982b2fe9c08": {
   "cap": 188,
   "copies": [
    "KWAMENU.BIN:168C0"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "너덜\n\n　산비탈에 크고 작은 암석이 잔뜩\n쌓인 곳으로, 너덜지대라고도 합니다.\n이 암석은 위에서 떨어진 낙석이나\n빙설이 얼고 녹는 작용으로 옮겨 와\n땅 위에 불안정하게 얹힌 뜬돌입니다.\n그래서 위에서는 낙석이 있고\n발밑은 뜬돌 사이를 지나야 하는\n위험 지대입니다.",
+  "status": "draft"
  },
  "src:d9daec0b510e": {
   "cap": 136,
   "copies": [
    "KWAMENU.BIN:1697C"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "크러스트\n\n　바람이나 햇볕, 비 등의 영향으로\n표면이 단단히 얼어붙은 적설을 말합니다.\n크러스트된 눈으로 덮인 사면에서는\n만일 활락할 때를 대비해\n활락 정지 기술도 익혀 둘 필요가\n있습니다.",
+  "status": "draft"
  },
  "src:2139ac760a58": {
   "cap": 64,
   "copies": [
    "KWAMENU.BIN:16A04"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "크랙\n\n　바위의 갈라진 틈을 말합니다.\n또 몸 전체가 들어갈 만한 큰 크랙을\n침니라고 합니다.",
+  "status": "draft"
  },
  "src:75fcf5866560": {
   "cap": 52,
   "copies": [
    "KWAMENU.BIN:16A44"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "디에드르(코너)\n\n　바위 면과 면이 맞닿아 생긴\n오목한 부분을 말합니다.\n　",
+  "status": "draft"
  },
  "src:494aa941a588": {
   "cap": 96,
   "copies": [
    "KWAMENU.BIN:16A78"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "크레바스\n\n　빙하에 생긴 갈라진 틈입니다.\n특히 흐름이 휘는 부분의 바깥쪽이나\n빙하의 경사가 바뀌는 곳 등에\n크레바스가 생기기 쉽다고 합니다.",
+  "status": "draft"
  },
  "src:b85c71d40d00": {
   "cap": 80,
   "copies": [
    "KWAMENU.BIN:16AD8"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "고르주\n\n　양쪽에서 암벽이 좁혀 든 좁은 골을\n말합니다.\n고르주에 길이 막히면\n헤엄칠지 물가로 트래버스할지 정합시다.",
+  "status": "draft"
  },
  "src:891dcbb44b19": {
   "cap": 192,
   "copies": [
    "KWAMENU.BIN:16B28"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "눈처마\n\n　눈 덮인 산의 능선이나 벼랑 끝에서\n바람 반대쪽으로 지붕 처마처럼 튀어나온\n적설입니다. 매우 무너지기 쉬워\n사면에서는 눈사태가 일어나기 쉽습니다.\n눈사태처럼 판단이 어려워 지형과\n눈 상태 읽기, 종합적인 설산 경험 같은\n불확실한 관점으로 판단할 수밖에\n없습니다.",
+  "status": "draft"
  },
  "src:e5499c07a18d": {
   "cap": 120,
   "copies": [
    "KWAMENU.BIN:16BE8"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "빙하\n\n　빙하가 움직이는 속도는 다양해서\n같은 빙하라도 장소, 시간,\n계절에 따라 속도가 다릅니다.\n흔히 골짜기를 이루며 흐르는 것을\n떠올리지만 그것은 곡빙하라고\n하는 것입니다.",
+  "status": "draft"
  },
  "src:0b61fd261906": {
   "cap": 112,
   "copies": [
    "KWAMENU.BIN:16C60"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "홀드\n\n　바위 표면의 모서리, 턱, 틈, 곡면 등\n을 이용해 손가락이나 발끝 등을 고정하여\n몸을 지탱하는 곳,\n즉 지지점을 홀드라고 합니다.",
+  "status": "draft"
  },
  "src:8fd82d0dade7": {
   "cap": 20,
   "copies": [
    "KWAMENU.BIN:16CD0"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "■등산 기술 관련 지식",
+  "status": "draft"
  },
  "src:c2c6089bb3bb": {
   "cap": 76,
   "copies": [
    "KWAMENU.BIN:16CE4"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "에트리에 기술\n\n　크랙에 하켄을 박고\n에트리에를 지점으로 바꿔 걸며\n오르는 인공 등반의 기초 기술입니다.",
+  "status": "draft"
  },
  "src:800b30fe6995": {
   "cap": 132,
   "copies": [
    "KWAMENU.BIN:16D30"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "오버행 등반\n\n　인공 등반에서는 에트리에를 써서\n오르지만, 프리 클라이밍\n에서는 두 손만으로 온 체중을 지탱하며\n올라야 하는 일도 많아\n체력이 매우 많이 필요합니다.",
+  "status": "draft"
  },
  "src:23f94ca23162": {
   "cap": 132,
   "copies": [
    "KWAMENU.BIN:16DB4"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "크랙 등반\n\n　바위 틈에 손이나 발, 때로는\n몸 전체를 끼워 넣고 비틀어\n반대 방향으로 생기는 힘을\n이용하거나, 몸과 바위 사이에 생기는\n마찰력을 최대한 살려 오르는 기술입니다.",
+  "status": "draft"
  },
  "src:fa0c3e138d3f": {
   "cap": 56,
   "copies": [
    "KWAMENU.BIN:16E38"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "현수 하강\n\n　자일을 두 겹으로 지점에 걸고\n그것을 타고 내려가는 기술입니다.",
+  "status": "draft"
  },
  "src:40e45bf5cc59": {
   "cap": 72,
   "copies": [
    "KWAMENU.BIN:16E70"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "디에드르 등반\n\n　넓은 침니를 오르는 요령으로\n두 손, 두 발을 벌리고\n좌우 벽을 버티며 오릅니다.",
+  "status": "draft"
  },
  "src:b5c7ad2cc08e": {
   "cap": 120,
   "copies": [
    "KWAMENU.BIN:16EB8"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "더블 피켈(더블 액스) 기술\n\n　빙벽 등반 기술입니다.\n두 손에 피켈 또는 아이스바일을 쥐고\n각각의 피크를 번갈아 박아 홀드하고\n아이젠 앞발톱을 차 넣으며 오릅니다.",
+  "status": "draft"
  },
  "src:62feb88c8b57": {
   "cap": 136,
   "copies": [
    "KWAMENU.BIN:16F30"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "침니 등반\n\n　넓은 침니는 두 손, 두 발을 벌리고\n좌우 벽을 버티며 오릅니다.\n좁은 침니는 두 다리를 힘주기 좋게\n굽혀 버티고\n등으로 밀며 몸을 지탱해 올라갑니다.",
+  "status": "draft"
  },
  "src:59f7943c737e": {
   "cap": 112,
   "copies": [
    "KWAMENU.BIN:16FB8"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "하켄 기술\n\n　박는 법은 크랙에 하켄을 끼우고\n해머로 두드려 박는 단순한 작업이지만\n중요한 점은 박은 하켄이\n제대로 듣는지 아닌지를\n확인하는 것입니다.",
+  "status": "draft"
  },
  "src:8bed2afc723e": {
   "cap": 80,
   "copies": [
    "KWAMENU.BIN:17028"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "비박 기술\n\n　비박 색을 써서\n바람을 덜 맞으며 쉬는 것이 기본입니다.\n뜨거운 음료 등으로 몸을 녹이는 것도\n좋습니다.",
+  "status": "draft"
  },
  "src:978a5dc27f6a": {
   "cap": 120,
   "copies": [
    "KWAMENU.BIN:17078"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "페이스 클라이밍\n\n　손을 바위 틈에 찔러 넣거나\n발을 바위 돌기에 올려\n균형을 잡으며 바위 표면을 오르는\n단순한 동작입니다.\n바위 오르기에서 가장 중요한 기술입니다.",
+  "status": "draft"
  },
  "src:696775eff3ca": {
   "cap": 120,
   "copies": [
    "KWAMENU.BIN:170F0"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "펜듈럼 트래버스\n\n　먼저 목표 지점까지의 거리를 예측하고\n내려간 뒤, 벽을 차는 요령으로 진자\n처럼 트래버스합니다.\n긴 트래버스에서 위력을 발휘하는\n기술입니다.",
+  "status": "draft"
  },
  "src:e8c3332d9772": {
   "cap": 144,
   "copies": [
    "KWAMENU.BIN:17168"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "레이백(뒬퍼)\n\n　암벽에서 바위 일부가 얇은 판처럼\n떨어진 듯한 크랙을 오르는 방법입니다.\n몸을 바위에 대해 옆으로 향하고\n두 손으로 크랙 가장자리를 잡고\n두 발을 앞 벽이나 크랙 가장자리에\n버티며 오릅니다.",
+  "status": "draft"
  },
  "src:bae7e6222a16": {
   "cap": 12,
   "copies": [
    "KWAMENU.BIN:171F8"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "■등산 용구",
+  "status": "draft"
  },
  "src:83c667f18057": {
   "cap": 108,
   "copies": [
    "KWAMENU.BIN:17204"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "아이젠\n\n　눈 위를 걸을 때 등산화 바닥에\n달아 미끄럼을 막는 도구입니다.\n아이젠 발톱 수는\n４・６・８・１０・１２・１４・\n２０개짜리가 있습니다.",
+  "status": "draft"
  },
  "src:e5ffa682d93f": {
   "cap": 68,
   "copies": [
    "KWAMENU.BIN:17270"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "에트리에\n\n　홀드하기 어려운 오버행 등을\n넘을 때 인공 발판으로 쓰는\n작은 사다리입니다.",
+  "status": "draft"
  },
  "src:97c753349734": {
   "cap": 128,
   "copies": [
    "KWAMENU.BIN:172B4"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "카라비너\n\n　중요한 등산 용구 중 하나입니다.\n두랄루민으로 만든 타원형 고리로\n긴 축 일부를 스프링으로 여닫을 수 있게\n되어 있습니다.\n카라비너를 쓰면\n하켄과 로프를 재빨리 연결할 수\n있습니다.",
+  "status": "draft"
  },
  "src:2fd2b3845172": {
   "cap": 148,
   "copies": [
    "KWAMENU.BIN:17334"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "행동식\n\n　행동 중에 바로 먹는 식량입니다.\n버너류를 쓰지 않고\n짧은 시간에 먹을 수 있는 양으로 나뉘어\n있어서, 하루를 꽉 채워 행동하고\n목적지에 빨리 도착할 수 있습니다.\n어떤 조건에서도 합리적인 열량\n보급 방법입니다.",
+  "status": "draft"
  },
  "src:d644ad4b22f9": {
   "cap": 68,
   "copies": [
    "KWAMENU.BIN:173C8"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "비박 색\n\n　비박용 간이 텐트로\n비상용으로 본체만 가지고 다니는 것이\n본래 쓰는 법입니다.",
+  "status": "draft"
  },
  "src:558335353d27": {
   "cap": 100,
   "copies": [
    "KWAMENU.BIN:1740C"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "등산화\n\n　등산화는 중등산화와 경등산화로\n크게 나눌 수 있습니다.\n요즘은 눈이 없는 시기에는 경등산화,\n적설기에는 플라스틱 부츠가 주류입니다.",
+  "status": "draft"
  },
  "src:fdfa7001791b": {
   "cap": 68,
   "copies": [
    "KWAMENU.BIN:17470"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "하켄(피톤)\n\n　해머로 암벽의 가는 틈에\n박아 확보 지점을 만드는 도구입니다.",
+  "status": "draft"
  },
  "src:263ae37d8c2d": {
   "cap": 104,
   "copies": [
    "KWAMENU.BIN:174B4"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "하네스\n\n　클라이밍에 쓰는 확보용 벨트입니다.\n대부분 허리에 차는 반신형이며\n다루기 어려우므로 알맞은 크기로\n올바른 착용법을 지키는 것이 중요합니다.",
+  "status": "draft"
  },
  "src:84d3aa5d42b3": {
   "cap": 168,
   "copies": [
    "KWAMENU.BIN:1751C"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "피켈\n\n　가늘고 긴 샤프트에 금속 헤드와\n스파이크(물미)를 단 것입니다.\n그중 헤드 부분은 빙설을 깎는\n블레이드와 빙설에 찍는 피크로\n이루어지며, 피켈의 생명이라 할 만한\n중요한 부분입니다.\n지팡이, 빙설에 발판을 깎는 도구 등으로\n쓰입니다.",
+  "status": "draft"
  },
  "src:0f808eefceda": {
   "cap": 112,
   "copies": [
    "KWAMENU.BIN:175C4"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "로프(자일)\n\n　로프로 현수 하강을 할 수도\n있고, 만일 추락했을 때는\n확보로 추락을 막을 수 있습니다.\n이처럼 클라이밍에서는\n없어서는 안 될 물건입니다.",
+  "status": "draft"
  },
  "src:cad3b25b48c2": {
   "cap": 12,
   "copies": [
    "KWAMENU.BIN:17634"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "■산의 기상",
+  "status": "draft"
  },
  "src:9bc55660cf17": {
   "cap": 52,
   "copies": [
    "KWAMENU.BIN:17640"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "가스\n\n　구름을 바로 곁에서 보거나 속에 들어간\n상태에서 볼 때의 안개를 말합니다.",
+  "status": "draft"
  },
  "src:fa14c73401a0": {
   "cap": 96,
   "copies": [
    "KWAMENU.BIN:17674"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "관천망기\n\n　구름의 모양이나 변화를 바라보거나\n바람의 방향이나 공기의 따뜻함, 차가움,\n축축함 등을 느껴\n날씨를 예측하는 것을 말합니다.",
+  "status": "draft"
  },
  "src:8026037e1dae": {
   "cap": 136,
   "copies": [
    "KWAMENU.BIN:176D4"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "땅눈보라\n\n　쌓인 눈이 거센 바람에\n눈 표면 가까이를 흐르듯 이동하거나\n높이 날아오르는 것입니다.\n때로는 시야를 가리고\n눈 알갱이가 옆으로 얼굴을 때려\n눈도 뜨고 있을 수 없을 정도가\n됩니다.",
+  "status": "draft"
  },
  "src:8d8e8aee3693": {
   "cap": 144,
   "copies": [
    "KWAMENU.BIN:1775C"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "눈사태\n\n　설산에서 가장 무서운 자연 현상입니다.\n함부로 경험을 쌓을 수도 없고\n기술만으로는 대처할 수 없는 면이 있으며\n기본 지식을 갖추고도\n좀처럼 정확한 판단을 내리기 어렵습니다.\n표층・전층 눈사태가 대표적입니다.",
+  "status": "draft"
  },
  "src:476f4e21a942": {
   "cap": 168,
   "copies": [
    "KWAMENU.BIN:177EC"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "화이트아웃\n\n　가스나 눈보라 때문에\n시야가 극도로 나빠진 상태를\n말합니다.\n주위 지형이 전혀 보이지 않게 되어\n올바른 방향을 정하기 어려워집니다.\n이 상태가 되면 보통 행동이 불가능하다고\n보고 날씨가 회복되기를 기다리는 편이\n좋다고 합니다.",
+  "status": "draft"
  },
  "src:02f72b5dba48": {
   "cap": 120,
   "copies": [
    "KWAMENU.BIN:17894"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "유설\n\n　발밑에서 눈이 모래처럼 흘러내리는\n현상입니다.\n눈사태 발생 지점에 있으면 이런\n현상을 겪습니다.\n또 눈이 바람에 날려 올라가\n아래서 흘러오는 현상도 이렇게 부릅니다.",
+  "status": "draft"
  },
  "src:0f2529247cbc": {
   "cap": 108,
@@ -4131,40 +4134,40 @@
    "KWAMENU.BIN:1790C",
    "KWAMENU.BIN:17F90"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "　먼저 움직일 손이나 발을 고릅니다.\n△(Ｒ１)버튼(오른손)\n□(Ｌ１)버튼(왼손)\n○(Ｒ２)버튼(오른발)\n×(Ｌ２)버튼(왼발)\n에 대응합니다.\n",
+  "status": "draft"
  },
  "src:974c3c884db0": {
   "cap": 92,
   "copies": [
    "KWAMENU.BIN:17978"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "　△(Ｒ１)버튼을 눌러 오른손을\n홀드에서 뗍니다.\n당연히 남은 손발의 부담이 커지므로\n서둘러 다음 홀드를\n확보합시다.\n",
+  "status": "draft"
  },
  "src:1d96bbdab8c8": {
   "cap": 56,
   "copies": [
    "KWAMENU.BIN:179D4"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "　방향키로 손을 움직여 새로 홀드할\n수 있을 듯한 모서리 등으로 옮깁니다.\n",
+  "status": "draft"
  },
  "src:f4bc7dda28b2": {
   "cap": 44,
   "copies": [
    "KWAMENU.BIN:17A0C"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "　잡을 홀드가 있으면 자동으로\n그 홀드를 잡습니다.\n",
+  "status": "draft"
  },
  "src:69bc3191890c": {
   "cap": 56,
   "copies": [
    "KWAMENU.BIN:17A38"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "　클라이머의 몸을 바위 위로 끌어올릴\n때 등에 이 중심 이동을 합니다.\n",
+  "status": "draft"
  },
  "src:941668ae0745": {
   "cap": 36,
@@ -4173,544 +4176,544 @@
    "KWAMENU.BIN:17C70",
    "KWAMENU.BIN:180EC"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "　ＳＴＡＲＴ버튼을 누르면 중심 이동\n모드가 됩니다.\n",
+  "status": "draft"
  },
  "src:4875d27053c6": {
   "cap": 96,
   "copies": [
    "KWAMENU.BIN:17A94"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "　방향키로 중심을 옮길 방향을\n고르십시오.\n그 방향의 키(８방향)를 계속\n누르고 있으면 클라이머가 중심 이동을\n시작합니다.\n",
+  "status": "draft"
  },
  "src:8a87a6974576": {
   "cap": 116,
   "copies": [
    "KWAMENU.BIN:17AF4"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "원하는 위치까지 이동했으면\n방향키를 누릅니다.\n또한 △(Ｒ１)버튼・\n□(Ｌ１)버튼・○(Ｒ２)버튼\n×(Ｌ２)버튼을 누르면\n중심 이동이 풀립니다.\n",
+  "status": "draft"
  },
  "src:5fcd668181f8": {
   "cap": 68,
   "copies": [
    "KWAMENU.BIN:17B68"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "　좁은 침니를 오를 때는 손발을\n한쪽 벽에 버티고 등을 다른\n벽에 붙여 오릅니다.\n",
+  "status": "draft"
  },
  "src:924d867e9c77": {
   "cap": 112,
   "copies": [
    "KWAMENU.BIN:17BAC"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "　먼저 홀드에서 떼어 옮길 손이나 발을\n고릅니다.\n△(Ｒ１)버튼(오른손)\n□(Ｌ１)버튼(왼손)\n○(Ｒ２)버튼(오른발)\n×(Ｌ２)버튼(왼발)\n에 대응합니다.\n",
+  "status": "draft"
  },
  "src:3b107de5aaac": {
   "cap": 24,
   "copies": [
    "KWAMENU.BIN:17C1C"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "　다음으로 남은 손발도 옮깁니다.\n",
+  "status": "draft"
  },
  "src:b44f869ee9f1": {
   "cap": 24,
   "copies": [
    "KWAMENU.BIN:17C34"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "　조금씩 옮기는 편이 안전합니다.\n",
+  "status": "draft"
  },
  "src:c954687dba8c": {
   "cap": 36,
   "copies": [
    "KWAMENU.BIN:17C4C"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "　손발을 다 옮겼으면 몸을 끌어올립니다.\n",
+  "status": "draft"
  },
  "src:2794bd51d649": {
   "cap": 44,
   "copies": [
    "KWAMENU.BIN:17C94"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "　오를 때는 방향키 위, 내려갈 때는\n아래를 계속 누릅니다.\n",
+  "status": "draft"
  },
  "src:910fea9a1e96": {
   "cap": 48,
   "copies": [
    "KWAMENU.BIN:17CC0"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "　넓은 침니는 네 손발을 좌우 벽에\n버티며 오릅니다.\n",
+  "status": "draft"
  },
  "src:4e50de1045a3": {
   "cap": 48,
   "copies": [
    "KWAMENU.BIN:17CF0"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "　디에드르는 암벽이 만나는 모서리\n(코너)를 오를 때 씁니다.\n",
+  "status": "draft"
  },
  "src:33320c32d7d4": {
   "cap": 60,
   "copies": [
    "KWAMENU.BIN:17D20"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "　네 손발을 각각의 바위 면에 눌러\n몸을 받치고 조금씩 몸을 밀어 올립니다.\n",
+  "status": "draft"
  },
  "src:93f9ef571d6b": {
   "cap": 52,
   "copies": [
    "KWAMENU.BIN:17D5C"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "　레이백은 암벽에 수직으로 난\n크랙에 손을 넣고 비틀어 오릅니다.\n",
+  "status": "draft"
  },
  "src:3d3008c0cc55": {
   "cap": 40,
   "copies": [
    "KWAMENU.BIN:17D90"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "　몸은 마치 크랙 옆에 매달린\n듯한 모양이 됩니다.\n",
+  "status": "draft"
  },
  "src:3dcb85142a57": {
   "cap": 96,
   "copies": [
    "KWAMENU.BIN:17DB8"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "ＳＥＬＥＣＴ버튼을 누르면\n메뉴가 나오니, 그중에서\n특수 등반의 트래버스 세트를 고릅니다.\n\n펜듈럼 트래버스 시작 지점까지 이동합니다.\n",
+  "status": "draft"
  },
  "src:dd4b61452289": {
   "cap": 56,
   "copies": [
    "KWAMENU.BIN:17E18"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "　거기서 트래버스 시작을 고르면\n클라이머가 자동으로 로프에 매달립니다.\n",
+  "status": "draft"
  },
  "src:ca262eb9193d": {
   "cap": 28,
   "copies": [
    "KWAMENU.BIN:17E50"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "　클라이머가 좌우로 크게 흔들립니다.\n",
+  "status": "draft"
  },
  "src:6e758e6d8d21": {
   "cap": 52,
   "copies": [
    "KWAMENU.BIN:17E6C"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "　흔들리는 동안 홀드할 수 있는 곳에\n손이 겹치면 이동할 수 있습니다.\n",
+  "status": "draft"
  },
  "src:4f6cbd312358": {
   "cap": 28,
   "copies": [
    "KWAMENU.BIN:17EA0"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "　오버행은 손만으로 오릅니다.\n",
+  "status": "draft"
  },
  "src:c77bf20c741e": {
   "cap": 76,
   "copies": [
    "KWAMENU.BIN:17EBC"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "　뗄 홀드를 □(Ｌ１)버튼 왼손,\n△(Ｒ１)버튼 오른손으로 골라 떼면\n남은 한 손으로 매달립니다.\n",
+  "status": "draft"
  },
  "src:1a244c71aa7e": {
   "cap": 48,
   "copies": [
    "KWAMENU.BIN:17F08"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "　받친 손이 지치기 전에 손을 뻗어\n새 홀드를 잡습니다.\n",
+  "status": "draft"
  },
  "src:4b3bca613b6d": {
   "cap": 88,
   "copies": [
    "KWAMENU.BIN:17F38"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "　이것으로 이동할 수 있었습니다.\n두 손이 지쳐 떨어지기 전에 이 동작을\n되풀이해 오버행을 다 오르면\n됩니다.\n",
+  "status": "draft"
  },
  "src:c30a390ad25a": {
   "cap": 92,
   "copies": [
    "KWAMENU.BIN:17FFC"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "　△(Ｒ１)버튼을 눌러 오른손을\n홀드에서 뗍니다. 당연히 남은 손발\n의 부담이 커지므로 서둘러 다음\n홀드를 확보합시다.\n",
+  "status": "draft"
  },
  "src:1d384ef8a9bd": {
   "cap": 56,
   "copies": [
    "KWAMENU.BIN:18058"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "　방향키로 손을 움직여 새로\n홀드할 수 있을 듯한 모서리 등으로 옮깁니다.\n",
+  "status": "draft"
  },
  "src:6131fa8913c6": {
   "cap": 36,
   "copies": [
    "KWAMENU.BIN:18090"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "　△(Ｒ１)버튼을 누르면 새 홀드\n를 잡습니다.\n",
+  "status": "draft"
  },
  "src:e03f8d749a45": {
   "cap": 56,
   "copies": [
    "KWAMENU.BIN:180B4"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "　클라이머의 몸을 바위 위로 끌어올릴\n때 등에 이 중심 이동을 씁니다.\n",
+  "status": "draft"
  },
  "src:4f089d52b81f": {
   "cap": 96,
   "copies": [
    "KWAMENU.BIN:18110"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "　방향키로 중심을 옮길 방향을\n고르십시오.\n그 방향의 키(８방향)를 계속 누르고 있으면\n클라이머가 중심 이동을 시작합니다.\n",
+  "status": "draft"
  },
  "src:8945574b7000": {
   "cap": 116,
   "copies": [
    "KWAMENU.BIN:18170"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "원하는 위치까지 이동했으면\n방향키를 누릅니다.\n또한 △(Ｒ１)버튼・\n□(Ｌ１)버튼・○(Ｒ２)버튼\n×(Ｌ２)버튼을 누르면\n중심 이동이 풀립니다.\n",
+  "status": "draft"
  },
  "src:4cf26c6e3285": {
   "cap": 84,
   "copies": [
    "KWAMENU.BIN:181E4"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "　로프 현수 하강은 먼저\n로프를 겁니다.\n\n로프에 닿으면 그다음은 자동으로\n클라이머가 현수 하강 동작을 시작합니다.\n",
+  "status": "draft"
  },
  "src:24b81fc33bf1": {
   "cap": 80,
   "copies": [
    "KWAMENU.BIN:18238"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "　일단 로프에 매달리고 나면\n조작은 아주 간단합니다.\n방향키 아래를 누르면 클라이머가\n아래로 내려갑니다.\n",
+  "status": "draft"
  },
  "src:2b6773e7c736": {
   "cap": 84,
   "copies": [
    "KWAMENU.BIN:18288"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "　반대로 방향키 위를 누르면 클라이머가\n오르기 시작합니다.\n로프로 내려갔지만 위험하거나\n되돌아가고 싶을 때 씁니다.\n",
+  "status": "draft"
  },
  "src:34c30aaf61b9": {
   "cap": 100,
   "copies": [
    "KWAMENU.BIN:182DC"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "　페이스 클라이밍 중에 ＳＥＬＥＣＴ버튼\n을 누르면 특수 등반 메뉴가 나옵니다.\n그중 하켄을 고르면 하켄 관련\n메뉴가 나옵니다.\n",
+  "status": "draft"
  },
  "src:b18eb77d6bcb": {
   "cap": 68,
   "copies": [
    "KWAMENU.BIN:18340"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "　하켄은 기본적으로 크랙에만\n박을 수 있습니다.\n메뉴에서 박기를 고릅니다.\n",
+  "status": "draft"
  },
  "src:5ae5b79f5b4a": {
   "cap": 140,
   "copies": [
    "KWAMENU.BIN:18384"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "　”하켄 박기”를 고르면\n박을 수 있는 범위가 표시됩니다.\n방향키 상하좌우로 박을 곳을\n골라 ○(Ｒ２)버튼으로 정합니다.\n그다음은 자동으로 하켄을 박아 줍니다.\n",
+  "status": "draft"
  },
  "src:2a65ad68e4af": {
   "cap": 72,
   "copies": [
    "KWAMENU.BIN:18410"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "　하켄은 가져갈 수 있는 수가 한정됩니다.\n”뽑기” 명령으로 하켄을 회수해\n다시 쓸 수 있을 때도 있습니다.\n",
+  "status": "draft"
  },
  "src:891320ba0844": {
   "cap": 116,
   "copies": [
    "KWAMENU.BIN:18458"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "　하켄은 클라이머의 온 체중을 맡기는\n중요한 물건입니다.\n제대로 박히지 않은 하켄은\n빠질 우려가 있습니다.\n위험하다 싶으면 이 강도 점검으로\n확인해 봅시다.\n",
+  "status": "draft"
  },
  "src:6d77a5e78a59": {
   "cap": 24,
   "copies": [
    "KWAMENU.BIN:184CC"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "가고 싶은 곳에 에트리에를 겁니다.\n",
+  "status": "draft"
  },
  "src:8c3050867762": {
   "cap": 20,
   "copies": [
    "KWAMENU.BIN:184E4"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "　그 에트리에로 옮겨 탑니다.\n",
+  "status": "draft"
  },
  "src:d1b6eba0c465": {
   "cap": 48,
   "copies": [
    "KWAMENU.BIN:184F8"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "　새 에트리에를 또 걸면\n앞의 에트리에는 자동으로 회수\n됩니다.\n",
+  "status": "draft"
  },
  "src:97ff120ae3bd": {
   "cap": 36,
   "copies": [
    "KWAMENU.BIN:18528"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "　활락할 때 클라이머는\n뒤로 누운 채 떨어집니다.\n",
+  "status": "draft"
  },
  "src:cd6da6835ac1": {
   "cap": 44,
   "copies": [
    "KWAMENU.BIN:1854C"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "　먼저 방향키 좌우로 몸을 뒤집어\n엎드린 자세가 됩니다.\n",
+  "status": "draft"
  },
  "src:e897a1373ed5": {
   "cap": 52,
   "copies": [
    "KWAMENU.BIN:18578"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "　엎드린 자세에서 ○버튼\n을 연타하면 빙벽에 피켈을 눌러\n댑니다.\n",
+  "status": "draft"
  },
  "src:507d1d659b9e": {
   "cap": 28,
   "copies": [
    "KWAMENU.BIN:185AC"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "　잘되면 이것으로 멈출 수\n있습니다.\n",
+  "status": "draft"
  },
  "src:97b3664073ab": {
   "cap": 88,
   "copies": [
    "KWAMENU.BIN:185C8"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "더블 피켈은 두 손에 피켈을\n들고 번갈아 빙벽에 찍고\n발은 스파이크 모양 발톱이 달린 아이젠\n을 차 넣으며 오르는 방법입니다.\n",
+  "status": "draft"
  },
  "src:c06bcbb80a19": {
   "cap": 68,
   "copies": [
    "KWAMENU.BIN:18620"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "먼저 △(Ｒ１)버튼 오른손,\n□(Ｌ１)버튼 왼손을 골라\n어디에 피켈을 찍을지\n정합니다.\n",
+  "status": "draft"
  },
  "src:ea4fe64774a6": {
   "cap": 64,
   "copies": [
    "KWAMENU.BIN:18664"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "다음으로 ○(Ｒ２)버튼 오른발,\n×(Ｌ２)버튼 왼발\n을 골라 어디에 아이젠을 차 넣을지\n정합니다.\n",
+  "status": "draft"
  },
  "src:fde17c0f0743": {
   "cap": 24,
   "copies": [
    "KWAMENU.BIN:186A4"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "게임을 끝내겠습니까?",
+  "status": "draft"
  },
  "src:b8f7b3f893e7": {
   "cap": 184,
   "copies": [
    "KWAMENU.BIN:186BC"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "１)트레이닝＃１\n\n습득 기술\n３점 지지법\n\n락클라이밍에서 기초 중의 기초가\n이 ３점 지지법입니다.\n암벽을 자유롭게 오르내리려면\n피해 갈 수 없습니다.\n\n미숙할 때의 사고\n암장 도중에 오르지도 내려가지도\n못하게 되어 꼼짝 못 하는\n일이 생깁니다.\n",
+  "status": "draft"
  },
  "src:3f65440151d2": {
   "cap": 216,
   "copies": [
    "KWAMENU.BIN:18774"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "２)트레이닝＃２\n\n습득 기술\n로프 하강\n\n이 기술을 익히면\n손 디딜 곳도 발 디딜 곳도 없는 급사면도\n자유롭게 내려갈 수 있습니다.\n락클라이밍에서 가장 기본적인\n기술 중 하나입니다\n\n미숙할 때의 사고\n로프에서 균형을 잃어 거꾸로 매달린\n상태가 됩니다.\n또 발을 헛디뎌\n떨어지기도 합니다.\n",
+  "status": "draft"
  },
  "src:bbc594b2db06": {
   "cap": 224,
   "copies": [
    "KWAMENU.BIN:1884C"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "３)트레이닝＃３\n\n습득 기술\n트래버스\n\n트래버스는 옆으로 이동하는 것입니다.\n바로 위에 손발 디딜 곳이 없을 때\n옆으로 이동해(트래버스해)\n오르기 쉬운 루트를 찾을 수 있습니다.\n\n미숙할 때의 사고\n트래버스는 손발 부담이 클 뿐\n아니라 발판이 불안정한 경우도\n많습니다.\n헛디뎌 떨어지는 경우가\n가장 위험합니다.\n",
+  "status": "draft"
  },
  "src:88cc528aea69": {
   "cap": 188,
   "copies": [
    "KWAMENU.BIN:1892C"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "４)트레이닝＃４\n\n습득 기술\n좁은 침니\n\n이것을 익히면 바위 틈에 몸을\n끼워 넣고 오를 수 있습니다.\n비교적 체력을 덜 쓰고 편하게 오를 수\n있습니다.\n\n미숙할 때의 사고\n계속 암벽을 눌러 체중을 지탱\n하므로 균형을 잃으면\n그대로 떨어집니다.\n",
+  "status": "draft"
  },
  "src:30aa74bd3b25": {
   "cap": 184,
   "copies": [
    "KWAMENU.BIN:189E8"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "５)트레이닝＃５\n\n습득 기술\n넓은 침니\n\n팔다리(손발)를 모두 거미처럼 뻗어\n비교적 넓은 바위 틈을 오를 수\n있습니다.\n\n미숙할 때의 사고\n몸이 공중에 떠 있는 ３점 지지법의\n일종이라 손발 하나가 미끄러지면\n곧바로 추락으로 이어지기 쉽습니다.\n",
+  "status": "draft"
  },
  "src:baadff780738": {
   "cap": 200,
   "copies": [
    "KWAMENU.BIN:18AA0"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "６)트레이닝＃６\n\n습득 기술\n디에드르\n\n돌기가 비교적 적은 암장이라도\n바위 모서리에 손발을 눌러 대듯\n면으로 몸을 받치는 방법이라면 오를 수\n있습니다.\n\n미숙할 때의 사고\n잠깐이라면 체중을 지탱하기는 비교적\n쉽지만, 오래 버티려면 상당한 체력과\n요령이 필요합니다.\n",
+  "status": "draft"
  },
  "src:df28fb9e365b": {
   "cap": 176,
   "copies": [
    "KWAMENU.BIN:18B68"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "７)트레이닝＃７\n\n습득 기술\n레이백\n\n손가락이나 손바닥이 겨우 들어갈 만한\n좁은 바위 틈을 써서 암장을 오를 수\n있게 됩니다.\n특수한 등반법 중 하나입니다.\n\n미숙할 때의 사고\n손가락으로 온몸을 지탱하므로 손가락에\n힘이 빠지면 미끄러져 떨어집니다.\n",
+  "status": "draft"
  },
  "src:786e3b8d5831": {
   "cap": 212,
   "copies": [
    "KWAMENU.BIN:18C18"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "８)트레이닝＃８\n\n습득 기술\n펜듈럼 트래버스\n\n손 디딜 곳 하나 없는 매끈한 한 장 바위\n라도 로프를 써서 진자처럼 건너가는\n이 테크닉을 쓰면 편하게\n이동할 수 있습니다.\n\n미숙할 때의 사고\n로프를 지탱하는 하켄이 빠지거나\n건너간 곳에서 몸을 제대로\n홀드하지 못하면 곧바로 추락으로\n이어집니다.\n",
+  "status": "draft"
  },
  "src:52f3844978c6": {
   "cap": 256,
   "copies": [
    "KWAMENU.BIN:18CEC"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "９)트레이닝＃９\n\n습득 기술\n오버행(트래버스)\n\n오버행이란 암장이 수직 이상으로\n깎아지른 곳을 말합니다.\n주로 손만으로 암장을 오르는 것이\n이 오버행 오르는 법입니다.\n\n미숙할 때의 사고\n두 손으로 체중을 지탱한다는 것은\n이동할 때 아무래도 한 손을 떼고\n남은 한 손으로 온 체중을 지탱해야\n하니, 손의 부담은 상상 이상일 것입니다.\n",
+  "status": "draft"
  },
  "src:94dff50d448e": {
   "cap": 212,
   "copies": [
    "KWAMENU.BIN:18DEC"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "１０)트레이닝＃１０\n\n습득 기술\n오버행(등반)\n\n튀어나온 바위나 테라스 등 오버행\n진 곳을 손만으로 오를 수 있습니다.\n\n미숙할 때의 사고\n몸이 거의 허공에 내던져져 있으므로\n온 체중이 두 손에 걸립니다.\n게다가 몸을 힘껏 끌어올려야\n하니 손이 미끄러지면 그대로\n떨어집니다.\n",
+  "status": "draft"
  },
  "src:f15a128d9668": {
   "cap": 216,
   "copies": [
    "KWAMENU.BIN:18EC0"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "１１)트레이닝＃１１\n\n습득 기술\n３점 지지법\n\n락클라이밍에서 기초 중의 기초가\n이 ３점 지지법입니다.\n암벽을 자유롭게 오르내리려면 피해 갈 수\n없습니다.\n\n미숙할 때의 사고\n암장 도중에 오르지도 내려가지도 못하게\n되어 꼼짝 못 하는 일이\n생깁니다.\n장비가 무거운 인공 등반에서 중요합니다.\n",
+  "status": "draft"
  },
  "src:485415de308a": {
   "cap": 220,
   "copies": [
    "KWAMENU.BIN:18F98"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "１２)트레이닝＃１２\n\n습득 기술\n트래버스\n\n오르기 어려운 곳을 피해\n옆으로 이동하는 것을 트래버스라 합니다.\n여기서는 발을 써서 암장을 건너가는\n기술을 익힙니다.\n\n미숙할 때의 사고\n대부분 발을 헛디뎌 일어나는 추락\n사고입니다. 본래 위험한 곳에서 쓸 때가\n많은 기술이라 참혹한 결과가 됩니다.\n",
+  "status": "draft"
  },
  "src:e20984b608bd": {
   "cap": 192,
   "copies": [
    "KWAMENU.BIN:19074"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "１３)트레이닝＃１３\n\n습득 기술\n능선 등반\n\n능선은 산의 꼭대기 부분입니다.\n이곳을 오를 수 있게 되면 비교적\n등반이 편해집니다.\n\n미숙할 때의 사고\n능선 부근은 좌우가 깎아지른 벼랑인\n경우가 많고, 또 풍화되어\n바위도 약해져 있으므로\n위험도가 높습니다.\n",
+  "status": "draft"
  },
  "src:bc158b700579": {
   "cap": 188,
   "copies": [
    "KWAMENU.BIN:19134"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "１４)트레이닝＃１４\n\n습득 기술\n활락 정지\n\n만일 눈 비탈에서 활락하기 시작했을 때\n이 기술을 익혀 두었다면 활락을 멈출\n수 있는 경우가 있습니다.\n\n미숙할 때의 사고\n빨리 제동을 걸지 않으면 가속이 붙어\n더는 멈출 수 없게 됩니다.\n이 기술이 삶과 죽음을 가릅니다.\n",
+  "status": "draft"
  },
  "src:1ccc4261e55f": {
   "cap": 244,
   "copies": [
    "KWAMENU.BIN:191F0"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "１５)트레이닝＃１５\n\n습득 기술\n테라스에서의 하켄 박기\n\n로프 하강용 로프를 걸거나\n에트리에를 걸 때 필요한 기술입니다.\n여기서는 두 손을 써서 확실하게 하켄\n을 박습니다.\n\n미숙할 때의 사고\n하켄을 박는 중에\n하켄이 튕겨 나가는 일이 있습니다.\n체중을 실은 하켄이 서서히 빠지는\n일도 잦아, 그런 경우 추락으로\n이어집니다.\n",
+  "status": "draft"
  },
  "src:a39c63e3ef72": {
   "cap": 244,
   "copies": [
    "KWAMENU.BIN:192E4"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "１６)트레이닝＃１６\n\n습득 기술\n암장에서의 하켄 박기\n\n로프 하강용 로프를 걸거나\n에트리에를 걸 때 필요한 기술입니다.\n여기서는 한 손밖에 쓸 수 없는 상태로\n하켄을 박습니다.\n\n미숙할 때의 사고\n하켄을 박는 중에\n하켄이 튕겨 나가는 일이 있습니다.\n체중을 실은 하켄이 서서히 빠지는\n일도 잦아, 그런 경우 추락으로\n이어집니다.\n",
+  "status": "draft"
  },
  "src:0f55c7c02c1b": {
   "cap": 164,
   "copies": [
    "KWAMENU.BIN:193D8"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "１７)트레이닝＃１７\n\n습득 기술\n더블 피켈(빙폭)\n\n얼어붙은 빙벽을 오르는 기술입니다.\n피켈과 아이젠을 얼음에 박으며\n올라갈 수 있습니다.\n\n미숙할 때의 사고\n피켈이 덜 박히면\n체중을 견디지 못해 미끄러져 떨어집니다.\n",
+  "status": "draft"
  },
  "src:5c365eba1f54": {
   "cap": 196,
   "copies": [
    "KWAMENU.BIN:1947C"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "１８)트레이닝＃１８\n\n습득 기술\n\n더블 피켈(무른 얼음면)\n단단한 얼음 면과 무른 싸락눈 같은 면을\n피켈로 더듬으며 오르는 기술입니다.\n\n미숙할 때의 사고\n단단한 부분을 찾지 못해\n꼼짝 못 하게 됩니다.\n빙벽 오르기는 체력 소모가 심해서\n조난하는 경우도 많이 생깁니다.\n",
+  "status": "draft"
  },
  "src:4d728bfd6f9f": {
   "cap": 180,
   "copies": [
    "KWAMENU.BIN:19540"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "１９)트레이닝＃１９\n\n습득 기술\n에트리에 트래버스\n\n오버행 등 ３점 지지법을 쓸\n홀드가 없는 곳에 줄사다리\n비슷한 에트리에를 걸어\n오를 수 있게 됩니다.\n\n미숙할 때의 사고\n필요 없는 하켄을 박아 낭비하는\n일이 많습니다.\n",
+  "status": "draft"
  },
  "src:74b3d7a4cae8": {
   "cap": 176,
   "copies": [
    "KWAMENU.BIN:195F4"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "２０)트레이닝＃２０\n\n습득 기술\n에트리에 등반\n에트리에를 차례로 바꿔 걸어\n손발 디딜 곳이 전혀 없는 암장도\n오를 수 있습니다.\n\n미숙할 때의 사고\n에트리에를 건 하켄이 바위에 제대로\n박혀 있지 않으면 클라이머를\n태운 채 떨어지고 맙니다.\n",
+  "status": "draft"
  },
  "src:a164b7e5b6ff": {
   "cap": 60,
   "copies": [
    "KWAMENU.BIN:196A4"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "고독한 노인봉　노인의 변덕\n스테이지, ３점 지지법 피치를\n답파했습니다.",
+  "status": "draft"
  },
  "src:2f8b56928fb9": {
   "cap": 28,
@@ -4718,32 +4721,32 @@
    "KWAMENU.BIN:196E0",
    "KWAMENU.BIN:19A24"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "\n３점 지지법 기술은\n{F9:01}",
+  "status": "draft"
  },
  "src:c8c348f78e9c": {
   "cap": 64,
   "copies": [
    "KWAMENU.BIN:196FC"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "고독한 노인봉　로프 하강 벽\n스테이지, 로프 하강\n피치를 답파했습니다.",
+  "status": "draft"
  },
  "src:a5df5fdbfcda": {
   "cap": 28,
   "copies": [
    "KWAMENU.BIN:1973C"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "\n로프 하강 기술은\n{F9:01}",
+  "status": "draft"
  },
  "src:01e4418b96c9": {
   "cap": 48,
   "copies": [
    "KWAMENU.BIN:19758"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "여신의 맨얼굴봉　신의 술잔 스테이지\n트래버스 피치를 답파했습니다.",
+  "status": "draft"
  },
  "src:2c31a20cfebc": {
   "cap": 24,
@@ -4751,208 +4754,208 @@
    "KWAMENU.BIN:19788",
    "KWAMENU.BIN:19A74"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "\n트래버스 기술은\n{F9:01}",
+  "status": "draft"
  },
  "src:c60e7991a6a4": {
   "cap": 52,
   "copies": [
    "KWAMENU.BIN:197A0"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "신들의 송곳니봉　비뚠 송곳니 스테이지\n좁은 침니 피치를 답파했습니다.",
+  "status": "draft"
  },
  "src:5263669943f2": {
   "cap": 24,
   "copies": [
    "KWAMENU.BIN:197D4"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "\n좁은 침니 기술은\n{F9:01}",
+  "status": "draft"
  },
  "src:3c8bc2356d81": {
   "cap": 52,
   "copies": [
    "KWAMENU.BIN:197EC"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "신들의 송곳니봉　비뚠 송곳니 스테이지\n넓은 침니 피치를 답파했습니다.",
+  "status": "draft"
  },
  "src:02a8fb5e79df": {
   "cap": 24,
   "copies": [
    "KWAMENU.BIN:19820"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "\n넓은 침니 기술은\n{F9:01}",
+  "status": "draft"
  },
  "src:bfcfa2bdd0e7": {
   "cap": 52,
   "copies": [
    "KWAMENU.BIN:19838"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "신들의 송곳니봉　하늘의 물고기 스테이지\n디에드르 피치를 답파했습니다.",
+  "status": "draft"
  },
  "src:e25a0bb27f2b": {
   "cap": 24,
   "copies": [
    "KWAMENU.BIN:1986C"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "\n디에드르 기술은\n{F9:01}",
+  "status": "draft"
  },
  "src:e9945945d101": {
   "cap": 52,
   "copies": [
    "KWAMENU.BIN:19884"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "신들의 송곳니봉　풍수의 골짜기 스테이지\n레이백 피치를 답파했습니다.",
+  "status": "draft"
  },
  "src:7c53af79b734": {
   "cap": 20,
   "copies": [
    "KWAMENU.BIN:198B8"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "\n레이백 기술은\n{F9:01}",
+  "status": "draft"
  },
  "src:306b09705eb8": {
   "cap": 60,
   "copies": [
    "KWAMENU.BIN:198CC"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "여신의 맨얼굴봉　여신의 날개옷 스테이지\n펜듈럼 트래버스 피치를 답파\n했습니다.",
+  "status": "draft"
  },
  "src:a92acd7851b9": {
   "cap": 28,
   "copies": [
    "KWAMENU.BIN:19908"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "\n펜듈럼 트래버스 기술은\n{F9:01}",
+  "status": "draft"
  },
  "src:ecdc9f09f5cb": {
   "cap": 68,
   "copies": [
    "KWAMENU.BIN:19924"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "여신의 맨얼굴봉　여신의 보석함 스테이지\n오버행(트래버스)\n피치를 답파했습니다.",
+  "status": "draft"
  },
  "src:5bf81b27b6dd": {
   "cap": 36,
   "copies": [
    "KWAMENU.BIN:19968"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "\n오버행(트래버스)\n기술은\n{F9:01}",
+  "status": "draft"
  },
  "src:821fbea9e4b1": {
   "cap": 64,
   "copies": [
    "KWAMENU.BIN:1998C"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "여신의 맨얼굴봉　여신의 날개옷 스테이지\n오버행(등반) 피치를\n답파했습니다.",
+  "status": "draft"
  },
  "src:729b939da5dc": {
   "cap": 32,
   "copies": [
    "KWAMENU.BIN:199CC"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "\n오버행(등반) 기술\n은{F9:01}",
+  "status": "draft"
  },
  "src:5afe12001043": {
   "cap": 56,
   "copies": [
    "KWAMENU.BIN:199EC"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "바람의 축제봉　현자의 서재 스테이지\n３점 지지법 피치를 답파했습니다.",
+  "status": "draft"
  },
  "src:803ab7c62af4": {
   "cap": 52,
   "copies": [
    "KWAMENU.BIN:19A40"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "대지의 분노봉　신전의 문 스테이지\n트래버스 피치를 답파했습니다.",
+  "status": "draft"
  },
  "src:cb2ba6293e46": {
   "cap": 56,
   "copies": [
    "KWAMENU.BIN:19A8C"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "대지의 분노봉　대지의 걸상 스테이지\n능선 등반 피치를 답파했습니다.",
+  "status": "draft"
  },
  "src:6086b82e5719": {
   "cap": 24,
   "copies": [
    "KWAMENU.BIN:19AC4"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "\n능선 등반 기술은\n{F9:01}",
+  "status": "draft"
  },
  "src:24ec6cf4fd87": {
   "cap": 36,
   "copies": [
    "KWAMENU.BIN:19ADC"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "오리지널 스테이지\n빙벽 활락 정지에 성공했습니다.",
+  "status": "draft"
  },
  "src:04bfa2b4e3bb": {
   "cap": 28,
   "copies": [
    "KWAMENU.BIN:19B00"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "\n빙벽 활락 정지 기술은\n{F9:01}",
+  "status": "draft"
  },
  "src:34533359b7b1": {
   "cap": 60,
   "copies": [
    "KWAMENU.BIN:19B1C"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "바람의 축제봉　벽돌집 스테이지\n테라스에서의 하켄 박기\n피치를 답파했습니다.",
+  "status": "draft"
  },
  "src:29ebf22b1c8a": {
   "cap": 36,
   "copies": [
    "KWAMENU.BIN:19B58"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "\n테라스에서의 하켄 박기\n기술은\n{F9:01}",
+  "status": "draft"
  },
  "src:753f075df77b": {
   "cap": 64,
   "copies": [
    "KWAMENU.BIN:19B7C"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "바람의 축제봉　날개 가진 자 스테이지\n암장에서의 하켄 박기\n피치를 답파했습니다.",
+  "status": "draft"
  },
  "src:abc6b3bd90ff": {
   "cap": 36,
   "copies": [
    "KWAMENU.BIN:19BBC"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "\n암장에서의 하켄 박기\n기술은\n{F9:01}",
+  "status": "draft"
  },
  "src:111d4804bfb3": {
   "cap": 64,
   "copies": [
    "KWAMENU.BIN:19BE0"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "바람의 축제봉　무너진 각설탕 스테이지\n더블 피켈 빙벽 등반\n피치를 답파했습니다.",
+  "status": "draft"
  },
  "src:7967d2f1f028": {
   "cap": 36,
@@ -4960,88 +4963,88 @@
    "KWAMENU.BIN:19C20",
    "KWAMENU.BIN:19C80"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "\n더블 피켈 빙벽 등반\n기술은\n{F9:01}",
+  "status": "draft"
  },
  "src:b5be54602fab": {
   "cap": 60,
   "copies": [
    "KWAMENU.BIN:19C44"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "신들의 송곳니봉　얼음의 검 스테이지\n더블 피켈 빙벽 등반\n피치를 답파했습니다.",
+  "status": "draft"
  },
  "src:e6eecd00115d": {
   "cap": 56,
   "copies": [
    "KWAMENU.BIN:19CA4"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "바람의 축제봉　바람의 요람 스테이지\n에트리에 트래버스 피치를\n답파했습니다.",
+  "status": "draft"
  },
  "src:010071f2e167": {
   "cap": 28,
   "copies": [
    "KWAMENU.BIN:19CDC"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "\n에트리에 트래버스 기술은\n{F9:01}",
+  "status": "draft"
  },
  "src:6a7d0bfb9992": {
   "cap": 56,
   "copies": [
    "KWAMENU.BIN:19CF8"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "여신의 맨얼굴봉　정령의 골짜기 스테이지\n에트리에 등반 피치를\n답파했습니다.",
+  "status": "draft"
  },
  "src:cef8337335f9": {
   "cap": 28,
   "copies": [
    "KWAMENU.BIN:19D30"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "\n에트리에 등반 기술은\n{F9:01}",
+  "status": "draft"
  },
  "src:609790212b67": {
   "cap": 36,
   "copies": [
    "KWAMENU.BIN:19D4C"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "아쉽지만 １０분이 지났습니다.\n시간 초과입니다.",
+  "status": "draft"
  },
  "src:453673ee5949": {
   "cap": 28,
   "copies": [
    "KWAMENU.BIN:19D70"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "트레이닝에 실패하고\n말았습니다.",
+  "status": "draft"
  },
  "src:692dfe7ccbc0": {
   "cap": 24,
   "copies": [
    "KWAMENU.BIN:19D8C"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "미습득에서 대체로 습득이 되었습니다.",
+  "status": "draft"
  },
  "src:3d0c477cdd68": {
   "cap": 28,
   "copies": [
    "KWAMENU.BIN:19DA4"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "대체로 습득에서 완벽히 습득이 되었습니다.",
+  "status": "draft"
  },
  "src:0de7b5cf3f88": {
   "cap": 20,
   "copies": [
    "KWAMENU.BIN:19DC0"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "트레이닝에 성공했습니다.",
+  "status": "draft"
  },
  "src:5e31db6fb29f": {
   "cap": 3,
