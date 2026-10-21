@@ -976,8 +976,9 @@
    "X_SUZU.BIN:0133C",
    "X_SUZU.BIN:013A0"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "신의 문",
+  "status": "draft",
+  "note": "D7 확정 약칭"
  },
  "src:8cd1cdee0761": {
   "cap": 12,
@@ -1072,8 +1073,9 @@
    "KWAMENU.BIN:135B0",
    "X_SUZU.BIN:013B4"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "비뚠 송곳니Ａ",
+  "status": "draft",
+  "note": "D7 확정 약칭"
  },
  "src:ca332e2170c7": {
   "cap": 8,
@@ -1082,8 +1084,9 @@
    "KWAMENU.BIN:135B8",
    "X_SUZU.BIN:013BC"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "비뚠 송곳니Ｂ",
+  "status": "draft",
+  "note": "D7 확정 약칭"
  },
  "src:79623da2dae7": {
   "cap": 8,
@@ -1092,8 +1095,9 @@
    "KWAMENU.BIN:135C0",
    "X_SUZU.BIN:013C4"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "비뚠 송곳니Ｃ",
+  "status": "draft",
+  "note": "D7 확정 약칭"
  },
  "src:d3499a66439d": {
   "cap": 8,
@@ -1102,8 +1106,9 @@
    "KWAMENU.BIN:135C8",
    "X_SUZU.BIN:013CC"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "비뚠 송곳니Ｄ",
+  "status": "draft",
+  "note": "D7 확정 약칭"
  },
  "src:f978f830ac06": {
   "cap": 8,
@@ -1112,8 +1117,9 @@
    "KWAMENU.BIN:135D0",
    "X_SUZU.BIN:013D4"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "비뚠 송곳니Ｅ",
+  "status": "draft",
+  "note": "D7 확정 약칭"
  },
  "src:7fcebc6556ca": {
   "cap": 8,
@@ -1122,8 +1128,9 @@
    "KWAMENU.BIN:135D8",
    "X_SUZU.BIN:013DC"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "비뚠 송곳니Ｆ",
+  "status": "draft",
+  "note": "D7 확정 약칭"
  },
  "src:b1aaa6e16f42": {
   "cap": 8,
@@ -1132,8 +1139,9 @@
    "KWAMENU.BIN:135E0",
    "X_SUZU.BIN:013E4"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "비뚠 송곳니Ｇ",
+  "status": "draft",
+  "note": "D7 확정 약칭"
  },
  "src:c6e1cc2477ed": {
   "cap": 8,
@@ -1142,8 +1150,9 @@
    "KWAMENU.BIN:135E8",
    "X_SUZU.BIN:013EC"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "용 발톱 자국",
+  "status": "draft",
+  "note": "D7 확정 약칭"
  },
  "src:1ef466b24d4b": {
   "cap": 8,
@@ -1708,8 +1717,9 @@
    "KWAMENU.BIN:13830",
    "X_SUZU.BIN:01634"
   ],
-  "ko": "",
-  "status": "untranslated"
+  "ko": "은 열쇠 다발",
+  "status": "draft",
+  "note": "D7 확정 약칭"
  },
  "src:c2dbcf429eab": {
   "cap": 12,

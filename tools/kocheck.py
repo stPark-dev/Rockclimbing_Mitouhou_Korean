@@ -25,7 +25,13 @@ TABLE = Path(__file__).resolve().parent.parent / "tables" / "charmap.tsv"
 LAYOUT = {0xFC}
 NEW_PUNCT = set(" .,“”")
 ALIASES = {"(": "（", ")": "）", "!": "！", "?": "？", ":": "："}
-ONE_BYTE_SLOTS = 148  # kana cells 86-238 minus NEW_PUNCT; Latin lowercase stays for ｃｍ etc.
+# 1-byte codes reach glyph cells 0-238 and 244-246 (F5-F7). Cells 0-59 stay fixed: FA prints
+# digits from cells 0-9, and the symbols and Latin capitals keep their codes. The build places
+# NEW_PUNCT, ｃｍｘ, ・ and ？ in 1-byte cells as well; every other non-Hangul glyph keeps a
+# 2-byte cell.
+FIXED_ONE_BYTE = 60
+ONE_BYTE_OTHER = set("ｃｍｘ・？")
+ONE_BYTE_SLOTS = (239 + 3) - FIXED_ONE_BYTE - len(NEW_PUNCT) - len(ONE_BYTE_OTHER)
 _CTL = re.compile(r"\{([0-9A-F]{2}):([0-9A-F]{2}(?:,[0-9A-F]{2})*)?\}")
 
 
@@ -42,6 +48,9 @@ def _kept():
 
 
 KEPT = _kept()
+_CELL = {}
+for _k, (_c, _) in sorted(charmap.load(TABLE).items()):
+    _CELL.setdefault(_c, _k)
 
 
 def tokenize(text):
@@ -69,6 +78,11 @@ def encodable(ch):
     return "가" <= ch <= "힣" or ch in NEW_PUNCT or ALIASES.get(ch, ch) in KEPT
 
 
+def _one_byte_char(ch):
+    ch = ALIASES.get(ch, ch)
+    return ch in NEW_PUNCT or ch in ONE_BYTE_OTHER or _CELL.get(ch, 9999) < FIXED_ONE_BYTE
+
+
 def byte_length(toks, one_byte):
     n = 1  # FF
     for t in toks:
@@ -76,6 +90,8 @@ def byte_length(toks, one_byte):
             n += 1 + len(t[2])
         elif t[0] == "c" and "가" <= t[1] <= "힣":
             n += 1 if t[1] in one_byte else 2
+        elif t[0] == "c":
+            n += 1 if _one_byte_char(t[1]) else 2
         else:
             n += 1
     return n

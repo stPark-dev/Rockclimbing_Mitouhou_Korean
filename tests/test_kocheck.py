@@ -72,3 +72,17 @@ def test_fit_plan_keeps_frequency_plan_when_everything_fits():
     units_ = {"src:a": {"text": "", "capacity": 40}}
     ko = {"src:a": {"ko": "가가나", "status": "draft"}}
     assert kocheck.fit_plan(units_, ko, slots=1) == {"가"}
+
+
+@pytest.mark.parametrize("text,size", [
+    ("Ａ", 2), ("０", 2), ("？", 2), ("・", 2), (".", 2), ("ｃ", 2),  # 1-byte cells + FF
+    ("Ⅰ", 3), ("℃", 3), ("△", 3),  # glyphs in 2-byte cells
+])
+def test_non_hangul_sizes_follow_their_cells(text, size):
+    assert kocheck.byte_length(kocheck.tokenize(text), one_byte=set()) == size
+
+
+def test_one_byte_slots_leave_room_for_fixed_and_reserved_cells():
+    # cells 0-238 and 244-246 are 1-byte; 0-59 stay fixed (digits for FA, symbols, Latin capitals);
+    # new punctuation, ｃｍｘ, ・ and ？ take 1-byte cells too
+    assert kocheck.ONE_BYTE_SLOTS == (239 + 3) - 60 - len(kocheck.NEW_PUNCT) - 3 - 2
