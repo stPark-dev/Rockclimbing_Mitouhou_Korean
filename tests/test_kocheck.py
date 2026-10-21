@@ -145,3 +145,14 @@ def test_window_problems_ignore_layout_at_the_end_of_a_line():
     assert kocheck.window_problems(units_, ko) == []
     ko = {"src:a": {"ko": "{FC:01}" + "가" * 9, "status": "draft"}}
     assert kocheck.window_problems(units_, ko) == [("src:a", "window", "line 1 121px > 108px")]
+
+
+def test_fixed_pitch_windows_count_every_character_as_a_13px_cell():
+    # stage overview (SUZU0 0x8CEC-): 224px = 17 cells; the half-width space is a full cell
+    toks = kocheck.tokenize("산{FC:05}：가나 다")
+    assert kocheck.fixed_line_widths(toks) == [13 * (1 + 5 + 1 + 4)]
+    units_ = {"src:a": {"text": "", "capacity": 99, "source": "57ff", "copies": ["SUZU0.BIN:8CEC"]}}
+    ko = {"src:a": {"ko": "가 " * 8 + "가", "status": "draft"}}  # 17 cells
+    assert kocheck.window_problems(units_, ko) == []
+    ko = {"src:a": {"ko": "가 " * 8 + "가가", "status": "draft"}}  # 18 cells
+    assert kocheck.window_problems(units_, ko)[0][2].endswith("> 224px (fixed 13px)")

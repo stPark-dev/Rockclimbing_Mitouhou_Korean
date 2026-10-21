@@ -241,28 +241,68 @@ WINDOW_LIMITS = [
 ]
 
 
-def window_limit(copies):
-    """Smallest measured limit among a unit's copies, or None if no copy sits in a measured window."""
+# Windows that draw every character, the half-width space included, in a 13px cell; FC:n is
+# n cells and FD one. (module ranges, px from the text start to the inner right edge)
+_SUZU = ["SUZU0.BIN", "SUZU1.BIN", "SUZU2.BIN", "SUZU3.BIN", "SUZU4.BIN"]
+FIXED_WINDOWS = (
+    [(m, 0x210, 0x7260, 238, "stage conditions: text x=44, inner right edge x~282 (docs/survey.md §9)") for m in _SUZU]
+    + [(m, 0x8CEC, 0xBA54, 224, "stage overview: text x=57, inner right edge x~281 (docs/survey.md §9)") for m in _SUZU]
+    + [("SUZU_0.BIN", lo, hi, px, why) for lo, hi, px, why in (
+        (0x5A90, 0xCAE0, 238, "stage conditions"), (0x11694, 0x186E4, 238, "stage conditions"),
+        (0xE56C, 0x112D4, 224, "stage overview"), (0x1A170, 0x1CED8, 224, "stage overview"))]
+)
+WINDOW_LIMITS += (
+    [(m, 0x72EC, 0x8CC8, 234, "stage advice: text x=48, inner right edge x~282 (docs/survey.md §9)") for m in _SUZU]
+    + [("SUZU_0.BIN", 0xCB6C, 0xE548, 234, "stage advice"), ("SUZU_0.BIN", 0x18770, 0x1A14C, 234, "stage advice")]
+)
+
+
+def _limit(table, copies):
     found = []
     for cid in copies:
         mod, off = cid.split(":")
-        found += [px for m, lo, hi, px, _ in WINDOW_LIMITS if m == mod and lo <= int(off, 16) < hi]
+        found += [px for m, lo, hi, px, _ in table if m == mod and lo <= int(off, 16) < hi]
     return min(found) if found else None
+
+
+def window_limit(copies):
+    """Smallest measured limit among a unit's copies, or None if no copy sits in a measured window."""
+    found = [x for x in (_limit(WINDOW_LIMITS, copies), _limit(FIXED_WINDOWS, copies)) if x is not None]
+    return min(found) if found else None
+
+
+def fixed_line_widths(toks):
+    lines = [0]
+    for t in toks:
+        if t == ("nl",):
+            lines.append(0)
+        elif t[0] == "ctl" and t[1] == 0xFC:
+            lines[-1] += CELL_W * t[2][0]
+        elif t[0] == "ctl":
+            continue
+        else:
+            lines[-1] += CELL_W
+    return lines
 
 
 def window_problems(units_, ko, widths=None):
     """Lines wider than a measured window limit."""
     out = []
     for k, entry in ko.items():
-        limit = window_limit(units_[k]["copies"]) if entry.get("ko") else None
-        if limit is None:
+        if not entry.get("ko"):
+            continue
+        copies = units_[k]["copies"]
+        prop, fixed = _limit(WINDOW_LIMITS, copies), _limit(FIXED_WINDOWS, copies)
+        if prop is None and fixed is None:
             continue
         # layout at the end of a line (FC tabs, FD spaces) draws nothing
-        text = re.sub(r"(?:\{FC:[0-9A-F]{2}\}|　)+(?=\n|$)", "", entry["ko"])
-        lines = ko_line_widths(tokenize(text), widths)
-        over = [(i + 1, w) for i, w in enumerate(lines) if w > limit]
-        if over:
-            out.append((k, "window", ", ".join(f"line {i} {w}px" for i, w in over) + f" > {limit}px"))
+        text = re.sub(r"(?:\{FC:[0-9A-F]{2}\}|　| )+(?=\n|$)", "", entry["ko"])
+        toks = tokenize(text)
+        for limit, lines, tag in ((prop, ko_line_widths(toks, widths) if prop else [], ""),
+                                  (fixed, fixed_line_widths(toks) if fixed else [], " (fixed 13px)")):
+            over = [(i + 1, w) for i, w in enumerate(lines) if w > limit]
+            if over:
+                out.append((k, "window", ", ".join(f"line {i} {w}px" for i, w in over) + f" > {limit}px{tag}"))
     return out
 
 
