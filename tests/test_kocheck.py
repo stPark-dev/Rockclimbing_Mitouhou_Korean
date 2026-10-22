@@ -274,3 +274,17 @@ def test_training_result_window_has_its_measured_limit():
     assert kocheck.window_limit(["KWAMENU.BIN:196A4"]) == 232
     assert kocheck.window_limit(["KWAMENU.BIN:19D70"]) == 232
     assert kocheck.window_limit(["KWAMENU.BIN:19DC0"]) == 232
+
+
+def test_plan_advice_windows_have_their_measured_limits():
+    # KWAMENU summer/winter advice 268px, partner/solo advice 172px (docs/survey.md §9)
+    assert kocheck.window_limit(["KWAMENU.BIN:11D88"]) == 268
+    assert kocheck.window_limit(["KWAMENU.BIN:11DC8"]) == 268
+    assert kocheck.window_limit(["KWAMENU.BIN:11EB0"]) == 172
+    assert kocheck.window_limit(["KWAMENU.BIN:11EFC"]) == 172
+
+
+def test_save_slot_window_has_its_measured_limit():
+    # KWAMENU 0x10E0C-0x112D8 save slot lines: text x=48, inner right edge x~281 (docs/survey.md §9)
+    assert kocheck.window_limit(["KWAMENU.BIN:10E0C"]) == 233
+    assert kocheck.window_limit(["KWAMENU.BIN:112C4"]) == 233
