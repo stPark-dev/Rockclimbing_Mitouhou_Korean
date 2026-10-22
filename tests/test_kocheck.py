@@ -264,7 +264,8 @@ def test_memory_card_dialog_has_its_measured_limit():
     # save flow dialog seen on screen: text x=88, inner right edge x~241 (docs/survey.md §9)
     for off in ("10A98", "10B00", "10BB0", "10BFC"):
         assert kocheck.window_limit([f"KWAMENU.BIN:{off}"]) == 153
-    assert kocheck.window_limit(["KWAMENU.BIN:10C5C"]) is None  # card full: source is 166px, another frame
+    for off in ("10C5C", "10D8C", "10DC8"):  # error messages put into the same record (state intervention)
+        assert kocheck.window_limit([f"KWAMENU.BIN:{off}"]) == 153
 
 
 def test_training_result_window_has_its_measured_limit():
@@ -294,3 +295,10 @@ def test_windows_inferred_from_shared_call_sites():
     assert kocheck.window_limit(["KABE.BIN:2BFF4"]) == 220
     assert kocheck.window_limit(["MESI.BIN:02224"]) == 187
     assert kocheck.window_limit(["MESI.BIN:02360"]) == 187
+
+
+def test_history_and_food_out_windows():
+    # route history (KWAMENU 0x12E0C-) 141px on screen; food ran out over a full-screen picture, x=72 (code) 248px
+    assert kocheck.window_limit(["KWAMENU.BIN:12E0C"]) == 141
+    assert kocheck.window_limit(["KWAMENU.BIN:12E4C"]) == 141
+    assert kocheck.window_limit(["MT0.BIN:00000"]) == 248

@@ -277,8 +277,13 @@ WINDOW_LIMITS += [("KWAMENU.BIN", 0x10E0C, 0x112D8, 233, "save slot")]
 # Same call sites as measured windows: KABE footing remarks (0x800CAD3C, x=56, 16 tiles) and MESI advice (x=0x48)
 WINDOW_LIMITS += [("KABE.BIN", 0x2BFE0, 0x2C014, 220, "footing remarks, event frame"),
                   ("MESI.BIN", 0x2224, 0x2384, 187, "advice, rest-menu box")]
+# Route history ("履歴"): text x=140, inner right edge x~281. Food ran out on the mountain (SUZU_1 0x800B65F8):
+# text x=72 over a full-screen picture, no box, so the screen edge (320) is the limit
+WINDOW_LIMITS += [("KWAMENU.BIN", 0x12E0C, 0x12E60, 141, "route history"),
+                  ("MT0.BIN", 0x0, 0x58, 248, "food ran out, full-screen picture"),
+                  ("MT1.BIN", 0x0, 0x58, 248, "food ran out, full-screen picture")]
 # Memory card save dialog (questions and results seen on screen): text x=88, inner right edge x~241
-WINDOW_LIMITS += [("KWAMENU.BIN", o, o + 1, 153, "memory card save dialog") for o in (0x10A98, 0x10B00, 0x10BB0, 0x10BFC)]
+WINDOW_LIMITS += [("KWAMENU.BIN", o, o + 1, 153, "memory card save dialog") for o in (0x10A98, 0x10B00, 0x10BB0, 0x10BFC, 0x10C5C, 0x10D8C, 0x10DC8)]
 # Mountain screen progress status after a stage: text x=72, inner right edge x~252 (docs/survey.md §9, 2026-10-22)
 WINDOW_LIMITS += [(m, 0x0, 0x19C, 180, "progress status (ahead of or behind plan)") for m in _SUZU]
 # Climbing screen: frame x = 8*f384, inner right edge = 8*f384 + 16*(tiles-1) - 4 (docs/survey.md §9, 2026-10-22)
