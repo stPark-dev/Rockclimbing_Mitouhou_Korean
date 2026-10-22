@@ -47,13 +47,28 @@ MODULES = {
 # MT0/MT1 carry digit tables after their messages (0x17E8 onward)
 BLOB_TEXT_END = {"MT0.BIN": 0x17E8, "MT1.BIN": 0x17E8}
 EXE_BASE, EXE_HEADER = 0x80010000, 0x800
-# Adopted population (reviewed 2026-10-21, revised after the れ-index fix; docs/survey.md §4.3). MGAME.BIN has none:
+# Adopted population (reviewed 2026-10-21, revised after the れ-index fix and the pointer-tail
+# starts of 2026-10-22; docs/survey.md §4.3). MGAME.BIN has none:
 # its referenced candidates all read as MIPS bytes.
 EXPECTED_COUNTS = {
-    "KWAMENU.BIN": 731, "KABE.BIN": 62, "MESI.BIN": 22, "STAFF.BIN": 1, "SUZU_0.BIN": 745,
+    "KWAMENU.BIN": 730, "KABE.BIN": 62, "MESI.BIN": 22, "STAFF.BIN": 1, "SUZU_0.BIN": 745,
     "SUZU_1.BIN": 268, "X_SUZU.BIN": 115, "SUZU0.BIN": 404, "SUZU1.BIN": 550, "SUZU2.BIN": 469,
     "SUZU3.BIN": 538, "SUZU4.BIN": 472, "MT0.BIN": 90, "MT1.BIN": 90,
 }
+
+
+def pointer_tail(data, start):
+    """Aligned start after the high bytes of a RAM pointer word, or None.
+
+    A string that follows a 32-bit pointer (..., 0B 80 for 0x800Bxxxx) is read by the
+    candidate scanner from the byte after the pointer's 00, so its first bytes would be
+    the pointer's top half. Seen at KWAMENU 0x11CF8, SUZU_0 0x5880, X_SUZU 0x11C8."""
+    if start % 4 == 0:
+        return None
+    word = start & ~3
+    if word + 4 >= len(data) or data[word + 3] != 0x80:
+        return None
+    return word + 4
 
 
 def candidates(data):
@@ -65,6 +80,16 @@ def candidates(data):
             except (ValueError, IndexError):
                 i += 1
                 continue
+            tail = pointer_tail(data, i)
+            if tail is not None and tail < end:
+                try:
+                    toks2, end2 = tc.read_page(data, tail)
+                except (ValueError, IndexError):
+                    end2 = None
+                if end2 == end and any(t[0] == "g" for t in toks2):
+                    out.append((tail, end, toks2))
+                    i = end
+                    continue
             out.append((i, end, toks))
             i = end
             continue
@@ -72,10 +97,21 @@ def candidates(data):
     return out
 
 
+def _linked(data, prev_end, start):
+    gap = data[prev_end:start]
+    if len(gap) <= 3 and not any(gap):
+        return True
+    # zero padding, then the top bytes of a pointer word that ends at an aligned start
+    if start % 4 or len(gap) > 6 or gap[-1] != 0x80:
+        return False
+    word = start - 4
+    return word >= prev_end - 3 and not any(data[prev_end:max(prev_end, word)])
+
+
 def chains(cands, data):
     out, cur = [], []
     for c in cands:
-        if cur and c[0] - cur[-1][1] <= 3 and not any(data[cur[-1][1] : c[0]]):
+        if cur and _linked(data, cur[-1][1], c[0]):
             cur.append(c)
             continue
         if cur:

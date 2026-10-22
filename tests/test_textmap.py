@@ -106,3 +106,22 @@ def test_write_sources_emits_one_json_per_module(tmp_path):
     doc = json.loads((tmp_path / "A.BIN.json").read_text(encoding="utf-8"))
     assert doc["entries"][0]["text"] == "あい" and doc["entries"][0]["capacity"] == 4
     assert doc["file"] == "A.BIN" and doc["base"] is None
+
+
+def test_pointer_tail_moves_the_start_past_the_high_bytes_of_a_pointer_word():
+    # word 0x800B00A8 (A8 00 0B 80) right before an aligned string: the candidate reader starts
+    # after the 00 and would take "0B 80" (＋れ) as text
+    data = bytes.fromhex("a8000b80") + A
+    assert textmap.pointer_tail(data, 2) == 4
+    assert textmap.pointer_tail(data, 4) is None  # aligned: no tail
+    other = bytes.fromhex("a8000b7f") + A  # not a RAM pointer's top byte
+    assert textmap.pointer_tail(other, 2) is None
+
+
+@need_files
+def test_corpus_interior_starts_after_pointer_words():
+    files = {n: (FILES / n).read_bytes() for n in textmap.MODULES}
+    ids = {e["id"] for e in textmap.extract(files, (FILES / "SLPS_006.62").read_bytes())}
+    # name entry title, SUZU_0 plan message and the mountain name shown on the mountain screen
+    assert {"KWAMENU.BIN:11CF8", "SUZU_0.BIN:05880", "X_SUZU.BIN:011C8"} <= ids
+    assert not {"KWAMENU.BIN:11CF5", "SUZU_0.BIN:0587E", "X_SUZU.BIN:011C5"} & ids

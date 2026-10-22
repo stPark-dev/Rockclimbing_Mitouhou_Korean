@@ -1791,23 +1791,14 @@
   "ko": "생명의 가치",
   "status": "draft"
  },
- "src:b6e25e629000": {
-  "cap": 4,
+ "src:2f2e7a1fc298": {
+  "cap": 16,
   "copies": [
-   "KWAMENU.BIN:116BA"
+   "KWAMENU.BIN:11CF8"
   ],
-  "ko": "",
-  "status": "untranslated",
-  "note": "비텍스트로 보임(９れＪ). 번역하지 않음 — 모집단 재검토 대상"
- },
- "src:287547f67c81": {
-  "cap": 19,
-  "copies": [
-   "KWAMENU.BIN:11CF5"
-  ],
-  "ko": "",
-  "status": "untranslated",
-  "note": "보류: 앞 3글자(）－れ)는 데이터 바이트로 보이고 포인터가 문자열 중간(名前…)을 가리킬 수 있음. 참조 확인 후 번역"
+  "ko": "이름을 입력하십시오",
+  "status": "draft",
+  "note": "이름 입력 제목. 포인터가 KWAMENU 0x11CF8(앞 단어 윗바이트 뒤)를 가리킴 — 화면으로 확인(survey §9)"
  },
  "src:f0eceb670cac": {
   "cap": 68,
@@ -1893,7 +1884,8 @@
  "src:9b19fa49d3a5": {
   "cap": 12,
   "copies": [
-   "KWAMENU.BIN:12004"
+   "KWAMENU.BIN:12004",
+   "X_SUZU.BIN:011C8"
   ],
   "ko": "알프스의 고독한 노인",
   "status": "draft"
@@ -5053,7 +5045,8 @@
    "KWAMENU.BIN:1A374"
   ],
   "ko": "",
-  "status": "untranslated"
+  "status": "untranslated",
+  "note": "비텍스트: KWAMENU 0x800CB75C–0x800CB784 표의 32비트 값이 가리키는 2–3바이트 데이터. 번역하지 않음"
  },
  "src:ef6161bc185c": {
   "cap": 4,
@@ -5061,7 +5054,8 @@
    "KWAMENU.BIN:19FB4"
   ],
   "ko": "",
-  "status": "untranslated"
+  "status": "untranslated",
+  "note": "비텍스트: KWAMENU 0x800CB75C–0x800CB784 표의 32비트 값이 가리키는 2–3바이트 데이터. 번역하지 않음"
  },
  "src:b0a7e6c31c63": {
   "cap": 3,
@@ -5069,7 +5063,8 @@
    "KWAMENU.BIN:1A554"
   ],
   "ko": "",
-  "status": "untranslated"
+  "status": "untranslated",
+  "note": "비텍스트: KWAMENU 0x800CB75C–0x800CB784 표의 32비트 값이 가리키는 2–3바이트 데이터. 번역하지 않음"
  },
  "src:5dae914e0105": {
   "cap": 4,
@@ -5077,7 +5072,8 @@
    "KWAMENU.BIN:1A734"
   ],
   "ko": "",
-  "status": "untranslated"
+  "status": "untranslated",
+  "note": "비텍스트: KWAMENU 0x800CB75C–0x800CB784 표의 32비트 값이 가리키는 2–3바이트 데이터. 번역하지 않음"
  },
  "src:558b69e8c90e": {
   "cap": 4,
@@ -5085,6 +5081,7 @@
    "KWAMENU.BIN:1AEB4"
   ],
   "ko": "",
-  "status": "untranslated"
+  "status": "untranslated",
+  "note": "비텍스트: KWAMENU 0x800CB75C–0x800CB784 표의 32비트 값이 가리키는 2–3바이트 데이터. 번역하지 않음"
  }
 }

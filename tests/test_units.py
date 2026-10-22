@@ -59,5 +59,5 @@ def test_merge_refuses_units_that_vanished_from_the_source():
 def test_corpus_unit_count_matches_unique_sources():
     es = [e for p in SRC.glob("*.json") for e in json.loads(p.read_text(encoding="utf-8"))["entries"]]
     us = units.build(es)
-    assert len(us) == len({e["source"] for e in es}) == 1477
-    assert sum(len(u["copies"]) for u in us.values()) == 4557
+    assert len(us) == len({e["source"] for e in es}) == 1474  # after the pointer-tail starts (2026-10-22)
+    assert sum(len(u["copies"]) for u in us.values()) == 4556

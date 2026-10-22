@@ -6,7 +6,8 @@
    "SUZU1.BIN:00000",
    "SUZU2.BIN:00000",
    "SUZU3.BIN:00000",
-   "SUZU4.BIN:00000"
+   "SUZU4.BIN:00000",
+   "SUZU_0.BIN:05880"
   ],
   "ko": "계획보다\n{FA:06}시간 빨리 진행 중입니다.",
   "status": "draft"
@@ -8054,22 +8055,6 @@
   ],
   "ko": "루트{FC:04}：생명의 가치\n스테이지＃５：악마의 만찬\n피치１\n\n날씨　흐림\n{FC:03}날씨가 나빠지는 중입니다.",
   "status": "draft"
- },
- "src:2d217427749e": {
-  "cap": 34,
-  "copies": [
-   "SUZU_0.BIN:0587E"
-  ],
-  "ko": "",
-  "status": "untranslated"
- },
- "src:0818b8c6ef87": {
-  "cap": 15,
-  "copies": [
-   "X_SUZU.BIN:011C5"
-  ],
-  "ko": "",
-  "status": "untranslated"
  },
  "src:7d793f2713b0": {
   "cap": 12,
