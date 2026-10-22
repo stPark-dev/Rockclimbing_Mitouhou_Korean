@@ -298,6 +298,7 @@ WINDOW_LIMITS += [
         (m, 0x58, 0x88, 132, "stage-to-stage note: text x=40, inner right edge x~172"),
         (m, 0x160, 0x200, 216, "stage move header: text x=64, inner right edge x~280"),
         (m, 0xC90, 0x14EC, 216, "route descriptions, drawn inside the stage move window"),
+        (m, 0x14EC, 0x17E8, 178, "scenery remarks under the photo: text x=74, inner right edge x~252, 5 lines"),
     )
 ]
 # Move hazards (storm, rockfall, spindrift, hidden cliff, crevasse): the text x of each message comes

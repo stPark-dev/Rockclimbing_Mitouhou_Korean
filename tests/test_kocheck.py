@@ -227,7 +227,8 @@ def test_mountain_screen_move_windows_have_their_measured_limits():
         assert kocheck.window_limit([f"{mod}:00058"]) == 132
         assert kocheck.window_limit([f"{mod}:00160"]) == 216
         assert kocheck.window_limit([f"{mod}:00E64"]) == 216
-        assert kocheck.window_limit([f"{mod}:014EC"]) is None  # scenery remarks: not measured
+        assert kocheck.window_limit([f"{mod}:014EC"]) == 178  # scenery remarks
+        assert kocheck.window_limit([f"{mod}:017CC"]) == 178
 
 
 def test_mountain_screen_hazard_windows_have_their_measured_limits():
