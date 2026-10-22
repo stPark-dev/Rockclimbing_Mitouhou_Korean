@@ -254,6 +254,8 @@ FIXED_WINDOWS = (
     + [("SUZU_0.BIN", lo, hi, px, why) for lo, hi, px, why in (
         (0x5A90, 0xCAE0, 238, "stage conditions"), (0x11694, 0x186E4, 238, "stage conditions"),
         (0xE56C, 0x112D4, 224, "stage overview"), (0x1A170, 0x1CED8, 224, "stage overview"))]
+    + [(m, 0xBAB4, 0x10000, 236, "pitch overview and advice: text x=44, inner right edge x~280 (docs/survey.md §9)")
+       for m in _SUZU]
 )
 WINDOW_LIMITS += [
     ("X_SUZU.BIN", 0x11C8, 0x12A8, 89,
@@ -265,6 +267,8 @@ WINDOW_LIMITS += (
     [(m, 0x72EC, 0x8CC8, 234, "stage advice: text x=48, inner right edge x~282 (docs/survey.md §9)") for m in _SUZU]
     + [("SUZU_0.BIN", 0xCB6C, 0xE548, 234, "stage advice"), ("SUZU_0.BIN", 0x18770, 0x1A14C, 234, "stage advice")]
 )
+# Mountain screen progress status after a stage: text x=72, inner right edge x~252 (docs/survey.md §9, 2026-10-22)
+WINDOW_LIMITS += [(m, 0x0, 0x19C, 180, "progress status (ahead of or behind plan)") for m in _SUZU]
 # Climbing screen: frame x = 8*f384, inner right edge = 8*f384 + 16*(tiles-1) - 4 (docs/survey.md §9, 2026-10-22)
 KABE_EVENTS = (0x2C014, 0x2C6F4)  # messages opened by the event handlers 0x800B3D2C-0x800B5604
 WINDOW_LIMITS += [

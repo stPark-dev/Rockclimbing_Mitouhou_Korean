@@ -242,3 +242,21 @@ def test_mountain_screen_hazard_windows_have_their_measured_limits():
         assert kocheck.window_limit([f"{mod}:002DC"]) == 178
         assert kocheck.window_limit([f"{mod}:00C54"]) == 178
         assert kocheck.window_limit([f"{mod}:00200"]) is None  # bivouac notice: not measured
+
+
+def test_mountain_screen_status_window_has_its_measured_limit():
+    # SUZU0-4 progress status (ahead of or behind plan, food left): 180px (docs/survey.md §9)
+    for mod in ("SUZU0.BIN", "SUZU1.BIN", "SUZU2.BIN", "SUZU3.BIN", "SUZU4.BIN"):
+        assert kocheck.window_limit([f"{mod}:00000"]) == 180
+        assert kocheck.window_limit([f"{mod}:00154"]) == 180
+        assert kocheck.window_limit([f"{mod}:0019C"]) is None  # pitch list: another window
+
+
+def test_pitch_overview_and_advice_are_fixed_pitch_windows():
+    # SUZU1-4 0xBAB4-: pitch overview / advice, 13px cells, text x=44, inner right x~280: 18 cells (docs/survey.md §9)
+    units_ = {"src:a": {"text": "", "capacity": 99, "source": "57ff", "copies": ["SUZU1.BIN:0BAB4"]}}
+    ko = {"src:a": {"ko": "가" * 18, "status": "draft"}}
+    assert kocheck.window_problems(units_, ko) == []
+    ko = {"src:a": {"ko": "가" * 19, "status": "draft"}}
+    assert kocheck.window_problems(units_, ko)[0][2].endswith("> 236px (fixed 13px)")
+    assert kocheck.window_limit(["SUZU4.BIN:0CF94"]) == 236
