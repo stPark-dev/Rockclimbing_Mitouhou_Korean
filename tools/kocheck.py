@@ -274,6 +274,23 @@ WINDOW_LIMITS += [
      "climbing notices (hunger, pitons found): text x=40, inner right edge x~164"),
     ("KABE.BIN", 0x2D74C, 0x2D750, 252,
      "altitude sickness near the summit: text x=40, 18 tiles from the code, edge by the formula"),
+    ("KABE.BIN", 0x2C6F4, 0x2C880, 252,
+     "level-up and new techniques: text x=40, 18 tiles from the code, edge by the formula"),
+    ("KABE.BIN", 0x2C8A4, 0x2C8A5, 156,
+     "terrace question: text x=80, inner right edge x~236"),
+    ("KABE.BIN", 0x2D650, 0x2D6B0, 236,
+     "give-up questions: text x=48, 17 tiles from the code, edge by the formula"),
+    ("KABE.BIN", 0x2D6F8, 0x2D74C, 236, "give-up questions"),
+]
+# Camp screen between stages (MESI): boxes sized by the caller, not tiles (docs/survey.md §9, 2026-10-22)
+WINDOW_LIMITS += [
+    ("MESI.BIN", 0x1F9C, 0x1FFC, 245, "food ran out: text x=38, inner right edge x~283"),
+    ("MESI.BIN", 0x1FFC, 0x2030, 203, "bivouac remark: text x=64, box x=60-268"),
+    ("MESI.BIN", 0x2030, 0x2074, 191,
+     "plan question: text x=68, inner right edge x~259; the F9 line is checked on screen"),
+    ("MESI.BIN", 0x20AC, 0x211C, 187, "rest menu: text x=72, inner right edge x~259"),
+    ("MESI.BIN", 0x211C, 0x21D0, 203, "rest and meal results: text x=64, box x=60-268"),
+    ("MESI.BIN", 0x2210, 0x2224, 203, "bivouac: text x=64, box x=60-268"),
 ]
 
 

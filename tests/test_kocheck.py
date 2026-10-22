@@ -184,13 +184,17 @@ def test_window_limit_applies_to_the_variant_on_that_copy(monkeypatch):
 
 
 def test_climbing_screen_windows_have_their_measured_limits():
-    # KABE event messages 220px, small notices 124px, altitude sickness 252px (docs/survey.md §9)
+    # KABE event messages 220px, small notices 124px, altitude sickness and level-up 252px (docs/survey.md §9)
     assert kocheck.window_limit(["KABE.BIN:2C014"]) == 220
     assert kocheck.window_limit(["KABE.BIN:2C67C"]) == 220
     assert kocheck.window_limit(["KABE.BIN:2C880"]) == 124
     assert kocheck.window_limit(["KABE.BIN:2C88C"]) == 124
     assert kocheck.window_limit(["KABE.BIN:2D74C"]) == 252
-    assert kocheck.window_limit(["KABE.BIN:2C6F4"]) is None  # level-up window: not measured
+    assert kocheck.window_limit(["KABE.BIN:2C6F4"]) == 252  # level-up, frame formula
+    assert kocheck.window_limit(["KABE.BIN:2C8A4"]) == 156  # terrace question
+    assert kocheck.window_limit(["KABE.BIN:2D650"]) == 236  # give-up questions
+    assert kocheck.window_limit(["KABE.BIN:2D720"]) == 236
+    assert kocheck.window_limit(["KABE.BIN:2D6B0"]) is None  # return to the entrance: caller not found
     assert kocheck.window_limit(["KABE.BIN:2BFE0"]) is None  # hold remarks, another caller: not measured
 
 
@@ -203,3 +207,15 @@ def test_player_name_slot_counts_eight_cells_in_climbing_event_messages():
     assert kocheck.window_problems(units_, ko) == []
     ko["src:a"]["ko"] = "{F8:00}" + "가" * 10  # 224px
     assert kocheck.window_problems(units_, ko) == [("src:a", "window", "line 1 224px > 220px")]
+
+
+def test_camp_screen_windows_have_their_measured_limits():
+    # MESI: food ran out 245px, results and bivouac 203px, plan question 191px, rest menu 187px (docs/survey.md §9)
+    assert kocheck.window_limit(["MESI.BIN:01F9C"]) == 245
+    assert kocheck.window_limit(["MESI.BIN:01FFC"]) == 203
+    assert kocheck.window_limit(["MESI.BIN:02170"]) == 203
+    assert kocheck.window_limit(["MESI.BIN:02210"]) == 203
+    assert kocheck.window_limit(["MESI.BIN:02040"]) == 191
+    assert kocheck.window_limit(["MESI.BIN:020AC"]) == 187
+    assert kocheck.window_limit(["MESI.BIN:021D0"]) is None  # mood question: not measured
+    assert kocheck.window_limit(["MESI.BIN:022D8"]) is None  # advice: not measured
