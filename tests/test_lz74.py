@@ -1,0 +1,67 @@
+import sys
+from pathlib import Path
+
+import pytest
+
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "tools"))
+import lz74  # noqa: E402
+
+ROOT = Path(__file__).resolve().parent.parent
+X_MEMORY = ROOT / "work" / "files" / "X_HUMAN" / "X_MEMORY.BIN"
+
+
+def test_decode_73_block_literals_runs_and_back_references():
+    # 0x73 block: literal run of 3, short run (0x7E, count 1+4) of 0x09, back reference len 3 dist 3, end
+    block = bytes([0x73, 0x03, 1, 2, 3, 0x7E, 0x01, 0x09, 0x80 | (0 << 3), 0x02, 0x00])
+    out, used = lz74.decode_block(block)
+    assert out == bytes([1, 2, 3] + [9] * 5 + [9, 9, 9])
+    assert used == len(block)
+
+
+def test_decode_74_block_expands_pair_dictionary():
+    # 0x74 block with one escape byte 0xEE standing for the pair (0x41, 0x42), read low byte first;
+    # a literal run counts the pair as two symbols
+    block = bytes([0x74, 0x01, 0xEE, 0x41, 0x42, 0x03, 0xEE, 0x43, 0x00])
+    out, used = lz74.decode_block(block)
+    assert out == b"ABC"
+    assert used == len(block)
+
+
+def test_fill_block():
+    out, used = lz74.decode_block(bytes([0x40, 0x5A, 0x03, 0x00]))
+    assert out == b"ZZZ" and used == 4
+
+
+def test_long_run_and_stored_block():
+    out, _ = lz74.decode_block(bytes([0x73, 0x7F, 0x05, 0x01, 0x07, 0x00]))
+    assert out == bytes([7] * 0x105)
+    out, used = lz74.decode_block(bytes([0xFF, 0x02, 0x00, 0xAA, 0xBB]))
+    assert out == b"\xaa\xbb" and used == 5
+
+
+def test_stream_places_blocks_every_0x2000_bytes():
+    raw = bytes(range(256)) * 40  # 10240 bytes, two blocks
+    stream = lz74.encode_stream(raw)
+    assert lz74.decode_stream(stream)[0] == raw
+    assert stream[-1] == 0
+
+
+@pytest.mark.parametrize("data", [b"", b"a", b"abcabcabcabc" * 50, bytes(5000), bytes(range(256)) * 9])
+def test_encode_round_trip(data):
+    assert lz74.decode_stream(lz74.encode_stream(data))[0] == data
+
+
+@pytest.mark.skipif(not X_MEMORY.exists(), reason="extracted disc files are not in the repository")
+def test_name_entry_graphics_decode_to_tims_and_round_trip():
+    data = X_MEMORY.read_bytes()
+    for off in (0x0, 0xE04, 0x272C):
+        raw, used = lz74.decode_stream(data[off:])
+        assert raw[:4] == b"\x10\x00\x00\x00"  # TIM magic
+        assert lz74.decode_stream(lz74.encode_stream(raw))[0] == raw
+
+
+def test_malformed_blocks_are_rejected():
+    with pytest.raises(ValueError):
+        lz74.decode_stream(bytes([0x40, 0x00, 0x00, 0x40, 0x00]))  # one block expanding to 0x4000
+    with pytest.raises(ValueError):
+        lz74.decode_block(bytes([0xFF, 0x05, 0x00, 0xAA]))  # stored block cut short
