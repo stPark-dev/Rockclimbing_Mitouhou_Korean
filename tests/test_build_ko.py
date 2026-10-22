@@ -121,3 +121,30 @@ def test_text_for_copy_prefers_the_by_copy_variant():
     entry = {"ko": "기본", "by_copy": {"X_SUZU.BIN:011C8": "짧게"}}
     assert build.text_for(entry, "X_SUZU.BIN:011C8") == "짧게"
     assert build.text_for(entry, "KWAMENU.BIN:12004") == "기본"
+
+
+@need_disc
+@need_galmuri
+def test_corpus_dev_build_installs_the_hangul_name_entry():
+    import struct
+    import nameentry as ne
+    ko = {}
+    for p in sorted((ROOT / "text" / "ko").glob("*.json")):
+        ko.update(json.loads(p.read_text(encoding="utf-8")))
+    out, report = build.build(TRACK.read_bytes(), ko, kfont.load_bdf(GALMURI), policy="dev")
+    cells, files = report["cells"], report["files_out"]
+    assert all(ch in cells for ch in ne.syllables())
+    exe = files["SLPS_006.62"]
+    o = ne.TABLE_START - ne.EXE_LOAD
+    region = exe[o:ne.TABLE_END - ne.EXE_LOAD]
+    for i, ch in enumerate(ne.layout(), 1):
+        off = struct.unpack_from("<H", region, 2 * i)[0]
+        if ch == ne.SPACE:
+            assert region[off] == 0xFD
+        else:
+            assert region[off:off + len(ne.code(cells[ch]))] == ne.code(cells[ch])
+    kw = files["KWAMENU.BIN"]
+    page0 = ne.encode_pages(cells, build.encode)[0]
+    assert page0 in kw[ne.CAVE_START:ne.CAVE_END]
+    assert not any(w["file"] == "KWAMENU.BIN" and ne.CAVE_START <= w["offset"] < ne.CAVE_END
+                   for w in report["written"])

@@ -9,7 +9,7 @@ Steps, all on the fixed revision (docs/survey.md §1):
    Hangul take free 2-byte cells;
 4. draw the glyphs into every copy of the font, write their advances into the
    executable's table, and write each translation over every copy of its unit;
-5. apply the emulator compatibility fix (tools/compat.py: START.BIN below the end of RAM);
+5. install the Hangul name entry (tools/nameentry.py, D10) and apply the emulator compatibility fix (tools/compat.py: START.BIN below the end of RAM);
 6. rebuild track 1 through iso.plan/apply.
 Untranslated units keep their source bytes; under the dev policy their kana and
 kanji show whatever now sits in those cells.
@@ -28,6 +28,7 @@ import compat
 import iso
 import kfont
 import kocheck
+import nameentry
 import poc_db
 import textcodec as tc
 import textmap
@@ -213,7 +214,7 @@ def build(src, ko, bdf, policy="dev", compat_fix=True):
 
     plan = kocheck.fit_plan(us, picked, slots=len(ONE_BYTE_CELLS) - len(IN_PLACE) - len(NEW_PUNCT_CELLS))
     texts = [t for k, v in picked.items() for _, t, _ in kocheck.variants(us[k], v)]
-    hangul = {ch for t in texts for ch in t if "가" <= ch <= "힣"}
+    hangul = {ch for t in texts for ch in t if "가" <= ch <= "힣"} | set(nameentry.syllables())
     kept = {kocheck.ALIASES.get(t[1], t[1]) for x in texts for t in kocheck.tokenize(x)
             if t[0] == "c" and not ("가" <= t[1] <= "힣")} - set(kocheck.NEW_PUNCT)
     for ch in kept:
@@ -223,6 +224,8 @@ def build(src, ko, bdf, policy="dev", compat_fix=True):
 
     for k, v in picked.items():
         for e in us[k]["entries"]:
+            if nameentry.reserved(e["file"], e["offset"]):
+                continue
             text = text_for(v, e["id"])
             write_string(files[e["file"]], e["offset"], e["slot_end"], encode(text, cells))
             report["written"].append({"file": e["file"], "offset": e["offset"], "ko": text})
@@ -252,6 +255,7 @@ def build(src, ko, bdf, policy="dev", compat_fix=True):
         else:
             exe[WIDTH_OFFSET + width_index(k)] = advance(ch, bdf)
 
+    report["name_entry"] = nameentry.install(files, originals, cells, encode)
     if compat_fix:
         report["compat"] = compat.apply(files)
     changes = {n: bytes(d) for n, d in files.items() if bytes(d) != originals[n]}
