@@ -300,6 +300,17 @@ WINDOW_LIMITS += [
         (m, 0xC90, 0x14EC, 216, "route descriptions, drawn inside the stage move window"),
     )
 ]
+# Move hazards (storm, rockfall, spindrift, hidden cliff, crevasse): the text x of each message comes
+# from the record table at SUZU_1 0xD3AC; warning frame inner right x~252, main x~280, outcome x~252
+_HAZARD_WARNINGS = {0x20C: 179, 0x588: 178, 0x7C4: 178, 0xA88: 178, 0xB8C: 178}
+_HAZARD_MAIN = {0x240: 220, 0x438: 220, 0x5BC: 210, 0x810: 210, 0xAC4: 210, 0xBD4: 205}
+_HAZARD_OUTCOMES = (0x2DC, 0x340, 0x384, 0x3EC, 0x4D4, 0x53C, 0x648, 0x6A0, 0x6E0, 0x74C,
+                    0x788, 0x89C, 0x8FC, 0x96C, 0x9C4, 0xA2C, 0xAF8, 0xB38, 0xBFC, 0xC54)
+WINDOW_LIMITS += [
+    (m, off, off + 1, px, "move hazard message")
+    for m in ("MT0.BIN", "MT1.BIN")
+    for off, px in [*_HAZARD_WARNINGS.items(), *_HAZARD_MAIN.items(), *((o, 178) for o in _HAZARD_OUTCOMES)]
+]
 
 
 # Windows where {F8:00} is the player name, drawn in a fixed 8-cell slot (docs/survey.md §9)
