@@ -119,7 +119,7 @@ def test_window_problem_when_a_line_exceeds_a_measured_limit():
 def test_measured_windows_replace_the_source_width_warning():
     widths = {86: 12}
     units_ = {"src:a": {"text": "", "capacity": 99, "source": "57ff", "copies": ["KWAMENU.BIN:14354"]},
-              "src:b": {"text": "", "capacity": 99, "source": "57ff", "copies": ["KWAMENU.BIN:196A4"]}}  # training result, not measured
+              "src:b": {"text": "", "capacity": 99, "source": "57ff", "copies": ["KWAMENU.BIN:11D4C"]}}  # summer/winter question, not measured
     ko = {"src:a": {"ko": "가나", "status": "draft"}, "src:b": {"ko": "가나", "status": "draft"}}
     assert [w[0] for w in kocheck.width_warnings(units_, ko, widths)] == ["src:b"]
     assert kocheck.window_problems(units_, ko) == []
@@ -260,3 +260,17 @@ def test_pitch_overview_and_advice_are_fixed_pitch_windows():
     ko = {"src:a": {"ko": "가" * 19, "status": "draft"}}
     assert kocheck.window_problems(units_, ko)[0][2].endswith("> 236px (fixed 13px)")
     assert kocheck.window_limit(["SUZU4.BIN:0CF94"]) == 236
+
+
+def test_memory_card_dialog_has_its_measured_limit():
+    # save flow dialog seen on screen: text x=88, inner right edge x~241 (docs/survey.md §9)
+    for off in ("10A98", "10B00", "10BB0", "10BFC"):
+        assert kocheck.window_limit([f"KWAMENU.BIN:{off}"]) == 153
+    assert kocheck.window_limit(["KWAMENU.BIN:10C5C"]) is None  # card full: source is 166px, another frame
+
+
+def test_training_result_window_has_its_measured_limit():
+    # KWAMENU 0x196A4-: training results over the picture, text x=48, inner right edge x~280 (docs/survey.md §9)
+    assert kocheck.window_limit(["KWAMENU.BIN:196A4"]) == 232
+    assert kocheck.window_limit(["KWAMENU.BIN:19D70"]) == 232
+    assert kocheck.window_limit(["KWAMENU.BIN:19DC0"]) == 232

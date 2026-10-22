@@ -267,6 +267,10 @@ WINDOW_LIMITS += (
     [(m, 0x72EC, 0x8CC8, 234, "stage advice: text x=48, inner right edge x~282 (docs/survey.md §9)") for m in _SUZU]
     + [("SUZU_0.BIN", 0xCB6C, 0xE548, 234, "stage advice"), ("SUZU_0.BIN", 0x18770, 0x1A14C, 234, "stage advice")]
 )
+# Training results over the picture (success and failure share the frame): text x=48, inner right edge x~280
+WINDOW_LIMITS += [("KWAMENU.BIN", 0x196A4, 0x19DD4, 232, "training results")]
+# Memory card save dialog (questions and results seen on screen): text x=88, inner right edge x~241
+WINDOW_LIMITS += [("KWAMENU.BIN", o, o + 1, 153, "memory card save dialog") for o in (0x10A98, 0x10B00, 0x10BB0, 0x10BFC)]
 # Mountain screen progress status after a stage: text x=72, inner right edge x~252 (docs/survey.md §9, 2026-10-22)
 WINDOW_LIMITS += [(m, 0x0, 0x19C, 180, "progress status (ahead of or behind plan)") for m in _SUZU]
 # Climbing screen: frame x = 8*f384, inner right edge = 8*f384 + 16*(tiles-1) - 4 (docs/survey.md §9, 2026-10-22)
