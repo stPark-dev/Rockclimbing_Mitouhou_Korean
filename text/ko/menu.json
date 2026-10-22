@@ -516,7 +516,7 @@
   "copies": [
    "KWAMENU.BIN:10FCC"
   ],
-  "ko": "노인의 지팡이 루트・{F9:02}\n",
+  "ko": "노인의 지팡이・{F9:02}\n",
   "status": "draft"
  },
  "src:6db160df5b6d": {
@@ -524,7 +524,7 @@
   "copies": [
    "KWAMENU.BIN:10FE0"
   ],
-  "ko": "노인의 수염 루트・{F9:02}\n",
+  "ko": "노인의 수염・{F9:02}\n",
   "status": "draft"
  },
  "src:d60924f63b6a": {
@@ -532,7 +532,7 @@
   "copies": [
    "KWAMENU.BIN:10FF4"
   ],
-  "ko": "왼쪽 송곳니 루트・{F9:02}\n",
+  "ko": "왼쪽 송곳니・{F9:02}\n",
   "status": "draft"
  },
  "src:3af5895f7ac0": {
@@ -540,7 +540,7 @@
   "copies": [
    "KWAMENU.BIN:11004"
   ],
-  "ko": "오른쪽 송곳니 루트・{F9:02}\n",
+  "ko": "오른쪽 송곳니・{F9:02}\n",
   "status": "draft"
  },
  "src:da028f9caf60": {
@@ -548,7 +548,7 @@
   "copies": [
    "KWAMENU.BIN:11014"
   ],
-  "ko": "영광으로 가는 계단 루트・{F9:02}\n",
+  "ko": "영광으로 가는 계단・{F9:02}\n",
   "status": "draft"
  },
  "src:82bbc7a222db": {
@@ -556,7 +556,7 @@
   "copies": [
    "KWAMENU.BIN:11028"
   ],
-  "ko": "여신의 입맞춤 루트・{F9:02}\n",
+  "ko": "여신의 입맞춤・{F9:02}\n",
   "status": "draft"
  },
  "src:b8685ee251cc": {
@@ -564,7 +564,7 @@
   "copies": [
    "KWAMENU.BIN:1103C"
   ],
-  "ko": "여신의 어깨 루트・{F9:02}\n",
+  "ko": "여신의 어깨・{F9:02}\n",
   "status": "draft"
  },
  "src:bd53a4c79024": {
@@ -572,7 +572,7 @@
   "copies": [
    "KWAMENU.BIN:11050"
   ],
-  "ko": "여신의 등 루트・{F9:02}\n",
+  "ko": "여신의 등・{F9:02}\n",
   "status": "draft"
  },
  "src:f022fd83c1a6": {
@@ -580,7 +580,7 @@
   "copies": [
    "KWAMENU.BIN:11064"
   ],
-  "ko": "바람의 샛길 루트・{F9:02}\n",
+  "ko": "바람의 샛길・{F9:02}\n",
   "status": "draft"
  },
  "src:a4352516384f": {
@@ -588,7 +588,7 @@
   "copies": [
    "KWAMENU.BIN:11078"
   ],
-  "ko": "바람의 길 루트・{F9:02}\n",
+  "ko": "바람의 길・{F9:02}\n",
   "status": "draft"
  },
  "src:d10bff4d4ed6": {
@@ -596,7 +596,7 @@
   "copies": [
    "KWAMENU.BIN:11088"
   ],
-  "ko": "바람의 폭포 루트・{F9:02}\n",
+  "ko": "바람의 폭포・{F9:02}\n",
   "status": "draft"
  },
  "src:88f012e535a0": {
@@ -604,7 +604,7 @@
   "copies": [
    "KWAMENU.BIN:11098"
   ],
-  "ko": "왕좌로 가는 길 루트・{F9:02}\n",
+  "ko": "왕좌로 가는 길・{F9:02}\n",
   "status": "draft"
  },
  "src:d4a53c92f61a": {
@@ -612,7 +612,7 @@
   "copies": [
    "KWAMENU.BIN:110AC"
   ],
-  "ko": "신의 칼날 루트・{F9:02}\n",
+  "ko": "신의 칼날・{F9:02}\n",
   "status": "draft",
   "note": "약칭: 칸 16바이트라 '신을 향한 칼날' 불가"
  },
@@ -621,7 +621,7 @@
   "copies": [
    "KWAMENU.BIN:110BC"
   ],
-  "ko": "생명의 가치 루트・{F9:02}\n",
+  "ko": "생명의 가치・{F9:02}\n",
   "status": "draft"
  },
  "src:f90131bed490": {
@@ -629,7 +629,7 @@
   "copies": [
    "KWAMENU.BIN:110D0"
   ],
-  "ko": "노인의 지팡이 루트・{F9:03}\n",
+  "ko": "노인의 지팡이・{F9:03}\n",
   "status": "draft"
  },
  "src:b7191518ebe9": {
@@ -637,7 +637,7 @@
   "copies": [
    "KWAMENU.BIN:110E4"
   ],
-  "ko": "노인의 수염 루트・{F9:03}\n",
+  "ko": "노인의 수염・{F9:03}\n",
   "status": "draft"
  },
  "src:f244f94a625a": {
@@ -645,7 +645,7 @@
   "copies": [
    "KWAMENU.BIN:110F8"
   ],
-  "ko": "왼쪽 송곳니 루트・{F9:03}\n",
+  "ko": "왼쪽 송곳니・{F9:03}\n",
   "status": "draft"
  },
  "src:87c8fce97fd2": {
@@ -653,7 +653,7 @@
   "copies": [
    "KWAMENU.BIN:11108"
   ],
-  "ko": "오른쪽 송곳니 루트・{F9:03}\n",
+  "ko": "오른쪽 송곳니・{F9:03}\n",
   "status": "draft"
  },
  "src:3688360a824d": {
@@ -661,7 +661,7 @@
   "copies": [
    "KWAMENU.BIN:11118"
   ],
-  "ko": "영광으로 가는 계단 루트・{F9:03}\n",
+  "ko": "영광으로 가는 계단・{F9:03}\n",
   "status": "draft"
  },
  "src:cf8dce4ebc29": {
@@ -669,7 +669,7 @@
   "copies": [
    "KWAMENU.BIN:1112C"
   ],
-  "ko": "여신의 입맞춤 루트・{F9:03}\n",
+  "ko": "여신의 입맞춤・{F9:03}\n",
   "status": "draft"
  },
  "src:0d706c4a5422": {
@@ -677,7 +677,7 @@
   "copies": [
    "KWAMENU.BIN:11140"
   ],
-  "ko": "여신의 어깨 루트・{F9:03}\n",
+  "ko": "여신의 어깨・{F9:03}\n",
   "status": "draft"
  },
  "src:10f34c2ae11e": {
@@ -685,7 +685,7 @@
   "copies": [
    "KWAMENU.BIN:11154"
   ],
-  "ko": "여신의 등 루트・{F9:03}\n",
+  "ko": "여신의 등・{F9:03}\n",
   "status": "draft"
  },
  "src:bc2b301e7c9a": {
@@ -693,7 +693,7 @@
   "copies": [
    "KWAMENU.BIN:11168"
   ],
-  "ko": "바람의 샛길 루트・{F9:03}\n",
+  "ko": "바람의 샛길・{F9:03}\n",
   "status": "draft"
  },
  "src:cfa6972355f3": {
@@ -701,7 +701,7 @@
   "copies": [
    "KWAMENU.BIN:1117C"
   ],
-  "ko": "바람의 길 루트・{F9:03}\n",
+  "ko": "바람의 길・{F9:03}\n",
   "status": "draft"
  },
  "src:147fc5b1d525": {
@@ -709,7 +709,7 @@
   "copies": [
    "KWAMENU.BIN:1118C"
   ],
-  "ko": "바람의 폭포 루트・{F9:03}\n",
+  "ko": "바람의 폭포・{F9:03}\n",
   "status": "draft"
  },
  "src:d0edd1202673": {
@@ -717,7 +717,7 @@
   "copies": [
    "KWAMENU.BIN:1119C"
   ],
-  "ko": "왕좌로 가는 길 루트・{F9:03}\n",
+  "ko": "왕좌로 가는 길・{F9:03}\n",
   "status": "draft"
  },
  "src:730a8b60d7d0": {
@@ -725,7 +725,7 @@
   "copies": [
    "KWAMENU.BIN:111B0"
   ],
-  "ko": "신의 칼날 루트・{F9:03}\n",
+  "ko": "신의 칼날・{F9:03}\n",
   "status": "draft",
   "note": "약칭: 칸 16바이트"
  },
@@ -734,7 +734,7 @@
   "copies": [
    "KWAMENU.BIN:111C0"
   ],
-  "ko": "생명의 가치 루트・{F9:03}\n",
+  "ko": "생명의 가치・{F9:03}\n",
   "status": "draft"
  },
  "src:ff33b675a061": {
@@ -742,7 +742,7 @@
   "copies": [
    "KWAMENU.BIN:111D4"
   ],
-  "ko": "노인의 지팡이 루트・{F9:04}\n",
+  "ko": "노인의 지팡이・{F9:04}\n",
   "status": "draft"
  },
  "src:e13ac898225f": {
@@ -750,7 +750,7 @@
   "copies": [
    "KWAMENU.BIN:111E8"
   ],
-  "ko": "노인의 수염 루트・{F9:04}\n",
+  "ko": "노인의 수염・{F9:04}\n",
   "status": "draft"
  },
  "src:fa88e9d5396a": {
@@ -758,7 +758,7 @@
   "copies": [
    "KWAMENU.BIN:111FC"
   ],
-  "ko": "왼쪽 송곳니 루트・{F9:04}\n",
+  "ko": "왼쪽 송곳니・{F9:04}\n",
   "status": "draft"
  },
  "src:6c695c889c98": {
@@ -766,7 +766,7 @@
   "copies": [
    "KWAMENU.BIN:1120C"
   ],
-  "ko": "오른쪽 송곳니 루트・{F9:04}\n",
+  "ko": "오른쪽 송곳니・{F9:04}\n",
   "status": "draft"
  },
  "src:7728d361169c": {
@@ -774,7 +774,7 @@
   "copies": [
    "KWAMENU.BIN:1121C"
   ],
-  "ko": "영광으로 가는 계단 루트・{F9:04}\n",
+  "ko": "영광으로 가는 계단・{F9:04}\n",
   "status": "draft"
  },
  "src:b5547a0f8114": {
@@ -782,7 +782,7 @@
   "copies": [
    "KWAMENU.BIN:11230"
   ],
-  "ko": "여신의 입맞춤 루트・{F9:04}\n",
+  "ko": "여신의 입맞춤・{F9:04}\n",
   "status": "draft"
  },
  "src:0ab2601f2a3b": {
@@ -790,7 +790,7 @@
   "copies": [
    "KWAMENU.BIN:11244"
   ],
-  "ko": "여신의 어깨 루트・{F9:04}\n",
+  "ko": "여신의 어깨・{F9:04}\n",
   "status": "draft"
  },
  "src:573b70a11b93": {
@@ -798,7 +798,7 @@
   "copies": [
    "KWAMENU.BIN:11258"
   ],
-  "ko": "여신의 등 루트・{F9:04}\n",
+  "ko": "여신의 등・{F9:04}\n",
   "status": "draft"
  },
  "src:de0a697559ac": {
@@ -806,7 +806,7 @@
   "copies": [
    "KWAMENU.BIN:1126C"
   ],
-  "ko": "바람의 샛길 루트・{F9:04}\n",
+  "ko": "바람의 샛길・{F9:04}\n",
   "status": "draft"
  },
  "src:31fb72ce8dae": {
@@ -814,7 +814,7 @@
   "copies": [
    "KWAMENU.BIN:11280"
   ],
-  "ko": "바람의 길 루트・{F9:04}\n",
+  "ko": "바람의 길・{F9:04}\n",
   "status": "draft"
  },
  "src:d32b3aa575c7": {
@@ -822,7 +822,7 @@
   "copies": [
    "KWAMENU.BIN:11290"
   ],
-  "ko": "바람의 폭포 루트・{F9:04}\n",
+  "ko": "바람의 폭포・{F9:04}\n",
   "status": "draft"
  },
  "src:fc6db3ede98c": {
@@ -830,7 +830,7 @@
   "copies": [
    "KWAMENU.BIN:112A0"
   ],
-  "ko": "왕좌로 가는 길 루트・{F9:04}\n",
+  "ko": "왕좌로 가는 길・{F9:04}\n",
   "status": "draft"
  },
  "src:736469f34ed4": {
@@ -838,7 +838,7 @@
   "copies": [
    "KWAMENU.BIN:112B4"
   ],
-  "ko": "신의 칼날 루트・{F9:04}\n",
+  "ko": "신의 칼날・{F9:04}\n",
   "status": "draft",
   "note": "약칭: 칸 16바이트"
  },
@@ -847,7 +847,7 @@
   "copies": [
    "KWAMENU.BIN:112C4"
   ],
-  "ko": "생명의 가치 루트・{F9:04}\n",
+  "ko": "생명의 가치・{F9:04}\n",
   "status": "draft"
  },
  "src:06fb0c7c1b35": {
