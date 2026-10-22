@@ -274,6 +274,9 @@ WINDOW_LIMITS += [("KWAMENU.BIN", 0x11D88, 0x11E9C, 268, "summer/winter advice")
                   ("KWAMENU.BIN", 0x11EB0, 0x11F28, 172, "partner/solo advice")]
 # Save slot lines (level, counts, peak/season, route/stage composed with F9): text x=48, inner right edge x~281
 WINDOW_LIMITS += [("KWAMENU.BIN", 0x10E0C, 0x112D8, 233, "save slot")]
+# Same call sites as measured windows: KABE footing remarks (0x800CAD3C, x=56, 16 tiles) and MESI advice (x=0x48)
+WINDOW_LIMITS += [("KABE.BIN", 0x2BFE0, 0x2C014, 220, "footing remarks, event frame"),
+                  ("MESI.BIN", 0x2224, 0x2384, 187, "advice, rest-menu box")]
 # Memory card save dialog (questions and results seen on screen): text x=88, inner right edge x~241
 WINDOW_LIMITS += [("KWAMENU.BIN", o, o + 1, 153, "memory card save dialog") for o in (0x10A98, 0x10B00, 0x10BB0, 0x10BFC)]
 # Mountain screen progress status after a stage: text x=72, inner right edge x~252 (docs/survey.md §9, 2026-10-22)

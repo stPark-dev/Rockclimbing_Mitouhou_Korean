@@ -195,7 +195,6 @@ def test_climbing_screen_windows_have_their_measured_limits():
     assert kocheck.window_limit(["KABE.BIN:2D650"]) == 236  # give-up questions
     assert kocheck.window_limit(["KABE.BIN:2D720"]) == 236
     assert kocheck.window_limit(["KABE.BIN:2D6B0"]) is None  # return to the entrance: caller not found
-    assert kocheck.window_limit(["KABE.BIN:2BFE0"]) is None  # hold remarks, another caller: not measured
 
 
 def test_player_name_slot_counts_eight_cells_in_climbing_event_messages():
@@ -218,7 +217,6 @@ def test_camp_screen_windows_have_their_measured_limits():
     assert kocheck.window_limit(["MESI.BIN:02040"]) == 191
     assert kocheck.window_limit(["MESI.BIN:020AC"]) == 187
     assert kocheck.window_limit(["MESI.BIN:021D0"]) is None  # mood question: not measured
-    assert kocheck.window_limit(["MESI.BIN:022D8"]) is None  # advice: not measured
 
 
 def test_mountain_screen_move_windows_have_their_measured_limits():
@@ -288,3 +286,11 @@ def test_save_slot_window_has_its_measured_limit():
     # KWAMENU 0x10E0C-0x112D8 save slot lines: text x=48, inner right edge x~281 (docs/survey.md §9)
     assert kocheck.window_limit(["KWAMENU.BIN:10E0C"]) == 233
     assert kocheck.window_limit(["KWAMENU.BIN:112C4"]) == 233
+
+
+def test_windows_inferred_from_shared_call_sites():
+    # KABE footing remarks open the 16-tile event frame; MESI advice opens the rest-menu box (docs/survey.md §9)
+    assert kocheck.window_limit(["KABE.BIN:2BFE0"]) == 220
+    assert kocheck.window_limit(["KABE.BIN:2BFF4"]) == 220
+    assert kocheck.window_limit(["MESI.BIN:02224"]) == 187
+    assert kocheck.window_limit(["MESI.BIN:02360"]) == 187
