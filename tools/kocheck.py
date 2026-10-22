@@ -292,6 +292,14 @@ WINDOW_LIMITS += [
     ("MESI.BIN", 0x211C, 0x21D0, 203, "rest and meal results: text x=64, box x=60-268"),
     ("MESI.BIN", 0x2210, 0x2224, 203, "bivouac: text x=64, box x=60-268"),
 ]
+# Mountain screen between stages (MT0/MT1, same layout): docs/survey.md §9, 2026-10-22
+WINDOW_LIMITS += [
+    entry for m in ("MT0.BIN", "MT1.BIN") for entry in (
+        (m, 0x58, 0x88, 132, "stage-to-stage note: text x=40, inner right edge x~172"),
+        (m, 0x160, 0x200, 216, "stage move header: text x=64, inner right edge x~280"),
+        (m, 0xC90, 0x14EC, 216, "route descriptions, drawn inside the stage move window"),
+    )
+]
 
 
 # Windows where {F8:00} is the player name, drawn in a fixed 8-cell slot (docs/survey.md §9)

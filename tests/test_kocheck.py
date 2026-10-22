@@ -219,3 +219,13 @@ def test_camp_screen_windows_have_their_measured_limits():
     assert kocheck.window_limit(["MESI.BIN:020AC"]) == 187
     assert kocheck.window_limit(["MESI.BIN:021D0"]) is None  # mood question: not measured
     assert kocheck.window_limit(["MESI.BIN:022D8"]) is None  # advice: not measured
+
+
+def test_mountain_screen_move_windows_have_their_measured_limits():
+    # MT0/MT1: stage move header and route descriptions 216px, stage-to-stage note 132px (docs/survey.md §9)
+    for mod in ("MT0.BIN", "MT1.BIN"):
+        assert kocheck.window_limit([f"{mod}:00058"]) == 132
+        assert kocheck.window_limit([f"{mod}:00160"]) == 216
+        assert kocheck.window_limit([f"{mod}:00E64"]) == 216
+        assert kocheck.window_limit([f"{mod}:014EC"]) is None  # scenery remarks: not measured
+        assert kocheck.window_limit([f"{mod}:0020C"]) is None  # weather and hazard events: not measured
