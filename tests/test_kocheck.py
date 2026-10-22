@@ -181,3 +181,25 @@ def test_window_limit_applies_to_the_variant_on_that_copy(monkeypatch):
     assert kocheck.window_problems(units_, ko) == []  # 가나 = 24px in the 30px window; 가나다라 is elsewhere
     ko["src:a"]["by_copy"] = {}
     assert [p[1] for p in kocheck.window_problems(units_, ko)] == ["window"]
+
+
+def test_climbing_screen_windows_have_their_measured_limits():
+    # KABE event messages 220px, small notices 124px, altitude sickness 252px (docs/survey.md §9)
+    assert kocheck.window_limit(["KABE.BIN:2C014"]) == 220
+    assert kocheck.window_limit(["KABE.BIN:2C67C"]) == 220
+    assert kocheck.window_limit(["KABE.BIN:2C880"]) == 124
+    assert kocheck.window_limit(["KABE.BIN:2C88C"]) == 124
+    assert kocheck.window_limit(["KABE.BIN:2D74C"]) == 252
+    assert kocheck.window_limit(["KABE.BIN:2C6F4"]) is None  # level-up window: not measured
+    assert kocheck.window_limit(["KABE.BIN:2BFE0"]) is None  # hold remarks, another caller: not measured
+
+
+def test_player_name_slot_counts_eight_cells_in_climbing_event_messages():
+    # {F8:00} draws the player name in a fixed 8 x 13px slot there (docs/survey.md §9); elsewhere F8 is a cursor
+    units_ = {"src:a": {"text": "", "capacity": 99, "source": "57ff", "copies": ["KABE.BIN:2C080"]},
+              "src:b": {"text": "", "capacity": 99, "source": "57ff", "copies": ["KWAMENU.BIN:14354"]}}
+    ko = {"src:a": {"ko": "{F8:00}" + "가" * 9, "status": "draft"},  # 104 + 108 = 212px
+          "src:b": {"ko": "{F8:00}" + "가" * 20, "status": "draft"}}  # 240px
+    assert kocheck.window_problems(units_, ko) == []
+    ko["src:a"]["ko"] = "{F8:00}" + "가" * 10  # 224px
+    assert kocheck.window_problems(units_, ko) == [("src:a", "window", "line 1 224px > 220px")]

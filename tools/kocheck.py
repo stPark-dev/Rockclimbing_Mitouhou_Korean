@@ -201,7 +201,7 @@ def source_line_widths(toks, widths):
     return lines
 
 
-def ko_line_widths(toks, widths=None):
+def ko_line_widths(toks, widths=None, name_w=0):
     lines = [0]
     for t in toks:
         if t == ("nl",):
@@ -210,6 +210,8 @@ def ko_line_widths(toks, widths=None):
             lines[-1] += CELL_W
         elif t[0] == "ctl" and t[1] == 0xFC:
             lines[-1] += CELL_W * t[2][0]
+        elif t[0] == "ctl" and t[1] == 0xF8 and t[2][0] == 0:
+            lines[-1] += name_w
         elif t[0] == "c":
             ch = ALIASES.get(t[1], t[1])
             if "가" <= ch <= "힣":
@@ -263,6 +265,21 @@ WINDOW_LIMITS += (
     [(m, 0x72EC, 0x8CC8, 234, "stage advice: text x=48, inner right edge x~282 (docs/survey.md §9)") for m in _SUZU]
     + [("SUZU_0.BIN", 0xCB6C, 0xE548, 234, "stage advice"), ("SUZU_0.BIN", 0x18770, 0x1A14C, 234, "stage advice")]
 )
+# Climbing screen: frame x = 8*f384, inner right edge = 8*f384 + 16*(tiles-1) - 4 (docs/survey.md §9, 2026-10-22)
+KABE_EVENTS = (0x2C014, 0x2C6F4)  # messages opened by the event handlers 0x800B3D2C-0x800B5604
+WINDOW_LIMITS += [
+    ("KABE.BIN", *KABE_EVENTS, 220,
+     "climbing event messages (rockfall, avalanche, gust, hands, spindrift): text x=56, inner right edge x~276"),
+    ("KABE.BIN", 0x2C880, 0x2C8A4, 124,
+     "climbing notices (hunger, pitons found): text x=40, inner right edge x~164"),
+    ("KABE.BIN", 0x2D74C, 0x2D750, 252,
+     "altitude sickness near the summit: text x=40, 18 tiles from the code, edge by the formula"),
+]
+
+
+# Windows where {F8:00} is the player name, drawn in a fixed 8-cell slot (docs/survey.md §9)
+NAME_SLOT_W = 8 * CELL_W
+NAME_SLOT_WINDOWS = [("KABE.BIN", *KABE_EVENTS, NAME_SLOT_W, "climbing event messages")]
 
 
 def _limit(table, copies):
@@ -306,7 +323,8 @@ def window_problems(units_, ko, widths=None):
             # layout at the end of a line (FC tabs, FD spaces) draws nothing
             text = re.sub(r"(?:\{FC:[0-9A-F]{2}\}|　| )+(?=\n|$)", "", text)
             toks = tokenize(text)
-            for limit, lines, tag in ((prop, ko_line_widths(toks, widths) if prop else [], ""),
+            name_w = _limit(NAME_SLOT_WINDOWS, copies) or 0
+            for limit, lines, tag in ((prop, ko_line_widths(toks, widths, name_w) if prop else [], ""),
                                       (fixed, fixed_line_widths(toks) if fixed else [], " (fixed 13px)")):
                 over = [(i + 1, w) for i, w in enumerate(lines) if w > limit]
                 if over:
