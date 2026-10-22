@@ -3,6 +3,7 @@
 The same source sits in several modules (SUZU_0 and SUZU0-4, X_SUZU and
 KWAMENU, ...); one translation serves every copy. A unit's capacity is the
 smallest slot among its copies, since every copy is replaced in place (D3).
+`by_copy` ({copy id: text}) gives a copy its own wording where its window differs.
 Translations live in text/ko/<group>.json keyed by `key(source)`.
 
 usage: units.py <text/src dir> <text/ko dir>   (creates or extends the group files)
@@ -31,9 +32,11 @@ def build(entries):
     out = {}
     for e in sorted(entries, key=lambda e: e["id"]):
         u = out.setdefault(key(e["source"]), {"source": e["source"].lower(), "text": e["text"],
-                                              "capacity": e["capacity"], "copies": [], "groups": set()})
+                                              "capacity": e["capacity"], "copies": [], "caps": {},
+                                              "groups": set()})
         u["capacity"] = min(u["capacity"], e["capacity"])
         u["copies"].append(e["id"])
+        u["caps"][e["id"]] = e["capacity"]
         u["groups"].add(GROUP_OF[e["file"]])
     for u in out.values():
         u["group"] = next(g for g in GROUP_ORDER if g in u["groups"])
@@ -55,6 +58,8 @@ def merge(existing, units_, group):
                   "ko": old.get("ko", ""), "status": old.get("status", "untranslated")}
         if old.get("note"):
             out[k]["note"] = old["note"]
+        if old.get("by_copy"):
+            out[k]["by_copy"] = old["by_copy"]
     return out
 
 

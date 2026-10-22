@@ -1888,7 +1888,11 @@
    "X_SUZU.BIN:011C8"
   ],
   "ko": "알프스의 고독한 노인",
-  "status": "draft"
+  "status": "draft",
+  "by_copy": {
+   "X_SUZU.BIN:011C8": "고독한 노인"
+  },
+  "note": "산 화면 오른쪽 위(89px)는 D7 약칭 고독한 노인"
  },
  "src:bd877bde1564": {
   "cap": 12,
@@ -1897,7 +1901,11 @@
    "X_SUZU.BIN:011D4"
   ],
   "ko": "신들을 향한 송곳니",
-  "status": "draft"
+  "status": "draft",
+  "by_copy": {
+   "X_SUZU.BIN:011D4": "신들의 송곳니"
+  },
+  "note": "산 화면 오른쪽 위(89px)는 D7 약칭 신들의 송곳니"
  },
  "src:4eaba1c60508": {
   "cap": 12,
@@ -2347,7 +2355,11 @@
    "X_SUZU.BIN:01200"
   ],
   "ko": "노인의 지팡이 루트",
-  "status": "draft"
+  "status": "draft",
+  "by_copy": {
+   "X_SUZU.BIN:01200": "노인의 지팡이"
+  },
+  "note": "D8: 산 화면 오른쪽 위(89px)는 「루트」 없이 이름만"
  },
  "src:c99bfb31007f": {
   "cap": 12,
@@ -2356,7 +2368,11 @@
    "X_SUZU.BIN:0120C"
   ],
   "ko": "노인의 수염 루트",
-  "status": "draft"
+  "status": "draft",
+  "by_copy": {
+   "X_SUZU.BIN:0120C": "노인의 수염"
+  },
+  "note": "D8: 산 화면 오른쪽 위(89px)는 「루트」 없이 이름만"
  },
  "src:54d02aa0a97f": {
   "cap": 12,
@@ -2365,7 +2381,11 @@
    "X_SUZU.BIN:01218"
   ],
   "ko": "왼쪽 송곳니 루트",
-  "status": "draft"
+  "status": "draft",
+  "by_copy": {
+   "X_SUZU.BIN:01218": "왼쪽 송곳니"
+  },
+  "note": "D8: 산 화면 오른쪽 위(89px)는 「루트」 없이 이름만"
  },
  "src:cc15b8015d63": {
   "cap": 12,
@@ -2374,7 +2394,11 @@
    "X_SUZU.BIN:01224"
   ],
   "ko": "오른쪽 송곳니 루트",
-  "status": "draft"
+  "status": "draft",
+  "by_copy": {
+   "X_SUZU.BIN:01224": "오른쪽 송곳니"
+  },
+  "note": "D8: 산 화면 오른쪽 위(89px)는 「루트」 없이 이름만"
  },
  "src:c54f8e7c9b8f": {
   "cap": 16,
@@ -2399,7 +2423,11 @@
    "X_SUZU.BIN:01248"
   ],
   "ko": "여신의 어깨 루트",
-  "status": "draft"
+  "status": "draft",
+  "by_copy": {
+   "X_SUZU.BIN:01248": "여신의 어깨"
+  },
+  "note": "D8: 산 화면 오른쪽 위(89px)는 「루트」 없이 이름만"
  },
  "src:678582fe033f": {
   "cap": 16,
@@ -2408,7 +2436,11 @@
    "X_SUZU.BIN:01254"
   ],
   "ko": "여신의 등 루트",
-  "status": "draft"
+  "status": "draft",
+  "by_copy": {
+   "X_SUZU.BIN:01254": "여신의 등"
+  },
+  "note": "D8: 산 화면 오른쪽 위(89px)는 「루트」 없이 이름만"
  },
  "src:7cd3722cfdaf": {
   "cap": 16,
@@ -2417,7 +2449,11 @@
    "X_SUZU.BIN:01264"
   ],
   "ko": "바람의 샛길 루트",
-  "status": "draft"
+  "status": "draft",
+  "by_copy": {
+   "X_SUZU.BIN:01264": "바람의 샛길"
+  },
+  "note": "D8: 산 화면 오른쪽 위(89px)는 「루트」 없이 이름만"
  },
  "src:b5bb24efe42d": {
   "cap": 12,
@@ -2426,7 +2462,11 @@
    "X_SUZU.BIN:01274"
   ],
   "ko": "바람의 길 루트",
-  "status": "draft"
+  "status": "draft",
+  "by_copy": {
+   "X_SUZU.BIN:01274": "바람의 길"
+  },
+  "note": "D8: 산 화면 오른쪽 위(89px)는 「루트」 없이 이름만"
  },
  "src:4bdebb851d83": {
   "cap": 12,
@@ -2435,7 +2475,11 @@
    "X_SUZU.BIN:01280"
   ],
   "ko": "바람의 폭포 루트",
-  "status": "draft"
+  "status": "draft",
+  "by_copy": {
+   "X_SUZU.BIN:01280": "바람의 폭포"
+  },
+  "note": "D8: 산 화면 오른쪽 위(89px)는 「루트」 없이 이름만"
  },
  "src:817ffd3d4f87": {
   "cap": 16,
@@ -2444,7 +2488,11 @@
    "X_SUZU.BIN:0128C"
   ],
   "ko": "왕좌로 가는 길 루트",
-  "status": "draft"
+  "status": "draft",
+  "by_copy": {
+   "X_SUZU.BIN:0128C": "왕좌의 길"
+  },
+  "note": "D8: 산 화면 오른쪽 위(89px)는 「루트」 없이 이름만"
  },
  "src:ea66db39b43c": {
   "cap": 12,
@@ -2461,7 +2509,11 @@
    "X_SUZU.BIN:0129C"
   ],
   "ko": "생명의 가치 루트",
-  "status": "draft"
+  "status": "draft",
+  "by_copy": {
+   "X_SUZU.BIN:0129C": "생명의 가치"
+  },
+  "note": "D8: 산 화면 오른쪽 위(89px)는 「루트」 없이 이름만"
  },
  "src:77c8154d4369": {
   "cap": 12,

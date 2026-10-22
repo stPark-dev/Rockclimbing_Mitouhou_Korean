@@ -109,16 +109,18 @@ def one_byte_plan(texts, slots=ONE_BYTE_SLOTS):
 def fit_plan(units_, ko, slots=ONE_BYTE_SLOTS, rounds=1000):
     """Frequency plan, then swap syllables of overflowing strings into 1-byte codes,
     each time evicting the least frequent 1-byte syllable whose eviction overflows nothing."""
-    entries = []
+    entries, texts = [], []
     for k, v in ko.items():
         if v.get("ko"):
-            toks = tokenize(v["ko"])
-            cnt = collections.Counter(t[1] for t in toks if t[0] == "c" and "가" <= t[1] <= "힣")
-            entries.append((toks, units_[k]["capacity"], cnt))
+            for _, text, cap in variants(units_[k], v):
+                toks = tokenize(text)
+                cnt = collections.Counter(t[1] for t in toks if t[0] == "c" and "가" <= t[1] <= "힣")
+                entries.append((toks, cap, cnt))
+                texts.append(text)
     freq = collections.Counter()
     for _, _, cnt in entries:
         freq.update(cnt)
-    plan = one_byte_plan([v["ko"] for v in ko.values() if v.get("ko")], slots)
+    plan = one_byte_plan(texts, slots)
     for _ in range(rounds):
         slack = [cap - byte_length(toks, plan) for toks, cap, _ in entries]
         gain = collections.Counter()
@@ -251,6 +253,12 @@ FIXED_WINDOWS = (
         (0x5A90, 0xCAE0, 238, "stage conditions"), (0x11694, 0x186E4, 238, "stage conditions"),
         (0xE56C, 0x112D4, 224, "stage overview"), (0x1A170, 0x1CED8, 224, "stage overview"))]
 )
+WINDOW_LIMITS += [
+    ("X_SUZU.BIN", 0x11C8, 0x12A8, 89,
+     "mountain screen top-right peak and route labels: text x=213, inner right edge x~302 (docs/survey.md §9, 2026-10-22)"),
+    ("X_SUZU.BIN", 0x12A8, 0x1680, 119,
+     "mountain screen top-left stage name, centred: inner x~12-131 (docs/survey.md §9, 2026-10-22)"),
+]
 WINDOW_LIMITS += (
     [(m, 0x72EC, 0x8CC8, 234, "stage advice: text x=48, inner right edge x~282 (docs/survey.md §9)") for m in _SUZU]
     + [("SUZU_0.BIN", 0xCB6C, 0xE548, 234, "stage advice"), ("SUZU_0.BIN", 0x18770, 0x1A14C, 234, "stage advice")]
@@ -291,18 +299,18 @@ def window_problems(units_, ko, widths=None):
     for k, entry in ko.items():
         if not entry.get("ko"):
             continue
-        copies = units_[k]["copies"]
-        prop, fixed = _limit(WINDOW_LIMITS, copies), _limit(FIXED_WINDOWS, copies)
-        if prop is None and fixed is None:
-            continue
-        # layout at the end of a line (FC tabs, FD spaces) draws nothing
-        text = re.sub(r"(?:\{FC:[0-9A-F]{2}\}|　| )+(?=\n|$)", "", entry["ko"])
-        toks = tokenize(text)
-        for limit, lines, tag in ((prop, ko_line_widths(toks, widths) if prop else [], ""),
-                                  (fixed, fixed_line_widths(toks) if fixed else [], " (fixed 13px)")):
-            over = [(i + 1, w) for i, w in enumerate(lines) if w > limit]
-            if over:
-                out.append((k, "window", ", ".join(f"line {i} {w}px" for i, w in over) + f" > {limit}px{tag}"))
+        for copies, text, _ in variants(units_[k], entry):
+            prop, fixed = _limit(WINDOW_LIMITS, copies), _limit(FIXED_WINDOWS, copies)
+            if prop is None and fixed is None:
+                continue
+            # layout at the end of a line (FC tabs, FD spaces) draws nothing
+            text = re.sub(r"(?:\{FC:[0-9A-F]{2}\}|　| )+(?=\n|$)", "", text)
+            toks = tokenize(text)
+            for limit, lines, tag in ((prop, ko_line_widths(toks, widths) if prop else [], ""),
+                                      (fixed, fixed_line_widths(toks) if fixed else [], " (fixed 13px)")):
+                over = [(i + 1, w) for i, w in enumerate(lines) if w > limit]
+                if over:
+                    out.append((k, "window", ", ".join(f"line {i} {w}px" for i, w in over) + f" > {limit}px{tag}"))
     return out
 
 
@@ -320,21 +328,35 @@ def width_warnings(units_, ko, widths):
     return out
 
 
+def variants(u, entry):
+    """[(copy ids, text, capacity)]: the default wording on the copies without a by_copy text."""
+    by = entry.get("by_copy", {})
+    copies = u.get("copies") or ["*"]
+    caps = u.get("caps") or {c: u["capacity"] for c in copies}
+    rest = [c for c in copies if c not in by]
+    out = [(rest, entry["ko"], min(caps[c] for c in rest))] if rest else []
+    for c, text in by.items():
+        out.append(([c], text, caps[c]))
+    return out
+
+
 def check(units_, ko, one_byte):
     probs = []
     for k, entry in ko.items():
         if not entry.get("ko"):
             continue
-        toks = tokenize(entry["ko"])
         src = tokenize(units_[k]["text"])
-        if protected(toks) != protected(src):
-            probs.append((k, "tokens", f"{protected(toks)} != source {protected(src)}"))
-        bad = sorted({t[1] for t in toks if t[0] == "c" and not encodable(t[1])})
-        if bad:
-            probs.append((k, "glyph", "".join(bad)))
-        size = byte_length(toks, one_byte)
-        if size > units_[k]["capacity"]:
-            probs.append((k, "capacity", f"{size} > {units_[k]['capacity']}"))
+        for copies, text, cap in variants(units_[k], entry):
+            where = "" if not entry.get("by_copy") or copies[0] not in entry["by_copy"] else f" [{copies[0]}]"
+            toks = tokenize(text)
+            if protected(toks) != protected(src):
+                probs.append((k, "tokens", f"{protected(toks)} != source {protected(src)}{where}"))
+            bad = sorted({t[1] for t in toks if t[0] == "c" and not encodable(t[1])})
+            if bad:
+                probs.append((k, "glyph", "".join(bad) + where))
+            size = byte_length(toks, one_byte)
+            if size > cap:
+                probs.append((k, "capacity", f"{size} > {cap}{where}"))
     return probs
 
 

@@ -61,3 +61,16 @@ def test_corpus_unit_count_matches_unique_sources():
     us = units.build(es)
     assert len(us) == len({e["source"] for e in es}) == 1474  # after the pointer-tail starts (2026-10-22)
     assert sum(len(u["copies"]) for u in us.values()) == 4556
+
+
+def test_build_records_each_copy_capacity():
+    es = [_entry("SUZU_0.BIN:00010", "SUZU_0.BIN", "5758ff", "あい", 4),
+          _entry("SUZU0.BIN:00020", "SUZU0.BIN", "5758ff", "あい", 3)]
+    u = units.build(es)[units.key("5758ff")]
+    assert u["caps"] == {"SUZU0.BIN:00020": 3, "SUZU_0.BIN:00010": 4}
+
+
+def test_merge_keeps_by_copy_variants():
+    us = units.build([_entry("MT0.BIN:00000", "MT0.BIN", "59ff", "う", 4)])
+    old = {units.key("59ff"): {"ko": "우", "status": "draft", "by_copy": {"MT0.BIN:00000": "오"}}}
+    assert units.merge(old, us, "event")[units.key("59ff")]["by_copy"] == {"MT0.BIN:00000": "오"}

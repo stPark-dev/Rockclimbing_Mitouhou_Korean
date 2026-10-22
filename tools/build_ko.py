@@ -168,11 +168,17 @@ def _units(entries, cm):
     us = {}
     for e in entries:
         u = us.setdefault(units.key(e["source"]), {
-            "source": e["source"], "capacity": e["slot_end"] - e["offset"], "copies": [],
-            "text": charmap.text(tc.decode(bytes.fromhex(e["source"])), cm)})
+            "source": e["source"], "capacity": e["slot_end"] - e["offset"], "copies": [], "caps": {},
+            "entries": [], "text": charmap.text(tc.decode(bytes.fromhex(e["source"])), cm)})
         u["capacity"] = min(u["capacity"], e["slot_end"] - e["offset"])
-        u["copies"].append(e)
+        u["copies"].append(e["id"])
+        u["caps"][e["id"]] = e["slot_end"] - e["offset"]
+        u["entries"].append(e)
     return us
+
+
+def text_for(entry, copy_id):
+    return entry.get("by_copy", {}).get(copy_id, entry["ko"])
 
 
 def _select(ko, policy):
@@ -206,7 +212,7 @@ def build(src, ko, bdf, policy="dev", compat_fix=True):
         raise ValueError(f"translations for units not in the source: {unknown[:5]}")
 
     plan = kocheck.fit_plan(us, picked, slots=len(ONE_BYTE_CELLS) - len(IN_PLACE) - len(NEW_PUNCT_CELLS))
-    texts = [v["ko"] for v in picked.values()]
+    texts = [t for k, v in picked.items() for _, t, _ in kocheck.variants(us[k], v)]
     hangul = {ch for t in texts for ch in t if "가" <= ch <= "힣"}
     kept = {kocheck.ALIASES.get(t[1], t[1]) for x in texts for t in kocheck.tokenize(x)
             if t[0] == "c" and not ("가" <= t[1] <= "힣")} - set(kocheck.NEW_PUNCT)
@@ -216,10 +222,10 @@ def build(src, ko, bdf, policy="dev", compat_fix=True):
     cells = allocate(hangul, plan, kept)
 
     for k, v in picked.items():
-        raw = encode(v["ko"], cells)
-        for e in us[k]["copies"]:
-            write_string(files[e["file"]], e["offset"], e["slot_end"], raw)
-            report["written"].append({"file": e["file"], "offset": e["offset"], "ko": v["ko"]})
+        for e in us[k]["entries"]:
+            text = text_for(v, e["id"])
+            write_string(files[e["file"]], e["offset"], e["slot_end"], encode(text, cells))
+            report["written"].append({"file": e["file"], "offset": e["offset"], "ko": text})
     report["strings_written"] = len(report["written"])
 
     drawn = {ch: k for ch, k in cells.items() if "가" <= ch <= "힣" or ch in NEW_PUNCT_CELLS}

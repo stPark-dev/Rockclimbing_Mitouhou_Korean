@@ -156,3 +156,28 @@ def test_fixed_pitch_windows_count_every_character_as_a_13px_cell():
     assert kocheck.window_problems(units_, ko) == []
     ko = {"src:a": {"ko": "가 " * 8 + "가가", "status": "draft"}}  # 18 cells
     assert kocheck.window_problems(units_, ko)[0][2].endswith("> 224px (fixed 13px)")
+
+
+def test_variants_split_copies_between_by_copy_and_the_default():
+    u = {"copies": ["A:1", "B:2", "C:3"], "caps": {"A:1": 20, "B:2": 8, "C:3": 20}}
+    entry = {"ko": "기본", "by_copy": {"B:2": "짧게"}}
+    assert kocheck.variants(u, entry) == [(["A:1", "C:3"], "기본", 20), (["B:2"], "짧게", 8)]
+
+
+def test_check_reports_capacity_of_a_by_copy_variant_against_its_own_slot():
+    units_ = {"src:a": {"text": "あ", "capacity": 3, "copies": ["A:1", "B:2"], "caps": {"A:1": 30, "B:2": 3}}}
+    ko = {"src:a": {"ko": "가", "by_copy": {"A:1": "가나다라마바사"}, "status": "draft"}}
+    assert kocheck.check(units_, ko, one_byte=set()) == []  # 7 Hangul x2 + FF = 15 <= 30; 가 = 3 <= 3
+    ko["src:a"]["ko"] = "가나"
+    assert [p[1] for p in kocheck.check(units_, ko, one_byte=set())] == ["capacity"]
+
+
+def test_window_limit_applies_to_the_variant_on_that_copy(monkeypatch):
+    monkeypatch.setattr(kocheck, "WINDOW_LIMITS", [("X.BIN", 0x10, 0x20, 30, "narrow")])
+    monkeypatch.setattr(kocheck, "FIXED_WINDOWS", [])
+    units_ = {"src:a": {"text": "あ", "capacity": 40, "copies": ["W.BIN:00010", "X.BIN:00010"],
+                        "caps": {"W.BIN:00010": 40, "X.BIN:00010": 40}}}
+    ko = {"src:a": {"ko": "가나다라", "by_copy": {"X.BIN:00010": "가나"}, "status": "draft"}}
+    assert kocheck.window_problems(units_, ko) == []  # 가나 = 24px in the 30px window; 가나다라 is elsewhere
+    ko["src:a"]["by_copy"] = {}
+    assert [p[1] for p in kocheck.window_problems(units_, ko)] == ["window"]

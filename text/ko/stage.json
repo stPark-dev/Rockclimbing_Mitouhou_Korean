@@ -8061,8 +8061,9 @@
   "copies": [
    "X_SUZU.BIN:01230"
   ],
-  "ko": "영광으로 가는 계단",
-  "status": "draft"
+  "ko": "영광의 계단",
+  "status": "draft",
+  "note": "D8: 산 화면 오른쪽 위(89px)는 「루트」 없이 이름만"
  },
  "src:7bdb6de86468": {
   "cap": 12,
@@ -8070,6 +8071,7 @@
    "X_SUZU.BIN:0123C"
   ],
   "ko": "여신의 입맞춤",
-  "status": "draft"
+  "status": "draft",
+  "note": "D8: 산 화면 오른쪽 위(89px)는 「루트」 없이 이름만"
  }
 }

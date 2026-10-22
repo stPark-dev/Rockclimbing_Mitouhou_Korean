@@ -115,3 +115,9 @@ def test_no_code_uses_f5_to_f7():
     cells = build.allocate(hangul={chr(0xAC00 + i) for i in range(300)}, one_byte={chr(0xAC00 + i) for i in range(100)},
                            kept={"・"})
     assert not any(build.code(k)[0] in (0xF5, 0xF6, 0xF7) for k in cells.values())
+
+
+def test_text_for_copy_prefers_the_by_copy_variant():
+    entry = {"ko": "기본", "by_copy": {"X_SUZU.BIN:011C8": "짧게"}}
+    assert build.text_for(entry, "X_SUZU.BIN:011C8") == "짧게"
+    assert build.text_for(entry, "KWAMENU.BIN:12004") == "기본"

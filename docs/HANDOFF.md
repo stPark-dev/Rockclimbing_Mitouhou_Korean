@@ -11,7 +11,7 @@
 | 문자표 | 1,348칸 전부(문맥 교정 30, 미검증 5) |
 | 문자열 모집단 | 4,556개 채택, 번역 단위 1,474(survey §4.3) |
 | 번역 | 초벌 1,469/1,474(전 묶음). 남은 5단위는 비텍스트(표가 가리키는 2–3바이트 데이터, survey §4.3) |
-| 결정 | D1–D7 |
+| 결정 | D1–D8 |
 | 제품 빌드 | `tools/build_ko.py` 완성. 개발용 빌드 런타임 확인(survey §9) |
 | 창 한계 | 실측 7창 등록(`kocheck.WINDOW_LIMITS`): 장비 설명 249, 봉우리 소개 265, 스테이지 설명 259, 등산 용어·트레이닝 설명 236, 조작법 268, 트레이닝 항목 108px |
 | 1바이트 음절 | 칸 169, **현재 최소 필요 169(여유 0)**. 전 번역 후 최소 178 → 문장 8건을 2–9바이트 줄여 맞춤(D3, 승인 약칭은 건드리지 않음). 번역을 고칠 때 새 음절이 늘면 바로 넘칠 수 있으니 `kocheck`로 확인하고, 넘치면 `work/stage_tm/plancheck.py`로 줄일 최소 문자열을 찾는다 |
@@ -28,7 +28,8 @@
 3. ~~실측 한계를 반영해 남은 번역을 재개한다.~~ 완료(2026-10-21). 스테이지 정보 702는 `work/stage_tm/`(저장소 밖: 원문을 담은 번역 메모리 tm.txt, 규칙 조립 stage_tm.py)로 머리말·기상 항목은 규칙, 문장 덩어리 360개는 한 번씩 번역해 조립했다. 수정은 tm.txt를 고치고 `python work/stage_tm/stage_tm.py apply`.
 4. ~~「山へ行く」 멈춤~~ 해결(2026-10-22, `tools/compat.py`, survey §9.1). 스테이지 정보 개요·상태 창은 **고정폭(13px 칸)** 이라 `kocheck.FIXED_WINDOWS`로 검사하고, `work/stage_tm/stage_tm.py`가 칸 수에 맞춰 줄바꿈한다.
 5. ~~문자열 중간 포인터 보류 3건~~ 해결(2026-10-22, `textmap.pointer_tail`, survey §4.3). 이름 입력 제목은 화면 확인, X_SUZU 산 이름은 산 화면에서 다시 볼 것.
-6. **다음:** 등반 중 창(SUZU1–4 0xBAB4– 루트 머리말, KABE, MESI, 이벤트) 실측, 산 화면의 「予/実 …日…時…分」(모집단에 없는 문자열로 보임) 조사, 이름 입력(D2), 그림 글자(D1), 검수.
+6. 산 화면 이름 상자 실측(89px·119px)과 D8(루트 이름은 「루트」 빼기) 적용, 화면 확인(2026-10-22). 번역 단위에 사본별 번역 `by_copy` 추가. 산 화면 「予／実 日時分」은 그림.
+7. **다음:** 등반 중 창(SUZU1–4 0xBAB4– 루트 머리말, KABE, MESI, 이벤트) 실측, 산 화면의 「予/実 …日…時…分」(모집단에 없는 문자열로 보임) 조사, 이름 입력(D2), 그림 글자(D1), 검수.
    - 알프스 등반사는 인명·산명·역사적 사실을 따로 검수(D7 권고).
    - 데이터베이스·기술 설명은 확정 산악 용어 일관성 우선.
 
@@ -61,6 +62,7 @@
 - 번역 검사: `cd tools && python3 kocheck.py ../text/src ../text/ko [-w]`
 - 개발용 빌드: `cd tools && python3 build_ko.py --src "../original/<원본> (Track 01).bin" --cue "../original/<원본>.cue" --galmuri ../../galmuri/Galmuri11.bdf --ko ../text/ko --out ../build/mitouhou_ko_dev.bin --policy dev` (약 1분, 결과 옆에 배포 불가 manifest)
 - 런타임(Windows): `python tools/re/winds.py launch <cue 절대 경로>` → `keys z 3 Down ...`(숫자는 대기 초) → `grab <png>`. PostMessage·PrintWindow라 사용자 포커스를 뺏지 않는다. DuckStation은 `../tools/duckstation`(공용 설정, F1–F4 저장·F5–F8 불러오기 = `savestates/savestate_N.sav`, 다른 프로젝트와 공유). 화면 좌표/2.5 = 게임 px(창 800 폭).
+- 산 화면까지 자동 진행(Linux): `PYTHON=../venv/bin/python sh tools/re/route_mountain.sh`(약 5분, `work/shots/route/`에 10초 간격 캡처). 먼저 개발용 빌드와 Xephyr :7 필요.
 - 런타임(Linux): `Xephyr :7 -screen 800x700 -ac -br -noreset &` 후 `PYTHON=../venv/bin/python sh tools/re/emu_restart.sh build/mitouhou_ko_dev.cue`(에뮬레이터 재시작과 입력 포커스 지정). 키 입력은 `../kenshin/tools/re/xkey.py :7 z ...`(○=z, ×=x, Start=Return).
   - 재시작 시 이전 창이 포커스를 잡고 남는 문제가 있어, 새 창을 찾아 `set_input_focus`해야 한다.
   - 경로: 부팅 후 z(GAME START) → z(NEW GAME) → 이름 입력에서 아래 7회 후 z(終了) → 메인 메뉴. 데이터베이스: 메인 메뉴에서 → ↓ z, 「登山道具」: → z.
