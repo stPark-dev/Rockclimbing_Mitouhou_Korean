@@ -8,6 +8,7 @@ expands to its pair, low byte first (0x80012340). 0x73 is the same LZ read byte 
   00 end | 7F lo hi v: run of lo|hi<<8 | 7E c v: run of c+4 | 1LLLLDDD d: copy L+3 from DDDd+1 back
   (zeros before the block start) | 0nnnnnnn: n literals.
 0xFF (0x80011E48): lo hi, then that many stored bytes. 0x40: one value repeated lo|hi<<8 times.
+0x20 (0x8001202C): 0 end | 0nnnnnnn n literals | 10LLLLLL lo hi: L+3 from block offset | 11LLLLLL d: L+3 from d+1 back.
 """
 
 BLOCK = 0x2000
@@ -42,6 +43,26 @@ def decode_block(data, pos=0):
         return bytes(data[pos + 3:pos + 3 + n]), n + 3
     if kind == 0x40:  # 0x80011FE0: value, lo hi count
         return bytes([data[pos + 1]]) * (data[pos + 2] | data[pos + 3] << 8), 4
+    if kind == 0x20:  # 0x8001202C
+        out, p = bytearray(), pos + 1
+        while True:
+            b = data[p]
+            p += 1
+            if b == 0:
+                return bytes(out), p - pos
+            if not b & 0x80:
+                out += data[p:p + b]
+                p += b
+            elif not b & 0x40:  # copy from an absolute position in the block
+                n, src = (b & 0x3F) + 3, data[p] | data[p + 1] << 8
+                p += 2
+                for k in range(n):
+                    out.append(out[src + k])
+            else:  # copy from close behind
+                n, dist = (b & 0x3F) + 3, data[p] + 1
+                p += 1
+                for _ in range(n):
+                    out.append(out[-dist])
     if kind not in (0x73, 0x74):
         raise ValueError(f"unsupported block type {kind:#x} at {pos:#x}")
     p, pairs = pos + 1, {}
@@ -91,6 +112,20 @@ def decode_stream(data, pos=0):
     return bytes(out), pos - start + 1
 
 
+def _match(raw, i, heads):
+    best_len, best_dist, n = 0, 0, len(raw)
+    if i + 3 <= n:
+        for j in reversed(heads.get(raw[i:i + 3], [])[-256:]):
+            if i - j > 2048:
+                break
+            k = 0
+            while k < 18 and i + k < n and raw[j + k] == raw[i + k]:
+                k += 1
+            if k > best_len:
+                best_len, best_dist = k, i - j
+    return best_len, best_dist
+
+
 def _tokens(raw):
     out, lits, i, n = bytearray(), bytearray(), 0, len(raw)
     heads = {}
@@ -102,20 +137,15 @@ def _tokens(raw):
             out.extend(chunk)
         lits.clear()
 
+    def add_heads(a, b):
+        for k in range(a, min(b, n - 2)):
+            heads.setdefault(raw[k:k + 3], []).append(k)
+
     while i < n:
         run = 1
         while i + run < n and raw[i + run] == raw[i] and run < 0xFFFF:
             run += 1
-        best_len, best_dist = 0, 0
-        if i + 3 <= n:
-            for j in reversed(heads.get(raw[i:i + 3], [])[-256:]):
-                if i - j > 2048:
-                    break
-                k = 0
-                while k < 18 and i + k < n and raw[j + k] == raw[i + k]:
-                    k += 1
-                if k > best_len:
-                    best_len, best_dist = k, i - j
+        best_len, best_dist = _match(raw, i, heads)
         if run >= 4 and run >= best_len:
             flush()
             if run <= 259:
@@ -131,9 +161,77 @@ def _tokens(raw):
         else:
             lits.append(raw[i])
             step = 1
-        for k in range(i, min(i + step, n - 2)):
-            heads.setdefault(raw[k:k + 3], []).append(k)
+        add_heads(i, i + step)
         i += step
+    flush()
+    return bytes(out)
+
+
+def _tokens_dp(raw):
+    """Cheapest token sequence by dynamic programming (literal runs cost one header byte each)."""
+    n = len(raw)
+    heads, matches = {}, []
+    for i in range(n):
+        matches.append(_match(raw, i, heads))
+        if i + 3 <= n:
+            heads.setdefault(raw[i:i + 3], []).append(i)
+    runs = [1] * (n + 1)
+    runs[n] = 0
+    for i in range(n - 2, -1, -1):
+        runs[i] = runs[i + 1] + 1 if raw[i] == raw[i + 1] else 1
+    INF = float("inf")
+    # best[s][i]: cheapest bytes for raw[:i]; s=0 ends after a token, s=1 inside a literal run
+    best = [[INF] * (n + 1), [INF] * (n + 1)]
+    prev = [[None] * (n + 1), [None] * (n + 1)]
+    best[0][0] = 0
+    for i in range(n):
+        for s0 in (0, 1):
+            c0 = best[s0][i]
+            if c0 == INF:
+                continue
+            c = c0 + (1 if s0 == 1 else 2)  # a literal; starting a run adds its header byte
+            if c < best[1][i + 1]:
+                best[1][i + 1], prev[1][i + 1] = c, (s0, i, ("lit",))
+            ln, dist = matches[i]
+            for k in range(3, ln + 1):
+                if c0 + 2 < best[0][i + k]:
+                    best[0][i + k], prev[0][i + k] = c0 + 2, (s0, i, ("ref", k, dist))
+            r = runs[i]
+            for k in range(4, min(r, 259) + 1):
+                if c0 + 3 < best[0][i + k]:
+                    best[0][i + k], prev[0][i + k] = c0 + 3, (s0, i, ("run", k))
+            if r > 259:
+                k = min(r, 0xFFFF)
+                if c0 + 4 < best[0][i + k]:
+                    best[0][i + k], prev[0][i + k] = c0 + 4, (s0, i, ("long", k))
+    toks, i, st = [], n, (0 if best[0][n] <= best[1][n] else 1)
+    while i > 0:
+        s0, j, t = prev[st][i]
+        toks.append((j,) + t)
+        i, st = j, s0
+    toks.reverse()
+    out, lits = bytearray(), bytearray()
+
+    def flush():
+        for k in range(0, len(lits), 0x7D):
+            chunk = lits[k:k + 0x7D]
+            out.append(len(chunk))
+            out.extend(chunk)
+        lits.clear()
+
+    for t in toks:
+        j, kind = t[0], t[1]
+        if kind == "lit":
+            lits.append(raw[j])
+            continue
+        flush()
+        if kind == "ref":
+            d = t[3] - 1
+            out += bytes([0x80 | (t[2] - 3) << 3 | d >> 8, d & 0xFF])
+        elif kind == "run":
+            out += bytes([0x7E, t[2] - 4, raw[j]])
+        else:
+            out += bytes([0x7F, t[2] & 0xFF, t[2] >> 8, raw[j]])
     flush()
     return bytes(out)
 
@@ -178,12 +276,13 @@ def _pairs(tokens):
 def encode_block(raw):
     """Encode at most 0x2000 bytes as the smallest of a 0x74, 0x73 or stored block."""
     assert len(raw) <= BLOCK
-    tokens = _tokens(raw) + b"\x00"
-    keys, vals, stream = _pairs(tokens)
-    cands = [bytes([0x73]) + tokens]
-    if keys:
-        cands.append(bytes([0x74, len(keys)]) + bytes(keys)
-                     + b"".join(bytes([v & 0xFF, v >> 8]) for v in vals) + stream)
+    cands = []
+    for tokens in {_tokens(raw) + b"\x00", _tokens_dp(raw) + b"\x00"}:
+        keys, vals, stream = _pairs(tokens)
+        cands.append(bytes([0x73]) + tokens)
+        if keys:
+            cands.append(bytes([0x74, len(keys)]) + bytes(keys)
+                         + b"".join(bytes([v & 0xFF, v >> 8]) for v in vals) + stream)
     cands.append(bytes([0xFF, len(raw) & 0xFF, len(raw) >> 8]) + raw)
     return min((c for c in cands if len(c) <= MAX_USED), key=len)
 

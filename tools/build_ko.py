@@ -259,6 +259,7 @@ def build(src, ko, bdf, policy="dev", compat_fix=True, title_logo=None, label_fo
 
     report["name_entry"] = nameentry.install(files, originals, cells, encode)
     report["labels"] = graphics.replace_labels(files, fonts=label_fonts)  # D1, D12: button and tab pictures
+    report["button_layout"] = graphics.replace_button_layout(files, fonts=label_fonts)
     if title_logo is not None:  # D11: supplied outside the repository
         report["title_logo"] = graphics.replace_title_logo(files["MENU/KWAMENU.BIN"], title_logo, feather=10)
     if compat_fix:

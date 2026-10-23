@@ -96,3 +96,21 @@ def test_0x74_blocks_use_at_most_16_pairs():
     assert lz74.decode_block(block)[0] == data
     with pytest.raises(ValueError):
         lz74.decode_block(bytes([0x74, 17]) + bytes(range(1, 18)) + bytes(34) + b"\x00")
+
+
+def test_dp_tokens_round_trip_random_data():
+    import random
+    rnd = random.Random(7)
+    for n in (1, 3, 17, 300, 0x2000):
+        data = bytes(rnd.choice((0, 0, 1, 2, rnd.randrange(256))) for _ in range(n))
+        block = bytes([0x73]) + lz74._tokens_dp(data) + b"\x00"
+        assert lz74.decode_block(block)[0] == data
+        assert len(block) <= len(bytes([0x73]) + lz74._tokens(data) + b"\x00")
+
+
+def test_decode_0x20_block_literals_absolute_and_relative_copies():
+    # 02 'A' 'B' literals; 0x80|0 + 00 00: 3 bytes from block offset 0; 0xC0|1 + 00: 4 bytes from 1 back; end
+    block = bytes([0x20, 0x02, 0x41, 0x42, 0x80, 0x00, 0x00, 0xC1, 0x00, 0x00])
+    out, used = lz74.decode_block(block)
+    assert out == b"AB" + b"ABA" + b"AAAA"
+    assert used == len(block)

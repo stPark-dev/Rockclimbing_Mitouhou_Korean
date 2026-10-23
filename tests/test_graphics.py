@@ -131,3 +131,48 @@ def test_label_pictures_are_redrawn_in_every_copy():
             assert len(drawn) == 1  # every copy of the button atlas ends up identical
     with pytest.raises(ValueError):
         graphics.replace_labels(files)  # already replaced: the originals are gone
+
+
+@needs_files
+def test_label_cells_match_the_borders_in_the_pictures():
+    # every table cell starts on a left border (or the cell inside) and ends on a right border
+    files = {c["file"]: (FILES / c["file"]).read_bytes() for g in graphics.copies().values() for c in g}
+    first = {pic: g[0] for pic, g in graphics.copies().items()}
+    for r in graphics.label_table():
+        c = first[r["pic"]]
+        tim, _ = lz74.decode_stream(files[c["file"]], int(c["offset"], 16))
+        rows = graphics._rows(tim)
+        inside = rows[r["y"] + 1]
+        right = r["x"] + r["w"] - 1
+        if right == len(inside) - 1:  # the cell runs past the picture's right edge (フリー)
+            continue
+        assert inside[right] == 1 and inside[right - 1] == graphics.BG, r  # right border, then the inside
+        assert right + 1 >= len(inside) or inside[right + 1] != graphics.BG, r  # nothing of the cell past it
+
+
+@needs_files
+def test_button_layout_boxes_continue_across_the_strip():
+    files = {graphics.CONFIG_FILE: bytearray((FILES / graphics.CONFIG_FILE).read_bytes())}
+    before = bytes(files[graphics.CONFIG_FILE])
+    assert graphics.replace_button_layout(files) == {"pictures": 4}
+    data = bytes(files[graphics.CONFIG_FILE])
+    pics = {o: graphics._rows(lz74.decode_stream(data, o)[0]) for o in graphics.PAD_SHA1}
+    old = {o: graphics._rows(lz74.decode_stream(before, o)[0]) for o in graphics.PAD_SHA1}
+    pa, pb = pics[graphics.PAD_A], pics[graphics.PAD_B]
+    assert pa[100][175:189] == old[graphics.PAD_A][100][175:189]  # type A button icons kept
+    assert pb[50][173:193] == old[graphics.PAD_B][50][173:193]  # type B L2/R2 icons kept
+    assert pa[0] == old[graphics.PAD_A][0] and pb[45] == old[graphics.PAD_B][45]  # frames kept
+    for strip, y in ((graphics.STRIP_A, 92), (graphics.STRIP_B, 46), (graphics.STRIP_B, 161)):
+        rows = pics[strip]
+        assert graphics.PAD_INK in sum((rows[y + r][0:45] for r in range(15)), []), (hex(strip), y)
+    for o in graphics.PAD_SHA1:
+        assert lz74.decode_stream(data, o)[1] <= graphics.slot(before, o)
+
+
+@needs_files
+def test_button_layout_clears_every_old_glyph_next_to_the_icons():
+    files = {graphics.CONFIG_FILE: bytearray((FILES / graphics.CONFIG_FILE).read_bytes())}
+    graphics.replace_button_layout(files)
+    pb = graphics._rows(lz74.decode_stream(bytes(files[graphics.CONFIG_FILE]), graphics.PAD_B)[0])
+    # between the L2 icon (ends at x 46) and the first Korean letter nothing of the old 左 is left
+    assert all(pb[y][47] == graphics.PAD_BG for y in range(48, 72))
