@@ -73,3 +73,34 @@ def test_title_logo_edges_fade_into_the_original_picture():
     diff = sum(sum(abs(a - b) for a, b in zip(pal[pn[row + x]], pal[po[row + x]])) for x in range(w)) / w
     assert diff < 40  # bottom row stays the original picture (dithering may pick a neighbouring colour)
     assert pn[44 * w + 64] == 30  # the middle is the new picture
+
+
+def test_label_cells_keep_their_border_and_hold_the_text():
+    w, h = 64, 32
+    rows = [[1 if y in (0, 14) or x == 0 else 4 for x in range(w)] for y in range(16)] + [[5] * w for _ in range(16)]
+    font = graphics.label_font()
+    graphics.draw_label(rows, (0, 0, 31, 16), "결정", font)
+    assert all(rows[0][x] == 1 and rows[14][x] == 1 for x in range(31))  # top and bottom border
+    assert all(rows[y][0] == 1 for y in range(15))
+    ink = [(x, y) for y in range(16) for x in range(31) if rows[y][x] == graphics.TEXT and 0 < y < 14 and x > 0]
+    assert ink and min(x for x, _ in ink) >= 2 and max(x for x, _ in ink) <= 29
+    assert rows[20][5] == 5  # outside the cell untouched
+    with pytest.raises(ValueError):
+        graphics.draw_label(rows, (0, 0, 15, 16), "다음 스테이지 개요", font)
+
+
+def test_label_table_rows_all_fit_their_cells():
+    font = graphics.label_font()
+    for row in graphics.label_table():
+        if row["ko"] != "=":
+            assert graphics.fit(row["ko"], font, row["w"]) is not None, row
+
+
+def test_label_glyphs_are_not_clipped():
+    rows = [[1 if y in (0, 14) or x == 0 else 4 for x in range(64)] for y in range(16)]
+    font = graphics.label_font()
+    graphics.draw_label(rows, (0, 0, 64, 16), "릉", font)  # tall syllable with a bottom consonant
+    ink_rows = [y for y in range(1, 14) if graphics.TEXT in rows[y][1:63]]  # inside (border is also 1)
+    import kfont
+    g = font[0]["릉"]
+    assert ink_rows[-1] - ink_rows[0] + 1 == g["bbx"][1]  # first to last bitmap row reached the cell

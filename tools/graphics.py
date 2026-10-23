@@ -142,3 +142,85 @@ def replace_title_logo(menu, art, resize=True, feather=0):
         menu[off:off + room] = packed + bytes(room - len(packed))
         written += 1
     return {"pieces": written}
+
+
+# ---- button and tab labels (atlases A-G, docs/graphics_text.md) ---------------------------------
+from pathlib import Path as _Path
+
+_ROOT = _Path(__file__).resolve().parent.parent
+LABELS = _ROOT / "tables" / "graphics_ko.tsv"
+GALMURI = _ROOT.parent / "galmuri"
+BG, TEXT = 4, 1  # cell inside, letters. The original kanji have a 1 px shadow (3); Hangul at 12 px reads
+# better without it (compared on the atlas, 2026-10-23)
+FONTS = ("Galmuri11", "Galmuri11-Condensed")  # wide first; condensed when the cell is too narrow
+ALIAS = {"＆": "&", "－": "-", "・": "·"}
+
+
+def label_font(root=GALMURI):
+    import kfont
+    return [kfont.load_bdf(root / f"{n}.bdf") for n in FONTS]
+
+
+def label_table(path=LABELS):
+    out = []
+    for line in path.read_text(encoding="utf-8").splitlines():
+        if not line or line.startswith("#"):
+            continue
+        pic, x, y, w, h, ja, ko = line.split("\t")
+        out.append({"pic": pic, "x": int(x), "y": int(y), "w": int(w), "h": int(h), "ja": ja, "ko": ko})
+    return out
+
+
+def _glyph(font, ch):
+    g = font.get(ch) or font.get(ALIAS.get(ch, ch))
+    if g is None:
+        raise ValueError(f"font has no glyph for {ch!r}")
+    return g
+
+
+def _advance(g):
+    w, _, xo, _ = g["bbx"]
+    return xo + w + 1
+
+
+def text_width(text, font):
+    return sum(4 if ch == " " else _advance(_glyph(font, ch)) for ch in text)
+
+
+def fit(text, fonts, cell_w):
+    """The first font in which the text fits inside the cell (the border is 1 px, the letters keep 1 px off it)."""
+    for f in fonts:
+        if text_width(text, f) <= cell_w - 3:  # at least 1 px between the letters and the border
+            return f
+    return None
+
+
+def draw_label(rows, cell, text, fonts):
+    """Clear the inside of a cell (x, y, w, h: top/left border included, bottom border at y+h-2)
+    and draw the text centred."""
+    x0, y0, w, h = cell
+    font = fit(text, fonts, w)
+    if font is None:
+        raise ValueError(f"{text!r} does not fit a {w} px cell")
+    for y in range(y0 + 1, y0 + h - 2):
+        for x in range(x0 + 1, x0 + w - 1):
+            rows[y][x] = BG
+    import kfont
+    box_h = kfont.hangul_box(font)[1]
+    tx = x0 + (w - text_width(text, font) - 1) // 2
+    base = y0 + 1 + (h - 3 - box_h + 1) // 2 + box_h  # centre the font's Hangul box in rows y0+1 .. y0+h-3
+    for ch in text:
+        if ch == " ":
+            tx += 4
+            continue
+        g = _glyph(font, ch)
+        gw, gh, xo, yo = g["bbx"]
+        top = base - (yo + gh)
+        for r, bits in enumerate(g["bits"]):
+            for c in range(gw):
+                if bits >> (gw - 1 - c) & 1:
+                    x, y = tx + xo + c, top + r
+                    if y0 < y < y0 + h - 2 and x0 < x < x0 + w - 1:
+                        rows[y][x] = TEXT
+        tx += _advance(g)
+    return rows
