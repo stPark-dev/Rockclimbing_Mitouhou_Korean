@@ -176,3 +176,57 @@ def test_button_layout_clears_every_old_glyph_next_to_the_icons():
     pb = graphics._rows(lz74.decode_stream(bytes(files[graphics.CONFIG_FILE]), graphics.PAD_B)[0])
     # between the L2 icon (ends at x 46) and the first Korean letter nothing of the old 左 is left
     assert all(pb[y][47] == graphics.PAD_BG for y in range(48, 72))
+
+
+@needs_files
+def test_small_glyphs_of_the_time_frame_are_replaced_in_every_copy():
+    group = graphics.copies()["G"]
+    files = {c["file"]: bytearray((FILES / c["file"]).read_bytes()) for c in group}
+    before = {n: bytes(d) for n, d in files.items()}
+    assert graphics.replace_small_glyphs(files) == {"G": 95}
+    seen = set()
+    for c in group:
+        off = int(c["offset"], 16)
+        tim, used = lz74.decode_stream(bytes(files[c["file"]]), off)
+        assert used <= graphics.slot(before[c["file"]], off)
+        old = graphics._rows(lz74.decode_stream(before[c["file"]], off)[0])
+        rows = graphics._rows(tim)
+        seen.add(graphics.image(tim)[2])
+        assert rows[:220] == old[:220] and rows[247:] == old[247:]  # only the time labels change
+        assert rows[227:236] != old[227:236]
+    assert len(seen) == 1
+
+
+@needs_files
+def test_hud_regions_are_redrawn_inside_their_boxes():
+    files = {graphics.HUD_FILE: bytearray((FILES / graphics.HUD_FILE).read_bytes())}
+    before = bytes(files[graphics.HUD_FILE])
+    assert graphics.replace_hud(files) == {"regions": len(graphics.HUD_REGIONS)}
+    new = graphics._rows(lz74.decode_stream(bytes(files[graphics.HUD_FILE]), graphics.HUD_OFF)[0])
+    old = graphics._rows(lz74.decode_stream(before, graphics.HUD_OFF)[0])
+    inside = {(x, y) for x0, y0, x1, y1, *_ in graphics.HUD_REGIONS for y in range(y0, y1) for x in range(x0, x1)}
+    changed = {(x, y) for y in range(len(new)) for x in range(len(new[0])) if new[y][x] != old[y][x]}
+    assert changed and changed <= inside
+    assert lz74.decode_stream(bytes(files[graphics.HUD_FILE]), graphics.HUD_OFF)[1] <= graphics.slot(before, graphics.HUD_OFF)
+
+
+@needs_files
+def test_alps_title_is_redrawn_only_inside_its_box():
+    files = {graphics.ALPS_FILE: bytearray((FILES / graphics.ALPS_FILE).read_bytes())}
+    before = bytes(files[graphics.ALPS_FILE])
+    assert graphics.replace_alps_title(files) == {"title": 1}
+    new = graphics._rows(lz74.decode_stream(bytes(files[graphics.ALPS_FILE]), graphics.ALPS_OFF)[0])
+    old = graphics._rows(lz74.decode_stream(before, graphics.ALPS_OFF)[0])
+    x0, y0, x1, y1 = graphics.ALPS_BOX
+    changed = {(x, y) for y in range(len(new)) for x in range(len(new[0])) if new[y][x] != old[y][x]}
+    assert changed and all(x0 <= x <= x1 and y0 <= y <= y1 for x, y in changed)
+
+
+def test_free_climbing_button_reads_through_the_covered_cell():
+    # the game draws the フェースクライミング cell and covers its first 24 px with the フリー piece
+    rows = [[1 if y in (0, 14) or x == 0 else 4 for x in range(80)] for y in range(16)]
+    graphics.draw_split_label(rows, (0, 0, 79, 16), graphics.SPLIT_LABELS[("B", 0, 160)], graphics.label_font())
+    ink = [x for y in range(1, 14) for x in range(80) if rows[y][x] == graphics.TEXT and x > 0]
+    head = [x for x in ink if x < graphics.FREE_COVER]
+    tail = [x for x in ink if x >= graphics.FREE_COVER]
+    assert head and max(head) <= graphics.FREE_COVER - 1 and tail and min(tail) >= graphics.FREE_COVER + 3

@@ -260,6 +260,8 @@ def replace_labels(files, table=None, groups=None, fonts=None):
     report = {}
     for pic, group in groups.items():
         rows_for = [r for r in table if r["pic"] == pic and r["ko"] != "="]
+        if not any(r["pic"] == pic for r in table):
+            continue  # drawn by another routine (SMALL_GLYPHS)
         for c in group:
             data, off = files[c["file"]], int(c["offset"], 16)
             tim, _ = lz74.decode_stream(bytes(data), off)
@@ -268,7 +270,11 @@ def replace_labels(files, table=None, groups=None, fonts=None):
             room = slot(bytes(data), off)
             rows = _rows(tim)
             for r in rows_for:
-                draw_label(rows, (r["x"], r["y"], r["w"], r["h"]), r["ko"], fonts)
+                split = SPLIT_LABELS.get((pic, r["x"], r["y"]))
+                if split:
+                    draw_split_label(rows, (r["x"], r["y"], r["w"], r["h"]), split, fonts)
+                else:
+                    draw_label(rows, (r["x"], r["y"], r["w"], r["h"]), r["ko"], fonts)
             packed = lz74.encode_stream(with_image(tim, _pack4(rows)))
             if len(packed) > room:
                 raise ValueError(f"{c['file']} {off:#x} needs {len(packed)} bytes, slot is {room}")
@@ -365,3 +371,191 @@ def replace_button_layout(files, fonts=None):
             raise ValueError(f"{CONFIG_FILE} {off:#x} needs {len(packed)} bytes, slot is {room}")
         data[off:off + room] = packed + bytes(room - len(packed))
     return {"pictures": len(pics)}
+
+
+# ---- small 8 px letters (group G: the time frame on the mountain screen, SUZU/*/SU_IG_*.BIN) -----
+# white letters (0) with a dark outline (1) on the window colour (2); Galmuri7 Hangul is 7 x 7.
+SMALL_FONT = "Galmuri7"
+SMALL_BG, SMALL_INK, SMALL_EDGE = 2, 0, 1
+SMALL_GLYPHS = {
+    "G": {"clear": ((26, 226, 37, 247), (63, 226, 73, 247), (86, 226, 99, 247), (112, 226, 124, 247)),
+          "glyphs": ((27, 227, "예"), (27, 237, "실"), (64, 227, "일"), (64, 237, "일"),
+                     (88, 227, "시"), (88, 237, "시"), (113, 227, "분"), (113, 237, "분"))},
+}
+
+
+def _small_glyph(rows, x, y, ch, font):
+    g = _glyph(font, ch)
+    gw, gh, xo, yo = g["bbx"]
+    ox = x + (9 - gw) // 2
+    pts = [(ox + xo + c, y + 1 + (7 - (yo + gh)) + r) for r, bits in enumerate(g["bits"])
+           for c in range(gw) if bits >> (gw - 1 - c) & 1]
+    for px, py in pts:
+        for dx in (-1, 0, 1):
+            for dy in (-1, 0, 1):
+                if rows[py + dy][px + dx] == SMALL_BG:
+                    rows[py + dy][px + dx] = SMALL_EDGE
+    for px, py in pts:
+        rows[py][px] = SMALL_INK
+
+
+def replace_small_glyphs(files, root=GALMURI):
+    import kfont
+    font = kfont.load_bdf(root / f"{SMALL_FONT}.bdf")
+    groups = copies()
+    report = {}
+    for pic, spec in SMALL_GLYPHS.items():
+        for c in groups[pic]:
+            data, off = files[c["file"]], int(c["offset"], 16)
+            tim, _ = lz74.decode_stream(bytes(data), off)
+            if hashlib.sha1(image(tim)[2]).hexdigest()[:16] != c["pixels_sha1"]:
+                raise ValueError(f"{c['file']} {off:#x} is not the supported original picture")
+            rows = _rows(tim)
+            for x0, y0, x1, y1 in spec["clear"]:
+                for y in range(y0, y1):
+                    for x in range(x0, x1):
+                        if rows[y][x] in (SMALL_INK, SMALL_EDGE):
+                            rows[y][x] = SMALL_BG
+            for x, y, ch in spec["glyphs"]:
+                _small_glyph(rows, x, y, ch, font)
+            room = slot(bytes(data), off)
+            packed = lz74.encode_stream(with_image(tim, _pack4(rows)))
+            if len(packed) > room:
+                raise ValueError(f"{c['file']} {off:#x} needs {len(packed)} bytes, slot is {room}")
+            data[off:off + room] = packed + bytes(room - len(packed))
+            report[pic] = report.get(pic, 0) + 1
+    return report
+
+
+# ---- free text regions (group F: climbing screen parts in X/X1.BIN) ------------------------------
+# (x0, y0, x1, y1, fill, text, font, ink, shade, align): the region is filled, the text drawn with
+# its Hangul box top at y0 (+1 for 8 px rows), shade right of each letter pixel when not None.
+HUD_FILE, HUD_OFF, HUD_PIXELS_SHA1 = "X/X1.BIN", 0xFD9C, "a14e7efa578e3358"
+HUD_REGIONS = (
+    (2, 98, 30, 126, 0, "기술", "Galmuri11-Bold", 2, 3, "centre"),       # 技 icon tile
+    (162, 130, 191, 141, 13, "경사", "Galmuri11", 1, 3, "left"),    # 傾斜 label (rows 130-140)
+    (216, 152, 248, 160, 11, "노랑", "Galmuri7", 1, None, "right"),  # イエロー + アラーム
+    (216, 160, 248, 168, 11, "경보", "Galmuri7", 1, None, "left"),
+    (216, 168, 240, 176, 11, "빨강", "Galmuri7", 1, None, "right"),  # レッド (+ アラーム)
+    (216, 176, 232, 184, 11, "남은", "Galmuri7", 1, None, "left"),   # あと ○分 ○秒 pieces
+    (232, 176, 240, 184, 11, "초", "Galmuri7", 1, None, "left"),
+    (240, 176, 248, 184, 11, "분", "Galmuri7", 1, None, "left"),
+    (160, 232, 224, 240, 11, "노랑 경보", "Galmuri7", 1, None, "left"),
+    (160, 240, 216, 248, 11, "빨강 경보", "Galmuri7", 1, None, "left"),
+    (160, 248, 176, 256, 11, "남은", "Galmuri7", 1, None, "left"),
+    (184, 248, 192, 256, 11, "분", "Galmuri7", 1, None, "left"),
+    (208, 248, 218, 256, 11, "초", "Galmuri7", 1, None, "left"),
+)
+
+
+def draw_region(rows, region, fonts_by_name):
+    x0, y0, x1, y1, fill, text, fname, ink, shade, align = region
+    font = fonts_by_name[fname]
+    import kfont
+    box_h = kfont.hangul_box(font)[1]
+    w = text_width(text, font)
+    if w > x1 - x0 or box_h > y1 - y0:
+        raise ValueError(f"{text!r} does not fit region {region[:4]}")
+    for y in range(y0, y1):
+        for x in range(x0, x1):
+            rows[y][x] = fill
+    x = {"left": x0, "right": x1 - w, "centre": x0 + (x1 - x0 - w) // 2}[align]
+    top = y0 + (y1 - y0 - box_h) // 2
+    canvas = [r[:] for r in rows]
+    draw_text(canvas, x, top, text, font, ink)
+    for y in range(y0, y1):
+        for xx in range(x0, x1):
+            if canvas[y][xx] == ink and rows[y][xx] != ink:
+                rows[y][xx] = ink
+                if shade is not None:
+                    for dx, dy in ((1, 0), (0, 1), (1, 1)):
+                        nx, ny = xx + dx, y + dy
+                        if x0 <= nx < x1 and y0 <= ny < y1 and canvas[ny][nx] != ink:
+                            rows[ny][nx] = shade
+    return rows
+
+
+def replace_hud(files, root=GALMURI):
+    import kfont
+    names = {r[6] for r in HUD_REGIONS}
+    fonts = {n: kfont.load_bdf(root / f"{n}.bdf") for n in names}
+    data = files[HUD_FILE]
+    tim, _ = lz74.decode_stream(bytes(data), HUD_OFF)
+    if hashlib.sha1(image(tim)[2]).hexdigest()[:16] != HUD_PIXELS_SHA1:
+        raise ValueError(f"{HUD_FILE} {HUD_OFF:#x} is not the supported original picture")
+    rows = _rows(tim)
+    for r in HUD_REGIONS:
+        draw_region(rows, r, fonts)
+    room = slot(bytes(data), HUD_OFF)
+    packed = lz74.encode_stream(with_image(tim, _pack4(rows)))
+    if len(packed) > room:
+        raise ValueError(f"{HUD_FILE} {HUD_OFF:#x} needs {len(packed)} bytes, slot is {room}")
+    data[HUD_OFF:HUD_OFF + room] = packed + bytes(room - len(packed))
+    return {"regions": len(HUD_REGIONS)}
+
+
+# ---- Alps history title over the photo (group E: MENU/KWAMENU.BIN 0x26DC8, 4bpp sepia) -----------
+ALPS_FILE, ALPS_OFF, ALPS_SHA1 = "MENU/KWAMENU.BIN", 0x26DC8, "c92fcd8eec2a1b3f"
+ALPS_BOX = (117, 22, 237, 39)  # the title and its shadow sit on the sky band
+ALPS_TEXT, ALPS_FONT = "알프스 등반사", "Galmuri14"
+ALPS_LETTERS = {2, 8, 9, 10, 11, 12, 13, 14, 15}  # dark letter and shadow colours
+ALPS_INK, ALPS_EDGE = 15, 12
+
+
+def replace_alps_title(files, root=GALMURI):
+    import kfont
+    font = kfont.load_bdf(root / f"{ALPS_FONT}.bdf")
+    data = files[ALPS_FILE]
+    tim, _ = lz74.decode_stream(bytes(data), ALPS_OFF)
+    if hashlib.sha1(image(tim)[2]).hexdigest()[:16] != ALPS_SHA1:
+        raise ValueError(f"{ALPS_FILE} {ALPS_OFF:#x} is not the supported original picture")
+    rows = _rows(tim)
+    x0, y0, x1, y1 = ALPS_BOX
+    for y in range(y0, y1):  # sky: take the nearest sky pixel of the same parity in the row
+        row = rows[y]
+        sky = [x for x in range(x0 - 8, x1 + 1) if row[x] not in ALPS_LETTERS]
+        for x in range(x0, x1):
+            if row[x] in ALPS_LETTERS:
+                src = min((s for s in sky if (s - x) % 2 == 0), key=lambda s: abs(s - x))
+                row[x] = rows[y][src]
+    w = text_width(ALPS_TEXT, font) + 1
+    box_h = kfont.hangul_box(font)[1]
+    tx, ty = x1 - 3 - w, y0 + (y1 - y0 - box_h - 1) // 2
+    canvas = [[None] * len(rows[0]) for _ in rows]
+    draw_text(canvas, tx, ty, ALPS_TEXT, font, 1)
+    draw_text(canvas, tx + 1, ty, ALPS_TEXT, font, 1)  # one pixel bolder, like the original
+    for y in range(y0, y1):
+        for x in range(x0, x1):
+            if canvas[y][x]:
+                if not canvas[y + 1][x + 1]:
+                    rows[y + 1][x + 1] = ALPS_EDGE  # shadow down-right
+    for y in range(y0, y1):
+        for x in range(x0, x1):
+            if canvas[y][x]:
+                rows[y][x] = ALPS_INK
+    room = slot(bytes(data), ALPS_OFF)
+    packed = lz74.encode_stream(with_image(tim, _pack4(rows)))
+    if len(packed) > room:
+        raise ValueError(f"{ALPS_FILE} {ALPS_OFF:#x} needs {len(packed)} bytes, slot is {room}")
+    data[ALPS_OFF:ALPS_OFF + room] = packed + bytes(room - len(packed))
+    return {"title": 1}
+
+
+# Cells the game shows partly covered: DB 「フリークライミング」 = the フェースクライミング cell with its
+# first 24 px covered by the フリー piece (pixel-matched on screen, 2026-10-23). The cell keeps
+# 「페이스」 inside the covered part and 「등반」 after it: alone 「페이스 등반」, covered 「프리 등반」.
+FREE_COVER = 24
+SPLIT_LABELS = {("B", 0, 160): (("페이스", 1, 1), ("등반", 0, FREE_COVER + 4))}  # (text, font index, x)
+
+
+def draw_split_label(rows, cell, parts, fonts):
+    x0, y0, w, h = cell
+    for y in range(y0 + 1, y0 + h - 2):
+        for x in range(x0 + 1, x0 + w - 1):
+            rows[y][x] = BG
+    import kfont
+    for text, fi, x in parts:
+        font = fonts[fi]
+        box_h = kfont.hangul_box(font)[1]
+        draw_text(rows, x0 + x, y0 + 1 + (h - 3 - box_h + 1) // 2, text, font, TEXT)
+    return rows

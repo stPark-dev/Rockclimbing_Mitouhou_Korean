@@ -114,3 +114,36 @@ def test_decode_0x20_block_literals_absolute_and_relative_copies():
     out, used = lz74.decode_block(block)
     assert out == b"AB" + b"ABA" + b"AAAA"
     assert used == len(block)
+
+
+def test_decode_run_blocks_0x30_and_0x31():
+    out, used = lz74.decode_block(bytes([0x30, 3, 7, 2, 9, 0]))
+    assert out == bytes([7, 7, 7, 9, 9]) and used == 6
+    out, used = lz74.decode_block(bytes([0x31, 0x02, 0x01, 5, 0x00, 0x00]))
+    assert out == bytes([5]) * 0x102 and used == 6
+
+
+def test_decode_nibble_block_0x14():
+    table = bytes(range(100, 116))
+    out, used = lz74.decode_block(bytes([0x14, 2, 0]) + table + bytes([0x21, 0x43]))
+    assert out == bytes([101, 102, 103, 104])
+    assert used == 2 // 2 + 0x13  # what the game returns (0x80011F04)
+
+
+def test_decode_bitmask_block_0x70():
+    # one group: fill 0xAA, mask with the top two bits set -> AA AA then 30 literals; trailer of 1 literal
+    lits = bytes(range(30))
+    block = bytes([0x70, 1, 0, 0xAA]) + (0xC0000000).to_bytes(4, "little") + lits + bytes([1, 0x55])
+    out, used = lz74.decode_block(block)
+    assert out == b"\xaa\xaa" + lits + b"\x55" and used == len(block)
+
+
+def test_decode_rle_block_0x71():
+    out, used = lz74.decode_block(bytes([0x71, 0x83, 0x09, 0x02, 0x41, 0x42, 0x00]))
+    assert out == bytes([9, 9, 9]) + b"AB" and used == 7
+
+
+def test_decode_interleaved_block_0x72():
+    inner = bytes([0x73, 0x04, 1, 2, 3, 4, 0x00])  # LZ stream holding 1 2 | 3 4
+    out, used = lz74.decode_block(bytes([0x72, 4, 0]) + inner)
+    assert out == bytes([1, 3, 2, 4]) and used == len(inner) + 3

@@ -11,6 +11,8 @@ expands to its pair, low byte first (0x80012340). 0x73 is the same LZ read byte 
 0x20 (0x8001202C): 0 end | 0nnnnnnn n literals | 10LLLLLL lo hi: L+3 from block offset | 11LLLLLL d: L+3 from d+1 back.
 """
 
+import hashlib
+
 BLOCK = 0x2000
 MAX_USED = 0x2003
 MAX_PAIRS = 16  # escape keys at 0x80060408 and pairs at 0x80060418 hold 16 each
@@ -43,6 +45,61 @@ def decode_block(data, pos=0):
         return bytes(data[pos + 3:pos + 3 + n]), n + 3
     if kind == 0x40:  # 0x80011FE0: value, lo hi count
         return bytes([data[pos + 1]]) * (data[pos + 2] | data[pos + 3] << 8), 4
+    if kind == 0x30:  # 0x80011F18: count, value pairs until a zero count
+        out, p = bytearray(), pos + 1
+        while data[p]:
+            out += bytes([data[p + 1]]) * data[p]
+            p += 2
+        return bytes(out), p + 1 - pos
+    if kind == 0x31:  # 0x80011F78: 16-bit count, value until a zero count
+        out, p = bytearray(), pos + 1
+        while data[p] | data[p + 1] << 8:
+            out += bytes([data[p + 2]]) * (data[p] | data[p + 1] << 8)
+            p += 3
+        return bytes(out), p + 2 - pos
+    if kind == 0x14:  # 0x80011E94: 16-entry table, each byte gives two table values (low nibble first)
+        n = data[pos + 1] | data[pos + 2] << 8
+        table, src = data[pos + 3:pos + 19], data[pos + 19:pos + 19 + n]
+        out = bytearray()
+        for b in src:
+            out += bytes([table[b & 15], table[b >> 4]])
+        return bytes(out), n // 2 + 0x13  # the game's own (short) count
+    if kind == 0x70:  # 0x800121D4: groups of a fill byte and a 32-bit mask (set bit: fill, else literal)
+        groups = data[pos + 1] | data[pos + 2] << 8
+        out, p = bytearray(), pos + 3
+        for _ in range(groups):
+            fill, mask = data[p], int.from_bytes(data[p + 1:p + 5], "little")
+            p += 5
+            for bit in range(31, -1, -1):
+                if mask >> bit & 1:
+                    out.append(fill)
+                else:
+                    out.append(data[p])
+                    p += 1
+        n = data[p]
+        out += data[p + 1:p + 1 + n]
+        return bytes(out), p + 1 + n - pos
+    if kind == 0x71:  # 0x800122C8: 1nnnnnnn v: n copies | 0nnnnnnn: n literals | 0: end
+        out, p = bytearray(), pos + 1
+        while True:
+            b = data[p]
+            p += 1
+            if b == 0:
+                return bytes(out), p - pos
+            if b & 0x80:
+                out += bytes([data[p]]) * (b & 0x7F)
+                p += 1
+            else:
+                out += data[p:p + b]
+                p += b
+    if kind == 0x72:  # 0x800128D0: an LZ block holding the even bytes, then the odd bytes
+        n = data[pos + 1] | data[pos + 2] << 8
+        inner, used = decode_block(data, pos + 3)
+        half = (n + 1) // 2
+        out = bytearray(n)
+        out[0::2] = inner[:half]
+        out[1::2] = inner[half:half + n // 2]
+        return bytes(out), used + 3
     if kind == 0x20:  # 0x8001202C
         out, p = bytearray(), pos + 1
         while True:
@@ -287,5 +344,16 @@ def encode_block(raw):
     return min((c for c in cands if len(c) <= MAX_USED), key=len)
 
 
+_CACHE = {}
+
+
 def encode_stream(raw):
+    """Encode a whole stream; identical input (copies of one picture) is encoded once."""
+    key = hashlib.sha1(raw).digest()
+    if key not in _CACHE:
+        _CACHE[key] = _encode_stream(raw)
+    return _CACHE[key]
+
+
+def _encode_stream(raw):
     return b"".join(encode_block(raw[k:k + BLOCK]) for k in range(0, len(raw), BLOCK)) + b"\x00"
