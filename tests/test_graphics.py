@@ -104,3 +104,30 @@ def test_label_glyphs_are_not_clipped():
     import kfont
     g = font[0]["릉"]
     assert ink_rows[-1] - ink_rows[0] + 1 == g["bbx"][1]  # first to last bitmap row reached the cell
+
+
+FILES = ROOT / "work" / "files"
+
+
+@needs_files
+def test_label_pictures_are_redrawn_in_every_copy():
+    files = {}
+    for group in graphics.copies().values():
+        for c in group:
+            files.setdefault(c["file"], bytearray((FILES / c["file"]).read_bytes()))
+    before = {n: bytes(d) for n, d in files.items()}
+    report = graphics.replace_labels(files)
+    assert report == {"A": 15, "B": 2}
+    for pic, group in graphics.copies().items():
+        drawn = set()
+        for c in group:
+            off = int(c["offset"], 16)
+            tim, used = lz74.decode_stream(bytes(files[c["file"]]), off)
+            assert used <= graphics.slot(before[c["file"]], off)
+            old, _ = lz74.decode_stream(before[c["file"]], off)
+            assert graphics.palette(tim) == graphics.palette(old) and tim[:20] == old[:20]
+            drawn.add(graphics.image(tim)[2])
+        if pic == "A":
+            assert len(drawn) == 1  # every copy of the button atlas ends up identical
+    with pytest.raises(ValueError):
+        graphics.replace_labels(files)  # already replaced: the originals are gone

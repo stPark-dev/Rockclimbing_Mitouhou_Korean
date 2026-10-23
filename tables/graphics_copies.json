@@ -1,0 +1,91 @@
+{
+ "A": [
+  {
+   "file": "MENU/KWAMENU.BIN",
+   "offset": "0x188f4",
+   "pixels_sha1": "2c1e6e2359e0c2c2"
+  },
+  {
+   "file": "SUZU/XM_SUZU/SU_MG_0.BIN",
+   "offset": "0x17f24",
+   "pixels_sha1": "2c1e6e2359e0c2c2"
+  },
+  {
+   "file": "SUZU/XM_SUZU/SU_MG_1.BIN",
+   "offset": "0x17f24",
+   "pixels_sha1": "2c1e6e2359e0c2c2"
+  },
+  {
+   "file": "SUZU/XM_SUZU/SU_MG_10.BIN",
+   "offset": "0x17f24",
+   "pixels_sha1": "2c1e6e2359e0c2c2"
+  },
+  {
+   "file": "SUZU/XM_SUZU/SU_MG_11.BIN",
+   "offset": "0x17f24",
+   "pixels_sha1": "2c1e6e2359e0c2c2"
+  },
+  {
+   "file": "SUZU/XM_SUZU/SU_MG_12.BIN",
+   "offset": "0x17f24",
+   "pixels_sha1": "2c1e6e2359e0c2c2"
+  },
+  {
+   "file": "SUZU/XM_SUZU/SU_MG_2.BIN",
+   "offset": "0x17f24",
+   "pixels_sha1": "2c1e6e2359e0c2c2"
+  },
+  {
+   "file": "SUZU/XM_SUZU/SU_MG_3.BIN",
+   "offset": "0x17f24",
+   "pixels_sha1": "2c1e6e2359e0c2c2"
+  },
+  {
+   "file": "SUZU/XM_SUZU/SU_MG_4.BIN",
+   "offset": "0x17f24",
+   "pixels_sha1": "2c1e6e2359e0c2c2"
+  },
+  {
+   "file": "SUZU/XM_SUZU/SU_MG_5.BIN",
+   "offset": "0x17f24",
+   "pixels_sha1": "2c1e6e2359e0c2c2"
+  },
+  {
+   "file": "SUZU/XM_SUZU/SU_MG_6.BIN",
+   "offset": "0x17f24",
+   "pixels_sha1": "2c1e6e2359e0c2c2"
+  },
+  {
+   "file": "SUZU/XM_SUZU/SU_MG_7.BIN",
+   "offset": "0x17f24",
+   "pixels_sha1": "2c1e6e2359e0c2c2"
+  },
+  {
+   "file": "SUZU/XM_SUZU/SU_MG_8.BIN",
+   "offset": "0x17f24",
+   "pixels_sha1": "2c1e6e2359e0c2c2"
+  },
+  {
+   "file": "SUZU/XM_SUZU/SU_MG_9.BIN",
+   "offset": "0x17f24",
+   "pixels_sha1": "2c1e6e2359e0c2c2"
+  },
+  {
+   "file": "X_HUMAN/X_MEMORY.BIN",
+   "offset": "0xe04",
+   "pixels_sha1": "2c1e6e2359e0c2c2"
+  }
+ ],
+ "B": [
+  {
+   "file": "MENU/KWAMENU.BIN",
+   "offset": "0x1a220",
+   "pixels_sha1": "a32b2e414ca7cddc"
+  },
+  {
+   "file": "X_HUMAN/X_CONFIG.BIN",
+   "offset": "0x0",
+   "pixels_sha1": "0bcc7c24f27cbd69"
+  }
+ ]
+}

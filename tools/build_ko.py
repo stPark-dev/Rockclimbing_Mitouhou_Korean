@@ -9,7 +9,8 @@ Steps, all on the fixed revision (docs/survey.md §1):
    Hangul take free 2-byte cells;
 4. draw the glyphs into every copy of the font, write their advances into the
    executable's table, and write each translation over every copy of its unit;
-5. install the Hangul name entry (tools/nameentry.py, D10) and apply the emulator compatibility fix (tools/compat.py: START.BIN below the end of RAM);
+5. redraw the button and tab pictures (tools/graphics.py, D12), install the Hangul name entry
+   (tools/nameentry.py, D10) and apply the emulator compatibility fix (tools/compat.py: START.BIN below the end of RAM);
 6. rebuild track 1 through iso.plan/apply.
 Untranslated units keep their source bytes; under the dev policy their kana and
 kanji show whatever now sits in those cells.
@@ -194,7 +195,7 @@ def _select(ko, policy):
     return picked
 
 
-def build(src, ko, bdf, policy="dev", compat_fix=True, title_logo=None):
+def build(src, ko, bdf, policy="dev", compat_fix=True, title_logo=None, label_fonts=None):
     if hashlib.sha256(src).hexdigest() != poc_db.SOURCE_SHA256:
         raise ValueError("source is not the supported original track 1")
     picked = _select(ko, policy)
@@ -257,6 +258,7 @@ def build(src, ko, bdf, policy="dev", compat_fix=True, title_logo=None):
             exe[WIDTH_OFFSET + width_index(k)] = advance(ch, bdf)
 
     report["name_entry"] = nameentry.install(files, originals, cells, encode)
+    report["labels"] = graphics.replace_labels(files, fonts=label_fonts)  # D1, D12: button and tab pictures
     if title_logo is not None:  # D11: supplied outside the repository
         report["title_logo"] = graphics.replace_title_logo(files["MENU/KWAMENU.BIN"], title_logo, feather=10)
     if compat_fix:
@@ -288,7 +290,8 @@ def main():
         from PIL import Image
         logo = Image.open(a.title_logo).convert("RGB")
     out, rep = build(Path(a.src).read_bytes(), ko, kfont.load_bdf(a.galmuri), a.policy,
-                     compat_fix=not a.no_compat, title_logo=logo)
+                     compat_fix=not a.no_compat, title_logo=logo,
+                     label_fonts=graphics.label_font(Path(a.galmuri).parent))
     Path(a.out).parent.mkdir(parents=True, exist_ok=True)
     Path(a.out).write_bytes(out)
     cue = poc_db.write_cue(a.cue, a.out)

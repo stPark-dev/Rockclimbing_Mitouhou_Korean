@@ -224,3 +224,52 @@ def draw_label(rows, cell, text, fonts):
                         rows[y][x] = TEXT
         tx += _advance(g)
     return rows
+
+
+COPIES = _ROOT / "tables" / "graphics_copies.json"
+
+
+def copies(path=COPIES):
+    import json
+    return json.loads(path.read_text(encoding="utf-8"))
+
+
+def _rows(tim):
+    w, h, px = image(tim)
+    bpp = _blocks(tim)[0]
+    if bpp != 0:
+        raise ValueError("label pictures are 4bpp")
+    return [[px[(y * w + x) // 2] >> 4 * (x & 1) & 15 for x in range(w)] for y in range(h)]
+
+
+def _pack4(rows):
+    out = bytearray()
+    for r in rows:
+        for x in range(0, len(r), 2):
+            out.append(r[x] | r[x + 1] << 4)
+    return bytes(out)
+
+
+def replace_labels(files, table=None, groups=None, fonts=None):
+    """Redraw every label of tables/graphics_ko.tsv in every copy listed in tables/graphics_copies.json."""
+    table = table or label_table()
+    groups = groups or copies()
+    fonts = fonts or label_font()
+    report = {}
+    for pic, group in groups.items():
+        rows_for = [r for r in table if r["pic"] == pic and r["ko"] != "="]
+        for c in group:
+            data, off = files[c["file"]], int(c["offset"], 16)
+            tim, _ = lz74.decode_stream(bytes(data), off)
+            if hashlib.sha1(image(tim)[2]).hexdigest()[:16] != c["pixels_sha1"]:
+                raise ValueError(f"{c['file']} {off:#x} is not the supported original picture")
+            room = slot(bytes(data), off)
+            rows = _rows(tim)
+            for r in rows_for:
+                draw_label(rows, (r["x"], r["y"], r["w"], r["h"]), r["ko"], fonts)
+            packed = lz74.encode_stream(with_image(tim, _pack4(rows)))
+            if len(packed) > room:
+                raise ValueError(f"{c['file']} {off:#x} needs {len(packed)} bytes, slot is {room}")
+            data[off:off + room] = packed + bytes(room - len(packed))
+            report[pic] = report.get(pic, 0) + 1
+    return report
