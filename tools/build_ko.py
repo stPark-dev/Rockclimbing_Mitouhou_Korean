@@ -27,6 +27,7 @@ import charmap
 import compat
 import iso
 import kfont
+import graphics
 import kocheck
 import nameentry
 import poc_db
@@ -193,7 +194,7 @@ def _select(ko, policy):
     return picked
 
 
-def build(src, ko, bdf, policy="dev", compat_fix=True):
+def build(src, ko, bdf, policy="dev", compat_fix=True, title_logo=None):
     if hashlib.sha256(src).hexdigest() != poc_db.SOURCE_SHA256:
         raise ValueError("source is not the supported original track 1")
     picked = _select(ko, policy)
@@ -256,6 +257,8 @@ def build(src, ko, bdf, policy="dev", compat_fix=True):
             exe[WIDTH_OFFSET + width_index(k)] = advance(ch, bdf)
 
     report["name_entry"] = nameentry.install(files, originals, cells, encode)
+    if title_logo is not None:  # D11: supplied outside the repository
+        report["title_logo"] = graphics.replace_title_logo(files["MENU/KWAMENU.BIN"], title_logo, feather=10)
     if compat_fix:
         report["compat"] = compat.apply(files)
     changes = {n: bytes(d) for n, d in files.items() if bytes(d) != originals[n]}
@@ -273,14 +276,19 @@ def main():
     ap.add_argument("--ko", required=True)
     ap.add_argument("--out", required=True)
     ap.add_argument("--policy", default="dev")
+    ap.add_argument("--title-logo", help="288x88 Korean title logo picture (D11, kept outside the repository)")
     ap.add_argument("--no-compat", action="store_true", help="leave out the START.BIN emulator fix (tools/compat.py)")
     a = ap.parse_args()
     poc_db.check_paths(a.src, a.out)
     ko = {}
     for p in sorted(Path(a.ko).glob("*.json")):
         ko.update(json.loads(p.read_text(encoding="utf-8")))
+    logo = None
+    if a.title_logo:
+        from PIL import Image
+        logo = Image.open(a.title_logo).convert("RGB")
     out, rep = build(Path(a.src).read_bytes(), ko, kfont.load_bdf(a.galmuri), a.policy,
-                     compat_fix=not a.no_compat)
+                     compat_fix=not a.no_compat, title_logo=logo)
     Path(a.out).parent.mkdir(parents=True, exist_ok=True)
     Path(a.out).write_bytes(out)
     cue = poc_db.write_cue(a.cue, a.out)

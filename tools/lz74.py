@@ -12,6 +12,7 @@ expands to its pair, low byte first (0x80012340). 0x73 is the same LZ read byte 
 
 BLOCK = 0x2000
 MAX_USED = 0x2003
+MAX_PAIRS = 16  # escape keys at 0x80060408 and pairs at 0x80060418 hold 16 each
 
 
 class Reader:
@@ -46,6 +47,8 @@ def decode_block(data, pos=0):
     p, pairs = pos + 1, {}
     if kind == 0x74:
         n = data[p]
+        if n > MAX_PAIRS:
+            raise ValueError(f"0x74 block at {pos:#x} has {n} pairs, the game holds {MAX_PAIRS}")
         keys = data[p + 1:p + 1 + n]
         vals = [data[p + 1 + n + 2 * i] | data[p + 2 + n + 2 * i] << 8 for i in range(n)]
         pairs = dict(zip(keys, vals))
@@ -105,7 +108,7 @@ def _tokens(raw):
             run += 1
         best_len, best_dist = 0, 0
         if i + 3 <= n:
-            for j in reversed(heads.get(raw[i:i + 3], [])[-32:]):
+            for j in reversed(heads.get(raw[i:i + 3], [])[-256:]):
                 if i - j > 2048:
                     break
                 k = 0
@@ -135,12 +138,54 @@ def _tokens(raw):
     return bytes(out)
 
 
+def _pairs(tokens):
+    """Byte-pair substitution for a 0x74 block: free byte values stand for frequent pairs of other
+    bytes (the decoder expands one level only). Returns (escape keys, pair values, new stream)."""
+    free = [b for b in range(1, 256) if b not in set(tokens)]
+    keys, vals, stream = [], [], list(tokens)
+    while free and len(keys) < MAX_PAIRS:
+        esc = set(keys)
+        count = {}
+        i = 0
+        while i < len(stream) - 1:
+            a, b = stream[i], stream[i + 1]
+            if a not in esc and b not in esc:
+                count[(a, b)] = count.get((a, b), 0) + 1
+            i += 1
+        if not count:
+            break
+        pair, n = max(count.items(), key=lambda kv: kv[1])
+        if n < 4:
+            break
+        k = free.pop(0)
+        out, i = [], 0
+        while i < len(stream):
+            if i + 1 < len(stream) and (stream[i], stream[i + 1]) == pair:
+                out.append(k)
+                i += 2
+            else:
+                out.append(stream[i])
+                i += 1
+        if len(stream) - len(out) <= 3:
+            free.insert(0, k)
+            break
+        keys.append(k)
+        vals.append(pair[0] | pair[1] << 8)
+        stream = out
+    return keys, vals, bytes(stream)
+
+
 def encode_block(raw):
-    """Encode at most 0x2000 bytes as one 0x73 block, or a stored block if that is not smaller."""
+    """Encode at most 0x2000 bytes as the smallest of a 0x74, 0x73 or stored block."""
     assert len(raw) <= BLOCK
-    lz = bytes([0x73]) + _tokens(raw) + b"\x00"
-    stored = bytes([0xFF, len(raw) & 0xFF, len(raw) >> 8]) + raw
-    return lz if len(lz) <= MAX_USED and len(lz) < len(stored) else stored
+    tokens = _tokens(raw) + b"\x00"
+    keys, vals, stream = _pairs(tokens)
+    cands = [bytes([0x73]) + tokens]
+    if keys:
+        cands.append(bytes([0x74, len(keys)]) + bytes(keys)
+                     + b"".join(bytes([v & 0xFF, v >> 8]) for v in vals) + stream)
+    cands.append(bytes([0xFF, len(raw) & 0xFF, len(raw) >> 8]) + raw)
+    return min((c for c in cands if len(c) <= MAX_USED), key=len)
 
 
 def encode_stream(raw):

@@ -65,3 +65,34 @@ def test_malformed_blocks_are_rejected():
         lz74.decode_stream(bytes([0x40, 0x00, 0x00, 0x40, 0x00]))  # one block expanding to 0x4000
     with pytest.raises(ValueError):
         lz74.decode_block(bytes([0xFF, 0x05, 0x00, 0xAA]))  # stored block cut short
+
+
+def test_encoder_uses_pair_escapes_when_they_help():
+    data = bytes(range(0, 200, 2)) * 60
+    block = lz74.encode_block(data[:0x2000])
+    assert block[0] == 0x74
+    assert lz74.decode_block(block)[0] == data[:0x2000]
+
+
+@pytest.mark.skipif(not X_MEMORY.exists(), reason="extracted disc files are not in the repository")
+def test_reencoded_title_logo_fits_its_original_slot():
+    menu = (ROOT / "work" / "files" / "MENU" / "KWAMENU.BIN").read_bytes()
+    for off in (0x56D24, 0x59128, 0x59A54):
+        raw, used = lz74.decode_stream(menu, off)
+        end = off + used
+        while menu[end] == 0:  # zero padding up to the next stream is free too
+            end += 1
+        assert len(lz74.encode_stream(raw)) <= end - off
+
+
+def test_0x74_blocks_use_at_most_16_pairs():
+    # the game keeps escape keys at 0x80060408 (16 bytes) and pairs at 0x80060418 (16 halfwords)
+    import random
+    rnd = random.Random(1)
+    data = bytes(rnd.choice(range(0, 120, 3)) for _ in range(0x2000))
+    block = lz74.encode_block(data)
+    if block[0] == 0x74:
+        assert block[1] <= 16
+    assert lz74.decode_block(block)[0] == data
+    with pytest.raises(ValueError):
+        lz74.decode_block(bytes([0x74, 17]) + bytes(range(1, 18)) + bytes(34) + b"\x00")
