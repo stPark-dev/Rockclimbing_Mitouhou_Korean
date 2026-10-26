@@ -603,10 +603,11 @@ def draw_split_label(rows, cell, parts, fonts):
 
 # ---- weather icons (group J: X/X1.BIN 0xD764, 8 x 2 icons of 32 px) -------------------------------
 # The label sits on the bottom-left of each icon: white (11) with a black outline (0), rows 22-29.
-# It is replaced by a black band (0) holding the Korean label in white; the band covers the old label.
+# It is replaced by a black band (0) holding the Korean label in white; the band covers the old label and
+# row 21 above it, so art in the label colour (the snow of 날린눈) does not touch the letter tops.
 WEATHER_FILE, WEATHER_OFF, WEATHER_SHA1 = "X/X1.BIN", 0xD764, "b5624501bb775231"
 WEATHER = ("맑음", "흐림", "안개", "진눈비", "날린눈", "폭풍설", "눈보라", "우박", "벼락", "강풍")
-WEATHER_ROWS, WEATHER_INK, WEATHER_BAND = (22, 30), 11, 0
+WEATHER_ROWS, WEATHER_INK, WEATHER_BAND = (21, 30), 11, 0  # band rows; the letters start one row lower
 # the move scene keeps its own はれ·くもり icons (copies group J2), black there is index 2 (0 is clear)
 MOVE_WEATHER_BAND = 2
 
@@ -623,7 +624,7 @@ def _weather_labels(rows, texts, font, band):
         for y in range(iy + y0, iy + y1):
             for x in range(ix + 2, end + 1):
                 rows[y][x] = band
-        draw_text(rows, ix + 3, iy + y0, text, font, WEATHER_INK)
+        draw_text(rows, ix + 3, iy + y0 + 1, text, font, WEATHER_INK)
 
 
 def _replace_weather_picture(data, off, sha1, texts, font, band, name):

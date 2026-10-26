@@ -259,15 +259,27 @@ def test_weather_labels_stay_inside_the_icon_bottoms():
         new = graphics._rows(tim)
         old = graphics._rows(lz74.decode_stream(before[c["file"]], off)[0])
         changed = {(x, y) for y in range(len(new)) for x in range(len(new[0])) if new[y][x] != old[y][x]}
-        assert changed and all(22 <= y < 30 and 2 <= x % 32 < 30 and x < 64 for x, y in changed)
+        assert changed and all(21 <= y < 30 and 2 <= x % 32 < 30 and x < 64 for x, y in changed)
         assert all(new[y][x] in (2, 11) for x, y in changed)
+        _assert_band_above_letters(new, 2, 2)
     before = before[graphics.WEATHER_FILE]
     new = graphics._rows(lz74.decode_stream(bytes(files[graphics.WEATHER_FILE]), graphics.WEATHER_OFF)[0])
     old = graphics._rows(lz74.decode_stream(before, graphics.WEATHER_OFF)[0])
     for y in range(len(new)):
         for x in range(len(new[0])):
             if new[y][x] != old[y][x]:
-                assert 22 <= y % 32 < 30 and 2 <= x % 32 < 30 and (y // 32) * 8 + x // 32 < 10
+                assert 21 <= y % 32 < 30 and 2 <= x % 32 < 30 and (y // 32) * 8 + x // 32 < 10
+    _assert_band_above_letters(new, 0, 10)
+
+
+def _assert_band_above_letters(rows, band, icons):
+    import kfont
+    font = kfont.load_bdf(graphics.GALMURI / "Galmuri7.bdf")
+    # 날린눈 has white snow right above the label: one band row keeps it off the letter tops (screen, 2026-10-26)
+    for i in range(icons):
+        ix, iy = (i % 8) * 32, (i // 8) * 32
+        w = graphics.text_width(graphics.WEATHER[i], font)
+        assert all(rows[iy + 21][x] == band for x in range(ix + 2, ix + 4 + w)), graphics.WEATHER[i]
 
 
 @needs_files
