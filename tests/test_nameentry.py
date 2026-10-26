@@ -45,7 +45,16 @@ def test_index_of_matches_the_patched_formula():
     assert ne.index_of(0, 0, 0) == 1
     assert ne.index_of(0, 5, 17) == 108
     assert ne.index_of(1, 0, 0) == 109
-    assert ne.index_of(2, 1, 17) == 252 < 255  # 0xFF ends a name
+    assert ne.index_of(1, 1, 13) == 140
+    assert ne.index_of(1, 1, 14) == 142  # 141 is the choice cursor
+    assert ne.index_of(2, 1, 17) == 253 < 255  # 0xFF ends a name
+
+
+def test_no_cell_takes_the_choice_cursor_number():
+    # the climbing and camp choices put number 141 in an {F8} slot to draw ▶ (original table entry 141)
+    numbers = [ne.number(k) for k in range(1, len(ne.layout()) + 1)]
+    assert ne.CURSOR == 141 and ne.CURSOR not in numbers
+    assert len(set(numbers)) == len(numbers) and max(numbers) < 0xFF
 
 
 def fake_cells():
@@ -75,9 +84,12 @@ def test_glyph_table_round_trips_every_index_and_fits():
     lay = ne.layout()
     assert read_glyph(table, ne.TABLE_START, 0) is None  # empty slot draws blank
     assert read_glyph(table, ne.TABLE_START, 0xFF) is None  # every byte value has an entry
+    assert read_glyph(table, ne.TABLE_START, ne.CURSOR) == ne.CURSOR_GLYPH == 29  # ▶ of the original font
     for i, ch in enumerate(lay, 1):
         want = None if ch == ne.SPACE else cells[ch]
-        assert read_glyph(table, ne.TABLE_START, i) == want
+        assert read_glyph(table, ne.TABLE_START, ne.number(i)) == want
+    for b, ch in zip(ne.default_name(), ne.DEFAULT_NAME):  # 클라이머 reads back through the shifted numbers
+        assert read_glyph(table, ne.TABLE_START, b) == cells[ch]
 
 
 def test_glyph_table_refuses_overflow():
@@ -108,7 +120,8 @@ def test_patched_exe_reads_every_number_through_the_new_table():
     o = ne.TABLE_START - ne.EXE_LOAD
     region = bytes(exe[o:ne.TABLE_END - ne.EXE_LOAD])
     for i, ch in enumerate(ne.layout(), 1):
-        assert read_glyph(region, ne.TABLE_START, i) == (None if ch == ne.SPACE else cells[ch])
+        assert read_glyph(region, ne.TABLE_START, ne.number(i)) == (None if ch == ne.SPACE else cells[ch])
+    assert read_glyph(region, ne.TABLE_START, ne.CURSOR) == ne.CURSOR_GLYPH
     words = {a: struct.unpack_from("<I", exe, a - ne.EXE_LOAD)[0] for a in ne.EXE_PATCH}
     assert dis(words[0x80021140]) == "lhu $a1, ($v0)"
     assert dis(words[0x80021148]) == "addu $a1, $a1, $s4"
@@ -149,6 +162,56 @@ def test_patched_name_screen_jumps_into_the_cave_and_branches_stay_inside():
     assert dis(struct.unpack_from("<I", kw, 0x800BA980 - ne.KW_BASE)[0]) == "slti $v0, $s1, 6"  # second row check
     assert dis(struct.unpack_from("<I", kw, 0x800BA990 - ne.KW_BASE)[0]) == "ori $s1, $zero, 5"
     assert struct.unpack_from("<3I", kw, labels["offsets"] - ne.KW_BASE) == (0, 108, 216)
+
+
+def run_number(code, base, labels, v0, page_offset):
+    """Interpret the cave's number routine (the few instructions it uses, with delay slots)."""
+    reg = {n: 0 for n in ne.REG}
+    reg["v0"] = v0
+    mem = {labels["vars"] + 8: page_offset}
+    pc, target = labels["number"], None
+    for _ in range(64):
+        i = next(MD.disasm(code[pc - base:pc - base + 4], pc))
+        ops = [o.strip().lstrip("$") for o in i.op_str.split(",")]
+        imm = lambda o: int(o, 0)
+        jump, m = target, i.mnemonic
+        target = None
+        if m == "lui":
+            reg[ops[0]] = imm(ops[1]) << 16
+        elif m == "lw":
+            off, r = ops[1].rstrip(")").split("($")
+            reg[ops[0]] = mem.get((reg[r] + imm(off or "0")) & 0xFFFFFFFF, 0)
+        elif m in ("addiu", "ori", "xori", "slti"):
+            a, b = reg[ops[1]], imm(ops[2])
+            reg[ops[0]] = {"addiu": a + b, "ori": a | b, "xori": a ^ b, "slti": int(a < b)}[m]
+        elif m == "addu":
+            reg[ops[0]] = reg[ops[1]] + reg[ops[2]]
+        elif m in ("bnez", "beqz"):
+            target = imm(ops[1]) if (reg[ops[0]] != 0) == (m == "bnez") else pc + 8
+        elif m == "jr":
+            target = -1
+        elif m != "nop":
+            raise AssertionError(f"unexpected {m} {i.op_str}")
+        reg["zero"] = 0
+        if jump == -1:
+            return reg["v0"]  # the delay slot of jr ra has run
+        pc = jump if jump is not None else pc + 4
+    raise AssertionError("number routine did not return")
+
+
+@needs_files
+def test_number_routine_skips_the_choice_cursor_and_maps_blank_cells_to_space():
+    kw = bytearray((FILES / "KWAMENU.BIN").read_bytes())
+    labels = ne.patch_kwamenu(kw, bytes(kw[ne.CAVE_START:ne.CAVE_END]), [b"\xff"] * 3)
+    base = ne.KW_BASE
+    space = ne.number(ne.layout().index(ne.SPACE) + 1)
+    for page in range(ne.PAGES):
+        for row in range(ne.ROWS):
+            for col in range(ne.COLS):
+                got = run_number(bytes(kw), base, labels, row * ne.COLS + col, page * ne.ROWS * ne.COLS)
+                k = page * ne.ROWS * ne.COLS + row * ne.COLS + col + 1
+                assert got == (ne.number(k) if k <= len(ne.layout()) else space), (page, row, col)
+    assert ne.CURSOR not in ne.default_name()
 
 
 @needs_files

@@ -4,12 +4,14 @@ A name is 8 bytes of input-table numbers at 0x80070EA4. The executable draws a n
 looking it up in the table at 0x80046548 (0x800210B0, 0x80021218); the name screen
 (KWAMENU 0x800BA830) stores row*20 + col + 1 from a 20 x 7 kana picture.
 
-This module turns that into three pages of 18 x 6 Hangul syllables (252 used numbers):
+This module turns that into three pages of 18 x 6 Hangul syllables (252 cells, numbers 1-253):
 - executable: the table area 0x800462F4-0x80046780 is rewritten as halfword offsets from its start
   followed by 1- or 2-byte glyph codes (both draw functions only read the first code), and the
   two lookups use lhu + base instead of lw;
 - KWAMENU: the number becomes row*18 + col + page offset, the page is switched with L1/R1, and the
-  syllables of the current page are drawn by a text window over the emptied keyboard frame.
+  syllables of the current page are drawn by a text window over the emptied keyboard frame;
+- number 141 stays the choice cursor ▶: the climbing and camp choices put it in an {F8} slot
+  (original table entry 141, past the 140 kana cells), so the cells after it are numbered one higher.
 """
 
 import struct
@@ -19,6 +21,7 @@ SYLLABLES = Path(__file__).resolve().parent.parent / "tables" / "name_syllables.
 SPACE = " "
 PAGES, ROWS, COLS = 3, 6, 18  # 6 rows: the text window line pitch is 14 px
 TABLE_START, TABLE_END = 0x800462F4, 0x80046780  # old entries + old pointer table, only used here
+CURSOR, CURSOR_GLYPH = 141, 29  # choice cursor number and its glyph ▶ (code 0x1E) in the original font
 
 REG = {n: i for i, n in enumerate(
     "zero at v0 v1 a0 a1 a2 a3 t0 t1 t2 t3 t4 t5 t6 t7 s0 s1 s2 s3 s4 s5 s6 s7 t8 t9 k0 k1 gp sp fp ra".split())}
@@ -66,15 +69,20 @@ def syllables():
 def layout():
     """Characters of every cell, page by page and row by row; the last cell is the space key."""
     cells = list(syllables()) + [SPACE]
-    if len(cells) > min(PAGES * ROWS * COLS, 254):
+    if len(cells) > min(PAGES * ROWS * COLS, 253):  # numbers skip CURSOR and stop below 0xFF
         raise ValueError(f"{len(cells)} cells for {PAGES * ROWS * COLS} keyboard positions")
     if len(set(cells)) != len(cells):
         raise ValueError("a syllable appears twice in tables/name_syllables.txt")
     return cells
 
 
+def number(k):
+    """Name byte of the k-th cell (1-based): CURSOR is skipped."""
+    return k if k < CURSOR else k + 1
+
+
 def index_of(page, row, col):
-    return page * ROWS * COLS + row * COLS + col + 1
+    return number(page * ROWS * COLS + row * COLS + col + 1)
 
 
 def code(k):
@@ -83,16 +91,18 @@ def code(k):
 
 def glyph_table(cells, limit=TABLE_END - TABLE_START):
     """Halfword offsets for every byte value (relative to the table start), then the codes.
-    0, 0xFF and unused numbers point to the blank code FD."""
+    0, 0xFF and unused numbers point to the blank code FD, CURSOR to ▶."""
     lay = layout()
     n = 256
     head = 2 * n
     body = bytearray([0xFD])
     offs = [head] * n
+    offs[CURSOR] = head + len(body)
+    body += code(CURSOR_GLYPH)
     for i, ch in enumerate(lay, 1):
         if ch == SPACE:
             continue
-        offs[i] = head + len(body)
+        offs[number(i)] = head + len(body)
         body += code(cells[ch])
     out = struct.pack(f"<{n}H", *offs) + bytes(body)
     if len(out) > limit:
@@ -300,7 +310,7 @@ def cave(strings):
     A(jal(0x80018D30), ori("a0", "zero", 2),
       lw("ra", 16, "sp"), NOP, addiu("sp", "sp", 24), jr("ra"), NOP)
 
-    # number: v0 = row*18 + col, then + 1 + page offset (replaces "addiu v0, v0, 1")
+    # number: v0 = row*18 + col, then + 1 + page offset, then past CURSOR (replaces "addiu v0, v0, 1")
     A.label("number")
     # cells past the last syllable (third page) enter a space
     A(lui("t0", vhi), lw("t0", vlo + 8, "t0"), NOP, addiu("v0", "v0", 1), addu("v0", "v0", "t0"),
@@ -308,7 +318,7 @@ def cave(strings):
     A.b(5, "t0", "zero", "number_done"); A(NOP)
     A(ori("v0", "zero", layout().index(SPACE) + 1))
     A.label("number_done")
-    A(jr("ra"), NOP)
+    A(slti("t0", "v0", CURSOR), xori("t0", "t0", 1), jr("ra"), addu("v0", "v0", "t0"))
     code_bytes, labels = A.build()
     if len(code_bytes) > CAVE_END - CAVE_START:
         raise ValueError(f"name screen code needs {len(code_bytes)} bytes, {CAVE_END - CAVE_START} available")
@@ -337,7 +347,7 @@ def kw_patches(labels):
 
 def default_name():
     lay = layout()
-    return bytes(lay.index(ch) + 1 for ch in DEFAULT_NAME)
+    return bytes(number(lay.index(ch) + 1) for ch in DEFAULT_NAME)
 
 
 def patch_kwamenu(kw, original_cave, strings):

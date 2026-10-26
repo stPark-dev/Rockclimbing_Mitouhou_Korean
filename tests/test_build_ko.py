@@ -138,7 +138,7 @@ def test_corpus_dev_build_installs_the_hangul_name_entry():
     o = ne.TABLE_START - ne.EXE_LOAD
     region = exe[o:ne.TABLE_END - ne.EXE_LOAD]
     for i, ch in enumerate(ne.layout(), 1):
-        off = struct.unpack_from("<H", region, 2 * i)[0]
+        off = struct.unpack_from("<H", region, 2 * ne.number(i))[0]
         if ch == ne.SPACE:
             assert region[off] == 0xFD
         else:
