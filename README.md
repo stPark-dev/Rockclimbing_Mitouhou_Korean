@@ -4,7 +4,7 @@
 
 플레이스테이션용 『ロッククライミング 未踏峰への挑戦 アルプス編』(일본판, SLPS-00662, ⓒ 위넷)의 한글 패치 제작 프로젝트입니다.
 
-> **현재 상태: v1.0-beta 후보 (AI 검수, 사람 승인 전)**
+> **현재 상태: v1.0-beta.1 (AI 검수 + 사용자 결정 반영, 정식 승인 전)**
 > 본편 텍스트 1,469단위와 주요 그림 글자·이름 입력을 한글화했습니다. 번역은 AI 일괄 검수만 거쳤고 사람이 승인한 것은 아닙니다(D14). 알려진 문제는 아래에 적었습니다.
 
 ## 진행 상황
@@ -16,7 +16,7 @@
 | 한글 표시 PoC | 완료. 데이터베이스 설명문 한 줄 한국어 표시 |
 | 문자표 | 완료. 1,348칸 전부 (문맥 교정 30칸, 미검증 5칸) |
 | 문자열 추출 | 모집단 채택: 4,556개(원문 기준 1,474개, 약 6.7만 자). 런타임 대조로 누락 확인 남음 |
-| 번역 | 1,469/1,474단위(남은 5는 비텍스트). AI 검수 완료 1,448, 문맥 확인 필요 21(`text/review_ai_v1.json`) |
+| 번역 | 1,469/1,474단위(남은 5는 비텍스트). AI 검수 완료 1,460, 문맥 확인 필요 9(`text/review_ai_v1.json`, D14·D15) |
 | 그림 글자 | 일본어 그림 한글화(D1, D11–D13). 타이틀 로고·메뉴 버튼·등반 화면·날씨 아이콘·설명 사진 |
 | 이름 입력 | 3쪽 한글 음절표(D10). 입력·저장·불러오기 화면 확인 |
 
@@ -34,15 +34,15 @@
 
 패치는 트랙 1만 바꿉니다. 오디오 트랙은 원본을 그대로 씁니다.
 
-## 패치 적용 (v1.0-beta)
+## 패치 적용 (v1.0-beta.1)
 
 1. 위 해시와 같은 트랙 1 이미지를 준비합니다.
-2. PPF 3.0 패처(PPF-O-Matic, ApplyPPF 등)로 `RockClimbing_Mitouhou_KO_v1.0-beta.ppf`를 트랙 1에 적용합니다. 패치는 원본의 일부 바이트를 검사하므로 다른 이미지에는 적용되지 않습니다.
+2. PPF 3.0 패처(PPF-O-Matic, ApplyPPF 등)로 `RockClimbing_Mitouhou_KO_v1.0-beta.1.ppf`를 트랙 1에 적용합니다. 패치는 원본의 일부 바이트를 검사하므로 다른 이미지에는 적용되지 않습니다.
 3. cue와 오디오 트랙(2–22)은 원본 그대로 씁니다.
 
-### v1.0-beta 알려진 문제
+### v1.0-beta.1 알려진 문제
 
-- 번역은 AI 검수만 거쳤습니다. 문맥·용어 결정이 필요한 21단위가 남아 있습니다(暗闇の掘 「어둠의 담장/해자」 표기, 「날씨가 버티다」 같은 직역투, 「~합시다」 말투 등).
+- 번역은 AI 검수와 일부 용어 결정(D15)만 거쳤습니다. 정식판 검수 대상 9단위가 남아 있습니다(「~합시다」 말투, 岩壁の緑 해석 등). 「어둠의 해자」는 원문 오기 추정에 따른 번역입니다.
 - 화면에서 재지 않은 창의 줄 44개가 원문 최장 줄보다 넓어 잘릴 수 있습니다.
 - 영상(STR) 안의 일본어 글자는 그대로입니다(v1.1).
 - 이동 장면의 시간 상자·날씨 아이콘(G2·J2)과 일부 스테이지 화면은 실기에서 보지 못했습니다.
@@ -77,7 +77,7 @@ cd tools
 python3 build_ko.py --src "../original/<원본> (Track 01).bin" --cue "../original/<원본>.cue" \
   --galmuri ../../galmuri/Galmuri11.bdf --ko ../text/ko --out ../build/mitouhou_ko_beta.bin --policy beta \
   --title-logo ../work/assets/title_logo_ko.png --db-photos ../work/assets/db_photo1_ko.png ../work/assets/db_photo2_ko.png
-python3 ppf.py "../original/<원본> (Track 01).bin" ../build/mitouhou_ko_beta.bin ../build/RockClimbing_Mitouhou_KO_v1.0-beta.ppf
+python3 ppf.py "../original/<원본> (Track 01).bin" ../build/mitouhou_ko_beta.bin ../build/RockClimbing_Mitouhou_KO_v1.0-beta.1.ppf
 ```
 
 `--policy dev`는 초벌을 포함한 배포 불가 빌드, `beta`는 AI 검수 이상만, `release`는 사람 승인만 받습니다. 타이틀 로고와 설명 사진 그림은 저장소 밖(`work/assets/`)에 둡니다.
