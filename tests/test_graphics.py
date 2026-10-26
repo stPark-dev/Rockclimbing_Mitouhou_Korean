@@ -237,11 +237,13 @@ def test_free_climbing_button_reads_through_the_covered_cell():
 
 def test_count_units_sit_right_of_the_number():
     # the game prints the count over the left of the 枚/本 cells; the originals use columns 26-37
-    for x0, unit in ((160, "장"), (200, "개")):
+    for x0, unit in ((160, "개"), (200, "개")):
         rows = [[1 if y in (0, 14) or x in (0, 38) else 4 for x in range(39)] for y in range(16)]
         graphics.draw_split_label(rows, (0, 0, 39, 16), graphics.SPLIT_LABELS[("I", x0, 128)], graphics.label_font())
         ink = [x for y in range(1, 14) for x in range(1, 38) if rows[y][x] == graphics.TEXT]
         assert ink and min(ink) >= 25
+        assert graphics.SPLIT_LABELS[("I", x0, 128)][0][0] == unit  # 枚 and 本 both read 개 (user, 2026-10-26)
+        assert [r["ko"] for r in graphics.label_table() if (r["pic"], r["x"], r["y"]) == ("I", x0, 128)] == [unit]
 
 
 @needs_files

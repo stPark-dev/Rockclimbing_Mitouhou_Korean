@@ -584,7 +584,7 @@ SPLIT_LABELS = {("B", 0, 160): (("페이스", 1, 1), ("등반", 0, FREE_COVER + 
                 ("H", 72, 144): (("피치 개요", 0, 15),),
                 # SELECT menu counts: the game prints the number over the left of the 枚/本 cells,
                 # whose glyphs sit in columns 26-37
-                ("I", 160, 128): (("장", 0, 26),),
+                ("I", 160, 128): (("개", 0, 26),),
                 ("I", 200, 128): (("개", 0, 26),)}
 
 
