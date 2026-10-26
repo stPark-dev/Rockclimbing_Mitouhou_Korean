@@ -1,0 +1,78 @@
+# picture	x	y	w	h	ja	ko	note  (H = SU_MG 0x1A6B4 and 0x1984C, 13 copies each; I = X/X1 0xE9DC; draft 2026-10-26)
+H	0	0	40	16	爪痕Ａ	자국Ａ	piece: composition unknown, screen check
+H	39	0	16	16	Ｂ	Ｂ	piece
+H	56	0	47	16	氷の剣	얼음의 검	stage
+H	104	0	55	16	天空の魚	하늘의 물고기	stage
+H	160	0	47	16	氷の柱	얼음 기둥	stage
+H	208	0	47	16	風の道	바람의 길	stage
+H	0	16	81	16	ひび割れた牙	금 간 송곳니	stage (+ letter piece)
+H	80	16	55	16	ずれた牙	비뚠 송곳니	stage (+ letter piece)
+H	136	16	71	16	老人のコブ	노인의 혹	stage; 「老人の」 part may be reused as a prefix
+H	207	16	16	16	２	2	number piece
+H	223	16	16	16	３	3	number piece
+H	239	16	16	16	４	4	number piece
+H	0	32	57	16	ずれた牙	비뚠 송곳니	stage (second copy)
+H	56	32	95	16	蟹渡りの沢　悋気	게걸음 계곡　질투	two pieces in one cell: 蟹渡りの沢 / (老人の)悋気
+H	152	32	71	16	神の台座５	신의 받침대 5	stage + number piece
+H	223	32	16	16	６	6	number piece
+H	239	32	16	16	７	7	number piece
+H	0	48	64	16	きまぐれ　１	변덕　1	piece: (老人の)きまぐれ + number
+H	63	48	64	16	のほころび	의 틈	piece: 神の台座 + のほころび
+H	128	48	71	16	神々の祝福	신들의 축복	stage
+H	200	48	55	16	竜の爪痕	용 발톱 자국	stage (D12, condensed)
+H	0	64	79	16	ひび割れた牙	금 간 송곳니	stage (second copy)
+H	80	64	63	16	ピッチ決定	피치 결정	button
+H	144	64	111	16	別のルートを考える	다른 루트 검토	button (D12)
+H	112	80	63	16	ピッチ概要	피치 개요	button
+H	176	80	79	16	馬のたてがみ	말갈기	stage (D12)
+H	0	96	119	16	次のステージの概要	다음 스테이지 개요	button (D12)
+H	120	96	63	16	アドバイス	조언	button (D12)
+H	184	96	71	16	登はん開始	등반 시작	button
+H	0	112	79	16	踏破をめざす	답파를 노린다	button (D12)
+H	136	112	63	16	情報ガイド	정보 안내	button
+H	200	112	55	16	神への扉	신의 문	stage (D12)
+H	0	128	87	16	ロープ降下の壁	로프 하강 벽	stage (D12)
+H	88	128	119	16	ブラディナイフエッジ	블러디 나이프 에지	stage (D12)
+H	0	144	71	16	風水の谷間	풍수 골짜기	stage (D12)
+H	72	144	95	16	このピッチの概要	이 피치의 개요	button
+H	0	160	151	16	次ステージの状態・気象条件	다음 스테이지 상태・기상	button; 「조건」 dropped to fit
+H	0	176	151	16	このピッチの状態・気象条件	이 피치의 상태・기상 조건	button (D12)
+I	0	0	79	16	傾斜確認	경사 확인	SELECT menu
+I	80	0	79	16	ホールド状態	홀드 상태
+I	160	0	79	16	加重状態	하중 상태
+I	0	16	79	16	あぶみ	에트리에	D4
+I	80	16	79	16	特殊登法	특수 등반	body: 특수 등반 메뉴
+I	160	16	79	16	断念	단념
+I	0	32	79	16	ロープ	로프
+I	80	32	79	16	ハーケン	하켄
+I	160	32	79	16	カラビナ	카라비너
+I	0	48	79	16	強度チェック	강도 점검	body: 강도 점검
+I	80	48	79	16	打ち込む	박기
+I	160	48	79	16	ぬく	뽑기
+I	0	64	79	16	ロープをかける	로프 걸기
+I	80	64	79	16	ロープを外す	로프 풀기
+I	160	64	79	16	垂直登はん	수직 등반
+I	0	80	79	16	垂直降下	수직 하강
+I	80	80	79	16	ダブルロープ	더블 로프
+I	160	80	79	16	シングルロープ	싱글 로프
+I	0	96	79	16	振り子トラバース	펜듈럼	D12 short form
+I	80	96	79	16	（ロープ回収可）	(회수 가능)	under 더블 로프
+I	160	96	79	16	（ロープ回収不可）	(회수 불가)	under 싱글 로프
+I	0	112	79	16	トラバースセット	트래버스 세트
+I	80	112	79	16	トラバース開始	트래버스 시작
+I	160	112	79	16	トラバース解除	트래버스 해제
+I	0	128	79	16	ジャンプ	점프
+I	80	128	79	16	位置確認	위치 확인
+I	160	128	39	16	枚	개	counter
+I	200	128	39	16	本	개	counter
+# J weather icons (X/X1 0xD764, 32 px icons, text under 28 px wide in Galmuri7: at most 3 syllables)
+J	-	-	-	-	はれ	맑음
+J	-	-	-	-	くもり	흐림
+J	-	-	-	-	のうむ	안개	「짙은 안개」 does not fit
+J	-	-	-	-	みぞれ	진눈	「진눈깨비」 (30 px) does not fit
+J	-	-	-	-	地ふぶき	땅눈	「땅눈보라」 (32 px) does not fit
+J	-	-	-	-	猛ふぶき	폭풍설	「심한 눈보라」 does not fit
+J	-	-	-	-	ふぶき	눈보라
+J	-	-	-	-	ひょう	우박
+J	-	-	-	-	かみなり	벼락
+J	-	-	-	-	強風	강풍
