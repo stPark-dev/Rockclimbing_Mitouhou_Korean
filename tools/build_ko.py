@@ -195,7 +195,7 @@ def _select(ko, policy):
     return picked
 
 
-def build(src, ko, bdf, policy="dev", compat_fix=True, title_logo=None, label_fonts=None):
+def build(src, ko, bdf, policy="dev", compat_fix=True, title_logo=None, label_fonts=None, db_photos=None):
     if hashlib.sha256(src).hexdigest() != poc_db.SOURCE_SHA256:
         raise ValueError("source is not the supported original track 1")
     picked = _select(ko, policy)
@@ -266,6 +266,8 @@ def build(src, ko, bdf, policy="dev", compat_fix=True, title_logo=None, label_fo
     report["weather"] = graphics.replace_weather(files)
     if title_logo is not None:  # D11: supplied outside the repository
         report["title_logo"] = graphics.replace_title_logo(files["MENU/KWAMENU.BIN"], title_logo, feather=10)
+    if db_photos is not None:  # D11: Korean screen captures, kept outside the repository
+        report["db_photos"] = graphics.replace_db_photos(files, db_photos)
     if compat_fix:
         report["compat"] = compat.apply(files)
     changes = {n: bytes(d) for n, d in files.items() if bytes(d) != originals[n]}
@@ -284,6 +286,8 @@ def main():
     ap.add_argument("--out", required=True)
     ap.add_argument("--policy", default="dev")
     ap.add_argument("--title-logo", help="288x88 Korean title logo picture (D11, kept outside the repository)")
+    ap.add_argument("--db-photos", nargs=2, metavar=("HAKEN", "SPECIAL"),
+                    help="SELECT menu screen captures for the two explanation photos (D11, kept outside the repository)")
     ap.add_argument("--no-compat", action="store_true", help="leave out the START.BIN emulator fix (tools/compat.py)")
     a = ap.parse_args()
     poc_db.check_paths(a.src, a.out)
@@ -294,8 +298,12 @@ def main():
     if a.title_logo:
         from PIL import Image
         logo = Image.open(a.title_logo).convert("RGB")
+    photos = None
+    if a.db_photos:
+        from PIL import Image
+        photos = [Image.open(p).convert("RGB") for p in a.db_photos]
     out, rep = build(Path(a.src).read_bytes(), ko, kfont.load_bdf(a.galmuri), a.policy,
-                     compat_fix=not a.no_compat, title_logo=logo,
+                     compat_fix=not a.no_compat, title_logo=logo, db_photos=photos,
                      label_fonts=graphics.label_font(Path(a.galmuri).parent))
     Path(a.out).parent.mkdir(parents=True, exist_ok=True)
     Path(a.out).write_bytes(out)

@@ -144,6 +144,35 @@ def replace_title_logo(menu, art, resize=True, feather=0):
     return {"pieces": written}
 
 
+# ---- database / training explanation photos (D11): the SELECT menu shot at 128 x 96, 8bpp ------
+DB_PHOTO_FILE = "MENU/MENUDB.BIN"
+DB_PHOTOS = {0x59B64: "e0c44554d64f4788", 0x6A070: "1ec0935df70ad9bf"}  # 하켄 submenu, 특수 등반 submenu
+
+
+def replace_db_photos(files, screens):
+    """Shrink two 320 x 240 screens (any size of that ratio) into the photos, keeping each CLUT."""
+    from PIL import Image
+    if len(screens) != len(DB_PHOTOS):
+        raise ValueError(f"{len(DB_PHOTOS)} screens are needed, got {len(screens)}")
+    data = files[DB_PHOTO_FILE]
+    for (off, sha1), screen in zip(DB_PHOTOS.items(), screens):
+        tim, _ = lz74.decode_stream(bytes(data), off)
+        if hashlib.sha1(image(tim)[2]).hexdigest()[:16] != sha1:
+            raise ValueError(f"{DB_PHOTO_FILE} {off:#x} is not the supported original picture")
+        w, h, _ = image(tim)
+        pal = palette(tim)
+        small = screen.convert("RGB").resize((w, h), Image.LANCZOS)
+        room = slot(bytes(data), off)
+        for rows in (quantize(small, pal), _undithered(small, pal)):  # dithering may not fit
+            packed = lz74.encode_stream(with_image(tim, bytes(v for r in rows for v in r)))
+            if len(packed) <= room:
+                break
+        else:
+            raise ValueError(f"{DB_PHOTO_FILE} {off:#x} needs {len(packed)} bytes, slot is {room}")
+        data[off:off + room] = packed + bytes(room - len(packed))
+    return {"photos": len(screens)}
+
+
 # ---- button and tab labels (atlases A-G, docs/graphics_text.md) ---------------------------------
 from pathlib import Path as _Path
 

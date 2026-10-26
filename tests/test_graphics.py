@@ -266,3 +266,36 @@ def test_weather_labels_stay_inside_the_icon_bottoms():
         for x in range(len(new[0])):
             if new[y][x] != old[y][x]:
                 assert 22 <= y % 32 < 30 and 2 <= x % 32 < 30 and (y // 32) * 8 + x // 32 < 10
+
+
+@needs_files
+def test_db_photos_take_the_korean_screens_in_their_slots():
+    from PIL import Image
+    files = {graphics.DB_PHOTO_FILE: bytearray((FILES / graphics.DB_PHOTO_FILE).read_bytes())}
+    before = bytes(files[graphics.DB_PHOTO_FILE])
+    screens = [Image.new("RGB", (800, 600), (40, 60, 120)), Image.new("RGB", (800, 600), (130, 130, 130))]
+    assert graphics.replace_db_photos(files, screens) == {"photos": 2}
+    data = bytes(files[graphics.DB_PHOTO_FILE])
+    for off, screen in zip(graphics.DB_PHOTOS, screens):
+        tim, used = lz74.decode_stream(data, off)
+        old, _ = lz74.decode_stream(before, off)
+        assert used <= graphics.slot(before, off)
+        assert graphics.palette(tim) == graphics.palette(old) and tim[:0x220] == old[:0x220]
+        w, h, px = graphics.image(tim)
+        pal = graphics.palette(tim)
+        want = screen.getpixel((0, 0))
+        mean = [sum(pal[v][i] for v in px) / len(px) for i in range(3)]
+        assert all(abs(m - c) < 12 for m, c in zip(mean, want))
+
+
+@needs_files
+def test_db_photos_refuse_a_wrong_count_and_pictures_that_do_not_fit():
+    import random
+    from PIL import Image
+    files = {graphics.DB_PHOTO_FILE: bytearray((FILES / graphics.DB_PHOTO_FILE).read_bytes())}
+    with pytest.raises(ValueError):
+        graphics.replace_db_photos(files, [Image.new("RGB", (320, 240))])
+    rnd = random.Random(1)
+    noise = Image.frombytes("RGB", (320, 240), bytes(rnd.randrange(256) for _ in range(320 * 240 * 3)))
+    with pytest.raises(ValueError):
+        graphics.replace_db_photos(files, [noise, noise])
