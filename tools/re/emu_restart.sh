@@ -1,6 +1,6 @@
 #!/bin/sh
 # restart DuckStation on the nested display :7 with $1 (cue) and give it input focus
-for p in $(ps -eo pid,comm | awk '$2=="duckstation"{print $1}'); do kill $p; done
+for p in $(ps -eo pid,comm | awk '$2=="duckstation" || $2=="AppRun"{print $1}'); do kill $p; done
 sleep 2
 (DISPLAY=:7 duckstation -batch -fastboot "$1" >/dev/null 2>&1 &)
 sleep 40

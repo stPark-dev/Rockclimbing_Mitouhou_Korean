@@ -263,6 +263,7 @@ def build(src, ko, bdf, policy="dev", compat_fix=True, title_logo=None, label_fo
     report["small_glyphs"] = graphics.replace_small_glyphs(files)
     report["hud"] = graphics.replace_hud(files)
     report["alps_title"] = graphics.replace_alps_title(files)
+    report["weather"] = graphics.replace_weather(files)
     if title_logo is not None:  # D11: supplied outside the repository
         report["title_logo"] = graphics.replace_title_logo(files["MENU/KWAMENU.BIN"], title_logo, feather=10)
     if compat_fix:

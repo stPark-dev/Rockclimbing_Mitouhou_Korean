@@ -117,7 +117,7 @@ def test_label_pictures_are_redrawn_in_every_copy():
             files.setdefault(c["file"], bytearray((FILES / c["file"]).read_bytes()))
     before = {n: bytes(d) for n, d in files.items()}
     report = graphics.replace_labels(files)
-    assert report == {"A": 15, "B": 2}
+    assert report == {"A": 15, "B": 2, "H": 13, "H1": 13, "I": 1}
     for pic, group in graphics.copies().items():
         drawn = set()
         for c in group:
@@ -147,7 +147,8 @@ def test_label_cells_match_the_borders_in_the_pictures():
         if right == len(inside) - 1:  # the cell runs past the picture's right edge (フリー)
             continue
         assert inside[right] == 1 and inside[right - 1] == graphics.BG, r  # right border, then the inside
-        assert right + 1 >= len(inside) or inside[right + 1] != graphics.BG, r  # nothing of the cell past it
+        shared = any(o["pic"] == r["pic"] and o["y"] == r["y"] and o["x"] == right for o in graphics.label_table())
+        assert shared or right + 1 >= len(inside) or inside[right + 1] != graphics.BG, r  # nothing of the cell past it
 
 
 @needs_files
@@ -230,3 +231,16 @@ def test_free_climbing_button_reads_through_the_covered_cell():
     head = [x for x in ink if x < graphics.FREE_COVER]
     tail = [x for x in ink if x >= graphics.FREE_COVER]
     assert head and max(head) <= graphics.FREE_COVER - 1 and tail and min(tail) >= graphics.FREE_COVER + 3
+
+
+@needs_files
+def test_weather_labels_stay_inside_the_icon_bottoms():
+    files = {graphics.WEATHER_FILE: bytearray((FILES / graphics.WEATHER_FILE).read_bytes())}
+    before = bytes(files[graphics.WEATHER_FILE])
+    assert graphics.replace_weather(files) == {"icons": 10}
+    new = graphics._rows(lz74.decode_stream(bytes(files[graphics.WEATHER_FILE]), graphics.WEATHER_OFF)[0])
+    old = graphics._rows(lz74.decode_stream(before, graphics.WEATHER_OFF)[0])
+    for y in range(len(new)):
+        for x in range(len(new[0])):
+            if new[y][x] != old[y][x]:
+                assert 22 <= y % 32 < 30 and 2 <= x % 32 < 30 and (y // 32) * 8 + x // 32 < 10

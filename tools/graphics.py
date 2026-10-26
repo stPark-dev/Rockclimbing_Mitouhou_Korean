@@ -545,7 +545,10 @@ def replace_alps_title(files, root=GALMURI):
 # first 24 px covered by the フリー piece (pixel-matched on screen, 2026-10-23). The cell keeps
 # 「페이스」 inside the covered part and 「등반」 after it: alone 「페이스 등반」, covered 「프리 등반」.
 FREE_COVER = 24
-SPLIT_LABELS = {("B", 0, 160): (("페이스", 1, 1), ("등반", 0, FREE_COVER + 4))}  # (text, font index, x)
+SPLIT_LABELS = {("B", 0, 160): (("페이스", 1, 1), ("등반", 0, FREE_COVER + 4)),  # (text, font index, x)
+                # pitch submenu: the game prints the pitch number over the first 13 px of
+                # 「このピッチの概要」 (「1のピッチの概要」), so the Korean leaves that part empty
+                ("H", 72, 144): (("피치 개요", 0, 15),)}
 
 
 def draw_split_label(rows, cell, parts, fonts):
@@ -559,3 +562,39 @@ def draw_split_label(rows, cell, parts, fonts):
         box_h = kfont.hangul_box(font)[1]
         draw_text(rows, x0 + x, y0 + 1 + (h - 3 - box_h + 1) // 2, text, font, TEXT)
     return rows
+
+
+# ---- weather icons (group J: X/X1.BIN 0xD764, 8 x 2 icons of 32 px) -------------------------------
+# The label sits on the bottom-left of each icon: white (11) with a black outline (0), rows 22-29.
+# It is replaced by a black band (0) holding the Korean label in white; the band covers the old label.
+WEATHER_FILE, WEATHER_OFF, WEATHER_SHA1 = "X/X1.BIN", 0xD764, "b5624501bb775231"
+WEATHER = ("맑음", "흐림", "안개", "진눈비", "날린눈", "폭풍설", "눈보라", "우박", "벼락", "강풍")
+WEATHER_ROWS, WEATHER_INK, WEATHER_BAND = (22, 30), 11, 0
+
+
+def replace_weather(files, root=GALMURI):
+    import kfont
+    font = kfont.load_bdf(root / "Galmuri7.bdf")
+    data = files[WEATHER_FILE]
+    tim, _ = lz74.decode_stream(bytes(data), WEATHER_OFF)
+    if hashlib.sha1(image(tim)[2]).hexdigest()[:16] != WEATHER_SHA1:
+        raise ValueError(f"{WEATHER_FILE} {WEATHER_OFF:#x} is not the supported original picture")
+    rows = _rows(tim)
+    y0, y1 = WEATHER_ROWS
+    for i, text in enumerate(WEATHER):
+        ix, iy = (i % 8) * 32, (i // 8) * 32
+        old_end = max(x for x in range(ix + 2, ix + 30) for y in range(iy + y0, iy + y1) if rows[y][x] == 0)
+        w = text_width(text, font)
+        if w > 26:
+            raise ValueError(f"{text!r} is wider than the icon")
+        end = min(ix + 29, max(old_end, ix + 3 + w))
+        for y in range(iy + y0, iy + y1):
+            for x in range(ix + 2, end + 1):
+                rows[y][x] = WEATHER_BAND
+        draw_text(rows, ix + 3, iy + y0, text, font, WEATHER_INK)
+    room = slot(bytes(data), WEATHER_OFF)
+    packed = lz74.encode_stream(with_image(tim, _pack4(rows)))
+    if len(packed) > room:
+        raise ValueError(f"{WEATHER_FILE} {WEATHER_OFF:#x} needs {len(packed)} bytes, slot is {room}")
+    data[WEATHER_OFF:WEATHER_OFF + room] = packed + bytes(room - len(packed))
+    return {"icons": len(WEATHER)}
