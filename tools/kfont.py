@@ -16,7 +16,51 @@ GLYPHS = 1348
 INK = 3
 
 
+# Hand-fixed glyphs by font file stem. Galmuri11 (and its condensed cut) 중 put a 1 px stem straight on ㅇ and read as
+# 종/증 on screen (2026-10-26): ㅇ takes 3 rows like 충, so the stem gets 2.
+HAND_FIXES = {"Galmuri11": {"중": (
+    ".#########.",
+    ".....#.....",
+    "...##.##...",
+    ".##.....##.",
+    "...........",
+    "###########",
+    ".....#.....",
+    ".....#.....",
+    "..#######..",
+    ".#.......#.",
+    "..#######..",
+)}, "Galmuri11-Condensed": {"중": (
+    ".#####.",
+    "...#...",
+    "..#.#..",
+    ".#...#.",
+    ".......",
+    "#######",
+    "...#...",
+    "...#...",
+    "..###..",
+    ".#...#.",
+    "..###..",
+)}}
+
+
+def _hand_fix(glyphs, stem):
+    for ch, rows in HAND_FIXES.get(stem, {}).items():
+        g = glyphs[ch]
+        w, h = g["bbx"][:2]
+        if (len(rows[0]), len(rows)) != (w, h):
+            raise ValueError(f"hand-fixed {ch} must keep the {w}x{h} box")
+        g["bits"] = [int(r.replace("#", "1").replace(".", "0"), 2) for r in rows]
+    return glyphs
+
+
 def load_bdf(path):
+    from pathlib import Path
+    return _hand_fix(_read_bdf(path), Path(path).stem)
+
+
+def _read_bdf(path):
     glyphs, cur = {}, None
     with open(path, encoding="latin-1") as f:
         for line in f:

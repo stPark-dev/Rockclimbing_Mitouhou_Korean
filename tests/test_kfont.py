@@ -74,3 +74,18 @@ def test_original_kanji_cell_extent():
     px = kfont.pixels(data[300 * 72 : 301 * 72])  # 手
     assert max(v for row in px for v in row) == 3
     assert not any(px[11])
+
+
+@pytest.mark.skipif(not Path(GALMURI).exists(), reason="Galmuri11.bdf not available")
+@pytest.mark.parametrize("stem", ["Galmuri11", "Galmuri11-Condensed"])
+def test_jung_keeps_a_visible_stem_apart_from_jong(stem):
+    # Galmuri11 중 had a 1 px stem right on top of ㅇ and read as 종/증 on screen (2026-10-26)
+    font = kfont.load_bdf(Path(GALMURI).parent / f"{stem}.bdf")
+    g = font["중"]
+    w = g["bbx"][0]
+    rows = ["".join("#" if b >> (w - 1 - c) & 1 else "." for c in range(w)) for b in g["bits"]]
+    bar = rows.index("#" * w)
+    mid = w // 2
+    assert rows[bar + 1][mid] == rows[bar + 2][mid] == "#" and rows[bar + 1].count("#") == rows[bar + 2].count("#") == 1
+    assert rows[:4] == ["".join("#" if b >> (w - 1 - c) & 1 else "." for c in range(w)) for b in font["종"]["bits"]][:4]
+    assert g["bbx"] == font["종"]["bbx"]

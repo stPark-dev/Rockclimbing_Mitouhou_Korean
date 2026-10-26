@@ -148,3 +148,20 @@ def test_corpus_dev_build_installs_the_hangul_name_entry():
     assert page0 in kw[ne.CAVE_START:ne.CAVE_END]
     assert not any(w["file"] == "KWAMENU.BIN" and ne.CAVE_START <= w["offset"] < ne.CAVE_END
                    for w in report["written"])
+
+
+def test_beta_policy_takes_ai_reviewed_units_and_refuses_drafts():
+    ko = {"src:a": {"ko": "가", "status": "ai_reviewed"}, "src:b": {"ko": "나", "status": "needs_context"},
+          "src:c": {"ko": "다", "status": "reviewed"}, "src:d": {"ko": "", "status": "untranslated"}}
+    assert set(build._select(ko, "beta")) == {"src:a", "src:b", "src:c"}
+    with pytest.raises(ValueError):
+        build._select({**ko, "src:e": {"ko": "라", "status": "draft"}}, "beta")
+    with pytest.raises(ValueError):  # release stays human-reviewed only
+        build._select(ko, "release")
+
+
+def test_beta_is_distributed_but_marked_as_not_human_reviewed():
+    assert build.CHANNELS["beta"]["distribution"] and not build.CHANNELS["beta"]["human_reviewed"]
+    assert "AI-reviewed" in build.CHANNELS["beta"]["note"]
+    assert build.CHANNELS["release"] == {"distribution": True, "human_reviewed": True, "note": ""}
+    assert not build.CHANNELS["dev"]["distribution"]

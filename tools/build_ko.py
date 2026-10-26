@@ -2,8 +2,9 @@
 
 Steps, all on the fixed revision (docs/survey.md §1):
 1. extract the adopted string population (textmap) and group it into units;
-2. select translations by policy — dev: draft and reviewed (non-distribution),
-   release: reviewed only, every translated unit must be reviewed;
+2. select translations by policy — dev: every translation (non-distribution),
+   beta: AI-reviewed or better, no drafts (public beta, not human-approved),
+   release: reviewed (human-approved) only, every translated unit must be reviewed;
 3. allocate glyph cells: kept glyphs stay in their cells, new punctuation and
    the 1-byte Hangul plan (kocheck.fit_plan) take free 1-byte cells, the other
    Hangul take free 2-byte cells;
@@ -16,7 +17,7 @@ Untranslated units keep their source bytes; under the dev policy their kana and
 kanji show whatever now sits in those cells.
 
 usage: build_ko.py --src <track 01 .bin> --cue <.cue> --galmuri Galmuri11.bdf --ko text/ko \\
-                   --out build/mitouhou_ko.bin [--policy dev|release]
+                   --out build/mitouhou_ko.bin [--policy dev|beta|release]
 """
 
 import argparse
@@ -184,12 +185,22 @@ def text_for(entry, copy_id):
     return entry.get("by_copy", {}).get(copy_id, entry["ko"])
 
 
+CHANNELS = {
+    "release": {"distribution": True, "human_reviewed": True, "note": ""},
+    "beta": {"distribution": True, "human_reviewed": False,
+             "note": "PUBLIC BETA: AI-reviewed translations, not human-approved"},
+    "dev": {"distribution": False, "human_reviewed": False,
+            "note": "NON-DISTRIBUTION development build: contains unreviewed drafts"},
+}
+ACCEPTED = {"release": {"reviewed"}, "beta": {"reviewed", "ai_reviewed", "needs_context"}}
+
+
 def _select(ko, policy):
     picked = {k: v for k, v in ko.items() if v.get("ko")}
-    if policy == "release":
-        bad = [k for k, v in picked.items() if v.get("status") != "reviewed"]
+    if policy in ACCEPTED:
+        bad = [k for k, v in picked.items() if v.get("status") not in ACCEPTED[policy]]
         if bad:
-            raise ValueError(f"release build refuses {len(bad)} unreviewed translations, e.g. {bad[:3]}")
+            raise ValueError(f"{policy} build refuses {len(bad)} translations not reviewed enough, e.g. {bad[:3]}")
     elif policy != "dev":
         raise ValueError(f"unknown policy {policy}")
     return picked
@@ -199,7 +210,7 @@ def build(src, ko, bdf, policy="dev", compat_fix=True, title_logo=None, label_fo
     if hashlib.sha256(src).hexdigest() != poc_db.SOURCE_SHA256:
         raise ValueError("source is not the supported original track 1")
     picked = _select(ko, policy)
-    report = {"distribution": policy == "release", "strings_written": 0, "written": [], "cells": {},
+    report = {"distribution": CHANNELS[policy]["distribution"], "strings_written": 0, "written": [], "cells": {},
               "files_out": {}}
     if not picked:
         return src, report
@@ -309,8 +320,7 @@ def main():
     Path(a.out).write_bytes(out)
     cue = poc_db.write_cue(a.cue, a.out)
     manifest = {
-        "policy": a.policy, "distribution": rep["distribution"],
-        "note": "" if rep["distribution"] else "NON-DISTRIBUTION development build: contains unreviewed drafts",
+        "policy": a.policy, **CHANNELS[a.policy],
         "sha256": hashlib.sha256(out).hexdigest(), "strings_written": rep["strings_written"],
         "hangul": rep.get("hangul"), "one_byte_hangul": rep.get("one_byte_hangul"),
         "changed_files": rep.get("changed_files"),
