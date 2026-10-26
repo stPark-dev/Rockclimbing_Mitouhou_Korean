@@ -381,6 +381,10 @@ SMALL_GLYPHS = {
     "G": {"clear": ((26, 226, 37, 247), (63, 226, 73, 247), (86, 226, 99, 247), (112, 226, 124, 247)),
           "glyphs": ((27, 227, "예"), (27, 237, "실"), (64, 227, "일"), (64, 237, "일"),
                      (88, 227, "시"), (88, 237, "시"), (113, 227, "분"), (113, 237, "분"))},
+    # move scene: the same box drawn 18 px further left (SU_IG 0x1842C, SU_MG 0x1E5B4)
+    "G2": {"clear": ((8, 226, 19, 247), (45, 226, 55, 247), (67, 226, 81, 247), (94, 226, 106, 247)),
+           "glyphs": ((9, 227, "예"), (9, 237, "실"), (46, 227, "일"), (46, 237, "일"),
+                      (70, 227, "시"), (70, 237, "시"), (95, 227, "분"), (95, 237, "분"))},
 }
 
 
@@ -548,7 +552,11 @@ FREE_COVER = 24
 SPLIT_LABELS = {("B", 0, 160): (("페이스", 1, 1), ("등반", 0, FREE_COVER + 4)),  # (text, font index, x)
                 # pitch submenu: the game prints the pitch number over the first 13 px of
                 # 「このピッチの概要」 (「1のピッチの概要」), so the Korean leaves that part empty
-                ("H", 72, 144): (("피치 개요", 0, 15),)}
+                ("H", 72, 144): (("피치 개요", 0, 15),),
+                # SELECT menu counts: the game prints the number over the left of the 枚/本 cells,
+                # whose glyphs sit in columns 26-37
+                ("I", 160, 128): (("장", 0, 26),),
+                ("I", 200, 128): (("개", 0, 26),)}
 
 
 def draw_split_label(rows, cell, parts, fonts):
@@ -570,31 +578,44 @@ def draw_split_label(rows, cell, parts, fonts):
 WEATHER_FILE, WEATHER_OFF, WEATHER_SHA1 = "X/X1.BIN", 0xD764, "b5624501bb775231"
 WEATHER = ("맑음", "흐림", "안개", "진눈비", "날린눈", "폭풍설", "눈보라", "우박", "벼락", "강풍")
 WEATHER_ROWS, WEATHER_INK, WEATHER_BAND = (22, 30), 11, 0
+# the move scene keeps its own はれ·くもり icons (copies group J2), black there is index 2 (0 is clear)
+MOVE_WEATHER_BAND = 2
 
 
-def replace_weather(files, root=GALMURI):
-    import kfont
-    font = kfont.load_bdf(root / "Galmuri7.bdf")
-    data = files[WEATHER_FILE]
-    tim, _ = lz74.decode_stream(bytes(data), WEATHER_OFF)
-    if hashlib.sha1(image(tim)[2]).hexdigest()[:16] != WEATHER_SHA1:
-        raise ValueError(f"{WEATHER_FILE} {WEATHER_OFF:#x} is not the supported original picture")
-    rows = _rows(tim)
+def _weather_labels(rows, texts, font, band):
     y0, y1 = WEATHER_ROWS
-    for i, text in enumerate(WEATHER):
+    for i, text in enumerate(texts):
         ix, iy = (i % 8) * 32, (i // 8) * 32
-        old_end = max(x for x in range(ix + 2, ix + 30) for y in range(iy + y0, iy + y1) if rows[y][x] == 0)
+        old_end = max(x for x in range(ix + 2, ix + 30) for y in range(iy + y0, iy + y1) if rows[y][x] == band)
         w = text_width(text, font)
         if w > 26:
             raise ValueError(f"{text!r} is wider than the icon")
         end = min(ix + 29, max(old_end, ix + 3 + w))
         for y in range(iy + y0, iy + y1):
             for x in range(ix + 2, end + 1):
-                rows[y][x] = WEATHER_BAND
+                rows[y][x] = band
         draw_text(rows, ix + 3, iy + y0, text, font, WEATHER_INK)
-    room = slot(bytes(data), WEATHER_OFF)
+
+
+def _replace_weather_picture(data, off, sha1, texts, font, band, name):
+    tim, _ = lz74.decode_stream(bytes(data), off)
+    if hashlib.sha1(image(tim)[2]).hexdigest()[:16] != sha1:
+        raise ValueError(f"{name} {off:#x} is not the supported original picture")
+    rows = _rows(tim)
+    _weather_labels(rows, texts, font, band)
+    room = slot(bytes(data), off)
     packed = lz74.encode_stream(with_image(tim, _pack4(rows)))
     if len(packed) > room:
-        raise ValueError(f"{WEATHER_FILE} {WEATHER_OFF:#x} needs {len(packed)} bytes, slot is {room}")
-    data[WEATHER_OFF:WEATHER_OFF + room] = packed + bytes(room - len(packed))
-    return {"icons": len(WEATHER)}
+        raise ValueError(f"{name} {off:#x} needs {len(packed)} bytes, slot is {room}")
+    data[off:off + room] = packed + bytes(room - len(packed))
+
+
+def replace_weather(files, root=GALMURI):
+    import kfont
+    font = kfont.load_bdf(root / "Galmuri7.bdf")
+    _replace_weather_picture(files[WEATHER_FILE], WEATHER_OFF, WEATHER_SHA1, WEATHER, font, WEATHER_BAND, WEATHER_FILE)
+    move = copies()["J2"]
+    for c in move:
+        _replace_weather_picture(files[c["file"]], int(c["offset"], 16), c["pixels_sha1"], WEATHER[:2], font,
+                                 MOVE_WEATHER_BAND, c["file"])
+    return {"icons": len(WEATHER), "move_icons": len(move)}

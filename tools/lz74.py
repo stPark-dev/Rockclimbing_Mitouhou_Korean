@@ -15,6 +15,9 @@ import hashlib
 
 BLOCK = 0x2000
 MAX_USED = 0x2003
+# run blocks whose handlers never check the 0x2000 end (0x80011F18, 0x80011F78, 0x800122C8); the
+# original data has 0x2001-byte ones (MENU/MENUDB 0x53C, SU_IG climber sprites)
+UNBOUNDED = (0x30, 0x31, 0x71)
 MAX_PAIRS = 16  # escape keys at 0x80060408 and pairs at 0x80060418 hold 16 each
 
 
@@ -155,17 +158,21 @@ def decode_block(data, pos=0):
 
 def decode_stream(data, pos=0):
     """Decode blocks until a 0x00 type byte; return (output, source bytes used including the 0x00)."""
-    out, start = bytearray(), pos
+    out, start, k = bytearray(), pos, 0
     while data[pos] != 0:
         block, used = decode_block(data, pos)
         if used > MAX_USED:
             raise ValueError(f"block at {pos:#x} uses {used:#x} bytes, the game stops at 0x2004")
-        if len(block) > BLOCK:
-            raise ValueError(f"block at {pos:#x} expands to {len(block):#x} bytes, more than 0x2000")
-        if len(out) % BLOCK:
+        if len(out) < k * BLOCK:
             raise ValueError("only the last block may be shorter than 0x2000")
-        out += block
+        if len(block) > BLOCK and data[pos] not in UNBOUNDED:
+            raise ValueError(f"block at {pos:#x} expands to {len(block):#x} bytes, more than 0x2000")
+        # block k lands at k * 0x2000: the tail of a longer run block is overwritten
+        out[k * BLOCK:] = block
+        k += 1
         pos += used
+    if len(out) > k * BLOCK:
+        raise ValueError(f"last block expands to {len(out) - (k - 1) * BLOCK:#x} bytes, more than 0x2000")
     return bytes(out), pos - start + 1
 
 

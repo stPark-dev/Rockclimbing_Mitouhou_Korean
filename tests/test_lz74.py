@@ -46,6 +46,18 @@ def test_stream_places_blocks_every_0x2000_bytes():
     assert stream[-1] == 0
 
 
+def test_overlong_block_tail_is_overwritten_by_the_next_block():
+    # MENU/MENUDB 0x53C: a 0x31 run block expands to 0x2001 bytes; the game writes the next block at
+    # +0x2000, so the extra byte is overwritten
+    first = bytes([0x31, 0x14, 0x00, 0x55, 0xED, 0x1F, 0x00, 0x00, 0x00])
+    second = bytes([0x40, 0x77, 0x02, 0x00])
+    out, used = lz74.decode_stream(first + second + b"\x00")
+    assert out == b"\x55" * 20 + bytes(0x1FEC) + b"\x77\x77"
+    assert used == len(first) + len(second) + 1
+    with pytest.raises(ValueError):  # only the run blocks 0x30, 0x31 and 0x71 may run past 0x2000
+        lz74.decode_stream(bytes([0x40, 0x00, 0x01, 0x20]) + second + b"\x00")
+
+
 @pytest.mark.parametrize("data", [b"", b"a", b"abcabcabcabc" * 50, bytes(5000), bytes(range(256)) * 9])
 def test_encode_round_trip(data):
     assert lz74.decode_stream(lz74.encode_stream(data))[0] == data

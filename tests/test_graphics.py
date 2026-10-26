@@ -117,7 +117,7 @@ def test_label_pictures_are_redrawn_in_every_copy():
             files.setdefault(c["file"], bytearray((FILES / c["file"]).read_bytes()))
     before = {n: bytes(d) for n, d in files.items()}
     report = graphics.replace_labels(files)
-    assert report == {"A": 15, "B": 2, "H": 13, "H1": 13, "I": 1}
+    assert report == {"A": 15, "B": 2, "H": 13, "H1": 13, "I": 1, "DB": 1}
     for pic, group in graphics.copies().items():
         drawn = set()
         for c in group:
@@ -181,21 +181,23 @@ def test_button_layout_clears_every_old_glyph_next_to_the_icons():
 
 @needs_files
 def test_small_glyphs_of_the_time_frame_are_replaced_in_every_copy():
-    group = graphics.copies()["G"]
-    files = {c["file"]: bytearray((FILES / c["file"]).read_bytes()) for c in group}
+    # G: mountain-screen time frame, G2: the move scene's box (same glyphs, 18 px further left)
+    groups = graphics.copies()
+    files = {c["file"]: bytearray((FILES / c["file"]).read_bytes()) for pic in ("G", "G2") for c in groups[pic]}
     before = {n: bytes(d) for n, d in files.items()}
-    assert graphics.replace_small_glyphs(files) == {"G": 95}
-    seen = set()
-    for c in group:
-        off = int(c["offset"], 16)
-        tim, used = lz74.decode_stream(bytes(files[c["file"]]), off)
-        assert used <= graphics.slot(before[c["file"]], off)
-        old = graphics._rows(lz74.decode_stream(before[c["file"]], off)[0])
-        rows = graphics._rows(tim)
-        seen.add(graphics.image(tim)[2])
-        assert rows[:220] == old[:220] and rows[247:] == old[247:]  # only the time labels change
-        assert rows[227:236] != old[227:236]
-    assert len(seen) == 1
+    assert graphics.replace_small_glyphs(files) == {"G": 95, "G2": 95}
+    for pic in ("G", "G2"):
+        seen = set()
+        for c in groups[pic]:
+            off = int(c["offset"], 16)
+            tim, used = lz74.decode_stream(bytes(files[c["file"]]), off)
+            assert used <= graphics.slot(before[c["file"]], off)
+            old = graphics._rows(lz74.decode_stream(before[c["file"]], off)[0])
+            rows = graphics._rows(tim)
+            seen.add(graphics.image(tim)[2])
+            assert rows[:220] == old[:220] and rows[247:] == old[247:]  # only the time labels change
+            assert rows[227:236] != old[227:236]
+        assert len(seen) == 1
 
 
 @needs_files
@@ -233,11 +235,31 @@ def test_free_climbing_button_reads_through_the_covered_cell():
     assert head and max(head) <= graphics.FREE_COVER - 1 and tail and min(tail) >= graphics.FREE_COVER + 3
 
 
+def test_count_units_sit_right_of_the_number():
+    # the game prints the count over the left of the 枚/本 cells; the originals use columns 26-37
+    for x0, unit in ((160, "장"), (200, "개")):
+        rows = [[1 if y in (0, 14) or x in (0, 38) else 4 for x in range(39)] for y in range(16)]
+        graphics.draw_split_label(rows, (0, 0, 39, 16), graphics.SPLIT_LABELS[("I", x0, 128)], graphics.label_font())
+        ink = [x for y in range(1, 14) for x in range(1, 38) if rows[y][x] == graphics.TEXT]
+        assert ink and min(ink) >= 25
+
+
 @needs_files
 def test_weather_labels_stay_inside_the_icon_bottoms():
-    files = {graphics.WEATHER_FILE: bytearray((FILES / graphics.WEATHER_FILE).read_bytes())}
-    before = bytes(files[graphics.WEATHER_FILE])
-    assert graphics.replace_weather(files) == {"icons": 10}
+    move = graphics.copies()["J2"]  # move scene: はれ·くもり only, black is index 2
+    files = {n: bytearray((FILES / n).read_bytes()) for n in [graphics.WEATHER_FILE] + [c["file"] for c in move]}
+    before = {n: bytes(d) for n, d in files.items()}
+    assert graphics.replace_weather(files) == {"icons": 10, "move_icons": 82}
+    for c in move:
+        off = int(c["offset"], 16)
+        tim, used = lz74.decode_stream(bytes(files[c["file"]]), off)
+        assert used <= graphics.slot(before[c["file"]], off)
+        new = graphics._rows(tim)
+        old = graphics._rows(lz74.decode_stream(before[c["file"]], off)[0])
+        changed = {(x, y) for y in range(len(new)) for x in range(len(new[0])) if new[y][x] != old[y][x]}
+        assert changed and all(22 <= y < 30 and 2 <= x % 32 < 30 and x < 64 for x, y in changed)
+        assert all(new[y][x] in (2, 11) for x, y in changed)
+    before = before[graphics.WEATHER_FILE]
     new = graphics._rows(lz74.decode_stream(bytes(files[graphics.WEATHER_FILE]), graphics.WEATHER_OFF)[0])
     old = graphics._rows(lz74.decode_stream(before, graphics.WEATHER_OFF)[0])
     for y in range(len(new)):
