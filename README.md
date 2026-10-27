@@ -4,7 +4,7 @@
 
 플레이스테이션용 『ロッククライミング 未踏峰への挑戦 アルプス編』(일본판, SLPS-00662, ⓒ 위넷)의 한글 패치 제작 프로젝트입니다.
 
-> **현재 상태: v1.0-beta.1 (AI 검수 + 사용자 결정 반영, 정식 승인 전)**
+> **현재 상태: v1.0-beta.2 (AI 검수 + 사용자 결정 반영, 정식 승인 전)**
 > 본편 텍스트 1,469단위와 주요 그림 글자·이름 입력을 한글화했습니다. 번역은 AI 일괄 검수만 거쳤고 사람이 승인한 것은 아닙니다(D14). 알려진 문제는 아래에 적었습니다.
 
 ## 진행 상황
@@ -34,15 +34,15 @@
 
 패치는 트랙 1만 바꿉니다. 오디오 트랙은 원본을 그대로 씁니다.
 
-## 패치 적용 (v1.0-beta.1)
+## 패치 적용 (v1.0-beta.2)
 
 1. 위 해시와 같은 트랙 1 이미지를 준비합니다.
-2. PPF 3.0 패처(PPF-O-Matic, ApplyPPF 등)로 `RockClimbing_Mitouhou_KO_v1.0-beta.1.ppf`를 트랙 1에 적용합니다. 패치는 원본의 일부 바이트를 검사하므로 다른 이미지에는 적용되지 않습니다.
+2. PPF 3.0 패처(PPF-O-Matic, ApplyPPF 등)로 `RockClimbing_Mitouhou_KO_v1.0-beta.2.ppf`를 트랙 1에 적용합니다. 패치는 원본의 일부 바이트를 검사하므로 다른 이미지에는 적용되지 않습니다.
 3. cue와 오디오 트랙(2–22)은 원본 그대로 씁니다.
 
-### v1.0-beta.1 알려진 문제
+### v1.0-beta.2 알려진 문제
 
-- 번역은 AI 검수와 용어 결정(D15–D17)만 거쳤고 사람 승인은 아직입니다. v1.0-beta.1 배포본에는 정식판 검수 대상 9단위가 남아 있으며, 저장소에서는 모두 결정되었습니다(暗闇の掘 → 「어둠의 벽」 등, 다음 배포에 반영).
+- 번역은 AI 검수와 용어 결정(D15–D17)만 거쳤고 사람 승인은 아직입니다. 문맥 확인이 필요하던 단위는 모두 결정되었습니다(暗闇の掘 → 「어둠의 벽」 등).
 - 화면에서 재지 않은 창의 줄 44개가 원문 최장 줄보다 넓어 잘릴 수 있습니다.
 - 영상(STR) 안의 일본어 글자는 그대로입니다(v1.1).
 - 이동 장면의 시간 상자·날씨 아이콘(G2·J2)과 일부 스테이지 화면은 실기에서 보지 못했습니다.
@@ -77,7 +77,7 @@ cd tools
 python3 build_ko.py --src "../original/<원본> (Track 01).bin" --cue "../original/<원본>.cue" \
   --galmuri ../../galmuri/Galmuri11.bdf --ko ../text/ko --out ../build/mitouhou_ko_beta.bin --policy beta \
   --title-logo ../work/assets/title_logo_ko.png --db-photos ../work/assets/db_photo1_ko.png ../work/assets/db_photo2_ko.png
-python3 ppf.py "../original/<원본> (Track 01).bin" ../build/mitouhou_ko_beta.bin ../build/RockClimbing_Mitouhou_KO_v1.0-beta.1.ppf
+python3 ppf.py "../original/<원본> (Track 01).bin" ../build/mitouhou_ko_beta.bin ../build/RockClimbing_Mitouhou_KO_v1.0-beta.2.ppf
 ```
 
 `--policy dev`는 초벌을 포함한 배포 불가 빌드, `beta`는 AI 검수 이상만, `release`는 사람 승인만 받습니다. 타이틀 로고와 설명 사진 그림은 저장소 밖(`work/assets/`)에 둡니다.
