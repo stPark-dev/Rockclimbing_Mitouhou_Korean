@@ -95,8 +95,8 @@
    "KABE.BIN:2C1AC"
   ],
   "ko": "표층 눈사태가 {F8:00} 쪽을\n덮친다. 피할 수 없다!",
-  "status": "needs_context",
-  "note": "D5 이름 문형"
+  "status": "ai_reviewed",
+  "note": "D5 이름 문형; D17 사용자 결정: 현행 유지"
  },
  "src:a740c1c353b8": {
   "cap": 40,
